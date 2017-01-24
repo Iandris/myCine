@@ -46,6 +46,6 @@ Ever bought a movie and after watching it decided maybe it wasnt worth the $$?. 
 * Application Flow
 * DB Design
 
-### [Project Plan](https://github.com/Iandris/myCine/blob/master/ProjectPlan)
+### [Project Plan](https://github.com/Iandris/myCine/blob/master/ProjectPlan.md)
 
 ### [Time Log](https://github.com/Iandris/myCine/blob/master/TimeLog.md)
