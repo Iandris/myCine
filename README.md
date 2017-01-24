@@ -48,4 +48,4 @@ Ever bought a movie and after watching it decided maybe it wasnt worth the $$?. 
 
 ### Project Plan
 
-### Time Log
+### [Time Log](https://github.com/Iandris/myCine/blob/master/TimeLog.md)
