@@ -17,80 +17,80 @@
  - [X] Time log entries
 
 ### Week 3
- - [] Deploy to AWS
- - [] Complete DB design
- - [] Begin creating jsp
- - [] create class diagram
- - [] set up logging
- - [] Time log entries
+ - [ ] Deploy to AWS
+ - [ ] Complete DB design
+ - [ ] Begin creating jsp
+ - [ ] create class diagram
+ - [ ] set up logging
+ - [ ] Time log entries
  
 ### Week 4
- - [] set up unit with Spock (Groovy)
- - [] create db locally
- - [] complete remaining jsp
- - [] add user login
- - [] add user registration
- - [] Time log entries
+ - [ ] set up unit with Spock (Groovy)
+ - [ ] create db locally
+ - [ ] complete remaining jsp
+ - [ ] add user login
+ - [ ] add user registration
+ - [ ] Time log entries
  
 ### Week 5
- - [] add movie creation / logging
- - [] add friend connection
- - [] attempt API call for imdb (omdb)
- - [] create sql for movie library list
- - [] Time log entries
+ - [ ] add movie creation / logging
+ - [ ] add friend connection
+ - [ ] attempt API call for imdb (omdb)
+ - [ ] create sql for movie library list
+ - [ ] Time log entries
  
 ### Week 6
- - [] create paging/sorting for library
- - [] create paging/sorgint for users
- - [] update prefs for users info
- - [] update pref for default rental period
- - [] begin text message information
- - [] Time log entries
+ - [ ] create paging/sorting for library
+ - [ ] create paging/sorgint for users
+ - [ ] update prefs for users info
+ - [ ] update pref for default rental period
+ - [ ] begin text message information
+ - [ ] Time log entries
  
  
 ### Week 7
- - [] 
- - []
- - []
- - []
- - []
- - [] Time log entries
+ - [ ] 
+ - [ ] 
+ - [ ] 
+ - [ ] 
+ - [ ] 
+ - [ ] Time log entries
  
 ### Week 8
- - []
- - []
- - []
- - []
- - []
- - [] Time log entries
+ - [ ] 
+ - [ ] 
+ - [ ] 
+ - [ ] 
+ - [ ] 
+ - [ ] Time log entries
  
 ### Week 9
- - []
- - []
- - []
- - []
- - []
- - [] Time log entries
+ - [ ] 
+ - [ ] 
+ - [ ] 
+ - [ ] 
+ - [ ] 
+ - [ ] Time log entries
  
 ### Week 10
- - [] Time log entries
+ - [ ] Time log entries
  
 ### Week 11
- - [] Time log entries
+ - [ ] Time log entries
  
 ### Week 12
- - [] Time log entries
+ - [ ] Time log entries
  
 ### Week 13
- - [] Time log entries
+ - [ ] Time log entries
  
 ### Week 14
- - [] Create Final Presentation
- - [] Time log entries
+ - [ ] Create Final Presentation
+ - [ ] Time log entries
  
 ### Week 15
- - [] Final Presentation 
- - [] Time log entries
+ - [ ] Final Presentation 
+ - [ ] Time log entries
  
 ### Week 16
- - [] Time log entries
+ - [ ] Time log entries
