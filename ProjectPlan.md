@@ -11,9 +11,86 @@
 ### Week 2
  - [X] Week 2 Exercises and Activities
  - [X] Complete Project Screen Design
- - [ ] Document application flow
+ - [X] Document application flow
  - [ ] Create project structure in IntelliJ
  - [ ] Add project to repository
- - [ ] Time log entries
+ - [X] Time log entries
 
 ### Week 3
+ - [] Deploy to AWS
+ - [] Complete DB design
+ - [] Begin creating jsp
+ - [] create class diagram
+ - [] set up logging
+ - [] Time log entries
+ 
+### Week 4
+ - [] set up unit with Spock (Groovy)
+ - [] create db locally
+ - [] complete remaining jsp
+ - [] add user login
+ - [] add user registration
+ - [] Time log entries
+ 
+### Week 5
+ - [] add movie creation / logging
+ - [] add friend connection
+ - [] attempt API call for imdb (omdb)
+ - [] create sql for movie library list
+ - [] Time log entries
+ 
+### Week 6
+ - [] create paging/sorting for library
+ - [] create paging/sorgint for users
+ - [] update prefs for users info
+ - [] update pref for default rental period
+ - [] begin text message information
+ - [] Time log entries
+ 
+ 
+### Week 7
+ - [] 
+ - []
+ - []
+ - []
+ - []
+ - [] Time log entries
+ 
+### Week 8
+ - []
+ - []
+ - []
+ - []
+ - []
+ - [] Time log entries
+ 
+### Week 9
+ - []
+ - []
+ - []
+ - []
+ - []
+ - [] Time log entries
+ 
+### Week 10
+ - [] Time log entries
+ 
+### Week 11
+ - [] Time log entries
+ 
+### Week 12
+ - [] Time log entries
+ 
+### Week 13
+ - [] Time log entries
+ 
+### Week 14
+ - [] Create Final Presentation
+ - [] Time log entries
+ 
+### Week 15
+ - [] Final Presentation 
+ - [] Time log entries
+ 
+### Week 16
+ - [] Time log entries
