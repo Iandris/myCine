@@ -5,3 +5,4 @@
 | 1/24/17 | Set up project Plan documentation on github | 2 | |
 | 1/25/17 | Begin wireframes/project flow and basic db tables/relationshipts | 1 | |
 | 1/30/17 | Finished wireframs | 2 | |
+| 1/30/17 | Draft db relationship uploaded | 1 | |
