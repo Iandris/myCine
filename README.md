@@ -33,12 +33,11 @@ Ever bought a movie and after watching it decided maybe it wasnt worth the $$?. 
 * Logging
 	* Log all rental transactions and error messages using Log4J
 * Site and DB hosted on AWS
-* Unit Testing
-	* Junit testing to cover all db transactions
-	* Junit testing for all authentication functions
+* Unit Testing (Spock)
+	* unit testing to cover all db transactions
+	* unit testing for all authentication functions
 * Independent research topic (ideas)
-	* Bootstrap
-	* Spock (powered by Groovy?)
+	* Spock (powered by Groovy?) for unit testing
 
 ### Design
 
