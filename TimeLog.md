@@ -6,3 +6,4 @@
 | 1/25/17 | Begin wireframes/project flow and basic db tables/relationshipts | 1 | |
 | 1/30/17 | Finished wireframs | 2 | |
 | 1/30/17 | Draft db relationship uploaded | 1 | |
+| 1/30/17 | finished application flow write up | 1 | |
