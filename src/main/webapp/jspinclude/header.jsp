@@ -7,10 +7,6 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-
-</body>
+    <img src="../images/MyCine.png" alt="MyCine Logo" />
 </html>
+
