@@ -17,7 +17,7 @@
  - [X] Time log entries
 
 ### Week 3
- - [ ] Deploy to AWS
+ - [X] Deploy to AWS
  - [ ] Complete DB design
  - [ ] Begin creating jsp
  - [ ] create class diagram
