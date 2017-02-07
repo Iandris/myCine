@@ -15,17 +15,17 @@ Ever bought a movie and after watching it decided maybe it wasnt worth the $$?. 
 
 ### Technology/Techniques
 
-* Security/Authentication
+* Security/Authentication (possible firebase aka google/facebook login)
 	* Admin Role: access to all data, ability to read/add/change/archive
-	* Users - 2 roles
+	* Users
 		* LibraryOwner: build personal collection and add renters, can view current rented out titles
 		* Renters: can view current rental titles and return dates.
 * Database - MySQL
 	* Store users / roles
 	* Store video libraries (linked to LibraryOwner users)
 	* Store active rentals (LibraryOwner, Renter, ReturnDate)
-	* Store all communication details
-	* Store all change logs
+	* Store all communication details -STRETCH
+	* Store all change logs -STRETCH
 * WebService / API
 	* text alert for renter (return title by date) Twilio https://www.twilio.com/docs/libraries/java 
 	* IMDB web service for movie info (omdb API) http://www.omdbapi.com 
