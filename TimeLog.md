@@ -7,4 +7,5 @@
 | 1/30/17 | Finished wireframs | 2 | |
 | 1/30/17 | Draft db relationship uploaded | 1 | |
 | 1/30/17 | finished application flow write up | 1 | |
-| 2/7/2017| stubbed out maven project for mycine | 1 | |
+| 2/07/17 | stubbed out maven project for mycine | 1 | |
+| 2/07/17 | Deploy app to AWS | 4 | |
