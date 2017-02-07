@@ -12,8 +12,8 @@
  - [X] Week 2 Exercises and Activities
  - [X] Complete Project Screen Design
  - [X] Document application flow
- - [ ] Create project structure in IntelliJ
- - [ ] Add project to repository
+ - [X] Create project structure in IntelliJ
+ - [X] Add project to repository
  - [X] Time log entries
 
 ### Week 3
