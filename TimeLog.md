@@ -10,3 +10,4 @@
 | 2/07/17 | stubbed out maven project for mycine | 1 | |
 | 2/07/17 | Deploy app to AWS | 4 | |
 | 2/07/17 | Draft db relationship updated  | 1 | ready for peer review |
+| 2/09/17 | Second draft db relationships | 1 | post review c.o. Cary Walker |
