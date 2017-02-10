@@ -1,0 +1,17 @@
+.navbar-brand {
+    padding: 5px;
+}
+
+.navbar-nav, .navbar-nav li, .navbar-nav li a {
+    height:75px;
+}
+
+.navbar-nav li a {
+    padding-top:50px;
+    padding-bottom:-10px;
+}
+
+.navbar-right {
+    padding-bottom:-10px;
+    padding-right:5px;
+}
