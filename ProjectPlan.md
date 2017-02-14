@@ -28,36 +28,31 @@
  - [ ] set up unit with Spock (Groovy)
  - [X] create db locally
  - [ ] complete remaining jsp
- - [ ] add user login
- - [ ] add user registration
+
  - [X] Time log entries
  
 ### Week 5
- - [ ] add movie creation / logging
- - [ ] add friend connection
- - [ ] attempt API call for imdb (omdb)
+ - [ ] add user login
+ - [ ] add user registration
  - [ ] create sql for movie library list
  - [ ] Time log entries
  
 ### Week 6
- - [ ] create paging/sorting for library
- - [ ] create paging/sorgint for users
- - [ ] update prefs for users info
- - [ ] update pref for default rental period
- - [ ] begin text message information
+ - [ ] add movie creation / logging
+ - [ ] add friend connection
+ - [ ] attempt API call for imdb (omdb)
  - [ ] Time log entries
  
  
 ### Week 7
- - [ ] 
- - [ ] 
- - [ ] 
- - [ ] 
- - [ ] 
+ - [ ] create paging/sorting for library
+ - [ ] create paging/sorgint for users
+ - [ ] update prefs for users info
+ - [ ] update pref for default rental period
  - [ ] Time log entries
  
 ### Week 8
- - [ ] 
+ - [ ] begin text message information
  - [ ] 
  - [ ] 
  - [ ] 
