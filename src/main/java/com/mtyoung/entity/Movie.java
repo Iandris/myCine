@@ -1,17 +1,44 @@
 package com.mtyoung.entity;
+import com.mtyoung.util.LocalDateAttributeConverter;
+import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.*;
+import java.time.*;
 
+@Entity
+@Table(name="Movie")
 public class Movie {
 
+  @Id
+  @GeneratedValue(generator="increment")
+  @GenericGenerator(name="increment", strategy = "increment")
+  @Column(name = "idmovie")
   private int idmovie;
-  private String title;
-  private int format;
-  private int genre;
-  private int director;
-  private int studio;
-  private int imdbid;
-  private int upccode;
 
+  @Column(name="title")
+  private String title;
+
+  @Column(name="format")
+  private int format;
+
+  @Column(name="genre")
+  private int genre;
+
+  @Column(name="director")
+  private int director;
+
+  @Column(name="studio")
+  private int studio;
+
+  @Column(name="imdbID", unique = true)
+  private String imdbid;
+
+  @Column(name="upcCode", unique = true)
+  private String upccode;
+
+  @Column(name="releaseDate")
+  @Convert(converter = LocalDateAttributeConverter.class)
+  private LocalDate releaseDate;
 
   public int getIdmovie() {
     return idmovie;
@@ -21,7 +48,6 @@ public class Movie {
     this.idmovie = idmovie;
   }
 
-
   public String getTitle() {
     return title;
   }
@@ -29,7 +55,6 @@ public class Movie {
   public void setTitle(String title) {
     this.title = title;
   }
-
 
   public int getFormat() {
     return format;
@@ -39,7 +64,6 @@ public class Movie {
     this.format = format;
   }
 
-
   public int getGenre() {
     return genre;
   }
@@ -47,7 +71,6 @@ public class Movie {
   public void setGenre(int genre) {
     this.genre = genre;
   }
-
 
   public int getDirector() {
     return director;
@@ -57,7 +80,6 @@ public class Movie {
     this.director = director;
   }
 
-
   public int getStudio() {
     return studio;
   }
@@ -66,22 +88,27 @@ public class Movie {
     this.studio = studio;
   }
 
-
-  public int getImdbid() {
+  public String getImdbid() {
     return imdbid;
   }
 
-  public void setImdbid(int imdbid) {
+  public void setImdbid(String imdbid) {
     this.imdbid = imdbid;
   }
 
-
-  public int getUpccode() {
+  public String getUpccode() {
     return upccode;
   }
 
-  public void setUpccode(int upccode) {
+  public void setUpccode(String upccode) {
     this.upccode = upccode;
   }
 
+  public LocalDate getReleaseDate() {
+    return releaseDate;
+  }
+
+  public void setReleaseDate(LocalDate releaseDate) {
+    this.releaseDate = releaseDate;
+  }
 }

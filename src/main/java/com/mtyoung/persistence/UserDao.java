@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Created by Mike on 2/13/17.
  */
-public class UserDAO {
+public class UserDao {
     private final Logger log = Logger.getLogger(this.getClass());
 
     /** Return a list of all users

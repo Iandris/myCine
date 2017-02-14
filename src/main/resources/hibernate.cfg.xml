@@ -25,6 +25,11 @@
         <mapping class="com.mtyoung.entity.UserRole" />
         <mapping class="com.mtyoung.entity.Address" />
         <mapping class="com.mtyoung.entity.State" />
+        <mapping class="com.mtyoung.entity.Movie" />
+        <mapping class="com.mtyoung.entity.Studio" />
+        <mapping class="com.mtyoung.entity.Genre" />
+        <mapping class="com.mtyoung.entity.Director" />
+        <mapping class="com.mtyoung.entity.Format" />
 
     </session-factory>
 

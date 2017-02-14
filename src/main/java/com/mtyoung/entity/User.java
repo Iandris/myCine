@@ -14,7 +14,7 @@ public class User {
   @Column(name = "id")
   private int uuid;
 
-  @Column
+  @Column(name="roleID")
   private int roleid;
 
   @Column(name = "fName")

@@ -14,13 +14,13 @@ import static org.junit.Assert.*;
  */
 public class UserDAOTest {
 
-    UserDAO dao;
+    UserDao dao;
     User bob;
     int newUser = 0;
 
     @Before
     public void setup() {
-        dao = new UserDAO();
+        dao = new UserDao();
         bob = new User();
         bob.setFname("Mike");
         bob.setLname("Young");
@@ -90,8 +90,23 @@ public class UserDAOTest {
     public void updateUser() throws Exception {
         newUser = dao.addUser(bob);
         bob.setFname("Michael");
+        bob.setLname("Smith");
+        bob.setRoleid(2);
+        bob.setAddressid(1);
+        bob.setEmail("myoung86@charter.net");
+        bob.setCellnumber("9202855911");
+        bob.setPassword("Connor");
+        bob.setReminderthreshold(2);
+        bob.setDefaultrentalperiod(5);
+
         dao.updateUser(bob);
-        assertEquals("user not updated", bob.getFname(), dao.getUser(newUser).getFname());
-    }
+        assertEquals("first not updated correctly", bob.getFname(), dao.getUser(newUser).getFname().toString());
+        assertEquals("last not updated correctly", bob.getLname(), dao.getUser(newUser).getLname());
+        assertEquals("updated role not returned", bob.getRoleid(), dao.getUser(newUser).getRoleid());
+        assertEquals("updated address not returned", bob.getAddressid(), dao.getUser(newUser).getAddressid());
+        assertEquals("updated Email not returned", bob.getEmail(), dao.getUser(newUser).getEmail());
+        assertEquals("updated cell not returned", bob.getCellnumber(), dao.getUser(newUser).getCellnumber());
+        assertEquals("updated reminder threshold not returned", bob.getReminderthreshold(), dao.getUser(newUser).getReminderthreshold());
+        assertEquals("updated rental period not returned", bob.getDefaultrentalperiod(), dao.getUser(newUser).getDefaultrentalperiod());    }
 
 }
