@@ -12,11 +12,6 @@ public class MovieCastLink {
     return idmoviecast;
   }
 
-  public void setIdmoviecast(int idmoviecast) {
-    this.idmoviecast = idmoviecast;
-  }
-
-
   public int getFilmid() {
     return filmid;
   }
@@ -24,7 +19,6 @@ public class MovieCastLink {
   public void setFilmid(int filmid) {
     this.filmid = filmid;
   }
-
 
   public int getActorid() {
     return actorid;

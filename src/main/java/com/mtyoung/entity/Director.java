@@ -1,21 +1,28 @@
 package com.mtyoung.entity;
 
+import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="Director")
 public class Director {
 
+  @Id
+  @GeneratedValue(generator="increment")
+  @GenericGenerator(name="increment", strategy = "increment")
+  @Column(name = "idDirector")
   private int iddirector;
-  private String fname;
-  private String lname;
 
+  @Column(name="fName")
+  private String fname;
+
+  @Column(name="lName")
+  private String lname;
 
   public int getIddirector() {
     return iddirector;
   }
-
-  public void setIddirector(int iddirector) {
-    this.iddirector = iddirector;
-  }
-
 
   public String getFname() {
     return fname;
@@ -24,7 +31,6 @@ public class Director {
   public void setFname(String fname) {
     this.fname = fname;
   }
-
 
   public String getLname() {
     return lname;

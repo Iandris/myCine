@@ -15,11 +15,6 @@ public class Message {
     return idmessagelog;
   }
 
-  public void setIdmessagelog(int idmessagelog) {
-    this.idmessagelog = idmessagelog;
-  }
-
-
   public int getSenderid() {
     return senderid;
   }

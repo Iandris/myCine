@@ -44,10 +44,6 @@ public class Movie {
     return idmovie;
   }
 
-  public void setIdmovie(int idmovie) {
-    this.idmovie = idmovie;
-  }
-
   public String getTitle() {
     return title;
   }

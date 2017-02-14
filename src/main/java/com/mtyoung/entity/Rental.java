@@ -13,11 +13,6 @@ public class Rental {
     return idrentals;
   }
 
-  public void setIdrentals(int idrentals) {
-    this.idrentals = idrentals;
-  }
-
-
   public int getRenterid() {
     return renterid;
   }
@@ -26,7 +21,6 @@ public class Rental {
     this.renterid = renterid;
   }
 
-
   public int getMovieid() {
     return movieid;
   }
@@ -34,7 +28,6 @@ public class Rental {
   public void setMovieid(int movieid) {
     this.movieid = movieid;
   }
-
 
   public java.sql.Timestamp getDuedate() {
     return duedate;

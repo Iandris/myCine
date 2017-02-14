@@ -25,11 +25,6 @@ public class State {
     return idstate;
   }
 
-  public void setIdstate(int idstate) {
-    this.idstate = idstate;
-  }
-
-
   public String getShort() {
     return short_name;
   }

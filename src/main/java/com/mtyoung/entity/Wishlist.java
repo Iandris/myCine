@@ -12,11 +12,6 @@ public class Wishlist {
     return idwishlistlink;
   }
 
-  public void setIdwishlistlink(int idwishlistlink) {
-    this.idwishlistlink = idwishlistlink;
-  }
-
-
   public int getUserid() {
     return userid;
   }
@@ -24,7 +19,6 @@ public class Wishlist {
   public void setUserid(int userid) {
     this.userid = userid;
   }
-
 
   public int getMovieid() {
     return movieid;

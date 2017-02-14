@@ -22,11 +22,6 @@ public class UserRole {
     return roleid;
   }
 
-  public void setRoleid(int roleid) {
-    this.roleid = roleid;
-  }
-
-
   public String getDescription() {
     return description;
   }

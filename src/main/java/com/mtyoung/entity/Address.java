@@ -23,7 +23,7 @@ public class Address {
   @Column(name="City")
   private String city;
 
-  @Column(name="stateID")
+  @Column(name="state")
   private int state;
 
   @Column(name="ZipCode")
@@ -33,11 +33,6 @@ public class Address {
   public int getIdaddresses() {
     return idaddresses;
   }
-
-  public void setIdaddresses(int idaddresses) {
-    this.idaddresses = idaddresses;
-  }
-
 
   public String getStreetaddress1() {
     return streetaddress1;
@@ -55,7 +50,6 @@ public class Address {
   public void setStreetaddress2(String streetaddress2) {
     this.streetaddress2 = streetaddress2;
   }
-
 
   public String getCity() {
     return city;

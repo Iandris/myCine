@@ -30,7 +30,7 @@
         <mapping class="com.mtyoung.entity.Genre" />
         <mapping class="com.mtyoung.entity.Director" />
         <mapping class="com.mtyoung.entity.Format" />
-
+        <mapping class="com.mtyoung.entity.Actor" />
     </session-factory>
 
 </hibernate-configuration>

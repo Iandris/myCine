@@ -1,7 +1,6 @@
 package com.mtyoung.persistence;
-import com.mtyoung.entity.Movie;
 
-import com.sun.xml.internal.bind.v2.TODO;
+import com.mtyoung.entity.Movie;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -74,13 +73,9 @@ public class MovieDaoTest {
 
     @Test
     public void deleteMovie() throws Exception {
-        int newMovie = dao.addMovie(film);
-
-        if (newMovie != 0) {
-            dao.deleteMovie(newMovie);
-        }
-
-        assertNull("Movie not successfully deleted", dao.getMovie(newMovie));
+        dao.addMovie(film);
+        dao.deleteMovie(film.getIdmovie());
+        assertNull("movie not deleted", dao.getMovie(film.getIdmovie()));
     }
 
     @Test

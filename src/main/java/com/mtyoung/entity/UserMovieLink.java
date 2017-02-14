@@ -14,11 +14,6 @@ public class UserMovieLink {
     return linkid;
   }
 
-  public void setLinkid(int linkid) {
-    this.linkid = linkid;
-  }
-
-
   public int getUserid() {
     return userid;
   }
@@ -26,7 +21,6 @@ public class UserMovieLink {
   public void setUserid(int userid) {
     this.userid = userid;
   }
-
 
   public int getMovieid() {
     return movieid;
@@ -36,7 +30,6 @@ public class UserMovieLink {
     this.movieid = movieid;
   }
 
-
   public int getQuantity() {
     return quantity;
   }
@@ -44,7 +37,6 @@ public class UserMovieLink {
   public void setQuantity(int quantity) {
     this.quantity = quantity;
   }
-
 
   public int getStarrating() {
     return starrating;

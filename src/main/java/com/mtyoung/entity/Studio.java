@@ -11,11 +11,6 @@ public class Studio {
     return idstudio;
   }
 
-  public void setIdstudio(int idstudio) {
-    this.idstudio = idstudio;
-  }
-
-
   public String getStudiotitle() {
     return studiotitle;
   }

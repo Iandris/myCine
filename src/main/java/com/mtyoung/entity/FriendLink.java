@@ -1,21 +1,28 @@
 package com.mtyoung.entity;
 
+import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="FriendLink")
 public class FriendLink {
 
-  private int linkid;
+  @Id
+  @GeneratedValue(generator="increment")
+  @GenericGenerator(name="increment", strategy = "increment")
+  @Column(name = "linkID")
+  private int linkID;
+
+  @Column(name="friendID1")
   private int friendid1;
+
+  @Column(name="friendID2")
   private int friendid2;
 
-
   public int getLinkid() {
-    return linkid;
+    return linkID;
   }
-
-  public void setLinkid(int linkid) {
-    this.linkid = linkid;
-  }
-
 
   public int getFriendid1() {
     return friendid1;
@@ -24,7 +31,6 @@ public class FriendLink {
   public void setFriendid1(int friendid1) {
     this.friendid1 = friendid1;
   }
-
 
   public int getFriendid2() {
     return friendid2;

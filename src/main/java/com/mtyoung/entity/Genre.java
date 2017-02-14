@@ -11,11 +11,6 @@ public class Genre {
     return idgenre;
   }
 
-  public void setIdgenre(int idgenre) {
-    this.idgenre = idgenre;
-  }
-
-
   public String getGenretitle() {
     return genretitle;
   }
