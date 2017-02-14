@@ -28,7 +28,6 @@
  - [ ] set up unit with Spock (Groovy)
  - [X] create db locally
  - [ ] complete remaining jsp
-
  - [X] Time log entries
  
 ### Week 5
