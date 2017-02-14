@@ -18,19 +18,19 @@
 
 ### Week 3
  - [X] Deploy to AWS
- - [ ] Complete DB design
- - [ ] Begin creating jsp
+ - [X] Complete DB design
+ - [X] Begin creating jsp
  - [ ] create class diagram
  - [ ] set up logging
- - [ ] Time log entries
+ - [X] Time log entries
  
 ### Week 4
  - [ ] set up unit with Spock (Groovy)
- - [ ] create db locally
+ - [X] create db locally
  - [ ] complete remaining jsp
  - [ ] add user login
  - [ ] add user registration
- - [ ] Time log entries
+ - [X] Time log entries
  
 ### Week 5
  - [ ] add movie creation / logging
