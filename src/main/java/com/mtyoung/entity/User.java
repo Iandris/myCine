@@ -41,7 +41,6 @@ public class User {
   @Column(name = "defaultRentalPeriod")
   private int defaultrentalperiod;
 
-
   public int getUuid() {
     return uuid;
   }
@@ -54,7 +53,6 @@ public class User {
     this.roleid = roleid;
   }
 
-
   public String getFname() {
     return fname;
   }
@@ -62,7 +60,6 @@ public class User {
   public void setFname(String fname) {
     this.fname = fname;
   }
-
 
   public String getLname() {
     return lname;
@@ -72,7 +69,6 @@ public class User {
     this.lname = lname;
   }
 
-
   public int getAddressid() {
     return id_address;
   }
@@ -80,7 +76,6 @@ public class User {
   public void setAddressid(int addressid) {
     this.id_address = addressid;
   }
-
 
   public String getEmail() {
     return email;
@@ -105,7 +100,6 @@ public class User {
   public void setPassword(String password) {
     this.password = password;
   }
-
 
   public int getReminderthreshold() {
     return reminderthreshold;

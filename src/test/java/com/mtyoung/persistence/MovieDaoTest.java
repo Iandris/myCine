@@ -1,6 +1,6 @@
 package com.mtyoung.persistence;
 
-import com.mtyoung.entity.Movie;
+import com.mtyoung.entity.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,19 +17,53 @@ public class MovieDaoTest {
 
     Movie film;
     MovieDao dao;
-    int newMovie;
+    Genre gen;
+    GenreDao genDao;
+    Format form;
+    FormatDao formDao;
+    Director dir;
+    DirectorDao dirDao;
+    Studio std;
+    StudioDao stdDao;
+
+    int newDir = 0;
+    int newMovie = 0;
+    int newGen = 0;
+    int newForm = 0;
+    int newStudio = 0;
 
     @Before
     public void setup() {
         film = new Movie();
         dao = new MovieDao();
 
+        std = new Studio();
+        stdDao = new StudioDao();
+        std.setStudiotitle("Paramount");
+        newStudio = stdDao.addStudio(std);
+
+        form = new Format();
+        formDao = new FormatDao();
+        form.setFormattitle("DVD");
+        newForm = formDao.addFormat(form);
+
+        genDao = new GenreDao();
+        gen = new Genre();
+        gen.setGenretitle("Action");
+        newGen = genDao.addGenre(gen);
+
+        dirDao = new DirectorDao();
+        dir = new Director();
+        dir.setFname("Martin");
+        dir.setLname("Scorsese");
+        newDir = dirDao.addDirector(dir);
+
         film.setTitle("The Matrix");
         film.setReleaseDate(LocalDate.of(1999,3,31));
-        film.setFormat(1);
-        film.setGenre(2);
-        film.setStudio(1);
-        film.setDirector(2);
+        film.setFormat(newForm);
+        film.setGenre(newGen);
+        film.setStudio(newStudio);
+        film.setDirector(newDir);
         film.setImdbid("tt0133093");
         film.setUpccode("883929454563");
     }
@@ -38,6 +72,22 @@ public class MovieDaoTest {
     public void cleanup() {
         if (newMovie != 0) {
             dao.deleteMovie(newMovie);
+        }
+
+        if (newDir != 0) {
+            dirDao.deleteDirector(newDir);
+        }
+
+        if (newGen != 0) {
+            genDao.deleteGenre(newGen);
+        }
+
+        if (newForm != 0) {
+            formDao.deleteFormat(newForm);
+        }
+
+        if (newStudio != 0) {
+            stdDao.deleteStudio(newStudio);
         }
     }
 
@@ -81,17 +131,22 @@ public class MovieDaoTest {
     @Test
     public void updateMovie() throws Exception {
         newMovie = dao.addMovie(film);
+
+        Studio std2 = new Studio();
+        std2.setStudiotitle("Sony");
+        int newStudio2 = stdDao.addStudio(std2);
+
         film.setTitle("Jaws");
         film.setReleaseDate(LocalDate.of(2005,9,22));
-        film.setFormat(2);
-        film.setGenre(1);
-        film.setStudio(2);
-        film.setDirector(1);
+        film.setFormat(newForm);
+        film.setGenre(newGen);
+        film.setStudio(newStudio2);
+        film.setDirector(newDir);
         film.setImdbid("abcidkasb");
         film.setUpccode("999999999999");
 
         dao.updateMovie(film);
-        assertEquals("title not updated correctly", film.getTitle(), dao.getMovie(newMovie).getTitle().toString());
+        assertEquals("title not updated correctly", film.getTitle(), dao.getMovie(newMovie).getTitle());
         assertEquals("release date not updated correctly", film.getReleaseDate(), dao.getMovie(newMovie).getReleaseDate());
         assertEquals("imdb id not updated correctly", film.getImdbid(), dao.getMovie(newMovie).getImdbid());
         assertEquals("upc code not updated", film.getUpccode(), dao.getMovie(newMovie).getUpccode());

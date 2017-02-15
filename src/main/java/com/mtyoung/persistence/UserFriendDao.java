@@ -1,6 +1,6 @@
 package com.mtyoung.persistence;
 
-import com.mtyoung.entity.FriendLink;
+import com.mtyoung.entity.UserFriends;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -11,45 +11,60 @@ import java.util.List;
 /**
  * Created by Mike on 2/14/17.
  */
-public class FriendLinkDao {
+public class UserFriendDao {
     private final Logger log = Logger.getLogger(this.getClass());
 
-    public List<FriendLink> getAllFriendLinks() {
-        List<FriendLink> links = null;
+    /** Return a list of all users
+     *
+     * @return All users
+     */
+    public List<UserFriends> getAllFriends() {
+        List<UserFriends> friends = null;
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         try {
-            links = session.createCriteria(FriendLink.class).list();
+            friends = session.createCriteria(UserFriends.class).list();
         } catch (HibernateException e) {
             log.info(e.getMessage().toString());
         }finally {
             session.close();
         }
-
-        return links;
+        return friends;
     }
 
-    public FriendLink getFriendLink(int id) {
+
+    /**
+     * retrieve a user given their id
+     *
+     * @param id the user's id
+     * @return user
+     */
+    public UserFriends getFriend(int id) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        FriendLink link = null;
+        UserFriends friend = null;
         try {
-            link = (FriendLink) session.get(FriendLink.class, id);
+            friend = (UserFriends) session.get(UserFriends.class, id);
+            return friend;
         } catch (HibernateException e) {
             log.info(e.getMessage().toString());
         } finally {
             session.close();
         }
-        return link;
+        return friend;
     }
 
-    //TODO fix add link not returning a value, not inserting row
-
-    public int addFriendLink(FriendLink link) {
+    /**
+     * add a user
+     *
+     * @param friend
+     * @return the id of the inserted record
+     */
+    public int addFriend(UserFriends friend) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
         int id = 0;
         try {
             tx = session.beginTransaction();
-            id = (int) session.save(link);
+            id = (int) session.save(friend);
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
@@ -60,14 +75,17 @@ public class FriendLinkDao {
         }
     }
 
-    public void deleteFriendLink(int id) {
+    /**
+     * delete a user by id
+     * @param id the user's id
+     */
+    public void deleteFriend(int id) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
-
         try {
             tx = session.beginTransaction();
-            FriendLink link = (FriendLink) session.get(FriendLink.class, id);
-            session.delete(link);
+            UserFriends friend = (UserFriends) session.get(UserFriends.class, id);
+            session.delete(friend);
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
@@ -77,12 +95,17 @@ public class FriendLinkDao {
         }
     }
 
-    public void updateFriendLink(FriendLink link) {
+    /**
+     * Update the user
+     * @param friend
+     */
+
+    public void updateFriend(UserFriends friend) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
         try {
             tx = session.beginTransaction();
-            session.update(link);
+            session.update(friend);
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
