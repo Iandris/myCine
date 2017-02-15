@@ -2,42 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f46ccfb-b6a2-4f76-a242-8954c9e8b758" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/MovieCastDaoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/RentalDaoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/StateDaoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserMovieDaoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserRoleDaoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/WishlistDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/MovieCastLink.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/MovieCastLink.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/Rental.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/Rental.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/State.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/State.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/UserMovieLink.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/UserMovieLink.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/UserRole.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/UserRole.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/Wishlist.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/Wishlist.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/MovieCastDao.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/MovieCastDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/RentalDao.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/RentalDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/StateDao.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/StateDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/UserMovieDao.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/UserMovieDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/UserRoleDao.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/UserRoleDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/WishlistDao.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/WishlistDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/mtyoung/persistence/MessageDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/mtyoung/persistence/MessageDaoTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/mtyoung/persistence/UserDAOTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/mtyoung/persistence/UserDAOTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/HibernateDemo.log" afterPath="$PROJECT_DIR$/logs/HibernateDemo.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/MovieCastLink.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/MovieCastLink.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Rental.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Rental.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/State.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/State.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/UserMovieLink.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/UserMovieLink.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/UserRole.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/UserRole.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Wishlist.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Wishlist.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/MovieCastDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/MovieCastDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/RentalDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/RentalDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/StateDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/StateDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/UserMovieDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/UserMovieDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/UserRoleDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/UserRoleDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/WishlistDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/WishlistDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/MessageDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/MessageDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserDaoTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,7 +17,7 @@
     <SUITE FILE_PATH="coverage/MyCine$UserDAOTest.coverage" NAME="UserDAOTest Coverage Results" MODIFIED="1487096103326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.mtyoung.persistence.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/MyCine$com_mtyoung_persistence_in_myCine.coverage" NAME="com.mtyoung.persistence in myCine Coverage Results" MODIFIED="1487191295651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/MyCine$com_mtyoung_persistence_in_myCine.coverage" NAME="com.mtyoung.persistence in myCine Coverage Results" MODIFIED="1487191539018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.mtyoung.persistence.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/MyCine$All_in_myCine.coverage" NAME="All in myCine Coverage Results" MODIFIED="1487124420860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -82,30 +47,6 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="myCine@localhost [2]" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="myCine@localhost [2]" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="WishList" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -297,7 +238,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="798" />
   </component>
@@ -1245,14 +1186,11 @@
       <workItem from="1487078915259" duration="20551000" />
       <workItem from="1487112042155" duration="12899000" />
       <workItem from="1487164279113" duration="3174000" />
-      <workItem from="1487167580896" duration="18449000" />
+      <workItem from="1487167580896" duration="19103000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RentalDaoTest - 2017.02.15 at 14h 08m 19s.xml">
-      <configuration name="RentalDaoTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RentalDaoTest - 2017.02.15 at 14h 29m 34s.xml">
       <configuration name="RentalDaoTest" configurationId="JUnit" />
     </history-entry>
@@ -1280,12 +1218,15 @@
     <history-entry file="com_mtyoung_persistence_in_myCine - 2017.02.15 at 14h 41m 42s.xml">
       <configuration name="com.mtyoung.persistence in myCine" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="com_mtyoung_persistence_in_myCine - 2017.02.15 at 14h 45m 46s.xml">
+      <configuration name="com.mtyoung.persistence in myCine" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103328000" />
+    <option name="totallyTimeSpent" value="103982000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="798" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="798" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1297,7 +1238,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32689556" sideWeight="0.15948276" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.83476394" sideWeight="0.22629969" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1309,9 +1250,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3427762" sideWeight="0.4914163" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5566572" sideWeight="0.4914163" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.49713877" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32689556" sideWeight="0.8405172" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="true" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="true" show_stripe_button="true" weight="0.7832618" sideWeight="0.7737003" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.49713877" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16523606" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
