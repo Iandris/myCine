@@ -75,6 +75,23 @@ public class UserDaoTest {
     }
 
     @Test
+    public void getUserByEmail() throws Exception {
+        newUser = dao.addUser(bob);
+        assertNotNull("no user returned", dao.getUserByEmail(bob.getEmail()));
+        assertEquals("user ID not returned correctly", bob.getUuid(), dao.getUserByEmail(bob.getEmail()).getUuid());
+        assertEquals("first not returned correctly", bob.getFname(), dao.getUserByEmail(bob.getEmail()).getFname());
+        assertEquals("last not returned correctly", bob.getLname(), dao.getUserByEmail(bob.getEmail()).getLname());
+        assertEquals("incorrect role returned", bob.getRoleid(), dao.getUserByEmail(bob.getEmail()).getRoleid());
+        assertEquals("incorrect address returned", bob.getAddressid(), dao.getUserByEmail(bob.getEmail()).getAddressid());
+        assertEquals("incorrect Email returned", bob.getEmail(), dao.getUserByEmail(bob.getEmail()).getEmail());
+        assertEquals("incorrect password returned", bob.getPassword(), dao.getUserByEmail(bob.getEmail()).getPassword());
+        assertEquals("incorrect cell returned", bob.getCellnumber(), dao.getUserByEmail(bob.getEmail()).getCellnumber());
+        assertEquals("incorrect reminder threshold returned", bob.getReminderthreshold(), dao.getUserByEmail(bob.getEmail()).getReminderthreshold());
+        assertEquals("incorrect rental period returned", bob.getDefaultrentalperiod(), dao.getUserByEmail(bob.getEmail()).getDefaultrentalperiod());
+
+    }
+
+    @Test
     public void getUser() throws Exception {
         newUser = dao.addUser(bob);
         assertNotNull("no user returned", dao.getUser(newUser));

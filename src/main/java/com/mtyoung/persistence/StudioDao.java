@@ -20,7 +20,7 @@ public class StudioDao {
         try {
             studios = session.createCriteria(Studio.class).list();
         } catch (HibernateException e) {
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         }finally {
             session.close();
         }
@@ -34,7 +34,7 @@ public class StudioDao {
         try {
             studio = (Studio) session.get(Studio.class, id);
         } catch (HibernateException e) {
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         } finally {
             session.close();
         }
@@ -52,7 +52,7 @@ public class StudioDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         }finally {
             session.close();
         }
@@ -71,7 +71,7 @@ public class StudioDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         } finally {
             session.close();
         }
@@ -86,7 +86,7 @@ public class StudioDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         } finally {
             session.close();
         }

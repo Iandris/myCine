@@ -20,7 +20,7 @@ public class GenreDao {
         try {
             genres = session.createCriteria(Genre.class).list();
         } catch (HibernateException e) {
-            log.info(e.getMessage().toString());
+           log.error("Hibernate Exception", e);
         }finally {
             session.close();
         }
@@ -34,7 +34,7 @@ public class GenreDao {
         try {
             genre = (Genre) session.get(Genre.class, id);
         } catch (HibernateException e) {
-            log.info(e.getMessage().toString());
+           log.error("Hibernate Exception", e);
         } finally {
             session.close();
         }
@@ -52,7 +52,7 @@ public class GenreDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.info(e.getMessage().toString());
+           log.error("Hibernate Exception", e);
         }finally {
             session.close();
         }
@@ -71,7 +71,7 @@ public class GenreDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.info(e.getMessage().toString());
+           log.error("Hibernate Exception", e);
         } finally {
             session.close();
         }
@@ -86,7 +86,7 @@ public class GenreDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.info(e.getMessage().toString());
+           log.error("Hibernate Exception", e);
         } finally {
             session.close();
         }

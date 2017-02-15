@@ -24,7 +24,7 @@ public class UserFriendDao {
         try {
             friends = session.createCriteria(UserFriends.class).list();
         } catch (HibernateException e) {
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         }finally {
             session.close();
         }
@@ -45,7 +45,7 @@ public class UserFriendDao {
             friend = (UserFriends) session.get(UserFriends.class, id);
             return friend;
         } catch (HibernateException e) {
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         } finally {
             session.close();
         }
@@ -68,7 +68,7 @@ public class UserFriendDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         }finally {
             session.close();
             return id;
@@ -89,7 +89,7 @@ public class UserFriendDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         } finally {
             session.close();
         }
@@ -109,7 +109,7 @@ public class UserFriendDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         } finally {
             session.close();
         }

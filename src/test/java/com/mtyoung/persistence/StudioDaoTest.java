@@ -35,7 +35,7 @@ public class StudioDaoTest {
 
     @Test
     public void getAllStudios() throws Exception {
-        dao.addStudio(std);
+        newStudio = dao.addStudio(std);
         List<Studio> studios = dao.getAllStudios();
         assertTrue(studios.size() > 0);
     }

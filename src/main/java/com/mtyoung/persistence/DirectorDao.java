@@ -20,7 +20,7 @@ public class DirectorDao {
         try {
             directors = session.createCriteria(Director.class).list();
         } catch (HibernateException e) {
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         }finally {
             session.close();
         }
@@ -34,7 +34,7 @@ public class DirectorDao {
         try {
             director = (Director) session.get(Director.class, id);
         } catch (HibernateException e) {
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         } finally {
             session.close();
         }
@@ -52,7 +52,7 @@ public class DirectorDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         }finally {
             session.close();
         }
@@ -71,7 +71,7 @@ public class DirectorDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         } finally {
             session.close();
         }
@@ -86,7 +86,7 @@ public class DirectorDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         } finally {
             session.close();
         }

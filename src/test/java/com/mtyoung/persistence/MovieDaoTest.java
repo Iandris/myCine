@@ -31,6 +31,7 @@ public class MovieDaoTest {
     int newGen = 0;
     int newForm = 0;
     int newStudio = 0;
+    int newStudio2 = 0;
 
     @Before
     public void setup() {
@@ -89,6 +90,10 @@ public class MovieDaoTest {
         if (newStudio != 0) {
             stdDao.deleteStudio(newStudio);
         }
+
+        if (newStudio2 != 0) {
+            stdDao.deleteStudio(newStudio2);
+        }
     }
 
 
@@ -134,7 +139,7 @@ public class MovieDaoTest {
 
         Studio std2 = new Studio();
         std2.setStudiotitle("Sony");
-        int newStudio2 = stdDao.addStudio(std2);
+        newStudio2 = stdDao.addStudio(std2);
 
         film.setTitle("Jaws");
         film.setReleaseDate(LocalDate.of(2005,9,22));
@@ -155,6 +160,7 @@ public class MovieDaoTest {
         assertEquals("Genre not updated", film.getGenre(), dao.getMovie(newMovie).getGenre());
         assertEquals("Studio not updated", film.getStudio(), dao.getMovie(newMovie).getStudio());
         assertEquals("Movie ID not updated", film.getIdmovie(), dao.getMovie(newMovie).getIdmovie());
+
 
     }
 

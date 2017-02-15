@@ -14,6 +14,9 @@ public class User {
   @Column(name = "id")
   private int uuid;
 
+  @Column(name = "email")
+  private String email;
+
   @Column(name="roleID")
   private int roleid;
 
@@ -26,8 +29,7 @@ public class User {
   @Column(name = "id_address")
   private int id_address;
 
-  @Column(name = "email")
-  private String email;
+
 
   @Column(name = "cell_number", unique = true)
   private String cell_number;

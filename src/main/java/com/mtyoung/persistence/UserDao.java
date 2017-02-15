@@ -24,7 +24,7 @@ public class UserDao {
         try {
             users = session.createCriteria(User.class).list();
         } catch (HibernateException e) {
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         }finally {
             session.close();
         }
@@ -45,7 +45,7 @@ public class UserDao {
             user = (User) session.get(User.class, id);
             return user;
         } catch (HibernateException e) {
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         } finally {
             session.close();
         }
@@ -68,13 +68,29 @@ public class UserDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         }finally {
             session.close();
             return id;
         }
     }
 
+    public User getUserByEmail(String email) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        Transaction tx = null;
+        User user = null;
+        try {
+            user = (User) session.createQuery("from com.mtyoung.entity.User U where U.email = :mail")
+                    .setString("mail", email)
+                    .uniqueResult();
+            return user;
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return user;
+    }
 
     /**
      * delete a user by id
@@ -90,7 +106,7 @@ public class UserDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         } finally {
             session.close();
         }
@@ -110,7 +126,7 @@ public class UserDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.info(e.getMessage().toString());
+            log.error("Hibernate Exception", e);
         } finally {
             session.close();
         }
