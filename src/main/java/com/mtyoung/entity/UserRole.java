@@ -17,7 +17,6 @@ public class UserRole {
   @Column(name = "description")
   private String description;
 
-
   public int getRoleid() {
     return roleid;
   }

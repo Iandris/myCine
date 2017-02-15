@@ -1,13 +1,30 @@
 package com.mtyoung.entity;
 
+import com.mtyoung.util.LocalDateTimeAttributeConverter;
+import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.*;
+import java.time.LocalDateTime;
+
+@Entity
+@Table(name="Rentals")
 public class Rental {
 
+  @Id
+  @GeneratedValue(generator="increment")
+  @GenericGenerator(name="increment", strategy = "increment")
+  @Column(name = "idRentals")
   private int idrentals;
-  private int renterid;
-  private int movieid;
-  private java.sql.Timestamp duedate;
 
+  @Column(name="renterID")
+  private int renterid;
+
+  @Column(name="movieID")
+  private int movieid;
+
+  @Column(name="dueDate")
+  @Convert(converter = LocalDateTimeAttributeConverter.class)
+  private LocalDateTime duedate;
 
   public int getIdrentals() {
     return idrentals;
@@ -29,11 +46,11 @@ public class Rental {
     this.movieid = movieid;
   }
 
-  public java.sql.Timestamp getDuedate() {
+  public LocalDateTime getDuedate() {
     return duedate;
   }
 
-  public void setDuedate(java.sql.Timestamp duedate) {
+  public void setDuedate(LocalDateTime duedate) {
     this.duedate = duedate;
   }
 

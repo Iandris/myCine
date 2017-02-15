@@ -1,9 +1,6 @@
 package com.mtyoung.persistence;
 
-import com.mtyoung.entity.Address;
-import com.mtyoung.entity.Message;
-import com.mtyoung.entity.User;
-import com.mtyoung.entity.UserFriends;
+import com.mtyoung.entity.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -23,6 +20,8 @@ public class MessageDaoTest {
     MessageDao dao;
     Address mail;
     AddressDao mailDao;
+    UserRole role;
+    UserRoleDao roleDao;
 
     UserDao userDao;
     User bob1;
@@ -34,6 +33,7 @@ public class MessageDaoTest {
     int newUser3 = 0;
     int newMail = 0;
     int newMessage = 0;
+    int newRole = 0;
 
     @Before
     public void setup() {
@@ -41,6 +41,11 @@ public class MessageDaoTest {
         message = new Message();
         mailDao = new AddressDao();
         userDao = new UserDao();
+
+        role = new UserRole();
+        roleDao = new UserRoleDao();
+        role.setDescription("CHIPS n SALSA");
+        newRole = roleDao.addRole(role);
 
         mail = new Address();
         mail.setStreetaddress1("605 Park St");
@@ -53,7 +58,7 @@ public class MessageDaoTest {
         bob1 = new User();
         bob1.setFname("Mike");
         bob1.setLname("Young");
-        bob1.setRoleid(1);
+        bob1.setRoleid(newRole);
         bob1.setAddressid(newMail);
         bob1.setEmail("mtyoung@madisoncollege.edu");
         bob1.setCellnumber("6083334717");
@@ -65,7 +70,7 @@ public class MessageDaoTest {
         bob2 = new User();
         bob2.setFname("John");
         bob2.setLname("Smith");
-        bob2.setRoleid(1);
+        bob2.setRoleid(newRole);
         bob2.setAddressid(newMail);
         bob2.setEmail("mail@gmail.com");
         bob2.setCellnumber("123456789");
@@ -77,7 +82,7 @@ public class MessageDaoTest {
         bob3 = new User();
         bob3.setFname("Dave");
         bob3.setLname("Navarro");
-        bob3.setRoleid(1);
+        bob3.setRoleid(newRole);
         bob3.setAddressid(newMail);
         bob3.setEmail("mail@yahoo.com");
         bob3.setCellnumber("987654321");
@@ -112,6 +117,10 @@ public class MessageDaoTest {
 
         if (newMail != 0) {
             mailDao.deleteAddress(newMail);
+        }
+
+        if (newRole != 0) {
+            roleDao.deleteRole(newRole);
         }
     }
 

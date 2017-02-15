@@ -1,6 +1,7 @@
 package com.mtyoung.persistence;
 
 import com.mtyoung.entity.Address;
+import com.mtyoung.entity.UserRole;
 import org.junit.After;
 import org.junit.Test;
 import com.mtyoung.entity.User;
@@ -19,6 +20,9 @@ public class UserDaoTest {
     User bob;
     Address mail;
     AddressDao mailDao;
+    UserRole role;
+    UserRoleDao roleDao;
+    int newRole = 0;
     int newMail = 0;
     int newMail2 = 0;
     int newUser = 0;
@@ -36,11 +40,16 @@ public class UserDaoTest {
         mail.setZipcode(53098);
         newMail = mailDao.addAddress(mail);
 
+        role = new UserRole();
+        roleDao = new UserRoleDao();
+        role.setDescription("CHIPS n SALSA");
+        newRole = roleDao.addRole(role);
+
         dao = new UserDao();
         bob = new User();
         bob.setFname("Mike");
         bob.setLname("Young");
-        bob.setRoleid(1);
+        bob.setRoleid(newRole);
         bob.setAddressid(mailDao.getAddress(newMail).getIdaddresses());
         bob.setEmail("mtyoung@madisoncollege.edu");
         bob.setCellnumber("6083334717");
@@ -64,6 +73,10 @@ public class UserDaoTest {
         //cleanup temp address for update user
         if (newMail2 != 0) {
             mailDao.deleteAddress(newMail2);
+        }
+
+        if (newRole != 0) {
+            roleDao.deleteRole(newRole);
         }
     }
 
@@ -143,7 +156,7 @@ public class UserDaoTest {
         newUser = dao.addUser(bob);
         bob.setFname("Michael");
         bob.setLname("Smith");
-        bob.setRoleid(2);
+        bob.setRoleid(newRole);
         bob.setAddressid(mailDao.getAddress(newMail2).getIdaddresses());
         bob.setEmail("myoung86@charter.net");
         bob.setCellnumber("9202855911");

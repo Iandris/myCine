@@ -33,7 +33,6 @@ public class State {
     this.short_name = short_name;
   }
 
-
   public String getLong() {
     return long_name;
   }

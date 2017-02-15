@@ -1,12 +1,24 @@
 package com.mtyoung.entity;
 
+import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="WishList")
 public class Wishlist {
 
+  @Id
+  @GeneratedValue(generator="increment")
+  @GenericGenerator(name="increment", strategy = "increment")
+  @Column(name = "idWishListLink")
   private int idwishlistlink;
-  private int userid;
-  private int movieid;
 
+  @Column(name="userID")
+  private int userid;
+
+  @Column(name="movieID")
+  private int movieid;
 
   public int getIdwishlistlink() {
     return idwishlistlink;

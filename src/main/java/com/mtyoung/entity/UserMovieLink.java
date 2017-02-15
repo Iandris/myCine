@@ -1,14 +1,31 @@
 package com.mtyoung.entity;
 
+import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="UserMovie")
 public class UserMovieLink {
 
-  private int linkid;
-  private int userid;
-  private int movieid;
-  private int quantity;
-  private int starrating;
 
+  @Id
+  @GeneratedValue(generator="increment")
+  @GenericGenerator(name="increment", strategy = "increment")
+  @Column(name = "linkID")
+  private int linkid;
+
+  @Column(name="userID")
+  private int userid;
+
+  @Column(name="movieID")
+  private int movieid;
+
+  @Column(name="quantity")
+  private int quantity;
+
+  @Column(name="starRating")
+  private int starrating;
 
   public int getLinkid() {
     return linkid;
