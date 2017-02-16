@@ -56,7 +56,7 @@ public class UserDaoTest {
         bob.setPassword("Password");
         bob.setReminderthreshold(1);
         bob.setDefaultrentalperiod(3);
-        bob.setFirebaseUID("temporary string");
+        bob.setFirebaseUID("B76OtOQ3TfaFQfGu19ar57j85Uc2");
     }
 
     @After
@@ -106,6 +106,12 @@ public class UserDaoTest {
     }
 
     @Test
+    public void getUserByFireBaseUUID() throws Exception {
+        newUser = dao.addUser(bob);
+        assertNotNull("no user returned", dao.getUserByFBUID(bob.getFirebaseUID()));
+    }
+
+    @Test
     public void getUser() throws Exception {
         newUser = dao.addUser(bob);
         assertNotNull("no user returned", dao.getUser(newUser));
@@ -119,6 +125,7 @@ public class UserDaoTest {
         assertEquals("incorrect cell returned", bob.getCellnumber(), dao.getUser(newUser).getCellnumber());
         assertEquals("incorrect reminder threshold returned", bob.getReminderthreshold(), dao.getUser(newUser).getReminderthreshold());
         assertEquals("incorrect rental period returned", bob.getDefaultrentalperiod(), dao.getUser(newUser).getDefaultrentalperiod());
+        assertEquals("incorrect firebase uid returned", bob.getFirebaseUID(), dao.getUser(newUser).getFirebaseUID());
     }
 
     @Test

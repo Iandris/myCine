@@ -7,7 +7,7 @@
     <c:import url="jspinclude/navBarNoLogin.jsp" />
 </head>
 <body class="schpeal">
-
+This is the registration form for a user not in the db
 <form action="" metho="POST">
 
 

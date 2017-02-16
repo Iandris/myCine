@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="com.mtyoung.persistence.DirectorDaoTest" time="0.06" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="com.mtyoung.persistence.DirectorDaoTest" time="0.082" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2016.3.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -63,9 +63,9 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.mtyoung.persistence.DirectorDaoTest" name="getDirector" time="0.02"/>
-  <testcase classname="com.mtyoung.persistence.DirectorDaoTest" name="deleteDirector" time="0.01"/>
-  <testcase classname="com.mtyoung.persistence.DirectorDaoTest" name="addDirector" time="0.013"/>
-  <testcase classname="com.mtyoung.persistence.DirectorDaoTest" name="updateDirector" time="0.008"/>
-  <testcase classname="com.mtyoung.persistence.DirectorDaoTest" name="getAllDirectors" time="0.009"/>
+  <testcase classname="com.mtyoung.persistence.DirectorDaoTest" name="getDirector" time="0.022"/>
+  <testcase classname="com.mtyoung.persistence.DirectorDaoTest" name="deleteDirector" time="0.011"/>
+  <testcase classname="com.mtyoung.persistence.DirectorDaoTest" name="addDirector" time="0.018"/>
+  <testcase classname="com.mtyoung.persistence.DirectorDaoTest" name="updateDirector" time="0.016"/>
+  <testcase classname="com.mtyoung.persistence.DirectorDaoTest" name="getAllDirectors" time="0.015"/>
 </testsuite>

@@ -33,7 +33,8 @@
 
         signInFlow: 'popup',
 
-        signInSuccessURL: 'Home.jsp',
+        //signInSuccessURL: 'RegCheck?fbUUID=' + firebase.User,
+        signInSuccessURL: 'RegCheck?fbUUID=B76OtOQ3TfaFQfGu19ar57j85Uc2',
         signInOptions : [
             firebase.auth.GoogleAuthProvider.PROVIDER_ID,
             firebase.auth.FacebookAuthProvider.PROVIDER_ID,

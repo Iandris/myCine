@@ -5,11 +5,13 @@
 /Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/entity/Director.java
 /Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/persistence/ActorDao.java
 /Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/persistence/UserFriendDao.java
+/Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/Servlet/IndexServlet.java
 /Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/persistence/WishlistDao.java
 /Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/persistence/UserRoleDao.java
 /Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/persistence/MovieCastDao.java
 /Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/persistence/StudioDao.java
 /Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/entity/Rental.java
+/Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/Servlet/RegistrationServlet.java
 /Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/util/LocalDateTimeAttributeConverter.java
 /Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/persistence/UserMovieDao.java
 /Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/persistence/GenreDao.java
@@ -21,6 +23,8 @@
 /Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/persistence/FormatDao.java
 /Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/persistence/UserDao.java
 /Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/entity/UserMovieLink.java
+/Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/Servlet/RegistrationCheckServlet.java
+/Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/Servlet/HomeServlet.java
 /Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/entity/Format.java
 /Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/entity/Address.java
 /Users/Mike/Desktop/Java/myCine/src/main/java/com/mtyoung/persistence/StateDao.java
