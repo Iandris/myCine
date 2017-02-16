@@ -13,7 +13,6 @@ import java.util.List;
  */
 public class ActorDao {
     private final Logger log = Logger.getLogger(this.getClass());
-
     public List<Actor> getAllActors() {
         List<Actor> actors = null;
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
@@ -24,7 +23,6 @@ public class ActorDao {
         }finally {
             session.close();
         }
-
         return actors;
     }
 
@@ -44,7 +42,6 @@ public class ActorDao {
     public int addActor(Actor actor) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
-
         int id = 0;
         try {
             tx = session.beginTransaction();
@@ -56,14 +53,12 @@ public class ActorDao {
         }finally {
             session.close();
         }
-
         return id;
     }
 
     public void deleteActor(int id) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
-
         try {
             tx = session.beginTransaction();
             Actor actor = (Actor) session.get(Actor.class, id);
