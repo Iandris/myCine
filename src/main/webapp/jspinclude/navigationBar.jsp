@@ -12,6 +12,7 @@
         <li><a href="#">Support</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Log-Out</a></li>
+        <li><a id="sign-in" href="#">Sign-In</a></li>
+        <li><a id="sign-out" href="#">Sign-Out</a></li>
     </ul>
 </nav>
