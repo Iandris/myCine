@@ -15,12 +15,30 @@
 
 <script type="text/javascript">
     var uiConfig = {
+        callbacks: {
+            signInSuccess: function (currentUser, credential, redirectURL) {
+                return true;
+            },
+
+            uiShown: function () {
+                document.getElementById('loader').style.display = 'none';
+            }
+         },
+
+        credentialHelper: firebaseui.auth.CredentialHelper.ACCOUNT_CHOOSER_COM,
+
+        queryParameterForWidgetMode: 'mode',
+
+        queryParameterForSignInSuccessUrl: 'signInSuccessUrl',
+
+        signInFlow: 'popup',
+
         signInSuccessURL: 'Home.jsp',
         signInOptions : [
             firebase.auth.GoogleAuthProvider.PROVIDER_ID,
             firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-            firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-            firebase.auth.GithubAuthProvider.PROVIDER_ID,
+            //firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+            //firebase.auth.GithubAuthProvider.PROVIDER_ID,
             firebase.auth.EmailAuthProvider.PROVIDER_ID
         ],
 

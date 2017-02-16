@@ -11,8 +11,19 @@
         <li><a href="#">Settings</a></li>
         <li><a href="#">Support</a></li>
     </ul>
+
     <ul class="nav navbar-nav navbar-right">
-        <li><div id="sign-in" >Sign-In</div></li>
-        <li><div id="sign-out" >Sign-Out</div></li>
+        <li><a href="#" onclick="logout()">Log-Out</a></li>
     </ul>
+
 </nav>
+
+<script type="text/javascript">
+    function logout() {
+        firebase.auth().signOut().then(function() {
+            // Sign-out successful.
+        }, function(error) {
+            // An error happened.
+        });
+    }
+</script>

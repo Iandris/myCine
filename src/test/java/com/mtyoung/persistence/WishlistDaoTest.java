@@ -75,6 +75,7 @@ public class WishlistDaoTest {
         bob1.setPassword("Password");
         bob1.setReminderthreshold(1);
         bob1.setDefaultrentalperiod(3);
+        bob1.setFirebaseUID("temporary string1");
         newUser1 = userDao.addUser(bob1);
 
         bob2 = new User();
@@ -87,6 +88,7 @@ public class WishlistDaoTest {
         bob2.setPassword("Connor");
         bob2.setReminderthreshold(2);
         bob2.setDefaultrentalperiod(5);
+        bob2.setFirebaseUID("temporary string2");
         newUser2 = userDao.addUser(bob2);
 
         std = new Studio();

@@ -7,14 +7,22 @@
                 var emailVerified = user.emailVerified;
                 var photoURL = user.photoURL;
                 var uid = user.uid;
-                var providerDatea = user.providerData;
+                var providerData = user.providerData;
 
                 user.getToken().then(function(accessToken) {
-                    document.getElementById('sign-in').textContent = 'Sign-Out';
-
+                    document.getElementById('userinfo').textContent = JSON.stringify({
+                        displayName: displayName,
+                        email: email,
+                        emailVerified: emailVerified,
+                        photoURL: photoURL,
+                        uid: uid,
+                        accessToken: accessToken,
+                        providerData: providerData
+                    }, null, ' ');
                 });
+                window.user = user;
             } else {
-                document.getElementById('sign-in').textContent = 'Sign-In';
+                window.location = 'index.jsp';
             }
         }, function (error) {
             console.log(error);

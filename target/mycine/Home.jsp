@@ -4,12 +4,10 @@
     <title>MyCine - Home</title>
     <c:import url="jspinclude/header.jsp" />
     <c:import url="jspinclude/navigationBar.jsp" />
-    <c:import url="jspinclude/scripts.jsp" />
-    <c:import url="jspinclude/firebaseLogin.jsp"/>
-    <c:import url="jspinclude/firebasePersist.jsp"/>
+
+
 </head>
 <body class="schpeal">
-
 
 <div>
     <h1>MyCine - Home</h1>
@@ -20,6 +18,10 @@
         to your friends. The possibilities are endless.
     </p>
 
+    <div id="userinfo">
+
+    </div>
+
     <div class="aside">
         <aside>
             <h2>Pro Tip:</h2>
@@ -28,6 +30,7 @@
             </p>
         </aside>
     </div>
+
     <div class="releases">
         <h2>New Releases</h2>
         <ul>
@@ -45,6 +48,10 @@
     </div>
 
 </div>
+<c:import url="jspinclude/scripts.jsp" />
+<c:import url="jspinclude/firebasePersist.jsp"/>
+<c:import url="jspinclude/firebaseLogin.jsp"/>
+
 
 </body>
 

@@ -29,7 +29,8 @@ public class User {
   @Column(name = "id_address")
   private int id_address;
 
-
+  @Column(name="firebaseUID")
+  private String firebaseUID;
 
   @Column(name = "cell_number", unique = true)
   private String cell_number;
@@ -120,4 +121,11 @@ public class User {
     this.defaultrentalperiod = defaultrentalperiod;
   }
 
+  public String getFirebaseUID() {
+    return firebaseUID;
+  }
+
+  public void setFirebaseUID(String firebaseUID) {
+    this.firebaseUID = firebaseUID;
+  }
 }

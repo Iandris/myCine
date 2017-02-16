@@ -64,8 +64,8 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase classname="com.mtyoung.persistence.GenreDaoTest" name="addGenre" time="0.008"/>
-  <testcase classname="com.mtyoung.persistence.GenreDaoTest" name="deleteGenre" time="0.004"/>
-  <testcase classname="com.mtyoung.persistence.GenreDaoTest" name="getAllGenres" time="0.005"/>
-  <testcase classname="com.mtyoung.persistence.GenreDaoTest" name="updateGenre" time="0.01"/>
-  <testcase classname="com.mtyoung.persistence.GenreDaoTest" name="getGenre" time="0.012"/>
+  <testcase classname="com.mtyoung.persistence.GenreDaoTest" name="deleteGenre" time="0.007"/>
+  <testcase classname="com.mtyoung.persistence.GenreDaoTest" name="getAllGenres" time="0.006"/>
+  <testcase classname="com.mtyoung.persistence.GenreDaoTest" name="updateGenre" time="0.007"/>
+  <testcase classname="com.mtyoung.persistence.GenreDaoTest" name="getGenre" time="0.011"/>
 </testsuite>

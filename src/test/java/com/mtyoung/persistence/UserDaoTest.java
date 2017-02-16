@@ -56,6 +56,7 @@ public class UserDaoTest {
         bob.setPassword("Password");
         bob.setReminderthreshold(1);
         bob.setDefaultrentalperiod(3);
+        bob.setFirebaseUID("temporary string");
     }
 
     @After

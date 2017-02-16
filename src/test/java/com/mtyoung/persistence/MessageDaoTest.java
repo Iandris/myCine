@@ -65,6 +65,7 @@ public class MessageDaoTest {
         bob1.setPassword("Password");
         bob1.setReminderthreshold(1);
         bob1.setDefaultrentalperiod(3);
+        bob1.setFirebaseUID("temporary string1");
         newUser1 = userDao.addUser(bob1);
 
         bob2 = new User();
@@ -77,6 +78,7 @@ public class MessageDaoTest {
         bob2.setPassword("Password2");
         bob2.setReminderthreshold(1555);
         bob2.setDefaultrentalperiod(39);
+        bob2.setFirebaseUID("temporary string2");
         newUser2 = userDao.addUser(bob2);
 
         bob3 = new User();
@@ -89,6 +91,7 @@ public class MessageDaoTest {
         bob3.setPassword("Password3");
         bob3.setReminderthreshold(51123);
         bob3.setDefaultrentalperiod(123123);
+        bob3.setFirebaseUID("temporary string3");
         newUser3 = userDao.addUser(bob3);
 
         message.setSenderid(bob1.getUuid());
