@@ -17,3 +17,4 @@
 | 2/14/17 | more dao and daotests | 4 | |
 | 2/15/17 | dao after dao after dao | 3 | |
 | 2/15/17 | entities, daos and dao tests complete for db interaction | 5 | |
+| 2/16/17 | firebase authentication | 4 | |
