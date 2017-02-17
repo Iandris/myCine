@@ -15,30 +15,30 @@ public class State {
   private int idstate;
 
   @Column(name="Short_name")
-  private String short_name;
+  private String shortname;
 
   @Column(name="Long_name")
-  private String long_name;
+  private String longname;
 
 
   public int getIdstate() {
     return idstate;
   }
 
-  public String getShort() {
-    return short_name;
+  public String getShortname() {
+    return shortname;
   }
 
   public void setShort(String short_name) {
-    this.short_name = short_name;
+    this.shortname = short_name;
   }
 
-  public String getLong() {
-    return long_name;
+  public String getLongname() {
+    return longname;
   }
 
   public void setLong(String long_name) {
-    this.long_name = long_name;
+    this.longname = long_name;
   }
 
 }

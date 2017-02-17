@@ -78,7 +78,6 @@ public class RentalDaoTest {
         bob1.setAddressid(newMail);
         bob1.setEmail("mtyoung@madisoncollege.edu");
         bob1.setCellnumber("6083334717");
-        bob1.setPassword("Password");
         bob1.setReminderthreshold(1);
         bob1.setDefaultrentalperiod(3);
         bob1.setFirebaseUID("temporary string1");
@@ -91,7 +90,6 @@ public class RentalDaoTest {
         bob2.setAddressid(newMail);
         bob2.setEmail("myoung86@charter.net");
         bob2.setCellnumber("9202855911");
-        bob2.setPassword("Connor");
         bob2.setReminderthreshold(2);
         bob2.setDefaultrentalperiod(5);
         bob2.setFirebaseUID("temporary string2");

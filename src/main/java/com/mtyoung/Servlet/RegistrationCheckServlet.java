@@ -1,6 +1,8 @@
 package com.mtyoung.Servlet;
 
+import com.mtyoung.entity.Address;
 import com.mtyoung.entity.User;
+import com.mtyoung.persistence.AddressDao;
 import com.mtyoung.persistence.UserDao;
 
 import javax.servlet.ServletException;
@@ -13,7 +15,7 @@ import java.io.IOException;
 
 @WebServlet(
         name = "RegCheck",
-        urlPatterns = { "/RegCheck" }
+        urlPatterns = { "/regcheck" }
 )
 
 /**
@@ -30,17 +32,15 @@ public class RegistrationCheckServlet  extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        HttpSession session  = request.getSession();
         UserDao dao = new UserDao();
-
-        String uid = request.getParameter("fbUUID");
-        User user = dao.getUserByFBUID(uid);
-        session.setAttribute("fbuid", request.getParameter("fbUUID"));
+        User user = dao.getUserByFBUID(request.getParameter("fbUUID"));
 
         if (user == null) {
-            response.sendRedirect("/myCine/Registration");
+            //response.sendRedirect("/mycine/registration.jsp");
+            getServletContext().getRequestDispatcher("/register").forward(request, response);
         } else {
-            response.sendRedirect("/myCine/Home");
+            //response.sendRedirect("/mycine/home");
+            getServletContext().getRequestDispatcher("/home").forward(request, response);
         }
 
     }

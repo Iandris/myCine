@@ -21,13 +21,13 @@
                 var uid = currentUser.uid;
 
                currentUser.getToken().then(function(accessToken) {
-                   document.getElementById('userinfo').textContent = JSON.stringify({
+                   JSON.stringify({
                        uid: uid,
                         accessToken: accessToken
                     }, null, ' ');
                 });
 
-                window.location = 'RegCheck?fbUUID=' + uid;
+                window.location = 'regcheck?fbUUID=' + uid;
                 return false;
                 //return true;
             },
@@ -45,7 +45,7 @@
 
         signInFlow: 'popup',
 
-        signInSuccessURL: 'RegCheck',
+        signInSuccessURL: 'regcheck',
         signInOptions : [
             firebase.auth.GoogleAuthProvider.PROVIDER_ID,
             firebase.auth.FacebookAuthProvider.PROVIDER_ID,

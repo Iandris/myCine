@@ -46,16 +46,16 @@ public class StateDaoTest {
     public void getState() throws Exception {
         newState = dao.addState(state);
         assertEquals("state id not returned", state.getIdstate(), dao.getState(newState).getIdstate());
-        assertEquals("state long not returned", state.getLong(), dao.getState(newState).getLong());
-        assertEquals("state short not returned", state.getShort(), dao.getState(newState).getShort());
+        assertEquals("state long not returned", state.getLongname(), dao.getState(newState).getLongname());
+        assertEquals("state short not returned", state.getShortname(), dao.getState(newState).getShortname());
     }
 
     @Test
     public void addState() throws Exception {
         newState = dao.addState(state);
         assertEquals("state id not inserted", state.getIdstate(), dao.getState(newState).getIdstate());
-        assertEquals("state long not inserted", state.getLong(), dao.getState(newState).getLong());
-        assertEquals("state short not inserted", state.getShort(), dao.getState(newState).getShort());
+        assertEquals("state long not inserted", state.getLongname(), dao.getState(newState).getLongname());
+        assertEquals("state short not inserted", state.getShortname(), dao.getState(newState).getShortname());
     }
 
     @Test
@@ -75,8 +75,8 @@ public class StateDaoTest {
         dao.updateState(state);
 
         assertEquals("state id not updated", state.getIdstate(), dao.getState(newState).getIdstate());
-        assertEquals("state long not updated", state.getLong(), dao.getState(newState).getLong());
-        assertEquals("state short not updated", state.getShort(), dao.getState(newState).getShort());
+        assertEquals("state long not updated", state.getLongname(), dao.getState(newState).getLongname());
+        assertEquals("state short not updated", state.getShortname(), dao.getState(newState).getShortname());
 
     }
 

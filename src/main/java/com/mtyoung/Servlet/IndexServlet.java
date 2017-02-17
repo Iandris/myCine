@@ -10,7 +10,7 @@ import java.io.IOException;
 
 @WebServlet(
         name = "Index",
-        urlPatterns = { "/Index" }
+        urlPatterns = { "/index" }
 )
 
 /**

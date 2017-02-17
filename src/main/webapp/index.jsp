@@ -2,8 +2,6 @@
 <html>
 <head>
     <title>MyCine - Welcome</title>
-
-    <c:import url="jspinclude/header.jsp" />
     <c:import url="jspinclude/navBarNoLogin.jsp" />
 </head>
 <body class="schpeal">

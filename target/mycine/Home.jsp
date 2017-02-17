@@ -18,14 +18,6 @@
         to your friends. The possibilities are endless.
     </p>
 
-    <div id="userinfo">
-
-    </div>
-
-    <div >
-
-    </div>
-
     <div class="aside">
         <aside>
             <h2>Pro Tip:</h2>

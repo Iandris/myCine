@@ -53,7 +53,6 @@ public class UserDaoTest {
         bob.setAddressid(mailDao.getAddress(newMail).getIdaddresses());
         bob.setEmail("mtyoung@madisoncollege.edu");
         bob.setCellnumber("6083334717");
-        bob.setPassword("Password");
         bob.setReminderthreshold(1);
         bob.setDefaultrentalperiod(3);
         bob.setFirebaseUID("B76OtOQ3TfaFQfGu19ar57j85Uc2");
@@ -98,7 +97,6 @@ public class UserDaoTest {
         assertEquals("incorrect role returned", bob.getRoleid(), dao.getUserByEmail(bob.getEmail()).getRoleid());
         assertEquals("incorrect address returned", bob.getAddressid(), dao.getUserByEmail(bob.getEmail()).getAddressid());
         assertEquals("incorrect Email returned", bob.getEmail(), dao.getUserByEmail(bob.getEmail()).getEmail());
-        assertEquals("incorrect password returned", bob.getPassword(), dao.getUserByEmail(bob.getEmail()).getPassword());
         assertEquals("incorrect cell returned", bob.getCellnumber(), dao.getUserByEmail(bob.getEmail()).getCellnumber());
         assertEquals("incorrect reminder threshold returned", bob.getReminderthreshold(), dao.getUserByEmail(bob.getEmail()).getReminderthreshold());
         assertEquals("incorrect rental period returned", bob.getDefaultrentalperiod(), dao.getUserByEmail(bob.getEmail()).getDefaultrentalperiod());
@@ -121,7 +119,6 @@ public class UserDaoTest {
         assertEquals("incorrect role returned", bob.getRoleid(), dao.getUser(newUser).getRoleid());
         assertEquals("incorrect address returned", bob.getAddressid(), dao.getUser(newUser).getAddressid());
         assertEquals("incorrect Email returned", bob.getEmail(), dao.getUser(newUser).getEmail());
-        assertEquals("incorrect password returned", bob.getPassword(), dao.getUser(newUser).getPassword());
         assertEquals("incorrect cell returned", bob.getCellnumber(), dao.getUser(newUser).getCellnumber());
         assertEquals("incorrect reminder threshold returned", bob.getReminderthreshold(), dao.getUser(newUser).getReminderthreshold());
         assertEquals("incorrect rental period returned", bob.getDefaultrentalperiod(), dao.getUser(newUser).getDefaultrentalperiod());
@@ -138,7 +135,6 @@ public class UserDaoTest {
         assertEquals("incorrect role returned", bob.getRoleid(), dao.getUser(newUser).getRoleid());
         assertEquals("incorrect address returned", bob.getAddressid(), dao.getUser(newUser).getAddressid());
         assertEquals("incorrect Email returned", bob.getEmail(), dao.getUser(newUser).getEmail());
-        assertEquals("incorrect password returned", bob.getPassword(), dao.getUser(newUser).getPassword());
         assertEquals("incorrect cell returned", bob.getCellnumber(), dao.getUser(newUser).getCellnumber());
         assertEquals("incorrect reminder threshold returned", bob.getReminderthreshold(), dao.getUser(newUser).getReminderthreshold());
         assertEquals("incorrect rental period returned", bob.getDefaultrentalperiod(), dao.getUser(newUser).getDefaultrentalperiod());
@@ -168,7 +164,6 @@ public class UserDaoTest {
         bob.setAddressid(mailDao.getAddress(newMail2).getIdaddresses());
         bob.setEmail("myoung86@charter.net");
         bob.setCellnumber("9202855911");
-        bob.setPassword("Connor");
         bob.setReminderthreshold(2);
         bob.setDefaultrentalperiod(5);
 
@@ -178,7 +173,6 @@ public class UserDaoTest {
         assertEquals("updated role not returned", bob.getRoleid(), dao.getUser(newUser).getRoleid());
         assertEquals("updated address not returned", bob.getAddressid(), dao.getUser(newUser).getAddressid());
         assertEquals("updated Email not returned", bob.getEmail(), dao.getUser(newUser).getEmail());
-        assertEquals("incorrect password returned", bob.getPassword(), dao.getUser(newUser).getPassword());
         assertEquals("updated cell not returned", bob.getCellnumber(), dao.getUser(newUser).getCellnumber());
         assertEquals("updated reminder threshold not returned", bob.getReminderthreshold(), dao.getUser(newUser).getReminderthreshold());
         assertEquals("updated rental period not returned", bob.getDefaultrentalperiod(), dao.getUser(newUser).getDefaultrentalperiod());

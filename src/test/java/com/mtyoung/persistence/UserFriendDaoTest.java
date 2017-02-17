@@ -55,7 +55,6 @@ public class UserFriendDaoTest {
         bob1.setAddressid(mailDao.getAddress(newMail).getIdaddresses());
         bob1.setEmail("mtyoung@madisoncollege.edu");
         bob1.setCellnumber("6083334717");
-        bob1.setPassword("Password");
         bob1.setReminderthreshold(1);
         bob1.setDefaultrentalperiod(3);
         bob1.setFirebaseUID("temporary string1");
@@ -68,7 +67,6 @@ public class UserFriendDaoTest {
         bob2.setAddressid(mailDao.getAddress(newMail).getIdaddresses());
         bob2.setEmail("mail@gmail.com");
         bob2.setCellnumber("123456789");
-        bob2.setPassword("Password2");
         bob2.setReminderthreshold(1555);
         bob2.setDefaultrentalperiod(39);
         bob2.setFirebaseUID("temporary string2");
@@ -81,7 +79,6 @@ public class UserFriendDaoTest {
         bob3.setAddressid(mailDao.getAddress(newMail).getIdaddresses());
         bob3.setEmail("mail@yahoo.com");
         bob3.setCellnumber("987654321");
-        bob3.setPassword("Password3");
         bob3.setReminderthreshold(51123);
         bob3.setDefaultrentalperiod(123123);
         bob3.setFirebaseUID("temporary string3");

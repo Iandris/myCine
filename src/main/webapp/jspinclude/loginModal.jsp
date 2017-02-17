@@ -3,10 +3,9 @@
         <div class="modal-content" >
             <div class ="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title" id="loginModalTitle">Login</h4>
             </div>
             <div class="modal-body">
-                <h1>Please sign in</h1>
+                <h1>Please Wait</h1>
                 <div id ="firebaseui-auth-container" ></div>
                 <div id="loader">Logging In...</div>
             </div>

@@ -35,9 +35,6 @@ public class User {
   @Column(name = "cell_number", unique = true)
   private String cell_number;
 
-  @Column(name = "password")
-  private String password;
-
   @Column(name = "reminderThreshold")
   private int reminderthreshold;
 
@@ -94,14 +91,6 @@ public class User {
 
   public void setCellnumber(String cellnumber) {
     this.cell_number = cellnumber;
-  }
-
-  public String getPassword() {
-    return password;
-  }
-
-  public void setPassword(String password) {
-    this.password = password;
   }
 
   public int getReminderthreshold() {

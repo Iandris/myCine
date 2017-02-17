@@ -9,12 +9,12 @@ import java.io.IOException;
 
 @WebServlet(
         name = "Home",
-        urlPatterns = { "/Home" }
+        urlPatterns = { "/home" }
 )
 
 public class HomeServlet  extends HttpServlet {
     /**
-     * doGet method for MyCine Home.jsp redirect
+     * doGet method for MyCine home.jsp redirect
      * @param request
      * @param response
      * @throws ServletException
@@ -23,7 +23,7 @@ public class HomeServlet  extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        getServletContext().getRequestDispatcher("/Home.jsp").forward(request, response);
+        getServletContext().getRequestDispatcher("/home.jsp").forward(request, response);
 
     }
 }
