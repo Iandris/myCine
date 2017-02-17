@@ -2,9 +2,8 @@
 <html>
 <head>
     <title>MyCine - Home</title>
-    <c:import url="jspinclude/header.jsp" />
-    <c:import url="jspinclude/navigationBar.jsp" />
 
+    <c:import url="jspinclude/navigationBar.jsp" />
 
 </head>
 <body class="schpeal">

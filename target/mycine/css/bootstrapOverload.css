@@ -68,3 +68,11 @@ body {
 .modal-backdrop {
     z-index: -1;
 }
+
+.sky-form {
+    margin: 0;
+    outline: none;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    font:13px/1.55 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #666;
+}

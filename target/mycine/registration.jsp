@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>MyCine - Registration</title>
-    <c:import url="jspinclude/header.jsp" />
     <c:import url="jspinclude/navBarNoLogin.jsp" />
 </head>
 <body class="schpeal">
@@ -11,7 +10,7 @@
 
 <p>Tell us a little more about you:</p>
 
-<form action="/mycine/enroll" metho="POST">
+<form action="/mycine/enroll" class="sky-form" method="POST" >
     <table>
         <tr>
             <td>
@@ -31,7 +30,7 @@
         </tr>
         <tr>
             <td>
-                <label class="form-label">Street Address: </label>
+                <label class="form-label">Address Line 1: </label>
             </td>
             <td>
                 <input class="form-control" type="text" id="address1" name="address1">
@@ -39,7 +38,7 @@
         </tr>
         <tr>
             <td>
-                <label class="form-label">Street Address: </label>
+                <label class="form-label">Address Line 2 </label>
             </td>
             <td>
                 <input class="form-control" type="text" id="address2" name="address2">
@@ -48,7 +47,7 @@
         <tr>
             <td>
                 <label class="form-label">City: </label>
-                </td>
+            </td>
             <td>
                 <input class="form-control" type="text" id="city" name="city">
             </td>
@@ -58,10 +57,10 @@
                 <label class="form-label">State: </label>
             </td>
             <td>
-               <!-- <input class="form-control" type="text" id="state" name="state"> -->
+                <!-- <input class="form-control" type="text" id="state" name="state"> -->
                 <select class="form-control" id="state" name="state"> 
                     <c:forEach var="state" items="${states}"> 
-                          <option value="${state.idstate}">${state.shortname}</option> 
+                        <option value="${state.idstate}">${state.shortname}</option> 
                     </c:forEach>
                 </select>
             </td>
@@ -97,19 +96,7 @@
             </td>
         </tr>
     </table>
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
 </form>
-
 
 <c:import url="jspinclude/scripts.jsp" />
 <c:import url="jspinclude/firebasePersist.jsp"/>
