@@ -17,7 +17,19 @@
     var uiConfig = {
         callbacks: {
             signInSuccess: function (currentUser, credential, redirectURL) {
-                return true;
+
+                var uid = currentUser.uid;
+
+               currentUser.getToken().then(function(accessToken) {
+                   document.getElementById('userinfo').textContent = JSON.stringify({
+                       uid: uid,
+                        accessToken: accessToken
+                    }, null, ' ');
+                });
+
+                window.location = 'RegCheck?fbUUID=' + uid;
+                return false;
+                //return true;
             },
 
             uiShown: function () {
@@ -33,8 +45,7 @@
 
         signInFlow: 'popup',
 
-        //signInSuccessURL: 'RegCheck?fbUUID=' + firebase.User,
-        signInSuccessURL: 'RegCheck?fbUUID=B76OtOQ3TfaFQfGu19ar57j85Uc2',
+        signInSuccessURL: 'RegCheck',
         signInOptions : [
             firebase.auth.GoogleAuthProvider.PROVIDER_ID,
             firebase.auth.FacebookAuthProvider.PROVIDER_ID,
@@ -45,6 +56,7 @@
 
         tosUrl: 'http://www.google.com'
     };
+
 
     var ui = new firebaseui.auth.AuthUI(firebase.auth());
 

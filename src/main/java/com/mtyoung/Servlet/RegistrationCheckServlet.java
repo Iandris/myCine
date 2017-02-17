@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet(
@@ -29,8 +30,12 @@ public class RegistrationCheckServlet  extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        HttpSession session  = request.getSession();
         UserDao dao = new UserDao();
-        User user = dao.getUserByFBUID(request.getParameter("fbUUID"));
+
+        String uid = request.getParameter("fbUUID");
+        User user = dao.getUserByFBUID(uid);
+        session.setAttribute("fbuid", request.getParameter("fbUUID"));
 
         if (user == null) {
             response.sendRedirect("/myCine/Registration");

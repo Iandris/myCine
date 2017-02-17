@@ -21,6 +21,8 @@
                     }, null, ' ');
                 });
                 window.user = user;
+                document.getElementById('email').value = email;
+                document.getElementById('uid').value = uid;
             } else {
                 window.location = 'index.jsp';
             }
