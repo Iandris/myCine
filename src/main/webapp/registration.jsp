@@ -9,98 +9,69 @@
 <h3>Registration</h3>
 
 <p>Tell us a little more about you:</p>
-
-<form action="/mycine/enroll" method="POST" >
-    <div class="form-group">
-        <label class="form-label">First Name: </label>
-        <input class="form-control" type="text" id="firstname" name="firstname" placeholder="First Name" />
+    
+    <div class="container">
+        <div class="row text-center pad-top ">
+            <div class="col-md-12">
+                <h2>Bootstrap Registration Page</h2>
+            </div>
+        </div>
+         <div class="row  pad-top">
+			<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<strong>   Register Yourself </strong>  
+					</div>
+					<div class="panel-body">
+						<form role="form" action="/mycine/enroll" method="POST">
+							<br/>
+							<div class="form-group input-group">
+								<span class="input-group-addon"><i class="fa fa-id-card"  ></i></span>
+								<input type="text" class="form-control" placeholder="First Name" id="firstname" name="firstname" />
+							</div>
+							   <div class="form-group input-group">
+								<span class="input-group-addon"><i class="fa fa-id-card-o"  ></i></span>
+								<input type="text" class="form-control" placeholder="Last Name" id="lastname" name="lastname" />
+							</div>
+							<div class="form-group input-group">
+								<span class="input-group-addon"><i class="fa fa-home"  ></i></span>
+								<input type="text" class="form-control" placeholder="Address Line 1" id="address1" name="address1" />
+							</div>
+							<div class="form-group input-group">
+								<span class="input-group-addon"><i class="fa fa-gear"  ></i></span>
+								<input type="text" class="form-control" placeholder="Address Line 2" id="address2" name="address2" />
+							</div>
+							<div class="form-group input-group">
+								<span class="input-group-addon"><i class="fa fa-gear"  ></i></span>
+								<input type="text" class="form-control" placeholder="City" id="city" name="city" />
+							</div>
+							<div class="form-group input-group">
+								<span class="input-group-addon"><i class="fa fa-circle-o-notch"  ></i></span>
+								<select class="form-control" id="state" name="state">
+                                     <c:forEach var="state" items="${states}"> 
+                                        <option value="${state.idstate}">${state.shortname}</option> 
+                                     </c:forEach>
+                                </select>
+							</div>
+							<div class="form-group input-group">
+								<span class="input-group-addon"><i class="fa fa-gear"  ></i></span>
+								<input type="text" class="form-control" placeholder="ZipCode"  id="zip" name="zip" />
+							</div>
+							<div class="form-group input-group">
+								<span class="input-group-addon">@</span>
+								<input type="text" class="form-control" placeholder="Your Email" id="email" name="email" />
+							</div>
+							<div class="form-group input-group">
+								<span class="input-group-addon"><i class="fa fa-phone"  ></i></span>
+								<input type="text" class="form-control" placeholder="Cellphone Number"  name="cellnumber" />
+							</div>
+							<a href="#" class="btn btn-success ">Register Me</a>
+						</form>
+					</div>
+				</div>
+			</div>  
+        </div>
     </div>
-    <table>
-        <tr>
-            <td>
-
-            </td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label class="form-label">Last Name: </label>
-            </td>
-            <td>
-                <input class="form-control" type="text" id="lastname" name="lastname" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label class="form-label">Address Line 1: </label>
-            </td>
-            <td>
-                <input class="form-control" type="text" id="address1" name="address1">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label class="form-label">Address Line 2 </label>
-            </td>
-            <td>
-                <input class="form-control" type="text" id="address2" name="address2">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label class="form-label">City: </label>
-            </td>
-            <td>
-                <input class="form-control" type="text" id="city" name="city">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label class="form-label">State: </label>
-            </td>
-            <td>
-                <!-- <input class="form-control" type="text" id="state" name="state"> -->
-                <select class="form-control" id="state" name="state"> 
-                    <c:forEach var="state" items="${states}"> 
-                        <option value="${state.idstate}">${state.shortname}</option> 
-                    </c:forEach>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label class="form-label">Zip: </label>
-            </td>
-            <td>
-                <input class="form-control" type="text" id="zip" name="zip">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label class="form-label">Email: </label>
-            </td>
-            <td>
-                <input class="form-control" type="text" id="email" name="email" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label class="form-label">Phone Number: </label>
-            </td>
-            <td>
-                <input class="form-control" type="text" id="cellnumber" name="cellnumber" />
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <input type="text" id="uid" name="uid" style="display:none"/>
-                <input type="submit" value="submit" />
-            </td>
-        </tr>
-    </table>
-</form>
 
 <c:import url="jspinclude/scripts.jsp" />
 <c:import url="jspinclude/firebasePersist.jsp"/>
