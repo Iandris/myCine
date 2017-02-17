@@ -6,9 +6,9 @@
     <c:import url="jspinclude/navigationBar.jsp" />
 
 </head>
-<body class="schpeal">
+<body >
 
-<div>
+<div class="schpeal">
     <h1>MyCine - Home</h1>
     <p>Keeping track of your personal movie collection can be an exhausting process. With the different movie formats available today,
         multiple release dates and movies included in different collections just checking to see if you have a title or not can be tricky. That's

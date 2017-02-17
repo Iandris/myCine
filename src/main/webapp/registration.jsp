@@ -4,23 +4,19 @@
     <title>MyCine - Registration</title>
     <c:import url="jspinclude/navBarNoLogin.jsp" />
 </head>
-<body class="schpeal">
-
-<h3>Registration</h3>
-
-<p>Tell us a little more about you:</p>
-    
+<body>
+<div class="schpeal">
     <div class="container">
         <div class="row text-center pad-top ">
             <div class="col-md-12">
-                <h2>Bootstrap Registration Page</h2>
+                <h2>Registration</h2>
             </div>
         </div>
          <div class="row  pad-top">
 			<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<strong>   Register Yourself </strong>  
+						<strong>   Tell us a little more about you  </strong>
 					</div>
 					<div class="panel-body">
 						<form role="form" action="/mycine/enroll" method="POST">
@@ -72,7 +68,7 @@
 			</div>  
         </div>
     </div>
-
+</div>
 <c:import url="jspinclude/scripts.jsp" />
 <c:import url="jspinclude/firebasePersist.jsp"/>
 <c:import url="jspinclude/firebaseLogin.jsp"/>

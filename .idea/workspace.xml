@@ -2,20 +2,112 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f46ccfb-b6a2-4f76-a242-8954c9e8b758" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/jspinclude/registrationform.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/images/MyCine 2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/web 2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/web 3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/web 4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/css/bootstrapOverload 2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/css/bootstrapOverload 3.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/css/bootstrapOverload 5.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/css/bootstrapOverload 6.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 17.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 18.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 19.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 20.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 21.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 22.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 30.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 31.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 33.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 34.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 17.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 18.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 19.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 20.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 21.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 22.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 23.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 25.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 26.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 27.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 28.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 29.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 30.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 31.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 9.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine.war" afterPath="$PROJECT_DIR$/target/mycine.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/EnrollServlet.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/EnrollServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/HibernateDemo.log" afterPath="$PROJECT_DIR$/logs/HibernateDemo.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/registration.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/registration.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/Home.jsp" afterPath="$PROJECT_DIR$/target/mycine/Home.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/css/bootstrapOverload.css" afterPath="$PROJECT_DIR$/target/mycine/css/bootstrapOverload.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/index.jsp" afterPath="$PROJECT_DIR$/target/mycine/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/loginModal.jsp" afterPath="$PROJECT_DIR$/target/mycine/jspinclude/loginModal.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/scripts.jsp" afterPath="$PROJECT_DIR$/target/mycine/jspinclude/scripts.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/registration.jsp" afterPath="$PROJECT_DIR$/target/mycine/registration.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.ActorDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.ActorDaoTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.AddressDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.AddressDaoTest.xml" />
@@ -52,6 +144,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.UserRoleDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.UserRoleDaoTest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.WishlistDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.WishlistDaoTest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.util.LocalDateAttributeConverterTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.util.LocalDateAttributeConverterTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.util.LocalDateTimeAttributeConverterTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.util.LocalDateTimeAttributeConverterTest.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -119,11 +212,9 @@
       <file leaf-file-name="registration.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/registration.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-705">
-              <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#td#0;n#tr#9;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="849">
+              <caret line="70" column="6" lean-forward="false" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,8 +222,8 @@
       <file leaf-file-name="scripts.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="56" lean-forward="false" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+            <state relative-caret-position="105">
+              <caret line="7" column="72" lean-forward="false" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -141,8 +232,28 @@
       <file leaf-file-name="bootstrapOverload.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="69" column="1" lean-forward="false" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+            <state relative-caret-position="264">
+              <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -224,8 +335,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/State.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RegistrationServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/firebasePersist.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/loginModal.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/User.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/MessageDaoTest.java" />
@@ -237,9 +346,11 @@
         <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserMovieDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/registrationform.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/registrationform.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/registration.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/registration.jsp" />
       </list>
     </option>
   </component>
@@ -253,8 +364,8 @@
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
     <option name="FILTER_INFO" value="false" />
-    <option name="FILTER_DEBUG" value="true" />
-    <option name="CUSTOM_FILTER" value="" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" value="background" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -310,7 +421,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
-    <option name="y" value="22" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="798" />
   </component>
@@ -374,6 +485,130 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1180,7 +1415,7 @@
       <workItem from="1487302375793" duration="148000" />
       <workItem from="1487302541495" duration="133000" />
       <workItem from="1487302781508" duration="297000" />
-      <workItem from="1487337732212" duration="17607000" />
+      <workItem from="1487337732212" duration="20588000" />
     </task>
     <servers />
   </component>
@@ -1217,10 +1452,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156563000" />
+    <option name="totallyTimeSpent" value="159544000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="22" width="1440" height="798" extended-state="6" />
+    <frame x="-1" y="23" width="1440" height="798" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1239,12 +1474,12 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27478755" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27478755" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25212464" sideWeight="0.48569384" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75637394" sideWeight="0.48569384" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.49713877" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.56795424" sideWeight="0.7737003" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22946176" sideWeight="0.49713877" order="11" side_tool="false" content_ui="tabs" />
@@ -1338,55 +1573,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/MessageDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="92" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/util/LocalDateTimeAttributeConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mtyoung/util/LocalDateTimeAttributeConverterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mtyoung/util/LocalDateAttributeConverterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="35" column="101" lean-forward="false" selection-start-line="35" selection-start-column="101" selection-end-line="35" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/util/LocalDateAttributeConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/firebaseui/dist/firebaseui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/ActorDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/MovieCastDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1469,14 +1655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/mycine/registration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1611,26 +1789,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/loginModal.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="89" lean-forward="false" selection-start-line="4" selection-start-column="89" selection-end-line="4" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1731,29 +1893,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/front-page-rebel-seed-films.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/mycine/registration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/mycine/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/mycine/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/mycine/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/mycine/css/bootstrapOverload.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-544">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/mycine/WEB-INF/images/MyCine 2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/mycine/WEB-INF/images/MyCine.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="69" column="1" lean-forward="false" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+        <state relative-caret-position="264">
+          <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="56" lean-forward="false" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+        <state relative-caret-position="105">
+          <caret line="7" column="72" lean-forward="false" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/registration.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-705">
-          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#td#0;n#tr#9;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="849">
+          <caret line="70" column="6" lean-forward="false" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>

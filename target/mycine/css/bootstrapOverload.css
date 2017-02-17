@@ -34,6 +34,9 @@ body {
     padding-left:5em;
     width:80em;
     padding-right:5em;
+    background: url(/images/front-page-rebel-seed-films.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
 .releases {
@@ -67,12 +70,4 @@ body {
 
 .modal-backdrop {
     z-index: -1;
-}
-
-.sky-form {
-    margin: 0;
-    outline: none;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
-    font:13px/1.55 'Open Sans', Helvetica, Arial, sans-serif;
-    color: #666;
 }
