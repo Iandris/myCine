@@ -34,8 +34,12 @@ body {
     padding-left:5em;
     width:80em;
     padding-right:5em;
-    background: url(/images/front-page-rebel-seed-films.jpg) no-repeat;
-    background-size: 100% 100%;
+    background-image: url(/images/front-page-rebel-seed-films.jpg);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
     background-attachment: fixed;
 }
 
