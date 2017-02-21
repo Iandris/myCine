@@ -5,7 +5,7 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-                <h1>Please Wait</h1>
+                <h1>Login:</h1>
                 <div id ="firebaseui-auth-container" ></div>
                 <div id="loader">Logging In...</div>
             </div>

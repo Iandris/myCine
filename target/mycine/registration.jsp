@@ -4,8 +4,8 @@
     <title>MyCine - Registration</title>
     <c:import url="jspinclude/navBarNoLogin.jsp" />
 </head>
-<body>
-<div class="schpeal">
+<body class="regform">
+<div>
     <div class="container">
         <div class="row text-center pad-top ">
             <div class="col-md-12">
@@ -19,7 +19,7 @@
 						<strong>   Tell us a little more about you  </strong>
 					</div>
 					<div class="panel-body">
-						<form role="form" action="/mycine/enroll" method="POST">
+						<form role="form" action="/mycine/enroll" onsubmit="return validate();" method="POST">
 							<br/>
 							<div class="form-group input-group">
 								<span class="input-group-addon"><i class="fa fa-id-card"  ></i></span>
@@ -44,6 +44,7 @@
 							<div class="form-group input-group">
 								<span class="input-group-addon"><i class="fa fa-circle-o-notch"  ></i></span>
 								<select class="form-control" id="state" name="state">
+									<option value="Select...">Select...</option> 
                                      <c:forEach var="state" items="${states}"> 
                                         <option value="${state.idstate}">${state.shortname}</option> 
                                      </c:forEach>
@@ -53,15 +54,16 @@
 								<span class="input-group-addon"><i class="fa fa-gear"  ></i></span>
 								<input type="text" class="form-control" placeholder="ZipCode"  id="zip" name="zip" />
 							</div>
-							<div class="form-group input-group">
-								<span class="input-group-addon">@</span>
+							<div class="form-group input-group" style="display: none">
+								<!--<span class="input-group-addon">@</span>-->
 								<input type="text" class="form-control" placeholder="Your Email" id="email" name="email" />
 							</div>
 							<div class="form-group input-group">
 								<span class="input-group-addon"><i class="fa fa-phone"  ></i></span>
-								<input type="text" class="form-control" placeholder="Cellphone Number"  name="cellnumber" />
+								<input type="text" class="form-control" placeholder="Cellphone Number" id="cellnumber" name="cellnumber" />
 							</div>
-							<a href="#" class="btn btn-success ">Register Me</a>
+							<input type="text" style="display: none;" id="uid" name="uid"/>
+                            <button type="submit" value="Submit" class="btn btn-success">Register</button>
 						</form>
 					</div>
 				</div>
@@ -73,5 +75,47 @@
 <c:import url="jspinclude/firebasePersist.jsp"/>
 <c:import url="jspinclude/firebaseLogin.jsp"/>
 </body>
+<script type="text/javascript">
+	function validate() {
+	    var success = false;
 
+        var fname = document.getElementById('firstname');
+        if (fname.value == "" || fname.value == null) {
+            alert("First Name Required");
+            return false;
+		}
+        var lname = document.getElementById('lastname');
+        if (lname.value == "" || lname.value == null) {
+            alert("Last Name Required");
+            return false;
+        }
+        var addr1 = document.getElementById('address1');
+        if (addr1.value == "" || addr1.value == null) {
+            alert("Address Required");
+            return false;
+        }
+        var cty = document.getElementById('city');
+        if (cty.value == "" || cty.value == null) {
+            alert("City Required");
+            return false;
+        }
+        var st = document.getElementById('state');
+        if (st.value == "Select...") {
+            alert("Please Select Your State");
+            return false;
+		}
+		var zpattern = /^\(?([0-9]{5})$/;
+        var z = document.getElementById('zip');
+		if (!z.value.match(zpattern)) {
+            alert("5-Digit Zip Code Required");
+            return false;
+		}
+		var phonenum = document.getElementById('cellnumber');
+	    var phonepattern = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+		if (!phonenum.value.match(phonepattern)) {
+	        alert("Invalid Phone Number Entered");
+	        return false;
+		}
+	};
+</script>
 </html>

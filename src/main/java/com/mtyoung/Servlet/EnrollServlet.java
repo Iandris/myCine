@@ -30,7 +30,7 @@ public class EnrollServlet  extends HttpServlet {
      * @throws ServletException
      * @throws IOException
      */
-    public void doGet(HttpServletRequest request, HttpServletResponse response)
+    public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
 
@@ -42,16 +42,16 @@ public class EnrollServlet  extends HttpServlet {
         addr.setCity(request.getParameter("city"));
         addr.setState(Integer.parseInt(request.getParameter("state")));
         addr.setZipcode(Integer.parseInt(request.getParameter("zip")));
-
+        int newaddr = addrDao.addAddress(addr);
         UserDao dao = new UserDao();
         User newUser = new User();
 
         newUser.setFname(request.getParameter("firstname"));
         newUser.setLname(request.getParameter("lastname"));
         newUser.setRoleid(2);
-        newUser.setAddressid(addrDao.addAddress(addr));
+        newUser.setAddressid(newaddr);
         newUser.setEmail(request.getParameter("email"));
-        newUser.setCellnumber(request.getParameter("cellnumber"));
+        newUser.setCellnumber(request.getParameter("cellnumber").replace(".","").replace("-","").replace("(","").replace(")","").replace(" ",""));
         newUser.setReminderthreshold(1);
         newUser.setDefaultrentalperiod(3);
         newUser.setFirebaseUID(request.getParameter("uid"));
@@ -59,7 +59,6 @@ public class EnrollServlet  extends HttpServlet {
         int userID =  dao.addUser(newUser);
 
         if (userID != 0) {
-
             getServletContext().getRequestDispatcher("/home").forward(request, response);
         } else {
             getServletContext().getRequestDispatcher("/index").forward(request, response);

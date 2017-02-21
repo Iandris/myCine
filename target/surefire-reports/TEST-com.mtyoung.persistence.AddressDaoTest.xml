@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="com.mtyoung.persistence.AddressDaoTest" time="0.126" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="com.mtyoung.persistence.AddressDaoTest" time="0.134" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2016.3.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -63,9 +63,9 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.mtyoung.persistence.AddressDaoTest" name="deleteAddress" time="0"/>
-  <testcase classname="com.mtyoung.persistence.AddressDaoTest" name="getAllAddresses" time="0.019"/>
-  <testcase classname="com.mtyoung.persistence.AddressDaoTest" name="getAddress" time="0.037"/>
-  <testcase classname="com.mtyoung.persistence.AddressDaoTest" name="addAddress" time="0.039"/>
-  <testcase classname="com.mtyoung.persistence.AddressDaoTest" name="updateAddress" time="0.031"/>
+  <testcase classname="com.mtyoung.persistence.AddressDaoTest" name="deleteAddress" time="0.002"/>
+  <testcase classname="com.mtyoung.persistence.AddressDaoTest" name="getAllAddresses" time="0.012"/>
+  <testcase classname="com.mtyoung.persistence.AddressDaoTest" name="getAddress" time="0.04"/>
+  <testcase classname="com.mtyoung.persistence.AddressDaoTest" name="addAddress" time="0.044"/>
+  <testcase classname="com.mtyoung.persistence.AddressDaoTest" name="updateAddress" time="0.036"/>
 </testsuite>

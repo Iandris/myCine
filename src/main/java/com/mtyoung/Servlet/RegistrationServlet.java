@@ -40,12 +40,8 @@ public class RegistrationServlet  extends HttpServlet {
         StateDao dao = new StateDao();
         List<State> states = dao.getAllStates();
 
-        if (states.size() < 1) {
-            getServletContext().getRequestDispatcher("/home").forward(request, response);
-        } else {
             session.setAttribute("states", states);
             getServletContext().getRequestDispatcher("/registration").forward(request, response);
-        }
 
     }
 }

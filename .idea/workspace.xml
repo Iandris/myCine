@@ -2,112 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f46ccfb-b6a2-4f76-a242-8954c9e8b758" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/images/MyCine 2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/web 2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/web 3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/web 4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/css/bootstrapOverload 2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/css/bootstrapOverload 3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/css/bootstrapOverload 5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/css/bootstrapOverload 6.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine 9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 17.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 18.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 19.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 20.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 21.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 22.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 30.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 31.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 33.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 34.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60 9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 17.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 18.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 19.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 20.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 21.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 22.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 23.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 24.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 25.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 26.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 27.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 28.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 29.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 30.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 31.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_157x60_White 9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/MyCine_White 9.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mycine/jspinclude/validation.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/css/registrationform.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/MANIFEST 2.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Message 5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Message 6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Message 7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Movie 4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Movie 5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/firebase 2.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/firebase 3.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/firebase 4.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/firebaseLogin 2.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/firebaseLogin 3.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/firebaseLogin 6.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/firebasePersist 2.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/firebasePersist 3.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/firebasePersist 4.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/header 2.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/header 3.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/header 4.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/loginModal 2.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/navBarNoLogin 2.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/navigationBar 2.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/navigationBar 3.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/navigationBar 4.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/scripts 2.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/scripts 3.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/scripts 4.jsp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/EnrollServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/EnrollServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/RegistrationServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/RegistrationServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine.war" afterPath="$PROJECT_DIR$/target/mycine.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/EnrollServlet.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/EnrollServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/RegistrationServlet.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/RegistrationServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/HibernateDemo.log" afterPath="$PROJECT_DIR$/logs/HibernateDemo.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mycine.iml" afterPath="$PROJECT_DIR$/mycine.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/EnrollServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/EnrollServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RegistrationServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RegistrationServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jspinclude/loginModal.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jspinclude/loginModal.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/registration.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/registration.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/Home.jsp" afterPath="$PROJECT_DIR$/target/mycine/Home.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/css/bootstrapOverload.css" afterPath="$PROJECT_DIR$/target/mycine/css/bootstrapOverload.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/scripts.jsp" afterPath="$PROJECT_DIR$/target/mycine/jspinclude/scripts.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/index.jsp" afterPath="$PROJECT_DIR$/target/mycine/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/loginModal.jsp" afterPath="$PROJECT_DIR$/target/mycine/jspinclude/loginModal.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/registration.jsp" afterPath="$PROJECT_DIR$/target/mycine/registration.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.ActorDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.ActorDaoTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.AddressDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.AddressDaoTest.xml" />
@@ -209,52 +151,71 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="registration.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/registration.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="849">
-              <caret line="70" column="6" lean-forward="false" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scripts.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="72" lean-forward="false" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="bootstrapOverload.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+            <state relative-caret-position="1275">
+              <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
+      <file leaf-file-name="RegistrationServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RegistrationServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            <state relative-caret-position="535">
+              <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;method#doGet#0;class#RegistrationServlet#0" expanded="true" />
+                <element signature="method#doGet#0;class#RegistrationServlet#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnrollServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/EnrollServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="53" column="143" lean-forward="false" selection-start-line="53" selection-start-column="143" selection-end-line="53" selection-end-column="143" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <file leaf-file-name="registration.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/registration.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="447">
+              <caret line="113" column="65" lean-forward="false" selection-start-line="113" selection-start-column="64" selection-end-line="113" selection-end-column="65" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActorDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/ActorDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+              <folding>
+                <element signature="method#deleteActor#0;class#ActorDao#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistrationCheckServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RegistrationCheckServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="39" column="12" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="docComment;method#doGet#0;class#RegistrationCheckServlet#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -266,8 +227,8 @@
       <list>
         <option value="JUnit4 Test Class" />
         <option value="Class" />
-        <option value="Jsp File" />
         <option value="CSS File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -300,8 +261,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/MovieCastDao.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/ActorDaoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/MovieCastDaoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/StateDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/UserRole.java" />
@@ -333,12 +292,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/wtf.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RegistrationCheckServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/State.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RegistrationServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/firebasePersist.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/loginModal.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/User.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/MessageDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/EnrollServlet.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserFriendDaoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserDaoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/RentalDaoTest.java" />
@@ -347,10 +303,15 @@
         <option value="$PROJECT_DIR$/src/main/webapp/css/registrationform.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/registrationform.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/loginModal.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/validation.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/registration.jsp" />
+        <option value="$PROJECT_DIR$/target/mycine/css/bootstrapOverload.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RegistrationServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/EnrollServlet.java" />
       </list>
     </option>
   </component>
@@ -420,8 +381,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="23" />
+    <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="798" />
   </component>
@@ -443,7 +403,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -466,69 +425,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mycine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mycine" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mycine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mycine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mycine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mycine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mycine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mycine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mycine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -543,6 +444,18 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtyoung" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -590,7 +503,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="jspinclude" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -609,18 +522,105 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtyoung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtyoung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Servlet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtyoung" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -1376,8 +1376,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.com.mtyoung.persistence in myCine" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.com.mtyoung in myCine" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.com.mtyoung in myCine" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.com.mtyoung.persistence in myCine" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.StateDaoTest" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.UserDaoTest.getUserByFireBaseUUID" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.UserDaoTest" />
@@ -1415,17 +1415,13 @@
       <workItem from="1487302375793" duration="148000" />
       <workItem from="1487302541495" duration="133000" />
       <workItem from="1487302781508" duration="297000" />
-      <workItem from="1487337732212" duration="20588000" />
+      <workItem from="1487337732212" duration="29660000" />
+      <workItem from="1487513144522" duration="895000" />
+      <workItem from="1487645262171" duration="739000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StateDaoTest - 2017.02.17 at 08h 37m 25s.xml">
-      <configuration name="StateDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StateDaoTest - 2017.02.17 at 08h 39m 04s.xml">
-      <configuration name="StateDaoTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="com_mtyoung_in_myCine - 2017.02.17 at 11h 00m 02s.xml">
       <configuration name="com.mtyoung in myCine" configurationId="JUnit" />
     </history-entry>
@@ -1433,6 +1429,12 @@
       <configuration name="com.mtyoung in myCine" configurationId="JUnit" />
     </history-entry>
     <history-entry file="com_mtyoung_in_myCine - 2017.02.17 at 11h 03m 23s.xml">
+      <configuration name="com.mtyoung in myCine" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_mtyoung_in_myCine - 2017.02.19 at 08h 11m 48s.xml">
+      <configuration name="com.mtyoung in myCine" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_mtyoung_in_myCine - 2017.02.19 at 08h 14m 53s.xml">
       <configuration name="com.mtyoung in myCine" configurationId="JUnit" />
     </history-entry>
     <history-entry file="com_mtyoung_persistence_in_myCine - 2017.02.16 at 15h 21m 24s.xml">
@@ -1452,17 +1454,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159544000" />
+    <option name="totallyTimeSpent" value="170250000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="1440" height="798" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="798" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9121813" sideWeight="0.5143061" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18168813" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18168813" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1474,27 +1476,27 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27478755" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75637394" sideWeight="0.48569384" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2733711" sideWeight="0.48569384" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.49713877" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.56795424" sideWeight="0.7737003" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22946176" sideWeight="0.49713877" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20386267" sideWeight="0.90234375" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28612304" sideWeight="0.6855524" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20386267" sideWeight="0.09765625" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28612304" sideWeight="0.31444758" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27478755" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.56795424" sideWeight="0.7737003" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1573,14 +1575,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/MovieCastDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1503">
-          <caret line="114" column="9" lean-forward="false" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/MovieDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="637">
@@ -1623,55 +1617,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-59">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/mycine/WEB-INF/web 2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/mycine/WEB-INF/web 3.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/mycine/WEB-INF/web 4.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/target/mycine/WEB-INF/web 2.xml" />
+    <entry file="file://$PROJECT_DIR$/target/mycine/WEB-INF/web 3.xml" />
+    <entry file="file://$PROJECT_DIR$/target/mycine/WEB-INF/web 4.xml" />
     <entry file="file://$PROJECT_DIR$/target/mycine/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/wtf.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/wtf.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/StudioDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1679,7 +1642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1687,41 +1649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding>
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="58" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RegistrationCheckServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="42" column="89" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RegistrationServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="46" column="67" lean-forward="false" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#doGet#0;class#RegistrationServlet#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1729,21 +1656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-          <folding>
-            <element signature="e#704#751#0#HTML" expanded="false" />
-            <element signature="e#769#814#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/firebasePersist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-          <folding>
-            <element signature="e#1223#1266#0#HTML" expanded="true" />
-            <element signature="e#1324#1350#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1765,19 +1677,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/firebaseLogin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/head.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1785,15 +1688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/loginModal.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="89" lean-forward="false" selection-start-line="4" selection-start-column="89" selection-end-line="4" selection-end-column="89" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1801,7 +1695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="99" column="97" lean-forward="false" selection-start-line="99" selection-start-column="97" selection-end-line="99" selection-end-column="97" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1809,7 +1702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1817,15 +1709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/EnrollServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1833,7 +1716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1841,13 +1723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
           <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
-          <folding>
-            <element signature="method#setup#0;class#UserDaoTest#0" expanded="false" />
-            <element signature="method#getUserByEmail#0;class#UserDaoTest#0" expanded="false" />
-            <element signature="method#getUser#0;class#UserDaoTest#0" expanded="false" />
-            <element signature="method#addUser#0;class#UserDaoTest#0" expanded="false" />
-            <element signature="method#updateUser#0;class#UserDaoTest#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1864,7 +1739,7 @@
         <state relative-caret-position="148">
           <caret line="87" column="12" lean-forward="false" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
           <folding>
-            <element signature="method#updateMovieLink#0;class#UserMovieDaoTest#0" expanded="true" />
+            <element signature="method#updateMovieLink#0;class#UserMovieDaoTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1873,26 +1748,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="93" column="12" lean-forward="false" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/registrationform.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1762" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/registrationform.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="86" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/registrationform.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/images/front-page-rebel-seed-films.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1902,7 +1761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1910,7 +1768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1918,56 +1775,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/mycine/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/mycine/css/bootstrapOverload.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/mycine/WEB-INF/images/MyCine 2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/target/mycine/WEB-INF/images/MyCine 2.png" />
     <entry file="file://$PROJECT_DIR$/target/mycine/WEB-INF/images/MyCine.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/firebasePersist.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="210">
+          <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/firebaseLogin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1976,14 +1810,101 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="72" lean-forward="false" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/loginModal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/registrationform.css" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/validation.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/mycine/css/bootstrapOverload.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="111" column="26" lean-forward="false" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/mycine/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="21" lean-forward="false" selection-start-line="61" selection-start-column="15" selection-end-line="61" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RegistrationCheckServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="39" column="12" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;method#doGet#0;class#RegistrationCheckServlet#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/ActorDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="method#deleteActor#0;class#ActorDao#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RegistrationServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#doGet#0;class#RegistrationServlet#0" expanded="true" />
+            <element signature="method#doGet#0;class#RegistrationServlet#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/registration.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="849">
-          <caret line="70" column="6" lean-forward="false" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+        <state relative-caret-position="447">
+          <caret line="113" column="65" lean-forward="false" selection-start-line="113" selection-start-column="64" selection-end-line="113" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/EnrollServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="53" column="143" lean-forward="false" selection-start-line="53" selection-start-column="143" selection-end-line="53" selection-end-column="143" />
           <folding />
         </state>
       </provider>
@@ -1994,7 +1915,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>unnamed</last-edited>
+          <last-edited>mycine:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2042,7 +1963,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>mycine</last-edited>
+          <last-edited>Web|mycine</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
