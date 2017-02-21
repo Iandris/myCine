@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="com.mtyoung.persistence.WishlistDaoTest" time="0.473" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="com.mtyoung.persistence.WishlistDaoTest" time="0.329" errors="0" skipped="0">
   <properties>
-    <property name="idea.version" value="2016.3.3"/>
+    <property name="idea.version" value="2016.3.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib"/>
     <property name="java.vm.version" value="25.111-b14"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2016.3.3 install"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2016.3.4 install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -63,9 +63,9 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.mtyoung.persistence.WishlistDaoTest" name="deleteWishListItem" time="0.096"/>
+  <testcase classname="com.mtyoung.persistence.WishlistDaoTest" name="deleteWishListItem" time="0.061"/>
   <testcase classname="com.mtyoung.persistence.WishlistDaoTest" name="updateWishListItem" time="0.077"/>
-  <testcase classname="com.mtyoung.persistence.WishlistDaoTest" name="getAllWishListItems" time="0.109"/>
-  <testcase classname="com.mtyoung.persistence.WishlistDaoTest" name="getWishListItem" time="0.106"/>
-  <testcase classname="com.mtyoung.persistence.WishlistDaoTest" name="addWishListItem" time="0.085"/>
+  <testcase classname="com.mtyoung.persistence.WishlistDaoTest" name="getAllWishListItems" time="0.061"/>
+  <testcase classname="com.mtyoung.persistence.WishlistDaoTest" name="getWishListItem" time="0.064"/>
+  <testcase classname="com.mtyoung.persistence.WishlistDaoTest" name="addWishListItem" time="0.066"/>
 </testsuite>

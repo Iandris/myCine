@@ -75,30 +75,13 @@ public class UserDao {
         }
     }
 
-    public User getUserByEmail(String email) {
+    public User getUserByEmail(String user_name) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
         User user = null;
         try {
-            user = (User) session.createQuery("from com.mtyoung.entity.User U where U.email = :mail")
-                    .setString("mail", email)
-                    .uniqueResult();
-            return user;
-        } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
-        } finally {
-            session.close();
-        }
-        return user;
-    }
-
-    public User getUserByFBUID(String fbuid) {
-        Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        Transaction tx = null;
-        User user = null;
-        try {
-            user = (User) session.createQuery("from com.mtyoung.entity.User U where U.firebaseUID = :fbuid")
-                    .setString("fbuid", fbuid)
+            user = (User) session.createQuery("from com.mtyoung.entity.User U where U.user_name = :user_name")
+                    .setString("user_name", user_name)
                     .uniqueResult();
             return user;
         } catch (HibernateException e) {

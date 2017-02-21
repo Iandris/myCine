@@ -6,7 +6,6 @@ import com.mtyoung.entity.User;
 import com.mtyoung.persistence.AddressDao;
 import com.mtyoung.persistence.UserDao;
 
-import javax.servlet.http.HttpSession;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -48,20 +47,21 @@ public class EnrollServlet  extends HttpServlet {
 
         newUser.setFname(request.getParameter("firstname"));
         newUser.setLname(request.getParameter("lastname"));
-        newUser.setRoleid(2);
         newUser.setAddressid(newaddr);
-        newUser.setEmail(request.getParameter("email"));
+        newUser.setUser_name(request.getParameter("email"));
         newUser.setCellnumber(request.getParameter("cellnumber").replace(".","").replace("-","").replace("(","").replace(")","").replace(" ",""));
         newUser.setReminderthreshold(1);
         newUser.setDefaultrentalperiod(3);
-        newUser.setFirebaseUID(request.getParameter("uid"));
+        newUser.setPassword(request.getParameter("password"));
 
         int userID =  dao.addUser(newUser);
 
         if (userID != 0) {
-            getServletContext().getRequestDispatcher("/home").forward(request, response);
+            //getServletContext().getRequestDispatcher("/home").forward(request, response);
+            response.sendRedirect("/mycine/secure/home");
         } else {
-            getServletContext().getRequestDispatcher("/index").forward(request, response);
+            //getServletContext().getRequestDispatcher("/index").forward(request, response);
+            response.sendRedirect("/mycine/index");
         }
 
     }

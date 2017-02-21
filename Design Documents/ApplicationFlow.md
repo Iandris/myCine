@@ -10,7 +10,7 @@
 
 ## User sign in
   1.  user chooses sign in from landing page
-  2. user enters email and password and submit
+  2. user enters user_name and password and submit
   3. login servlet authenticates against db, success sends to home
   4. failure is returned to login page
   

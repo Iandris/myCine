@@ -33,15 +33,15 @@ public class RegistrationCheckServlet  extends HttpServlet {
             throws ServletException, IOException {
 
         UserDao dao = new UserDao();
-        User user = dao.getUserByFBUID(request.getParameter("fbUUID"));
+       // User user = dao.getUserByFBUID(request.getParameter("fbUUID"));
 
-        if (user == null) {
-            //response.sendRedirect("/mycine/registration.jsp");
-            getServletContext().getRequestDispatcher("/register").forward(request, response);
-        } else {
-            //response.sendRedirect("/mycine/home");
-            getServletContext().getRequestDispatcher("/home").forward(request, response);
-        }
+//        if (user == null) {
+//            //response.sendRedirect("/mycine/registration.jsp");
+//            getServletContext().getRequestDispatcher("/register").forward(request, response);
+//        } else {
+//            //response.sendRedirect("/mycine/home");
+//            getServletContext().getRequestDispatcher("/home").forward(request, response);
+//        }
 
     }
 }

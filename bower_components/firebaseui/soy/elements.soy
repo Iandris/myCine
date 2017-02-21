@@ -18,31 +18,31 @@
 
 
 /**
- * Renders an email input field.
+ * Renders an user_name input field.
  */
-{template .email}
-  {@param? email: string} /** The email address to prefill. */
-  {@param? disabled: bool} /** Whether the email input is disabled or not. */
-  {@param? changeEmail: bool} /** Whether to use change email label. */
+{template .user_name}
+  {@param? user_name: string} /** The user_name address to prefill. */
+  {@param? disabled: bool} /** Whether the user_name input is disabled or not. */
+  {@param? changeEmail: bool} /** Whether to use change user_name label. */
   <div class="{css firebaseui-textfield} {css mdl-textfield} {css mdl-js-textfield}{sp}
       {css mdl-textfield--floating-label}">
-    <label class="{css mdl-textfield__label} {css firebaseui-label}" for="email">
+    <label class="{css mdl-textfield__label} {css firebaseui-label}" for="user_name">
       {if $changeEmail}
-        {msg desc="Label of a change email address input field."}Enter new email address{/msg}
+        {msg desc="Label of a change user_name address input field."}Enter new user_name address{/msg}
       {else}
-        {msg desc="Label of an email address input field."}Email{/msg}
+        {msg desc="Label of an user_name address input field."}Email{/msg}
       {/if}
     </label>
     <input
-        type="email"
-        name="email"
+        type="user_name"
+        name="user_name"
         autocomplete="username"
-        class="{css mdl-textfield__input} {css firebaseui-input} {css firebaseui-id-email}"
-        value="{$email ?: ''}"
+        class="{css mdl-textfield__input} {css firebaseui-input} {css firebaseui-id-user_name}"
+        value="{$user_name ?: ''}"
         {if $disabled}disabled{/if}>
   </div>
   <div class="{css firebaseui-error-wrapper}">
-    <p class="{css firebaseui-error} {css firebaseui-hidden} {css firebaseui-id-email-error}"></p>
+    <p class="{css firebaseui-error} {css firebaseui-hidden} {css firebaseui-id-user_name-error}"></p>
   </div>
 {/template}
 
@@ -62,13 +62,13 @@
         src="{call .idpLogo_ data="all" /}">
     {if $providerId == 'password'}
       <span class="{css firebaseui-idp-text} {css firebaseui-idp-text-long}">
-        {msg desc="Label for a button to sign in with an email account that requires a password.
+        {msg desc="Label for a button to sign in with an user_name account that requires a password.
             The long version"}
-          Sign in with email
+          Sign in with user_name
         {/msg}
       </span>
       <span class="{css firebaseui-idp-text} {css firebaseui-idp-text-short}">
-        {msg desc="Label for a button to sign in with an email account that requires a password.
+        {msg desc="Label for a button to sign in with an user_name account that requires a password.
             The short version"}
           Email
         {/msg}

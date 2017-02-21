@@ -54,15 +54,27 @@
 								<span class="input-group-addon"><i class="fa fa-gear"  ></i></span>
 								<input type="text" class="form-control" placeholder="ZipCode"  id="zip" name="zip" />
 							</div>
-							<div class="form-group input-group" style="display: none">
-								<!--<span class="input-group-addon">@</span>-->
-								<input type="text" class="form-control" placeholder="Your Email" id="email" name="email" />
-							</div>
 							<div class="form-group input-group">
 								<span class="input-group-addon"><i class="fa fa-phone"  ></i></span>
 								<input type="text" class="form-control" placeholder="Cellphone Number" id="cellnumber" name="cellnumber" />
 							</div>
-							<input type="text" style="display: none;" id="uid" name="uid"/>
+
+
+							<div class="form-group input-group">
+								<span class="input-group-addon">@</span>
+								<input type="text" class="form-control" placeholder="Your Email" id="user_name" name="user_name" />
+							</div>
+
+							<div class="form-group input-group">
+								<span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
+								<input type="password" class="form-control" placeholder="Password" id="password" name="password" />
+							</div>
+
+							<div class="form-group input-group">
+								<span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
+								<input type="password" class="form-control" placeholder="Verify Password" id="passwordVerify" name="passwordVerify" />
+							</div>
+
                             <button type="submit" value="Submit" class="btn btn-success">Register</button>
 						</form>
 					</div>
@@ -71,10 +83,8 @@
         </div>
     </div>
 </div>
-<c:import url="jspinclude/scripts.jsp" />
-<c:import url="jspinclude/firebasePersist.jsp"/>
-<c:import url="jspinclude/firebaseLogin.jsp"/>
 </body>
+<c:import url="jspinclude/scripts.jsp" />
 <script type="text/javascript">
 	function validate() {
 	    var success = false;
@@ -115,6 +125,13 @@
 		if (!phonenum.value.match(phonepattern)) {
 	        alert("Invalid Phone Number Entered");
 	        return false;
+		}
+
+		var pass = document.getElementById('password');
+		var passVerif = document.getElementById('passwordVerify');
+		if (pass.value != passVerif.value) {
+		    alert("Passwords do not match")
+			return false;
 		}
 	};
 </script>

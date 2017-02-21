@@ -1,7 +1,6 @@
 package com.mtyoung.persistence;
 
 import com.mtyoung.entity.Address;
-import com.mtyoung.entity.UserRole;
 import org.junit.After;
 import org.junit.Test;
 import com.mtyoung.entity.User;
@@ -20,9 +19,6 @@ public class UserDaoTest {
     User bob;
     Address mail;
     AddressDao mailDao;
-    UserRole role;
-    UserRoleDao roleDao;
-    int newRole = 0;
     int newMail = 0;
     int newMail2 = 0;
     int newUser = 0;
@@ -40,22 +36,16 @@ public class UserDaoTest {
         mail.setZipcode(53098);
         newMail = mailDao.addAddress(mail);
 
-        role = new UserRole();
-        roleDao = new UserRoleDao();
-        role.setDescription("CHIPS n SALSA");
-        newRole = roleDao.addRole(role);
-
         dao = new UserDao();
         bob = new User();
         bob.setFname("Mike");
         bob.setLname("Young");
-        bob.setRoleid(newRole);
         bob.setAddressid(mailDao.getAddress(newMail).getIdaddresses());
-        bob.setEmail("mtyoung@madisoncollege.edu");
-        bob.setCellnumber("6083334717");
+        bob.setUser_name("bob@email.com");
+        bob.setCellnumber("0000000000");
         bob.setReminderthreshold(1);
         bob.setDefaultrentalperiod(3);
-        bob.setFirebaseUID("B76OtOQ3TfaFQfGu19ar57j85Uc2");
+        bob.setPassword("password");
     }
 
     @After
@@ -75,9 +65,6 @@ public class UserDaoTest {
             mailDao.deleteAddress(newMail2);
         }
 
-        if (newRole != 0) {
-            roleDao.deleteRole(newRole);
-        }
     }
 
     @Test
@@ -90,23 +77,17 @@ public class UserDaoTest {
     @Test
     public void getUserByEmail() throws Exception {
         newUser = dao.addUser(bob);
-        assertNotNull("no user returned", dao.getUserByEmail(bob.getEmail()));
-        assertEquals("user ID not returned correctly", bob.getUuid(), dao.getUserByEmail(bob.getEmail()).getUuid());
-        assertEquals("first not returned correctly", bob.getFname(), dao.getUserByEmail(bob.getEmail()).getFname());
-        assertEquals("last not returned correctly", bob.getLname(), dao.getUserByEmail(bob.getEmail()).getLname());
-        assertEquals("incorrect role returned", bob.getRoleid(), dao.getUserByEmail(bob.getEmail()).getRoleid());
-        assertEquals("incorrect address returned", bob.getAddressid(), dao.getUserByEmail(bob.getEmail()).getAddressid());
-        assertEquals("incorrect Email returned", bob.getEmail(), dao.getUserByEmail(bob.getEmail()).getEmail());
-        assertEquals("incorrect cell returned", bob.getCellnumber(), dao.getUserByEmail(bob.getEmail()).getCellnumber());
-        assertEquals("incorrect reminder threshold returned", bob.getReminderthreshold(), dao.getUserByEmail(bob.getEmail()).getReminderthreshold());
-        assertEquals("incorrect rental period returned", bob.getDefaultrentalperiod(), dao.getUserByEmail(bob.getEmail()).getDefaultrentalperiod());
+        assertNotNull("no user returned", dao.getUserByEmail(bob.getUser_name()));
+        assertEquals("user ID not returned correctly", bob.getUuid(), dao.getUserByEmail(bob.getUser_name()).getUuid());
+        assertEquals("first not returned correctly", bob.getFname(), dao.getUserByEmail(bob.getUser_name()).getFname());
+        assertEquals("last not returned correctly", bob.getLname(), dao.getUserByEmail(bob.getUser_name()).getLname());
+        assertEquals("incorrect address returned", bob.getAddressid(), dao.getUserByEmail(bob.getUser_name()).getAddressid());
+        assertEquals("incorrect Email returned", bob.getUser_name(), dao.getUserByEmail(bob.getUser_name()).getUser_name());
+        assertEquals("incorrect cell returned", bob.getCellnumber(), dao.getUserByEmail(bob.getUser_name()).getCellnumber());
+        assertEquals("incorrect reminder threshold returned", bob.getReminderthreshold(), dao.getUserByEmail(bob.getUser_name()).getReminderthreshold());
+        assertEquals("incorrect rental period returned", bob.getDefaultrentalperiod(), dao.getUserByEmail(bob.getUser_name()).getDefaultrentalperiod());
+        assertEquals("incorrect password returned", bob.getPassword(), dao.getUserByEmail(bob.getUser_name()).getPassword());
 
-    }
-
-    @Test
-    public void getUserByFireBaseUUID() throws Exception {
-        newUser = dao.addUser(bob);
-        assertNotNull("no user returned", dao.getUserByFBUID(bob.getFirebaseUID()));
     }
 
     @Test
@@ -116,13 +97,12 @@ public class UserDaoTest {
         assertEquals("user ID not returned correctly", bob.getUuid(), dao.getUser(newUser).getUuid());
         assertEquals("first not returned correctly", bob.getFname(), dao.getUser(newUser).getFname());
         assertEquals("last not returned correctly", bob.getLname(), dao.getUser(newUser).getLname());
-        assertEquals("incorrect role returned", bob.getRoleid(), dao.getUser(newUser).getRoleid());
         assertEquals("incorrect address returned", bob.getAddressid(), dao.getUser(newUser).getAddressid());
-        assertEquals("incorrect Email returned", bob.getEmail(), dao.getUser(newUser).getEmail());
+        assertEquals("incorrect Email returned", bob.getUser_name(), dao.getUser(newUser).getUser_name());
         assertEquals("incorrect cell returned", bob.getCellnumber(), dao.getUser(newUser).getCellnumber());
         assertEquals("incorrect reminder threshold returned", bob.getReminderthreshold(), dao.getUser(newUser).getReminderthreshold());
         assertEquals("incorrect rental period returned", bob.getDefaultrentalperiod(), dao.getUser(newUser).getDefaultrentalperiod());
-        assertEquals("incorrect firebase uid returned", bob.getFirebaseUID(), dao.getUser(newUser).getFirebaseUID());
+        assertEquals("incorrect password returned", bob.getPassword(), dao.getUserByEmail(bob.getUser_name()).getPassword());
     }
 
     @Test
@@ -132,12 +112,12 @@ public class UserDaoTest {
         assertEquals("user ID not returned correctly", bob.getUuid(), dao.getUser(newUser).getUuid());
         assertEquals("first not entered correctly", bob.getFname(), dao.getUser(newUser).getFname());
         assertEquals("last not entered correctly", bob.getLname(), dao.getUser(newUser).getLname());
-        assertEquals("incorrect role returned", bob.getRoleid(), dao.getUser(newUser).getRoleid());
         assertEquals("incorrect address returned", bob.getAddressid(), dao.getUser(newUser).getAddressid());
-        assertEquals("incorrect Email returned", bob.getEmail(), dao.getUser(newUser).getEmail());
+        assertEquals("incorrect Email returned", bob.getUser_name(), dao.getUser(newUser).getUser_name());
         assertEquals("incorrect cell returned", bob.getCellnumber(), dao.getUser(newUser).getCellnumber());
         assertEquals("incorrect reminder threshold returned", bob.getReminderthreshold(), dao.getUser(newUser).getReminderthreshold());
         assertEquals("incorrect rental period returned", bob.getDefaultrentalperiod(), dao.getUser(newUser).getDefaultrentalperiod());
+        assertEquals("incorrect password returned", bob.getPassword(), dao.getUserByEmail(bob.getUser_name()).getPassword());
     }
 
     @Test
@@ -160,22 +140,22 @@ public class UserDaoTest {
         newUser = dao.addUser(bob);
         bob.setFname("Michael");
         bob.setLname("Smith");
-        bob.setRoleid(newRole);
         bob.setAddressid(mailDao.getAddress(newMail2).getIdaddresses());
-        bob.setEmail("myoung86@charter.net");
-        bob.setCellnumber("9202855911");
+        bob.setUser_name("bob2@email.com");
+        bob.setCellnumber("9999999999");
         bob.setReminderthreshold(2);
         bob.setDefaultrentalperiod(5);
+        bob.setPassword("password2");
 
         dao.updateUser(bob);
         assertEquals("first not updated correctly", bob.getFname(), dao.getUser(newUser).getFname());
         assertEquals("last not updated correctly", bob.getLname(), dao.getUser(newUser).getLname());
-        assertEquals("updated role not returned", bob.getRoleid(), dao.getUser(newUser).getRoleid());
         assertEquals("updated address not returned", bob.getAddressid(), dao.getUser(newUser).getAddressid());
-        assertEquals("updated Email not returned", bob.getEmail(), dao.getUser(newUser).getEmail());
+        assertEquals("updated Email not returned", bob.getUser_name(), dao.getUser(newUser).getUser_name());
         assertEquals("updated cell not returned", bob.getCellnumber(), dao.getUser(newUser).getCellnumber());
         assertEquals("updated reminder threshold not returned", bob.getReminderthreshold(), dao.getUser(newUser).getReminderthreshold());
         assertEquals("updated rental period not returned", bob.getDefaultrentalperiod(), dao.getUser(newUser).getDefaultrentalperiod());
+        assertEquals("incorrect password returned", bob.getPassword(), dao.getUserByEmail(bob.getUser_name()).getPassword());
     }
 
 

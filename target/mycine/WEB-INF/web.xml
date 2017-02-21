@@ -7,7 +7,6 @@
   <display-name>Welcome to MyCine</display-name>
 
 
-
   <!-- ********************************************************************* -->
   <!-- Servlet and JSP Configurations ************************************** -->
   <!-- ********************************************************************* -->
@@ -26,7 +25,10 @@
     <jsp-file>/registration.jsp</jsp-file>
   </servlet>
 
-
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <jsp-file>/login.jsp</jsp-file>
+  </servlet>
 
   <!-- ********************************************************************* -->
   <!-- Servlet Mappings **************************************************** -->
@@ -51,12 +53,51 @@
     <servlet-name>RegCheck</servlet-name>
     <url-pattern>/regcheck</url-pattern>
   </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
   <!-- ********************************************************************* -->
   <!-- Home Page *********************************************************** -->
   <!-- ********************************************************************* -->
-
   <welcome-file-list>
     <welcome-file>/index.jsp</welcome-file>
   </welcome-file-list>
+
+
+  <!-- Tell the server to use form-based authentication. -->
+  <login-config>
+    <auth-method>FORM</auth-method>
+    <form-login-config>
+      <form-login-page>/login</form-login-page>
+      <form-error-page>/login?status=fail</form-error-page>
+    </form-login-config>
+  </login-config>
+
+  <!-- Protect everything within the "secure" directory. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>home</web-resource-name>
+      <url-pattern>/home</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>registered-user</role-name>
+      <role-name>administrator</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-role>
+    <role-name>registered-user</role-name>
+  </security-role>
+
+  <security-role>
+    <role-name>administrator</role-name>
+  </security-role>
 
 </web-app>

@@ -13,7 +13,7 @@
     </ul>
 
     <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" onclick="logout()">Log-Out</a></li>
+        <li><a href="/mycine/logout">Log-Out</a></li>
     </ul>
 
 </nav>

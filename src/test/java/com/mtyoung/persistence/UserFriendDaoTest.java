@@ -51,37 +51,34 @@ public class UserFriendDaoTest {
         bob1 = new User();
         bob1.setFname("Mike");
         bob1.setLname("Young");
-        bob1.setRoleid(1);
         bob1.setAddressid(mailDao.getAddress(newMail).getIdaddresses());
-        bob1.setEmail("mtyoung@madisoncollege.edu");
-        bob1.setCellnumber("6083334717");
+        bob1.setUser_name("bob7@email.com");
+        bob1.setCellnumber("4444444444");
         bob1.setReminderthreshold(1);
         bob1.setDefaultrentalperiod(3);
-        bob1.setFirebaseUID("temporary string1");
+        bob1.setPassword("Password");
         newUser1 = userDao.addUser(bob1);
 
         bob2 = new User();
         bob2.setFname("John");
         bob2.setLname("Smith");
-        bob2.setRoleid(1);
         bob2.setAddressid(mailDao.getAddress(newMail).getIdaddresses());
-        bob2.setEmail("mail@gmail.com");
-        bob2.setCellnumber("123456789");
+        bob2.setUser_name("bob8@email.com");
+        bob2.setCellnumber("3333333333");
         bob2.setReminderthreshold(1555);
         bob2.setDefaultrentalperiod(39);
-        bob2.setFirebaseUID("temporary string2");
+        bob2.setPassword("Password");
         newUser2 = userDao.addUser(bob2);
 
         bob3 = new User();
         bob3.setFname("Dave");
         bob3.setLname("Navarro");
-        bob3.setRoleid(1);
         bob3.setAddressid(mailDao.getAddress(newMail).getIdaddresses());
-        bob3.setEmail("mail@yahoo.com");
-        bob3.setCellnumber("987654321");
+        bob3.setUser_name("bob9@email.com");
+        bob3.setCellnumber("2222222222");
         bob3.setReminderthreshold(51123);
         bob3.setDefaultrentalperiod(123123);
-        bob3.setFirebaseUID("temporary string3");
+        bob3.setPassword("Password");
         newUser3 = userDao.addUser(bob3);
 
         friend.setFriendidA(bob1.getUuid());

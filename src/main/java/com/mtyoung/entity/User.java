@@ -14,11 +14,8 @@ public class User {
   @Column(name = "id")
   private int uuid;
 
-  @Column(name = "email")
-  private String email;
-
-  @Column(name="roleID")
-  private int roleid;
+  @Column(name = "user_name")
+  private String user_name;
 
   @Column(name = "fName")
   private String fname;
@@ -29,9 +26,6 @@ public class User {
   @Column(name = "id_address")
   private int id_address;
 
-  @Column(name="firebaseUID")
-  private String firebaseUID;
-
   @Column(name = "cell_number", unique = true)
   private String cell_number;
 
@@ -41,16 +35,11 @@ public class User {
   @Column(name = "defaultRentalPeriod")
   private int defaultrentalperiod;
 
+  @Column(name="password")
+  private String password;
+
   public int getUuid() {
     return uuid;
-  }
-
-  public int getRoleid() {
-    return roleid;
-  }
-
-  public void setRoleid(int roleid) {
-    this.roleid = roleid;
   }
 
   public String getFname() {
@@ -77,12 +66,12 @@ public class User {
     this.id_address = addressid;
   }
 
-  public String getEmail() {
-    return email;
+  public String getUser_name() {
+    return user_name;
   }
 
-  public void setEmail(String email) {
-    this.email = email;
+  public void setUser_name(String user_name) {
+    this.user_name = user_name;
   }
 
   public String getCellnumber() {
@@ -101,7 +90,6 @@ public class User {
     this.reminderthreshold = reminderthreshold;
   }
 
-
   public int getDefaultrentalperiod() {
     return defaultrentalperiod;
   }
@@ -110,11 +98,11 @@ public class User {
     this.defaultrentalperiod = defaultrentalperiod;
   }
 
-  public String getFirebaseUID() {
-    return firebaseUID;
+  public String getPassword() {
+    return password;
   }
 
-  public void setFirebaseUID(String firebaseUID) {
-    this.firebaseUID = firebaseUID;
+  public void setPassword(String password) {
+    this.password = password;
   }
 }

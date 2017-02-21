@@ -25,18 +25,18 @@
 {/template}
 
 
-/** Error message for invalid email. */
+/** Error message for invalid user_name. */
 {template .errorInvalidEmail kind="text"}
-  {msg desc="Error message when the entered email is not a valid email address."}
-    That email address isn't correct
+  {msg desc="Error message when the entered user_name is not a valid user_name address."}
+    That user_name address isn't correct
   {/msg}
 {/template}
 
 
-/** Error message for missing email. */
+/** Error message for missing user_name. */
 {template .errorMissingEmail kind="text"}
-  {msg desc="Error message when the user didn't enter an email."}
-    Enter your email address to continue
+  {msg desc="Error message when the user didn't enter an user_name."}
+    Enter your user_name address to continue
   {/msg}
 {/template}
 
@@ -68,8 +68,8 @@
 /** Error message for password reset code not sent. */
 {template .errorSendPasswordReset kind="text"}
   {msg desc="Error message to be displayed when the password reset code is not sent to user's
-      email."}
-    Unable to send password reset code to specified email.
+      user_name."}
+    Unable to send password reset code to specified user_name.
   {/msg}
 {/template}
 
@@ -92,11 +92,11 @@
 {/template}
 
 
-/** Error message for anonymous account with email blocking sign-in with non-anonymous account. */
+/** Error message for anonymous account with user_name blocking sign-in with non-anonymous account. */
 {template .errorAnonymousEmailBlockingSignIn kind="text"}
-  {msg desc="Error message when the user tries to sign in but the email is used by an anonymous
+  {msg desc="Error message when the user tries to sign in but the user_name is used by an anonymous
       account. The user must reset their password to recover."}
-    This email already exists without any means of sign-in. Please reset the password to recover.
+    This user_name already exists without any means of sign-in. Please reset the password to recover.
   {/msg}
 {/template}
 
@@ -105,10 +105,10 @@
 {template .error kind="text"}
   {@param code: string} /** The error code. */
   {switch $code}
-    {case 'auth/email-already-in-use'}
-      {msg desc="Error message for when the user is trying to sign up with an email already existing
+    {case 'auth/user_name-already-in-use'}
+      {msg desc="Error message for when the user is trying to sign up with an user_name already existing
           in the database."}
-        The email address is already used by another account
+        The user_name address is already used by another account
       {/msg}
     {case 'auth/requires-recent-login'}
       {call .errorLoginAgain_ /}
@@ -125,7 +125,7 @@
     {case 'auth/user-not-found'}
       {msg desc="Error message for the user tries to sign in to a nonexistent account or if the user
           requests a password reset for a nonexistent account."}
-        That email address doesn't match an existing account
+        That user_name address doesn't match an existing account
       {/msg}
     {case 'auth/user-token-expired'}
       {call .errorLoginAgain_ /}
@@ -136,7 +136,7 @@
       {/msg}
     {case 'auth/wrong-password'}
       {msg desc="Error message for incorrect password."}
-        The email and password you entered don't match
+        The user_name and password you entered don't match
       {/msg}
     {case 'auth/network-request-failed'}
       {msg desc="Error message when a request fails due to a network error (such as timeout,

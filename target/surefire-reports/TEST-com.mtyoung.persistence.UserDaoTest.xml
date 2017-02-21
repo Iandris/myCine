@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="com.mtyoung.persistence.UserDaoTest" time="0.428" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="com.mtyoung.persistence.UserDaoTest" time="0.389" errors="0" skipped="0">
   <properties>
-    <property name="idea.version" value="2016.3.3"/>
+    <property name="idea.version" value="2016.3.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib"/>
     <property name="java.vm.version" value="25.111-b14"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2016.3.3 install"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2016.3.4 install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -63,11 +63,10 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="addUser" time="0.057"/>
-  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="getUserByEmail" time="0.211"/>
-  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="getAllUsers" time="0.037"/>
-  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="updateUser" time="0.055"/>
-  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="getUser" time="0.031"/>
-  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="getUserByFireBaseUUID" time="0.019"/>
-  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="deleteUser" time="0.018"/>
+  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="addUser" time="0.239"/>
+  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="getUserByEmail" time="0.05"/>
+  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="getAllUsers" time="0.021"/>
+  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="updateUser" time="0.041"/>
+  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="getUser" time="0.025"/>
+  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="deleteUser" time="0.013"/>
 </testsuite>

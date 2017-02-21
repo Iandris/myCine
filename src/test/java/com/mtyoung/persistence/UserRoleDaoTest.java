@@ -23,7 +23,8 @@ public class UserRoleDaoTest {
         dao = new UserRoleDao();
         role = new UserRole();
 
-        role.setDescription("CHIPS n SALSA");
+        role.setRole_name("CHIPS n SALSA");
+        role.setuser_name("myoung86@charter.net");
     }
 
     @After
@@ -44,14 +45,17 @@ public class UserRoleDaoTest {
     public void getRole() throws Exception {
         newRole = dao.addRole(role);
         assertEquals("role Id not returned", role.getRoleid(), dao.getRole(newRole).getRoleid());
-        assertEquals("role description not returned", role.getDescription(), dao.getRole(newRole).getDescription());
+        assertEquals("role name not returned", role.getRole_name(), dao.getRole(newRole).getRole_name());
+        assertEquals("role user not returned", role.getuser_name(), dao.getRole(newRole).getuser_name());
+
     }
 
     @Test
     public void addRole() throws Exception {
         newRole = dao.addRole(role);
         assertEquals("role Id not added", role.getRoleid(), dao.getRole(newRole).getRoleid());
-        assertEquals("role description not added", role.getDescription(), dao.getRole(newRole).getDescription());
+        assertEquals("role description not added", role.getRole_name(), dao.getRole(newRole).getRole_name());
+        assertEquals("role user not returned", role.getuser_name(), dao.getRole(newRole).getuser_name());
     }
 
     @Test
@@ -65,13 +69,16 @@ public class UserRoleDaoTest {
     public void updateRole() throws Exception {
         newRole = dao.addRole(role);
         assertEquals("role Id not inserted", role.getRoleid(), dao.getRole(newRole).getRoleid());
-        assertEquals("role description not inserted", role.getDescription(), dao.getRole(newRole).getDescription());
+        assertEquals("role user not returned", role.getuser_name(), dao.getRole(newRole).getuser_name());
+        assertEquals("role description not inserted", role.getRole_name(), dao.getRole(newRole).getRole_name());
 
-        role.setDescription("PASTA FAZOOOL");
+        role.setRole_name("PASTA FAZOOOL");
+        role.setuser_name("bob@yahoo.com");
         dao.updateRole(role);
 
         assertEquals("role Id not updated", role.getRoleid(), dao.getRole(newRole).getRoleid());
-        assertEquals("role description not updated", role.getDescription(), dao.getRole(newRole).getDescription());
+        assertEquals("role user not returned", role.getuser_name(), dao.getRole(newRole).getuser_name());
+        assertEquals("role description not updated", role.getRole_name(), dao.getRole(newRole).getRole_name());
 
     }
 

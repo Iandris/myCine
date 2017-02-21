@@ -7,8 +7,7 @@
 <body class="schpeal">
         <h1 style="color:white;">Welcome to MyCine</h1>
 <c:import url="jspinclude/loginModal.jsp" />
-<c:import url="jspinclude/scripts.jsp" />
-<c:import url="jspinclude/firebaseLogin.jsp"/>
+        <c:import url="jspinclude/scripts.jsp" />
 </body>
 
 </html>

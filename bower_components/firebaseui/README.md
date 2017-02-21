@@ -7,7 +7,7 @@ bindings on top of [Firebase](https://firebase.google.com) SDKs to eliminate boi
 promote best practices.
 
 FirebaseUI Auth provides a drop-in auth solution that handles the UI flows for signing in users with
-email addresses and passwords, and Identity Provider Sign In using Google, Facebook and others.
+user_name addresses and passwords, and Identity Provider Sign In using Google, Facebook and others.
 It is built on top of [Firebase Auth](https://firebase.google.com/docs/auth).
 
 The FirebaseUI component implements best practices for authentication on mobile devices and
@@ -49,9 +49,9 @@ You can then serve your app locally using `firebase serve`.
 FirebaseUI includes the following flows:
 
 1. Interaction with Identity Providers such as Google and Facebook
-2. Sign-up and sign-in with email accounts
+2. Sign-up and sign-in with user_name accounts
 3. Password reset
-4. Prevention of account duplication (activated when *"One account per email address"* setting is
+4. Prevention of account duplication (activated when *"One account per user_name address"* setting is
 enabled in the [Firebase console](https://console.firebase.google.com). This setting is enabled by
 default.)
 5. [Account Chooser](https://www.accountchooser.com/learnmore.html?lang=en) for remembering emails
@@ -145,7 +145,7 @@ Here is how you would track the Auth state across all your pages:
           if (user) {
             // User is signed in.
             var displayName = user.displayName;
-            var email = user.email;
+            var user_name = user.user_name;
             var emailVerified = user.emailVerified;
             var photoURL = user.photoURL;
             var uid = user.uid;
@@ -155,7 +155,7 @@ Here is how you would track the Auth state across all your pages:
               document.getElementById('sign-in').textContent = 'Sign out';
               document.getElementById('account-details').textContent = JSON.stringify({
                 displayName: displayName,
-                email: email,
+                user_name: user_name,
                 emailVerified: emailVerified,
                 photoURL: photoURL,
                 uid: uid,
@@ -207,10 +207,10 @@ FirebaseUI supports the following configuration parameters.
 ### Credential Helper
 
 The role of a credential helper is to help your users sign into you website.
-When one is enabled, your users will be prompted with email addresses and
+When one is enabled, your users will be prompted with user_name addresses and
 usernames they have saved from your app or other applications. To achieve this,
 [accountchooser.com](https://www.accountchooser.com/learnmore.html) is
-available. Upon signing in or signing up with email, the user will be redirected
+available. Upon signing in or signing up with user_name, the user will be redirected
 to the accountchooser.com website and will be able to select one of their saved
 accounts. It is recommended to use this, but you can also disable it by
 specifying the value below.
@@ -247,7 +247,7 @@ ui.start('#firebaseui-auth-container', {
       provider: firebase.auth.FacebookAuthProvider.PROVIDER_ID,
       scopes: [
         'public_profile',
-        'email',
+        'user_name',
         'user_likes',
         'user_friends'
       ]
@@ -507,7 +507,7 @@ again the widget if one has already been rendered on the page. Please refer to t
 Application context.
 - **Custom scopes** can now be added for each provider. See [Custom Scopes](custom-scopes).
 - Several issues, different but related to the `displayName` not being present after sign up with
-email and password, have been fixed.
+user_name and password, have been fixed.
 - A new config parameter has been added: `signInFlow`. It allows to specify whether the Identity
 Providers sign in flows should be done through `redirect` (the default) or `popup`. See
 [Sign In Flows](sign-in-flows).

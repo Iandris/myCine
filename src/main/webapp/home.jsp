@@ -40,10 +40,6 @@
     </div>
 </div>
 <c:import url="jspinclude/scripts.jsp" />
-<c:import url="jspinclude/firebasePersist.jsp"/>
-<c:import url="jspinclude/firebaseLogin.jsp"/>
-
-
 </body>
 
 </html>

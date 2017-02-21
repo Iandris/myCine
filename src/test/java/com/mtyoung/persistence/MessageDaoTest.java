@@ -5,7 +5,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -20,8 +19,7 @@ public class MessageDaoTest {
     MessageDao dao;
     Address mail;
     AddressDao mailDao;
-    UserRole role;
-    UserRoleDao roleDao;
+
 
     UserDao userDao;
     User bob1;
@@ -33,7 +31,6 @@ public class MessageDaoTest {
     int newUser3 = 0;
     int newMail = 0;
     int newMessage = 0;
-    int newRole = 0;
 
     @Before
     public void setup() {
@@ -42,10 +39,6 @@ public class MessageDaoTest {
         mailDao = new AddressDao();
         userDao = new UserDao();
 
-        role = new UserRole();
-        roleDao = new UserRoleDao();
-        role.setDescription("CHIPS n SALSA");
-        newRole = roleDao.addRole(role);
 
         mail = new Address();
         mail.setStreetaddress1("605 Park St");
@@ -58,37 +51,34 @@ public class MessageDaoTest {
         bob1 = new User();
         bob1.setFname("Mike");
         bob1.setLname("Young");
-        bob1.setRoleid(newRole);
         bob1.setAddressid(newMail);
-        bob1.setEmail("mtyoung@madisoncollege.edu");
-        bob1.setCellnumber("6083334717");
+        bob1.setUser_name("bob11@email.com");
+        bob1.setCellnumber("0000000008");
         bob1.setReminderthreshold(1);
         bob1.setDefaultrentalperiod(3);
-        bob1.setFirebaseUID("temporary string1");
+        bob1.setPassword("Password");
         newUser1 = userDao.addUser(bob1);
 
         bob2 = new User();
         bob2.setFname("John");
         bob2.setLname("Smith");
-        bob2.setRoleid(newRole);
         bob2.setAddressid(newMail);
-        bob2.setEmail("mail@gmail.com");
-        bob2.setCellnumber("123456789");
+        bob2.setUser_name("bob12@email.com");
+        bob2.setCellnumber("0000000007");
         bob2.setReminderthreshold(1555);
         bob2.setDefaultrentalperiod(39);
-        bob2.setFirebaseUID("temporary string2");
+        bob2.setPassword("Password");
         newUser2 = userDao.addUser(bob2);
 
         bob3 = new User();
         bob3.setFname("Dave");
         bob3.setLname("Navarro");
-        bob3.setRoleid(newRole);
         bob3.setAddressid(newMail);
-        bob3.setEmail("mail@yahoo.com");
-        bob3.setCellnumber("987654321");
+        bob3.setUser_name("bob13@email.com");
+        bob3.setCellnumber("0000000006");
         bob3.setReminderthreshold(51123);
         bob3.setDefaultrentalperiod(123123);
-        bob3.setFirebaseUID("temporary string3");
+        bob3.setPassword("Password");
         newUser3 = userDao.addUser(bob3);
 
         message.setSenderid(bob1.getUuid());
@@ -117,10 +107,6 @@ public class MessageDaoTest {
 
         if (newMail != 0) {
             mailDao.deleteAddress(newMail);
-        }
-
-        if (newRole != 0) {
-            roleDao.deleteRole(newRole);
         }
     }
 

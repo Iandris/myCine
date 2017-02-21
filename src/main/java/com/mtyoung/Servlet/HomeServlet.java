@@ -24,6 +24,6 @@ public class HomeServlet  extends HttpServlet {
             throws ServletException, IOException {
 
         getServletContext().getRequestDispatcher("/home.jsp").forward(request, response);
-
+        //response.sendRedirect("/home.jsp");
     }
 }

@@ -3,7 +3,7 @@
         firebase.auth().onAuthStateChanged(function (user) {
             if (user) {
                 var displayName = user.displayName;
-                var email = user.email;
+                var user_name = user.user_name;
                 var emailVerified = user.emailVerified;
                 var photoURL = user.photoURL;
                 var uid = user.uid;
@@ -12,7 +12,7 @@
                 user.getToken().then(function(accessToken) {
                     document.getElementById('userinfo').textContent = JSON.stringify({
                         displayName: displayName,
-                        email: email,
+                        user_name: user_name,
                         emailVerified: emailVerified,
                         photoURL: photoURL,
                         uid: uid,
@@ -21,10 +21,10 @@
                     }, null, ' ');
                 });
                 window.user = user;
-                document.getElementById('email').value = email;
+                document.getElementById('user_name').value = user_name;
                 document.getElementById('uid').value = uid;
             } else {
-                window.location = 'index.jsp';
+                window.location = '../index.jsp';
             }
         }, function (error) {
             console.log(error);

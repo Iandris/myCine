@@ -14,8 +14,7 @@ import static org.junit.Assert.*;
  * Created by Mike on 2/15/17.
  */
 public class UserMovieDaoTest {
-    UserRoleDao roleDao;
-    UserRole role;
+
     Address mail;
     AddressDao mailDao;
     User bob1;
@@ -35,7 +34,6 @@ public class UserMovieDaoTest {
     UserMovieLink link;
     UserMovieDao dao;
 
-    int newRole = 0;
     int newDir = 0;
     int newGen = 0;
     int newForm = 0;
@@ -59,34 +57,28 @@ public class UserMovieDaoTest {
         mail.setZipcode(53098);
         newMail = mailDao.addAddress(mail);
 
-        role = new UserRole();
-        roleDao = new UserRoleDao();
-        role.setDescription("CHIPS n SALSA");
-        newRole = roleDao.addRole(role);
 
         userDao = new UserDao();
         bob1 = new User();
         bob1.setFname("Mike");
         bob1.setLname("Young");
-        bob1.setRoleid(newRole);
         bob1.setAddressid(newMail);
-        bob1.setEmail("mtyoung@madisoncollege.edu");
-        bob1.setCellnumber("6083334717");
+        bob1.setUser_name("bob5@email.com");
+        bob1.setCellnumber("6666666666");
         bob1.setReminderthreshold(1);
         bob1.setDefaultrentalperiod(3);
-        bob1.setFirebaseUID("temporary string1");
+        bob1.setPassword("Password");
         newUser1 = userDao.addUser(bob1);
 
         bob2 = new User();
         bob2.setFname("Michael");
         bob2.setLname("Smith");
-        bob2.setRoleid(newRole);
         bob2.setAddressid(newMail);
-        bob2.setEmail("myoung86@charter.net");
-        bob2.setCellnumber("9202855911");
+        bob2.setUser_name("bob6@email.com");
+        bob2.setCellnumber("5555555555");
         bob2.setReminderthreshold(2);
         bob2.setDefaultrentalperiod(5);
-        bob2.setFirebaseUID("temporary string2");
+        bob2.setPassword("Password");
         newUser2 = userDao.addUser(bob2);
 
         std = new Studio();
@@ -154,10 +146,6 @@ public class UserMovieDaoTest {
 
         if (newUser1 != 0) {
             userDao.deleteUser(newUser1);
-        }
-
-        if (newRole != 0) {
-            roleDao.deleteRole(newRole);
         }
 
         if (newMail != 0) {

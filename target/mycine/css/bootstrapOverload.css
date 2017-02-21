@@ -89,14 +89,14 @@ body {
 }
 
 .regform {
-    background-image: url(../images/front-page-rebel-seed-films.jpg);
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: top center !important;
-    background-repeat: no-repeat !important;
-    background-attachment: fixed;
-}
+     background-image: url(../images/front-page-rebel-seed-films.jpg);
+     -moz-background-size: cover;
+     -webkit-background-size: cover;
+     background-size: cover;
+     background-position: top center !important;
+     background-repeat: no-repeat !important;
+     background-attachment: fixed;
+ }
 
 .schpeal {
     background-image: url(../images/maxresdefault.jpg);
