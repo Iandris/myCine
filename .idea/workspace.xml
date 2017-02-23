@@ -2,293 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f46ccfb-b6a2-4f76-a242-8954c9e8b758" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_annotations_api_6_0_16.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_catalina_6_0_16.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_juli_6_0_16.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_servlet_api_6_0_16.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/useradmin.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/shiro.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 10.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 14.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 15.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 16.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 17.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 18.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 2.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 3.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 4.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 5.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 6.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 8.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom 9.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Actor 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Actor 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Actor 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Address 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Address 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Address 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Address 5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Address 6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Address 7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Address 8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Director 10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Director 11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Director 12.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Director 13.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Director 14.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Director 15.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Director 16.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Director 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Director 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Director 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Director 5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Director 6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Director 7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Director 8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Director 9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Format 10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Format 11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Format 12.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Format 13.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Format 14.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Format 15.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Format 16.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Format 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Format 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Format 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Format 5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Format 6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Format 7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Format 8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Format 9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Genre 10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Genre 11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Genre 13.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Genre 14.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Genre 15.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Genre 16.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Genre 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Genre 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Genre 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Genre 5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Genre 6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Genre 7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Message 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Message 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Message 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Message 8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Movie 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Movie 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Movie 6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Movie 7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Movie 8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/MovieCastLink 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/MovieCastLink 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/MovieCastLink 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/MovieCastLink 5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/MovieCastLink 6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/MovieCastLink 7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/MovieCastLink 8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Rental 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Rental 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Rental 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Rental 5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Rental 6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Rental 7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Rental 8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/State 10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/State 11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/State 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/State 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/State 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/State 5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/State 6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/State 7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/State 8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/State 9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Studio 10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Studio 11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Studio 12.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Studio 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Studio 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Studio 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Studio 5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Studio 6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Studio 7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Studio 8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Studio 9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User 5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User 6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User 7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User 8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserFriends 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserFriends 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserFriends 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserFriends 5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserFriends 6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserFriends 7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserFriends 8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserMovieLink 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserMovieLink 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserMovieLink 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserMovieLink 5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserMovieLink 6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserMovieLink 7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserMovieLink 8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserRole 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserRole 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserRole 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserRole 5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserRole 6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserRole 7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserRole 8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Wishlist 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Wishlist 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Wishlist 6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Wishlist 7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Wishlist 8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/ActorDao 10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/ActorDao 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/ActorDao 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/ActorDao 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/ActorDao 5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/ActorDao 6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/ActorDao 7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/ActorDao 8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/ActorDao 9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/AddressDao 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/AddressDao 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/AddressDao 6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/AddressDao 7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/AddressDao 8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/DirectorDao 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/DirectorDao 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/DirectorDao 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/FormatDao 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/FormatDao 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/GenreDao 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/GenreDao 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/GenreDao 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/MessageDao 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/MessageDao 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/MessageDao 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/MovieCastDao 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/MovieCastDao 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/MovieCastDao 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/MovieDao 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/MovieDao 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/RentalDao 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/RentalDao 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/RentalDao 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/SessionFactoryProvider 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/SessionFactoryProvider 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/SessionFactoryProvider 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/StateDao 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/StateDao 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/StateDao 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/StudioDao 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/StudioDao 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/StudioDao 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/UserDao 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/UserDao 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/UserDao 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/UserFriendDao 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/UserFriendDao 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/UserMovieDao 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/UserRoleDao 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/UserRoleDao 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/UserRoleDao 4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/WishlistDao 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/util/LocalDateAttributeConverter 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/util/LocalDateTimeAttributeConverter 2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/util/LocalDateTimeAttributeConverter 3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/database 2.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/database 3.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/database 4.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/database 5.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/database 6.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/hibernate.cfg 2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/hibernate.cfg 3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/hibernate.cfg 6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/images/MyCine 2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/images/MyCine.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/log4j 2.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/log4j 3.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/log4j 4.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/shiro.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/images/MyCine.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/antlr-2.7.7 2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/commons-beanutils-1.8.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/dom4j-1.6.1 2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/hibernate-commons-annotations-4.0.5.Final 2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/hibernate-core-4.3.11.Final 2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final 2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/jandex-1.1.0.Final 2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/javaee-web-api-7.0 2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/javassist-3.18.1-GA 2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/javax.el-api-3.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/javax.servlet-api-3.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/javax.servlet.jsp-api-2.3.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/jboss-logging-3.1.3.GA 2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1 2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final 2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/jstl-1.2 2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/log4j-1.2.17 2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/mysql-connector-java-5.1.39 2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/shiro-core-1.3.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/shiro-web-1.3.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/slf4j-api-1.6.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/tomcat-servlet-api-8.5.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/lib/xml-apis-1.0.b2 2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/css/registrationform.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/firebase.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/head 2.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/registrationform.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/validation.jsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/EnrollServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/EnrollServlet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/UserAdminServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/secure/admin/useradmin.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/useradmin.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/Home.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/useradmin.jsp" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/secure/auth/home.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/HomeServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/HomeServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/User.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine.war" afterPath="$PROJECT_DIR$/target/mycine.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/EnrollServlet.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/EnrollServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/HomeServlet.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/HomeServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/mtyoung/persistence/UserDAOTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/mtyoung/persistence/UserDAOTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/mycine_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/mycine_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/HibernateDemo.log" afterPath="$PROJECT_DIR$/logs/HibernateDemo.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mycine.iml" afterPath="$PROJECT_DIR$/mycine.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/EnrollServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/EnrollServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/HomeServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/HomeServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserDaoTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jspinclude/navBarNoLogin.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jspinclude/navBarNoLogin.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jspinclude/navigationBar.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jspinclude/navigationBar.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom.properties" afterPath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom.xml" afterPath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/css/bootstrapOverload.css" afterPath="$PROJECT_DIR$/target/mycine/css/bootstrapOverload.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/index.jsp" afterPath="$PROJECT_DIR$/target/mycine/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/navBarNoLogin.jsp" afterPath="$PROJECT_DIR$/target/mycine/jspinclude/navBarNoLogin.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/navigationBar.jsp" afterPath="$PROJECT_DIR$/target/mycine/jspinclude/navigationBar.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/scripts.jsp" afterPath="$PROJECT_DIR$/target/mycine/jspinclude/scripts.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/login.jsp" afterPath="$PROJECT_DIR$/target/mycine/login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.ActorDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.ActorDaoTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.AddressDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.AddressDaoTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.DirectorDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.DirectorDaoTest.xml" />
@@ -305,7 +49,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.UserMovieDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.UserMovieDaoTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.UserRoleDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.UserRoleDaoTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.WishlistDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.WishlistDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.util.LocalDateAttributeConverterTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.util.LocalDateAttributeConverterTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.ActorDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.ActorDaoTest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.AddressDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.AddressDaoTest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.DirectorDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.DirectorDaoTest.txt" />
@@ -377,11 +120,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="context.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
+      <file leaf-file-name="useradmin.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/secure/admin/useradmin.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            <state relative-caret-position="270">
+              <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/entity/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-254">
+              <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -394,8 +147,8 @@
       <list>
         <option value="JUnit4 Test Class" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -430,9 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/firebase.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/head.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/Registration.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/StateDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/Home.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/IndexServlet.java" />
@@ -463,24 +213,27 @@
         <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/scriptssecure.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/secure/user/home.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/registration.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/navBarNoLogin.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/LogoutServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/navigationBar.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/User.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/HomeServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/EnrollServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/secure/useradmin.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/target/mycine/META-INF/context.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/secure/useradmin.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/navBarNoLogin.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/HomeServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/navigationBar.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/UserAdminServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/secure/auth/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/secure/admin/useradmin.jsp" />
       </list>
     </option>
   </component>
@@ -494,8 +247,8 @@
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
     <option name="FILTER_INFO" value="false" />
-    <option name="FILTER_DEBUG" value="false" />
-    <option name="CUSTOM_FILTER" value="" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" value="found" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -564,6 +317,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="1" />
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="798" />
@@ -586,8 +340,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -615,6 +367,62 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtyoung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtyoung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="persistence" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -688,7 +496,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
+              <option name="myItemId" value="secure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -710,7 +522,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="secure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jspinclude" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -735,10 +599,46 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtyoung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtyoung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -761,20 +661,25 @@
       <recent name="com.mtyoung.util" />
       <recent name="com.mtyoung.persistence" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/secure/user" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/secure" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.mtyoung.util" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/images" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/secure/auth" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/secure" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/secure/admin" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/secure/images" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/secure/css" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mtyoung.util" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/secure/auth" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/secure/admin" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/secure" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/secure/user" />
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.tomee+">
@@ -1500,10 +1405,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Maven.mycine [package]" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.UserDaoTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.UserDaoTest.addUser" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.com.mtyoung.persistence in myCine" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UserDaoTest.addUser" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.com.mtyoung.persistence in myCine" />
+        <item index="2" class="java.lang.String" itemvalue="Maven.mycine [package]" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UserDaoTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.com.mtyoung in myCine" />
       </list>
     </recent_temporary>
@@ -1546,20 +1451,18 @@
       <workItem from="1487716618338" duration="9782000" />
       <workItem from="1487776180446" duration="3590000" />
       <workItem from="1487811006046" duration="5958000" />
+      <workItem from="1487861119537" duration="10323000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserDaoTest - 2017.02.21 at 14h 16m 17s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest - 2017.02.21 at 15h 48m 25s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserDaoTest - 2017.02.21 at 16h 40m 58s.xml">
       <configuration name="UserDaoTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="UserDaoTest_addUser - 2017.02.21 at 15h 50m 09s.xml">
+      <configuration name="UserDaoTest.addUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_addUser - 2017.02.23 at 11h 47m 51s.xml">
       <configuration name="UserDaoTest.addUser" configurationId="JUnit" />
     </history-entry>
     <history-entry file="com_mtyoung_persistence_in_myCine - 2017.02.21 at 12h 55m 33s.xml">
@@ -1580,12 +1483,15 @@
     <history-entry file="com_mtyoung_persistence_in_myCine - 2017.02.21 at 13h 52m 23s.xml">
       <configuration name="com.mtyoung.persistence in myCine" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="com_mtyoung_persistence_in_myCine - 2017.02.23 at 11h 46m 57s.xml">
+      <configuration name="com.mtyoung.persistence in myCine" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206986000" />
+    <option name="totallyTimeSpent" value="217309000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="798" extended-state="6" />
+    <frame x="1" y="22" width="1440" height="798" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1604,17 +1510,19 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6373938" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30736545" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16288953" sideWeight="0.4828326" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.49713877" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46458924" sideWeight="0.4828326" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22946176" sideWeight="0.49713877" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3018598" sideWeight="0.6376812" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30615166" sideWeight="0.6376812" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29041487" sideWeight="0.36231884" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1623,8 +1531,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.56795424" sideWeight="0.7737003" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1691,43 +1597,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/validation.jsp" />
-    <entry file="file://$PROJECT_DIR$/target/mycine/css/bootstrapOverload.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="111" column="26" lean-forward="false" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/mycine/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/ActorDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Rental.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/loginModal.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/head.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1741,13 +1610,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Actor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1837,60 +1699,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RegistrationCheckServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RegistrationServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/LogoutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <element signature="method#doGet#0;class#LogoutServlet#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="77" column="47" lean-forward="false" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/navigationBar.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/navBarNoLogin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1898,24 +1710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <element signature="method#doGet#0;class#IndexServlet#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/EnrollServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="66" column="46" lean-forward="false" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="106" column="47" lean-forward="true" selection-start-line="106" selection-start-column="47" selection-end-line="106" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -1934,26 +1728,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/HomeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1964,27 +1742,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/useradmin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/mycine/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1033">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1992,7 +1753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2008,7 +1768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2020,23 +1779,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+    <entry file="file://$PROJECT_DIR$/target/mycine/META-INF/context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="30" column="71" lean-forward="false" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="71" />
+        <state relative-caret-position="45">
+          <caret line="3" column="57" lean-forward="false" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/LogoutServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="58" column="37" lean-forward="false" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="90">
+          <caret line="18" column="28" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="method#doGet#0;class#LogoutServlet#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/secure/admin/css/bootstrapOverload.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2044,18 +1817,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/mycine/META-INF/context.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/secure/auth/css/bootstrapOverload.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="57" lean-forward="false" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/secure/css/bootstrapOverload.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/navBarNoLogin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="53" lean-forward="false" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/HomeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="32" column="63" lean-forward="false" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/EnrollServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="66" column="46" lean-forward="false" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/DirectorDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-253">
+          <caret line="33" column="1" lean-forward="false" selection-start-line="33" selection-start-column="1" selection-end-line="36" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RegistrationServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="42" column="28" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/UserAdminServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-179">
+          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#doGet#0;class#UserAdminServlet#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/navigationBar.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="52" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="57" lean-forward="false" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+          <folding>
+            <element signature="e#953#1040#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Actor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="77" column="47" lean-forward="false" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/secure/auth/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-254">
+          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/secure/admin/useradmin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
           <folding />
         </state>
       </provider>

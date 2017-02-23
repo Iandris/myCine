@@ -4,6 +4,7 @@ com/mtyoung/entity/UserFriends.class
 com/mtyoung/Servlet/EnrollServlet.class
 com/mtyoung/Servlet/LogoutServlet.class
 com/mtyoung/util/LocalDateAttributeConverter.class
+com/mtyoung/Servlet/UserAdminServlet.class
 com/mtyoung/entity/Format.class
 com/mtyoung/util/LocalDateTimeAttributeConverter.class
 com/mtyoung/entity/Director.class

@@ -30,7 +30,7 @@ public class HomeServlet  extends HttpServlet {
 
         }
 
-        getServletContext().getRequestDispatcher("/home.jsp").forward(request, response);
+        getServletContext().getRequestDispatcher("/secure/auth/home.jsp").forward(request, response);
         //response.sendRedirect("/home.jsp");
     }
 }

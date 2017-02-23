@@ -17,6 +17,7 @@
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/Message.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/IndexServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/StateDao.java
+/Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/UserAdminServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/DirectorDao.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/util/LocalDateAttributeConverter.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/GenreDao.java

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="com.mtyoung.persistence.FormatDaoTest" time="0.035" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="com.mtyoung.persistence.FormatDaoTest" time="0.05" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2016.3.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -63,9 +63,9 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.mtyoung.persistence.FormatDaoTest" name="updateFormat" time="0.01"/>
-  <testcase classname="com.mtyoung.persistence.FormatDaoTest" name="deleteFormat" time="0.006"/>
-  <testcase classname="com.mtyoung.persistence.FormatDaoTest" name="addFormat" time="0.006"/>
-  <testcase classname="com.mtyoung.persistence.FormatDaoTest" name="getAllFormats" time="0.006"/>
-  <testcase classname="com.mtyoung.persistence.FormatDaoTest" name="getFormat" time="0.007"/>
+  <testcase classname="com.mtyoung.persistence.FormatDaoTest" name="updateFormat" time="0.016"/>
+  <testcase classname="com.mtyoung.persistence.FormatDaoTest" name="deleteFormat" time="0.009"/>
+  <testcase classname="com.mtyoung.persistence.FormatDaoTest" name="addFormat" time="0.012"/>
+  <testcase classname="com.mtyoung.persistence.FormatDaoTest" name="getAllFormats" time="0.008"/>
+  <testcase classname="com.mtyoung.persistence.FormatDaoTest" name="getFormat" time="0.005"/>
 </testsuite>

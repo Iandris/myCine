@@ -28,7 +28,7 @@ public class User {
   private int id_address;
 
   @Column(name = "cell_number", unique = true)
-  private String cell_number;
+  private String cellnumber;
 
   @Column(name = "reminderThreshold")
   private int reminderthreshold;
@@ -76,11 +76,11 @@ public class User {
   }
 
   public String getCellnumber() {
-    return cell_number;
+    return cellnumber;
   }
 
   public void setCellnumber(String cellnumber) {
-    this.cell_number = cellnumber;
+    this.cellnumber = cellnumber;
   }
 
   public int getReminderthreshold() {

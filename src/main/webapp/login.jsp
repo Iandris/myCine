@@ -19,7 +19,6 @@
                         <strong style="text-align:center;">Please Enter Your Email/Password</strong>
                     </div>
                     <div class="panel-body">
-                        <body class="regform">
                         <FORM ACTION="j_security_check" METHOD="POST">
                             ${status}
                             <div class="form-group input-group">
