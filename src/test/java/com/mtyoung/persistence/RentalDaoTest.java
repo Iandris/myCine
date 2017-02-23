@@ -66,7 +66,7 @@ public class RentalDaoTest {
         bob1 = new User();
         bob1.setFname("Mike");
         bob1.setLname("Young");
-        bob1.setAddressid(newMail);
+        bob1.setAddress(newMail);
         bob1.setUser_name("bob9@email.com");
         bob1.setCellnumber("1111111111");
         bob1.setReminderthreshold(1);
@@ -77,7 +77,7 @@ public class RentalDaoTest {
         bob2 = new User();
         bob2.setFname("Michael");
         bob2.setLname("Smith");
-        bob2.setAddressid(newMail);
+        bob2.setAddress(newMail);
         bob2.setUser_name("bob10@email.com");
         bob2.setCellnumber("0000000009");
         bob2.setReminderthreshold(2);

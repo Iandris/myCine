@@ -1,7 +1,6 @@
 package com.mtyoung.persistence;
 
 import com.mtyoung.entity.Address;
-import org.apache.catalina.realm.RealmBase;
 import org.junit.After;
 import org.junit.Test;
 import com.mtyoung.entity.User;
@@ -41,7 +40,7 @@ public class UserDaoTest {
         bob = new User();
         bob.setFname("Mike");
         bob.setLname("Young");
-        bob.setAddressid(mailDao.getAddress(newMail).getIdaddresses());
+        bob.setAddress(mailDao.getAddress(newMail).getIdaddresses());
         bob.setUser_name("bob@email.com");
         bob.setCellnumber("0000000000");
         bob.setReminderthreshold(1);
@@ -82,7 +81,7 @@ public class UserDaoTest {
         assertEquals("user ID not returned correctly", bob.getUuid(), dao.getUserByEmail(bob.getUser_name()).getUuid());
         assertEquals("first not returned correctly", bob.getFname(), dao.getUserByEmail(bob.getUser_name()).getFname());
         assertEquals("last not returned correctly", bob.getLname(), dao.getUserByEmail(bob.getUser_name()).getLname());
-        assertEquals("incorrect address returned", bob.getAddressid(), dao.getUserByEmail(bob.getUser_name()).getAddressid());
+        assertEquals("incorrect address returned", bob.getAddress(), dao.getUserByEmail(bob.getUser_name()).getAddress());
         assertEquals("incorrect Email returned", bob.getUser_name(), dao.getUserByEmail(bob.getUser_name()).getUser_name());
         assertEquals("incorrect cell returned", bob.getCellnumber(), dao.getUserByEmail(bob.getUser_name()).getCellnumber());
         assertEquals("incorrect reminder threshold returned", bob.getReminderthreshold(), dao.getUserByEmail(bob.getUser_name()).getReminderthreshold());
@@ -98,7 +97,7 @@ public class UserDaoTest {
         assertEquals("user ID not returned correctly", bob.getUuid(), dao.getUser(newUser).getUuid());
         assertEquals("first not returned correctly", bob.getFname(), dao.getUser(newUser).getFname());
         assertEquals("last not returned correctly", bob.getLname(), dao.getUser(newUser).getLname());
-        assertEquals("incorrect address returned", bob.getAddressid(), dao.getUser(newUser).getAddressid());
+        assertEquals("incorrect address returned", bob.getAddress(), dao.getUser(newUser).getAddress());
         assertEquals("incorrect Email returned", bob.getUser_name(), dao.getUser(newUser).getUser_name());
         assertEquals("incorrect cell returned", bob.getCellnumber(), dao.getUser(newUser).getCellnumber());
         assertEquals("incorrect reminder threshold returned", bob.getReminderthreshold(), dao.getUser(newUser).getReminderthreshold());
@@ -113,7 +112,7 @@ public class UserDaoTest {
         assertEquals("user ID not returned correctly", bob.getUuid(), dao.getUser(newUser).getUuid());
         assertEquals("first not entered correctly", bob.getFname(), dao.getUser(newUser).getFname());
         assertEquals("last not entered correctly", bob.getLname(), dao.getUser(newUser).getLname());
-        assertEquals("incorrect address returned", bob.getAddressid(), dao.getUser(newUser).getAddressid());
+        assertEquals("incorrect address returned", bob.getAddress(), dao.getUser(newUser).getAddress());
         assertEquals("incorrect Email returned", bob.getUser_name(), dao.getUser(newUser).getUser_name());
         assertEquals("incorrect cell returned", bob.getCellnumber(), dao.getUser(newUser).getCellnumber());
         assertEquals("incorrect reminder threshold returned", bob.getReminderthreshold(), dao.getUser(newUser).getReminderthreshold());
@@ -141,7 +140,7 @@ public class UserDaoTest {
         newUser = dao.addUser(bob);
         bob.setFname("Michael");
         bob.setLname("Smith");
-        bob.setAddressid(mailDao.getAddress(newMail2).getIdaddresses());
+        bob.setAddress(mailDao.getAddress(newMail2).getIdaddresses());
         bob.setUser_name("bob2@email.com");
         bob.setCellnumber("9999999999");
         bob.setReminderthreshold(2);
@@ -151,7 +150,7 @@ public class UserDaoTest {
         dao.updateUser(bob);
         assertEquals("first not updated correctly", bob.getFname(), dao.getUser(newUser).getFname());
         assertEquals("last not updated correctly", bob.getLname(), dao.getUser(newUser).getLname());
-        assertEquals("updated address not returned", bob.getAddressid(), dao.getUser(newUser).getAddressid());
+        assertEquals("updated address not returned", bob.getAddress(), dao.getUser(newUser).getAddress());
         assertEquals("updated Email not returned", bob.getUser_name(), dao.getUser(newUser).getUser_name());
         assertEquals("updated cell not returned", bob.getCellnumber(), dao.getUser(newUser).getCellnumber());
         assertEquals("updated reminder threshold not returned", bob.getReminderthreshold(), dao.getUser(newUser).getReminderthreshold());

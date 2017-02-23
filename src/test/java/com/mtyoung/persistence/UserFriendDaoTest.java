@@ -51,7 +51,7 @@ public class UserFriendDaoTest {
         bob1 = new User();
         bob1.setFname("Mike");
         bob1.setLname("Young");
-        bob1.setAddressid(mailDao.getAddress(newMail).getIdaddresses());
+        bob1.setAddress(mailDao.getAddress(newMail).getIdaddresses());
         bob1.setUser_name("bob7@email.com");
         bob1.setCellnumber("4444444444");
         bob1.setReminderthreshold(1);
@@ -62,7 +62,7 @@ public class UserFriendDaoTest {
         bob2 = new User();
         bob2.setFname("John");
         bob2.setLname("Smith");
-        bob2.setAddressid(mailDao.getAddress(newMail).getIdaddresses());
+        bob2.setAddress(mailDao.getAddress(newMail).getIdaddresses());
         bob2.setUser_name("bob8@email.com");
         bob2.setCellnumber("3333333333");
         bob2.setReminderthreshold(1555);
@@ -73,7 +73,7 @@ public class UserFriendDaoTest {
         bob3 = new User();
         bob3.setFname("Dave");
         bob3.setLname("Navarro");
-        bob3.setAddressid(mailDao.getAddress(newMail).getIdaddresses());
+        bob3.setAddress(mailDao.getAddress(newMail).getIdaddresses());
         bob3.setUser_name("bob9@email.com");
         bob3.setCellnumber("2222222222");
         bob3.setReminderthreshold(51123);

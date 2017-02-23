@@ -62,7 +62,7 @@ public class UserMovieDaoTest {
         bob1 = new User();
         bob1.setFname("Mike");
         bob1.setLname("Young");
-        bob1.setAddressid(newMail);
+        bob1.setAddress(newMail);
         bob1.setUser_name("bob5@email.com");
         bob1.setCellnumber("6666666666");
         bob1.setReminderthreshold(1);
@@ -73,7 +73,7 @@ public class UserMovieDaoTest {
         bob2 = new User();
         bob2.setFname("Michael");
         bob2.setLname("Smith");
-        bob2.setAddressid(newMail);
+        bob2.setAddress(newMail);
         bob2.setUser_name("bob6@email.com");
         bob2.setCellnumber("5555555555");
         bob2.setReminderthreshold(2);

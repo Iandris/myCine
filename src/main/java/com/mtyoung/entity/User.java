@@ -25,7 +25,7 @@ public class User {
   private String lname;
 
   @Column(name = "id_address")
-  private int id_address;
+  private int address;
 
   @Column(name = "cell_number", unique = true)
   private String cellnumber;
@@ -59,12 +59,12 @@ public class User {
     this.lname = lname;
   }
 
-  public int getAddressid() {
-    return id_address;
+  public int getAddress() {
+    return address;
   }
 
-  public void setAddressid(int addressid) {
-    this.id_address = addressid;
+  public void setAddress(int addressid) {
+    this.address = addressid;
   }
 
   public String getUser_name() {

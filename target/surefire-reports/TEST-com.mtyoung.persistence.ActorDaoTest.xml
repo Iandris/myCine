@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="com.mtyoung.persistence.ActorDaoTest" time="1.922" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="com.mtyoung.persistence.ActorDaoTest" time="1.673" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2016.3.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -63,9 +63,9 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.mtyoung.persistence.ActorDaoTest" name="addActor" time="1.853"/>
-  <testcase classname="com.mtyoung.persistence.ActorDaoTest" name="deleteActor" time="0.013"/>
-  <testcase classname="com.mtyoung.persistence.ActorDaoTest" name="getAllMovies" time="0.021"/>
-  <testcase classname="com.mtyoung.persistence.ActorDaoTest" name="updateActor" time="0.02"/>
-  <testcase classname="com.mtyoung.persistence.ActorDaoTest" name="getActor" time="0.015"/>
+  <testcase classname="com.mtyoung.persistence.ActorDaoTest" name="addActor" time="1.598"/>
+  <testcase classname="com.mtyoung.persistence.ActorDaoTest" name="deleteActor" time="0.015"/>
+  <testcase classname="com.mtyoung.persistence.ActorDaoTest" name="getAllMovies" time="0.025"/>
+  <testcase classname="com.mtyoung.persistence.ActorDaoTest" name="updateActor" time="0.021"/>
+  <testcase classname="com.mtyoung.persistence.ActorDaoTest" name="getActor" time="0.014"/>
 </testsuite>

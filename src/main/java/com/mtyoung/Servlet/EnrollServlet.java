@@ -13,7 +13,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import java.io.IOException;
 
@@ -50,7 +49,7 @@ public class EnrollServlet  extends HttpServlet {
 
         newUser.setFname(request.getParameter("firstname"));
         newUser.setLname(request.getParameter("lastname"));
-        newUser.setAddressid(newaddr);
+        newUser.setAddress(newaddr);
         newUser.setUser_name(request.getParameter("user_name"));
         newUser.setCellnumber(request.getParameter("cellnumber").replace(".","").replace("-","").replace("(","").replace(")","").replace(" ",""));
         newUser.setReminderthreshold(1);
@@ -68,7 +67,7 @@ public class EnrollServlet  extends HttpServlet {
             role.setuser_name(newUser.getUser_name());
             roleDao.addRole(role);
 
-            response.sendRedirect("/mycine/home");
+            response.sendRedirect("/mycine/secure/auth/home");
         } else {
             //getServletContext().getRequestDispatcher("/index").forward(request, response);
             response.sendRedirect("/mycine/index");
