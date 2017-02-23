@@ -2,74 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f46ccfb-b6a2-4f76-a242-8954c9e8b758" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/UserAdminUpdateServlet.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/EnrollServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/EnrollServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/UserAdminServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/UserAdminServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/User.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine.war" afterPath="$PROJECT_DIR$/target/mycine.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/EnrollServlet.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/EnrollServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/UserAdminServlet.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/UserAdminServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/mtyoung/persistence/MessageDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/mtyoung/persistence/MessageDaoTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/mtyoung/persistence/RentalDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/mtyoung/persistence/RentalDaoTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/mtyoung/persistence/UserDAOTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/mtyoung/persistence/UserDAOTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/mtyoung/persistence/UserFriendDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/mtyoung/persistence/UserFriendDaoTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/mtyoung/persistence/UserMovieDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/mtyoung/persistence/UserMovieDaoTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/mtyoung/persistence/WishlistDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/mtyoung/persistence/WishlistDaoTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/HibernateDemo.log" afterPath="$PROJECT_DIR$/logs/HibernateDemo.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/EnrollServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/EnrollServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/UserAdminServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/UserAdminServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/secure/admin/useradmin.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/secure/admin/useradmin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/MessageDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/MessageDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/RentalDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/RentalDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserFriendDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserFriendDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserMovieDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserMovieDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/WishlistDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/WishlistDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/css/bootstrapOverload.css" afterPath="$PROJECT_DIR$/target/mycine/css/bootstrapOverload.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/secure/admin/useradmin.jsp" afterPath="$PROJECT_DIR$/target/mycine/secure/admin/useradmin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.ActorDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.ActorDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.AddressDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.AddressDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.DirectorDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.DirectorDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.FormatDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.FormatDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.GenreDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.GenreDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.MessageDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.MessageDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.MovieCastDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.MovieCastDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.MovieDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.MovieDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.RentalDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.RentalDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.StateDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.StateDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.StudioDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.StudioDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.UserDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.UserDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.UserFriendDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.UserFriendDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.UserMovieDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.UserMovieDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.UserRoleDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.UserRoleDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.WishlistDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mtyoung.persistence.WishlistDaoTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.ActorDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.ActorDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.AddressDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.AddressDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.FormatDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.FormatDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.GenreDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.GenreDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.MessageDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.MessageDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.MovieCastDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.MovieCastDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.MovieDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.MovieDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.RentalDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.RentalDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.StateDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.StateDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.UserDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.UserDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.UserFriendDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.UserFriendDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.UserMovieDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.UserMovieDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.UserRoleDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.UserRoleDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.WishlistDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.persistence.WishlistDaoTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.util.LocalDateAttributeConverterTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mtyoung.util.LocalDateAttributeConverterTest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/kingtable.clear.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/kingtable.core.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/kingtable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jquery.kingtable.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -343,6 +279,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="798" />
@@ -1532,7 +1469,7 @@
       <workItem from="1487716618338" duration="9782000" />
       <workItem from="1487776180446" duration="3590000" />
       <workItem from="1487811006046" duration="5958000" />
-      <workItem from="1487861119537" duration="22086000" />
+      <workItem from="1487861119537" duration="22133000" />
     </task>
     <servers />
   </component>
@@ -1569,11 +1506,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229072000" />
+    <option name="totallyTimeSpent" value="229119000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="798" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="22" width="1440" height="798" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1596,7 +1533,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42917848" sideWeight="0.4828326" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42917848" sideWeight="0.4828326" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.49713877" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22946176" sideWeight="0.49713877" order="11" side_tool="false" content_ui="tabs" />
