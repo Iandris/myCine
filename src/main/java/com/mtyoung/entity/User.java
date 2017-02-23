@@ -1,6 +1,7 @@
 package com.mtyoung.entity;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.apache.catalina.realm.*;
 
 import javax.persistence.*;
 
@@ -103,6 +104,6 @@ public class User {
   }
 
   public void setPassword(String password) {
-    this.password = password;
+    this.password = RealmBase.Digest(password,"sha-256", "UTF-8");
   }
 }

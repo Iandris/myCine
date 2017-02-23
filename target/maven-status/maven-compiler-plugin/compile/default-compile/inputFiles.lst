@@ -12,6 +12,7 @@
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/Genre.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/WishlistDao.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/LoginServlet.java
+/Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/LogoutServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/MovieCastLink.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/Message.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/IndexServlet.java

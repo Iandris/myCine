@@ -23,6 +23,10 @@
           <element id="library" level="project" name="Maven: javax:javaee-web-api:7.0" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.39" />
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:catalina:6.0.16" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:servlet-api:6.0.16" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:juli:6.0.16" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:annotations-api:6.0.16" />
         </element>
       </element>
       <element id="directory" name="META-INF">

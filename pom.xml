@@ -58,6 +58,13 @@
       <version>1.2</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.apache.tomcat/catalina -->
+    <dependency>
+      <groupId>org.apache.tomcat</groupId>
+      <artifactId>catalina</artifactId>
+      <version>6.0.16</version>
+    </dependency>
+
   </dependencies>
   <build>
     <finalName>mycine</finalName>

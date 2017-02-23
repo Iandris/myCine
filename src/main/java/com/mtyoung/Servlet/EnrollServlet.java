@@ -3,14 +3,17 @@ package com.mtyoung.Servlet;
 
 import com.mtyoung.entity.Address;
 import com.mtyoung.entity.User;
+import com.mtyoung.entity.UserRole;
 import com.mtyoung.persistence.AddressDao;
 import com.mtyoung.persistence.UserDao;
+import com.mtyoung.persistence.UserRoleDao;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import java.io.IOException;
 
@@ -32,7 +35,6 @@ public class EnrollServlet  extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-
         AddressDao addrDao = new AddressDao();
         Address addr = new Address();
 
@@ -42,13 +44,14 @@ public class EnrollServlet  extends HttpServlet {
         addr.setState(Integer.parseInt(request.getParameter("state")));
         addr.setZipcode(Integer.parseInt(request.getParameter("zip")));
         int newaddr = addrDao.addAddress(addr);
+
         UserDao dao = new UserDao();
         User newUser = new User();
 
         newUser.setFname(request.getParameter("firstname"));
         newUser.setLname(request.getParameter("lastname"));
         newUser.setAddressid(newaddr);
-        newUser.setUser_name(request.getParameter("email"));
+        newUser.setUser_name(request.getParameter("user_name"));
         newUser.setCellnumber(request.getParameter("cellnumber").replace(".","").replace("-","").replace("(","").replace(")","").replace(" ",""));
         newUser.setReminderthreshold(1);
         newUser.setDefaultrentalperiod(3);
@@ -56,9 +59,16 @@ public class EnrollServlet  extends HttpServlet {
 
         int userID =  dao.addUser(newUser);
 
+
         if (userID != 0) {
-            //getServletContext().getRequestDispatcher("/home").forward(request, response);
-            response.sendRedirect("/mycine/secure/home");
+
+            UserRoleDao roleDao = new UserRoleDao();
+            UserRole role = new UserRole();
+            role.setRole_name("registered-user");
+            role.setuser_name(newUser.getUser_name());
+            roleDao.addRole(role);
+
+            response.sendRedirect("/mycine/home");
         } else {
             //getServletContext().getRequestDispatcher("/index").forward(request, response);
             response.sendRedirect("/mycine/index");

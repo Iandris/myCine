@@ -1,6 +1,7 @@
 package com.mtyoung.persistence;
 
 import com.mtyoung.entity.Address;
+import org.apache.catalina.realm.RealmBase;
 import org.junit.After;
 import org.junit.Test;
 import com.mtyoung.entity.User;

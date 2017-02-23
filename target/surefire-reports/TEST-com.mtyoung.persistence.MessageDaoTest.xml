@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="com.mtyoung.persistence.MessageDaoTest" time="0.367" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="com.mtyoung.persistence.MessageDaoTest" time="0.212" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2016.3.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -63,9 +63,9 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.mtyoung.persistence.MessageDaoTest" name="addMessage" time="0.16"/>
-  <testcase classname="com.mtyoung.persistence.MessageDaoTest" name="getAllMessages" time="0.051"/>
-  <testcase classname="com.mtyoung.persistence.MessageDaoTest" name="updateMessage" time="0.063"/>
-  <testcase classname="com.mtyoung.persistence.MessageDaoTest" name="deleteMessage" time="0.04"/>
-  <testcase classname="com.mtyoung.persistence.MessageDaoTest" name="getMessage" time="0.053"/>
+  <testcase classname="com.mtyoung.persistence.MessageDaoTest" name="addMessage" time="0.106"/>
+  <testcase classname="com.mtyoung.persistence.MessageDaoTest" name="getAllMessages" time="0.022"/>
+  <testcase classname="com.mtyoung.persistence.MessageDaoTest" name="updateMessage" time="0.032"/>
+  <testcase classname="com.mtyoung.persistence.MessageDaoTest" name="deleteMessage" time="0.025"/>
+  <testcase classname="com.mtyoung.persistence.MessageDaoTest" name="getMessage" time="0.027"/>
 </testsuite>

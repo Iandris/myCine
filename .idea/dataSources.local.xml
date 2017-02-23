@@ -11,5 +11,24 @@
       <user-name>root</user-name>
       <resolve-scope>myCine:</resolve-scope>
     </data-source>
+    <data-source name="myCine@localhost" uuid="762b1740-9133-47e5-b3fa-f611e7f61edf">
+      <database-info product="MySQL" version="5.7.17-0ubuntu0.16.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <resolve-scope>myCine:</resolve-scope>
+      <ssh-properties>
+        <enabled>true</enabled>
+        <proxy-host>52.14.69.207</proxy-host>
+        <proxy-port>22</proxy-port>
+        <secret-storage>master_key</secret-storage>
+        <user>ubuntu</user>
+        <use-password>false</use-password>
+        <private-key-path>$USER_HOME$/Dropbox/MyCine.pem</private-key-path>
+      </ssh-properties>
+    </data-source>
   </component>
 </project>

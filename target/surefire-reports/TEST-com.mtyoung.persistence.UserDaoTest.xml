@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="com.mtyoung.persistence.UserDaoTest" time="0.389" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="com.mtyoung.persistence.UserDaoTest" time="0.212" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2016.3.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -63,10 +63,10 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="addUser" time="0.239"/>
-  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="getUserByEmail" time="0.05"/>
-  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="getAllUsers" time="0.021"/>
-  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="updateUser" time="0.041"/>
-  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="getUser" time="0.025"/>
-  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="deleteUser" time="0.013"/>
+  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="addUser" time="0.125"/>
+  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="getUserByEmail" time="0.022"/>
+  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="getAllUsers" time="0.01"/>
+  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="updateUser" time="0.027"/>
+  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="getUser" time="0.019"/>
+  <testcase classname="com.mtyoung.persistence.UserDaoTest" name="deleteUser" time="0.009"/>
 </testsuite>

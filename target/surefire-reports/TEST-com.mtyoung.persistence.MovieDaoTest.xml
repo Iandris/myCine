@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="com.mtyoung.persistence.MovieDaoTest" time="0.298" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="com.mtyoung.persistence.MovieDaoTest" time="0.155" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2016.3.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -63,9 +63,9 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.mtyoung.persistence.MovieDaoTest" name="addMovie" time="0.048"/>
-  <testcase classname="com.mtyoung.persistence.MovieDaoTest" name="deleteMovie" time="0.041"/>
-  <testcase classname="com.mtyoung.persistence.MovieDaoTest" name="getAllMovies" time="0.048"/>
-  <testcase classname="com.mtyoung.persistence.MovieDaoTest" name="updateMovie" time="0.063"/>
-  <testcase classname="com.mtyoung.persistence.MovieDaoTest" name="getMovie" time="0.098"/>
+  <testcase classname="com.mtyoung.persistence.MovieDaoTest" name="addMovie" time="0.024"/>
+  <testcase classname="com.mtyoung.persistence.MovieDaoTest" name="deleteMovie" time="0.018"/>
+  <testcase classname="com.mtyoung.persistence.MovieDaoTest" name="getAllMovies" time="0.022"/>
+  <testcase classname="com.mtyoung.persistence.MovieDaoTest" name="updateMovie" time="0.044"/>
+  <testcase classname="com.mtyoung.persistence.MovieDaoTest" name="getMovie" time="0.047"/>
 </testsuite>
