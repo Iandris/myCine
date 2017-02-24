@@ -14,105 +14,138 @@
     <c:forEach var="user" items="${users}" >
         <c:set var="addr" value="${user.address}" />
         <c:set var="st" value="${addresses[addr - 1].state}" />
-        <h3>${user.lname}, ${user.fname}</h3>
+        <h3 style="text-decoration:underline;"><strong>${user.lname}, ${user.fname}</strong></h3>
         <form action="/mycine/secure/admin/updateuser">
+            <table width="100%">
+                <tr>
+                    <td colspan="3" width="25%">
+                            <label for="uuid" class="control-label">UserID:</label>
+                    </td>
+                    <td colspan="3" width="25%">
+                            <input id="uuid" name="uuid" width="100%" class="form-control" type="text" readonly="true" value="${user.uuid}" />
+                    </td>
+                    <td colspan="3" width="25%">
+                            <label for="username" class="control-label">Username/Email:</label>
+                    </td>
+                    <td colspan="3" width="25%">
+                            <input id="username" width="100%" class="form-control" name="user_name" type="text" value="${user.user_name}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" width="25%">
+
+                            <label for="cellphone" class="control-label">Cell Phone:</label>
+                    </td>
+                    <td colspan="3" width="25%">
+                            <input id="cellphone" width="100%" class="form-control" name="cellnumber" type="text" value="${user.cellnumber}" />
+
+                    </td>
+                    <td colspan="3" width="25%">
+
+                            <label for="password" class="control-label">Password:</label>
+                    </td>
+                    <td colspan="3" width="25%">
+                       <input id="password"  width="100%" class="form-control" name="password" type="password" value="${user.password}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" width="25%">
+
+                            <label for="firstname" class="control-label">First Name:</label>
+                    </td>
+                    <td colspan="3" width="25%">
+                            <input id="firstname" width="100%"  class="form-control" name="firstname" type="text" value="${user.fname}" />
+
+                    </td>
+                    <td colspan="3" width="25%">
+
+                            <label for="lastname" class="control-label">Last Name:</label>
+                    </td>
+                    <td colspan="3" width="25%">
+                            <input id="lastname" width="100%" class="form-control" name="lastname" type="text" value="${user.lname}" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" width="25%">
+
+                        <label for="reminder" class="control-label">Reminder:</label>
+                    </td>
+                    <td colspan="3" width="25%">
+                        <input id="reminder" width="100%" class="form-control" type="text" name="reminder" value="${user.reminderthreshold}" />
+
+                    </td>
+                    <td colspan="3" width="25%">
+
+                        <label for="rental" class="control-label">Default Rental:</label>
+                    </td>
+                    <td colspan="3" width="25%">
+                        <input id="rental" width="100%"  class="form-control" type="text" name="rental" value="${user.defaultrentalperiod}" />
+
+                    </td>
+                </tr>
+            </table>
+
+                <hr />
+                <h4 style="text-decoration:underline;"><strong>Address</strong></h4>
             <table>
                 <tr>
-                    <td>
-                        <div class="input-group">
-                            <label for="uuid" class="control-label">UserID:</label>
-                            <input id="uuid" name="uuid" class="form-control" type="text" readonly="true" value="${user.uuid}" />
-                        </div>
-                    </td>
-                    <td>
-                        <div class="input-group">
-                            <label for="username" class="control-label">Username/Email:</label>
-                            <input id="username" class="form-control" name="user_name" type="text" value="${user.user_name}" />
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="input-group">
-                            <label for="cellphone" class="control-label">Cell Phone:</label>
-                            <input id="cellphone" class="form-control" name="cellnumber" type="text" value="${user.cellnumber}" />
-                        </div>
-                    </td>
-                    <td>
-                        <div class="input-group">
-                            <label for="password" class="control-label">Password:</label>
-                            <input id="password" class="form-control" name="password" type="password" value="${user.password}" />
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="input-group">
-                            <label for="firstname" class="control-label">First Name:</label>
-                            <input id="firstname" class="form-control" name="firstname" type="text" value="${user.fname}" />
-                        </div>
-                    </td>
-                    <td>
-                        <div class="input-group">
-                            <label for="lastname" class="control-label">Last Name:</label>
-                            <input id="lastname" class="form-control" name="lastname" type="text" value="${user.lname}" />
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="input-group">
+                    <td colspan="3" width="25%">
+
                             <input type="text" hidden="true" name="addrid" value="${user.address}" />
                             <label for="address" class="control-label">Address Line 1:</label>
-                            <input id="address" class="form-control" type="text" name="address1" value="${addresses[addr -1].streetaddress1}" />
-                        </div>
                     </td>
-                    <td>
-                        <div class="input-group">
+                    <td colspan="3" width="25%">
+                            <input id="address" width="100%"  class="form-control" type="text" name="address1" value="${addresses[addr -1].streetaddress1}" />
+
+                    </td>
+                    <td colspan="3" width="25%">
+
                             <label for="address2" class="control-label">Address Line 2:</label>
-                            <input id="address2" class="form-control" name="address2" type="text" value="${addresses[addr -1].streetaddress2}" />
-                        </div>
+                    </td>
+                    <td colspan="3" width="25%">
+                            <input id="address2" width="100%"  class="form-control" name="address2" type="text" value="${addresses[addr -1].streetaddress2}" />
+
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <div class="input-group">
                             <label for="city" class="control-label">City:</label>
-                            <input id="city" class="form-control" name="city" type="text" value="${addresses[addr -1].city}" />
+                    </td>
+                    <td colspan="2">
+                            <input id="city" width="100%" class="form-control" name="city" type="text" value="${addresses[addr -1].city}" />
+
+                    </td>
+                    <td colspan="2">
+
                             <label for="state" class="control-label">State:</label>
+                    </td>
+                    <td colspan="2">
                             <select class="form-control" id="state" name="state">
                                 <c:set var="selectedState" value="${addresses[addr - 1].state}" />
                                 <option value="Select...">Select...</option> 
                                 <c:forEach var="state" items="${states}"> 
-                                    <option value="${state.idstate}" ${state.idstate ==  selectedState? 'selected="selected"' : ''}>${state.shortname}</option> 
+                                    <option value="${state.idstate}" ${state.idstate ==  selectedState? 'selected="selected"' : ''}>${state.longname}</option> 
                                 </c:forEach>
-
                             </select>
 
-                                <%--<input id="state" name="state" type="text" value="${states[st -1].longname}" />--%>
-                            <label for="zipcode" class="control-label">Zip Code:</label>
-                            <input id="zipcode" class="form-control" name="zip" type="text" value="${addresses[addr -1].zipcode}" />
-                        </div>
                     </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="input-group">
-                            <label for="reminder" class="control-label">Reminder Threshold:</label>
-                            <input id="reminder" class="form-control" type="text" name="reminder" value="${user.reminderthreshold}" />
-                        </div>
-                    </td>
-                    <td>
-                        <div class="input-group">
-                            <label for="rental" class="control-label">Default Rental Period:</label>
-                            <input id="rental" class="form-control" type="text" name="rental" value="${user.defaultrentalperiod}" />
-                        </div>
-                    </td>
-                </tr>
-                <tr>
                     <td colspan="2">
+
+                                <%--<input id="state" name="state" type="text" value="${states[st -1].longname}" />--%>
+                            <label for="zipcode" class="control-label">Zip:</label>
+                    </td>
+                    <td colspan="2">
+                            <input id="zipcode" width="100%"  class="form-control" name="zip" type="text" value="${addresses[addr -1].zipcode}" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" width ="33%"></td>
+                    <td colspan="4" width ="33%" style="text:center">
                         <input type="submit" class="form-control" value="Update User" />
                     </td>
+                    <td colspan="4" width ="33%"></td>
                 </tr>
             </table>
         </form>

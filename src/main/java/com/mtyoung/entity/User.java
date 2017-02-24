@@ -4,10 +4,11 @@ import org.hibernate.annotations.GenericGenerator;
 import org.apache.catalina.realm.*;
 
 import javax.persistence.*;
+import java.util.Comparator;
 
 @Entity
 @Table(name = "users")
-public class User {
+public class User implements Comparable<User>{
 
   @Id
   @GeneratedValue(generator="increment")
@@ -106,4 +107,20 @@ public class User {
   public void setPassword(String password) {
     this.password = RealmBase.Digest(password,"sha-256", "UTF-8");
   }
+
+  public int compareTo(User compareUser) {
+    int userId = ((User) compareUser).getUuid();
+
+    return this.uuid - userId;
+  }
+
+  public static Comparator<User> UserNameComparator = new Comparator<User>() {
+    public int compare(User user1, User user2) {
+      String lastName1 = user1.getLname().toLowerCase();
+      String lastName2 = user2.getLname().toLowerCase();
+
+      return lastName1.compareTo(lastName2);
+    }
+
+  };
 }

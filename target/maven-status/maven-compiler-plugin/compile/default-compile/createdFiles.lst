@@ -17,6 +17,7 @@ com/mtyoung/entity/MovieCastLink.class
 com/mtyoung/entity/Movie.class
 com/mtyoung/entity/Rental.class
 com/mtyoung/Servlet/UserAdminUpdateServlet.class
+com/mtyoung/entity/User$1.class
 com/mtyoung/persistence/SessionFactoryProvider.class
 com/mtyoung/Servlet/IndexServlet.class
 com/mtyoung/persistence/GenreDao.class

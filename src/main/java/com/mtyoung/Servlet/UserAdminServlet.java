@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
 
 @WebServlet(
@@ -43,8 +44,17 @@ public class UserAdminServlet  extends HttpServlet {
         List<UserRole> roles = roleDao.getAllRoles();
 
         HttpSession session  = request.getSession();
+        User[] sortedUsers = new User[users.size()];
+        int i = 0;
+        for (User usr: users
+             ) {
+            sortedUsers[i] = usr;
+            i++;
+        }
 
-        session.setAttribute("users", users);
+        Arrays.sort(sortedUsers, User.UserNameComparator);
+
+        session.setAttribute("users", sortedUsers);
         session.setAttribute("addresses", addresses);
         session.setAttribute("states", states);
         session.setAttribute("roles", roles);
