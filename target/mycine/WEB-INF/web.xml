@@ -30,11 +30,11 @@
     <jsp-file>/login.jsp</jsp-file>
   </servlet>
 
+  <servlet>
+    <servlet-name>MyLibrary</servlet-name>
+    <jsp-file>/secure/auth/mylibrary.jsp</jsp-file>
+  </servlet>
 
-  <!--<servlet>-->
-    <!--<servlet-name>UserAdmin</servlet-name>-->
-    <!--<jsp-file>/secure/admin/useradmin.jsp</jsp-file>-->
-  <!--</servlet>-->
 
   <!-- ********************************************************************* -->
   <!-- Servlet Mappings **************************************************** -->
@@ -73,6 +73,11 @@
   <servlet-mapping>
     <servlet-name>UserAdmin</servlet-name>
     <url-pattern>/secure/admin/useradmin</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyLibrary</servlet-name>
+    <url-pattern>/secure/auth/mylibrary</url-pattern>
   </servlet-mapping>
 
   <!-- ********************************************************************* -->

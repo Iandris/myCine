@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>MyCine - Home</title>
+    <title>MyCine - User Admin</title>
     <c:import url="../../jspinclude/navigationBar.jsp" />
     <c:import url="../../jspinclude/scripts.jsp" />
 </head>

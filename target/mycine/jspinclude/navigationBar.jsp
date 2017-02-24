@@ -5,7 +5,7 @@
 
     <ul class="nav navbar-nav">
         <li><a href="/mycine/secure/auth/home">Home</a></li>
-        <li><a href="#">MyLibrary</a></li>
+        <li><a href="/mycine/secure/auth/library">MyLibrary</a></li>
         <li><a href="#">MyWishList</a></li>
         <li><a href="#">MyFriends</a></li>
         <li><a href="#">Settings</a></li>

@@ -91,4 +91,22 @@ public class UserMovieDao {
             session.close();
         }
     }
+
+    public List<UserMovieLink> getMovieLinkByUserID(int userid) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        Transaction tx = null;
+        List<UserMovieLink> links = null;
+        try {
+
+            links = session.createQuery("from com.mtyoung.entity.UserMovieLink U where U.userid = :uuid")
+                    .setString("uuid", String.valueOf(userid))
+                    .list();
+            return links;
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return links;
+    }
 }

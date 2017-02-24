@@ -4,10 +4,11 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.time.*;
+import java.util.Comparator;
 
 @Entity
 @Table(name="Movie")
-public class Movie {
+public class Movie  implements Comparable<Movie>{
 
   @Id
   @GeneratedValue(generator="increment")
@@ -107,4 +108,20 @@ public class Movie {
   public void setReleaseDate(LocalDate releaseDate) {
     this.releaseDate = releaseDate;
   }
+
+  public int compareTo(Movie compareMovie) {
+    int movieID = ((Movie) compareMovie).getIdmovie();
+
+    return this.idmovie - movieID;
+  }
+
+  public static Comparator<Movie> MovieNameComparator = new Comparator<Movie>() {
+    public int compare(Movie movie1, Movie movie2) {
+      String movieName1 = movie1.getTitle().toLowerCase();
+      String movieName2 = movie2.getTitle().toLowerCase();
+
+      return movieName1.compareTo(movieName2);
+    }
+
+  };
 }

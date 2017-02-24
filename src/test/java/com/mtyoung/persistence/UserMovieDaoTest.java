@@ -236,4 +236,11 @@ public class UserMovieDaoTest {
         assertEquals("link rating not updated", link.getStarrating(), dao.getMovieLink(newMovieLink).getStarrating());
     }
 
+    @Test
+    public void getMovieLinkByUserID() throws Exception {
+        newMovieLink = dao.addUserMovie(link);
+        assertNotNull("no movie returned for user in link", dao.getMovieLinkByUserID(link.getUserid()));
+        assertNotNull("no movie link returned for user", dao.getMovieLinkByUserID(bob1.getUuid()));
+        assertEquals("link count returned different than expected", 1, dao.getMovieLinkByUserID(link.getUserid()).size());
+    }
 }
