@@ -6,17 +6,14 @@
     <c:import url="/jspinclude/scripts.jsp" />
 </head>
 <div>
-    <h1>MyCine - MyLibrary</h1>
+    <h1> ${user.fname}'s Library</h1>
 </div>
 
 <div id="accordion">
-    <c:forEach var="movie" items="${mymovies}" >
+    <c:forEach  var="movie" items="${mymovies}" >
         <h3 style="text-decoration:underline;"><strong>${movie.title}</strong></h3>
-
+        ${movie.format.formattitle}
     </c:forEach>
-    <c:if test="${empty mymovies}" >
-        <h2>No Movies in your Library</h2>
-    </c:if>
 </div>
 </body>
 

@@ -69,7 +69,7 @@ public class MovieCastDaoTest {
         film1 = new Movie();
         film1.setTitle("The Matrix");
         film1.setReleaseDate(LocalDate.of(1999,3,31));
-        film1.setFormat(newForm);
+        film1.setFormat(form);
         film1.setGenre(newGen);
         film1.setStudio(newStudio);
         film1.setDirector(newDir);
@@ -80,7 +80,7 @@ public class MovieCastDaoTest {
         film2 = new Movie();
         film2.setTitle("Jaws");
         film2.setReleaseDate(LocalDate.of(2005,9,22));
-        film2.setFormat(newForm);
+        film2.setFormat(form);
         film2.setGenre(newGen);
         film2.setStudio(newStudio);
         film2.setDirector(newDir);

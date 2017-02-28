@@ -19,7 +19,8 @@
                         <strong style="text-align:center;">Please Enter Your Email/Password</strong>
                     </div>
                     <div class="panel-body">
-                        <FORM ACTION="j_security_check" METHOD="POST">
+                        <FORM ACTION="/mycine/storelogin" METHOD="POST">
+                            <%--<FORM ACTION="j_security_check" METHOD="POST">--%>
                             ${status}
                             <div class="form-group input-group">
                                 <span class="input-group-addon">@</span>

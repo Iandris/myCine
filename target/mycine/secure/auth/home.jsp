@@ -8,7 +8,7 @@
 <body class="schpeal-home" >
 
 <div>
-    <h1>MyCine - Home</h1>
+    <h1>Welcome back ${user.fname}</h1>
     <div>Keeping track of your personal movie collection can be an exhausting process. With the different movie formats available today,
         multiple release dates and movies included in different collections just checking to see if you have a title or not can be tricky. That's
         where MyCine comes in. Catalog your personal collection by importing titles directly from our database of nearly a quarter million titles. Rank

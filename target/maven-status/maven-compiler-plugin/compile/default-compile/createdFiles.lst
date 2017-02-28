@@ -15,6 +15,7 @@ com/mtyoung/persistence/AddressDao.class
 com/mtyoung/persistence/MessageDao.class
 com/mtyoung/persistence/UserRoleDao.class
 com/mtyoung/Servlet/LoginServlet.class
+com/mtyoung/Servlet/LoginStoreInSession.class
 com/mtyoung/Servlet/HomeServlet.class
 com/mtyoung/entity/UserRole.class
 com/mtyoung/Servlet/EnrollServlet.class

@@ -1,10 +1,7 @@
 package com.mtyoung.Servlet;
 
-import com.mtyoung.entity.Movie;
-import com.mtyoung.entity.User;
-import com.mtyoung.entity.UserMovieLink;
-import com.mtyoung.persistence.MovieDao;
-import com.mtyoung.persistence.UserMovieDao;
+import com.mtyoung.entity.*;
+import com.mtyoung.persistence.*;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -31,42 +28,20 @@ public class MyLibraryLoaderServlet extends HttpServlet {
             throws ServletException, IOException {
 
         HttpSession session = request.getSession();
+        User user = (User)session.getAttribute("user");
 
         MovieDao dao = new MovieDao();
         UserMovieDao umdao = new UserMovieDao();
 
-        List<UserMovieLink> links = umdao.getMovieLinkByUserID(1);
-        List<Movie> movies = new ArrayList<Movie>();
+        List<UserMovieLink> links = umdao.getMovieLinkByUserID(user.getUuid());
+        List<Movie> mymovies = new ArrayList<Movie>();
 
-        if (links != null) {
-            for (UserMovieLink link : links
-                    ) {
-                Movie mv = dao.getMovie(link.getLinkid());
-                if (mv != null) {
-                    movies.add(mv);
-                }
-            }
-
-            if (movies != null) {
-                Movie[] mymovies = new Movie[movies.size()];
-                int i = 0;
-                for (Movie movie : movies
-                        ) {
-                    mymovies[i] = movie;
-                    i++;
-                }
-
-                Arrays.sort(mymovies, Movie.MovieNameComparator);
-                session.setAttribute("mymovies", mymovies);
-                session.setAttribute("hmmm", "stuff");
-            } else {
-                session.setAttribute("mymovies", null);
-
-            }
-        } else {
-            session.setAttribute("mymovies", null);
-
+        for (UserMovieLink link: links
+             ) {
+            mymovies.add(dao.getMovie(link.getMovieid()));
         }
+
+        session.setAttribute("mymovies", mymovies);
 
         getServletContext().getRequestDispatcher("/secure/auth/mylibrary.jsp").forward(request, response);
 
