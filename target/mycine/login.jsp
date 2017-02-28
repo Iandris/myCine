@@ -20,20 +20,20 @@
                     </div>
                     <div class="panel-body">
                         <FORM ACTION="/mycine/storelogin" METHOD="POST">
-                            <%--<FORM ACTION="j_security_check" METHOD="POST">--%>
-                            ${status}
                             <div class="form-group input-group">
                                 <span class="input-group-addon">@</span>
-                                <INPUT TYPE="TEXT" NAME="j_username" class="form-control" placeholder="Username/Email">
+                                <INPUT TYPE="TEXT" NAME="j_username" value="${uname}" class="form-control" placeholder="Username/Email">
                             </div>
                             <div class="form-group input-group">
                                 <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
                                 <INPUT TYPE="PASSWORD" NAME="j_password" class="form-control" placeholder="Password">
                             </div>
+                            <p style="color:red">${failure}</p>
                             <div class="form-group input-group">
                                 <INPUT TYPE="SUBMIT" VALUE="Log In" class="btn btn-success">
                             </div>
                         </FORM>
+
                         <div class="form-group input-group">
                             <a href="/mycine/register">New User? Register Here</a>
                         </div>

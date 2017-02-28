@@ -16,9 +16,9 @@
             <tr>
                 <td>${movie.format.formattitle}</td>
                 <td>${movie.genre.genretitle}</td>
+                <td>${movie.director.lname}, ${movie.director.fname}</td>
+                <td>${movie.studio.studiotitle}</td>
             </tr>
-
-
         </table>
     </c:forEach>
 </div>

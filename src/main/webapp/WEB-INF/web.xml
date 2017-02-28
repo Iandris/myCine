@@ -80,6 +80,11 @@
     <url-pattern>/secure/auth/mylibrary</url-pattern>
   </servlet-mapping>
 
+  <servlet-mapping>
+    <servlet-name>LoginFailure</servlet-name>
+    <url-pattern>/loginfailure</url-pattern>
+  </servlet-mapping>
+
   <!-- ********************************************************************* -->
   <!-- Home Page *********************************************************** -->
   <!-- ********************************************************************* -->
@@ -97,7 +102,7 @@
     <auth-method>FORM</auth-method>
     <form-login-config>
       <form-login-page>/login</form-login-page>
-      <form-error-page>/loginFailure.jsp</form-error-page>
+      <form-error-page>/loginfailure</form-error-page>
     </form-login-config>
   </login-config>
 

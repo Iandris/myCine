@@ -23,19 +23,25 @@ import java.io.IOException;
 public class LoginStoreInSession  extends HttpServlet  {
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
+        HttpSession session = request.getSession();
         String username = request.getParameter("j_username");
         String pwd = request.getParameter("j_password");
 
         UserDao dao = new UserDao();
         User user = dao.getUserByEmail(username);
 
+        if (user == null) {
+            session.setAttribute("uname", username);
+            response.sendRedirect("/mycine/loginfailure");
+        } else {
 
-        HttpSession session = request.getSession();
-        session.setAttribute("user",user );
+            session.setAttribute("user",user );
+            session.setAttribute("uname", user.getUser_name());
 
-        String url = "j_security_check?j_username=" + username + "&j_password=" + pwd;
-        String redirectURL = response.encodeRedirectURL(url);
-        response.sendRedirect(redirectURL);
+            String url = "j_security_check?j_username=" + username + "&j_password=" + pwd;
+            String redirectURL = response.encodeRedirectURL(url);
+            response.sendRedirect(redirectURL);
+        }
+
     }
 }
