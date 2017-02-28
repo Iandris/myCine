@@ -19,6 +19,7 @@ public class MessageDaoTest {
     MessageDao dao;
     Address mail;
     AddressDao mailDao;
+    StateDao stateDao;
 
 
     UserDao userDao;
@@ -35,6 +36,7 @@ public class MessageDaoTest {
     @Before
     public void setup() {
         dao = new MessageDao();
+        stateDao = new StateDao();
         message = new Message();
         mailDao = new AddressDao();
         userDao = new UserDao();
@@ -44,14 +46,14 @@ public class MessageDaoTest {
         mail.setStreetaddress1("605 Park St");
         mail.setStreetaddress2("");
         mail.setCity("Watertown");
-        mail.setState(49);
+        mail.setState(stateDao.getState(49));
         mail.setZipcode(53098);
         newMail = mailDao.addAddress(mail);
 
         bob1 = new User();
         bob1.setFname("Mike");
         bob1.setLname("Young");
-        bob1.setAddress(newMail);
+        bob1.setAddress(mail);
         bob1.setUser_name("bob11@email.com");
         bob1.setCellnumber("0000000008");
         bob1.setReminderthreshold(1);
@@ -62,7 +64,7 @@ public class MessageDaoTest {
         bob2 = new User();
         bob2.setFname("John");
         bob2.setLname("Smith");
-        bob2.setAddress(newMail);
+        bob2.setAddress(mail);
         bob2.setUser_name("bob12@email.com");
         bob2.setCellnumber("0000000007");
         bob2.setReminderthreshold(1555);
@@ -73,7 +75,7 @@ public class MessageDaoTest {
         bob3 = new User();
         bob3.setFname("Dave");
         bob3.setLname("Navarro");
-        bob3.setAddress(newMail);
+        bob3.setAddress(mail);
         bob3.setUser_name("bob13@email.com");
         bob3.setCellnumber("0000000006");
         bob3.setReminderthreshold(51123);

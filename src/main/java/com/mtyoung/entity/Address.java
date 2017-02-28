@@ -3,37 +3,36 @@ package com.mtyoung.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "Addresses")
-public class Address {
+public class Address implements Serializable {
+
+  private int idaddresses;
+  private String streetaddress1;
+  private String streetaddress2;
+  private String city;
+  private State state;
+  private int zipcode;
+  private Set<User> userSet = new HashSet<User>(0);
+
 
   @Id
   @GeneratedValue(generator="increment")
   @GenericGenerator(name="increment", strategy = "increment")
   @Column(name = "idAddresses")
-  private int idaddresses;
-
-  @Column(name="StreetAddress1")
-  private String streetaddress1;
-
-  @Column(name="StreetAddress2")
-  private String streetaddress2;
-
-  @Column(name="City")
-  private String city;
-
-  @Column(name="state")
-  private int state;
-
-  @Column(name="ZipCode")
-  private int zipcode;
-
-
   public int getIdaddresses() {
     return idaddresses;
   }
 
+  public void setIdaddresses(int idaddresses) {
+    this.idaddresses = idaddresses;
+  }
+
+  @Column(name="StreetAddress1")
   public String getStreetaddress1() {
     return streetaddress1;
   }
@@ -42,7 +41,7 @@ public class Address {
     this.streetaddress1 = streetaddress1;
   }
 
-
+  @Column(name="StreetAddress2")
   public String getStreetaddress2() {
     return streetaddress2;
   }
@@ -51,6 +50,7 @@ public class Address {
     this.streetaddress2 = streetaddress2;
   }
 
+  @Column(name="City")
   public String getCity() {
     return city;
   }
@@ -59,16 +59,18 @@ public class Address {
     this.city = city;
   }
 
-
-  public int getState() {
+ // @Column(name="state")
+  @ManyToOne(fetch = FetchType.EAGER)
+  @JoinColumn(name = "state")
+  public State getState() {
     return state;
   }
 
-  public void setState(int state) {
+  public void setState(State state) {
     this.state = state;
   }
 
-
+  @Column(name="ZipCode")
   public int getZipcode() {
     return zipcode;
   }
@@ -77,4 +79,12 @@ public class Address {
     this.zipcode = zipcode;
   }
 
+    @OneToMany (fetch = FetchType.EAGER, mappedBy = "address")
+    public Set<User> getUserSet() {
+        return this.userSet;
+    }
+
+    public void setUserSet (Set<User> userSet) {
+        this.userSet = userSet;
+    }
 }

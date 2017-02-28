@@ -70,9 +70,9 @@ public class MovieCastDaoTest {
         film1.setTitle("The Matrix");
         film1.setReleaseDate(LocalDate.of(1999,3,31));
         film1.setFormat(form);
-        film1.setGenre(newGen);
-        film1.setStudio(newStudio);
-        film1.setDirector(newDir);
+        film1.setGenre(gen);
+        film1.setStudio(std);
+        film1.setDirector(dir);
         film1.setImdbid("tt0133093");
         film1.setUpccode("883929454563");
         newMovie1 = movieDao.addMovie(film1);
@@ -81,9 +81,9 @@ public class MovieCastDaoTest {
         film2.setTitle("Jaws");
         film2.setReleaseDate(LocalDate.of(2005,9,22));
         film2.setFormat(form);
-        film2.setGenre(newGen);
-        film2.setStudio(newStudio);
-        film2.setDirector(newDir);
+        film2.setGenre(gen);
+        film2.setStudio(std);
+        film2.setDirector(dir);
         film2.setImdbid("abcidkasb");
         film2.setUpccode("999999999999");
         newMovie2 = movieDao.addMovie(film2);

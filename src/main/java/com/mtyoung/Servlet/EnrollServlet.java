@@ -5,8 +5,10 @@ import com.mtyoung.entity.Address;
 import com.mtyoung.entity.User;
 import com.mtyoung.entity.UserRole;
 import com.mtyoung.persistence.AddressDao;
+import com.mtyoung.persistence.StateDao;
 import com.mtyoung.persistence.UserDao;
 import com.mtyoung.persistence.UserRoleDao;
+import org.apache.catalina.realm.RealmBase;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -36,11 +38,13 @@ public class EnrollServlet  extends HttpServlet {
 
         AddressDao addrDao = new AddressDao();
         Address addr = new Address();
+        StateDao stateDao = new StateDao();
+
 
         addr.setStreetaddress1(request.getParameter("address1"));
         addr.setStreetaddress2(request.getParameter("address2"));
         addr.setCity(request.getParameter("city"));
-        addr.setState(Integer.parseInt(request.getParameter("state")));
+        addr.setState(stateDao.getState(Integer.parseInt(request.getParameter("state"))));
         addr.setZipcode(Integer.parseInt(request.getParameter("zip")));
         int newaddr = addrDao.addAddress(addr);
 
@@ -49,12 +53,12 @@ public class EnrollServlet  extends HttpServlet {
 
         newUser.setFname(request.getParameter("firstname"));
         newUser.setLname(request.getParameter("lastname"));
-        newUser.setAddress(newaddr);
+        newUser.setAddress(addr);
         newUser.setUser_name(request.getParameter("user_name"));
         newUser.setCellnumber(request.getParameter("cellnumber").replace(".","").replace("-","").replace("(","").replace(")","").replace(" ",""));
         newUser.setReminderthreshold(1);
         newUser.setDefaultrentalperiod(3);
-        newUser.setPassword(request.getParameter("password"));
+        newUser.setPassword(RealmBase.Digest(request.getParameter("password"),"sha-256", "UTF-8"));
 
         int userID =  dao.addUser(newUser);
 

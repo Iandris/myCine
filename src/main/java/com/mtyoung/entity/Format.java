@@ -10,9 +10,10 @@ import java.util.Set;
 @Entity
 @Table(name="Format")
 public class Format implements Serializable {
-  private Set<Movie> movieSet = new HashSet<Movie>(0);
+
   private int idformat;
   private String formattitle;
+  private Set<Movie> movieSet = new HashSet<Movie>(0);
 
   @Id
   @GeneratedValue(generator="increment")
@@ -25,7 +26,6 @@ public class Format implements Serializable {
   public void setIdformat(int idformat) {
     this.idformat = idformat;
   }
-
 
   @Column(name="formatTitle")
   public String getFormattitle() {

@@ -4,7 +4,9 @@ package com.mtyoung.Servlet;
 import com.mtyoung.entity.Address;
 import com.mtyoung.entity.User;
 import com.mtyoung.persistence.AddressDao;
+import com.mtyoung.persistence.StateDao;
 import com.mtyoung.persistence.UserDao;
+import org.apache.catalina.realm.RealmBase;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -30,12 +32,14 @@ public class UserAdminUpdateServlet extends HttpServlet {
 
 
         AddressDao addrDao = new AddressDao();
+        StateDao stateDao = new StateDao();
+
         Address addr = addrDao.getAddress(Integer.parseInt(request.getParameter("addrid")));
 
         addr.setStreetaddress1(request.getParameter("address1"));
         addr.setStreetaddress2(request.getParameter("address2"));
         addr.setCity(request.getParameter("city"));
-        addr.setState(Integer.parseInt(request.getParameter("state")));
+        addr.setState(stateDao.getState(Integer.parseInt(request.getParameter("state"))));
         addr.setZipcode(Integer.parseInt(request.getParameter("zip")));
         addrDao.updateAddress(addr);
 
@@ -50,7 +54,7 @@ public class UserAdminUpdateServlet extends HttpServlet {
         newUser.setDefaultrentalperiod(Integer.parseInt(request.getParameter("rental")));
 
         if (!newUser.getPassword().equals(request.getParameter("password"))) {
-            newUser.setPassword(request.getParameter("password"));
+            newUser.setPassword(RealmBase.Digest(request.getParameter("password"),"sha-256", "UTF-8"));
         }
 
         dao.updateUser(newUser);

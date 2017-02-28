@@ -33,6 +33,7 @@ public class WishlistDaoTest {
     MovieDao movieDao;
     Wishlist link;
     WishlistDao dao;
+    StateDao stateDao;
 
     int newDir = 0;
     int newGen = 0;
@@ -48,12 +49,13 @@ public class WishlistDaoTest {
     @Before
     public void setUp() throws Exception {
         //prep address table first, or user insert will fail on constraint
+        stateDao = new StateDao();
         mailDao = new AddressDao();
         mail = new Address();
         mail.setStreetaddress1("605 Park St");
         mail.setStreetaddress2("nnnnn");
         mail.setCity("Watertown");
-        mail.setState(49);
+        mail.setState(stateDao.getState(49));
         mail.setZipcode(53098);
         newMail = mailDao.addAddress(mail);
 
@@ -61,7 +63,7 @@ public class WishlistDaoTest {
         bob1 = new User();
         bob1.setFname("Mike");
         bob1.setLname("Young");
-        bob1.setAddress(newMail);
+        bob1.setAddress(mail);
         bob1.setUser_name("bob3@email.com");
         bob1.setCellnumber("8888888888");
         bob1.setReminderthreshold(1);
@@ -72,7 +74,7 @@ public class WishlistDaoTest {
         bob2 = new User();
         bob2.setFname("Michael");
         bob2.setLname("Smith");
-        bob2.setAddress(newMail);
+        bob2.setAddress(mail);
         bob2.setUser_name("bob4@email.com");
         bob2.setCellnumber("7777777777");
         bob2.setReminderthreshold(2);
@@ -106,9 +108,9 @@ public class WishlistDaoTest {
         film1.setTitle("The Matrix");
         film1.setReleaseDate(LocalDate.of(1999,3,31));
         film1.setFormat(form);
-        film1.setGenre(newGen);
-        film1.setStudio(newStudio);
-        film1.setDirector(newDir);
+        film1.setGenre(gen);
+        film1.setStudio(std);
+        film1.setDirector(dir);
         film1.setImdbid("tt0133093");
         film1.setUpccode("883929454563");
         newMovie1 = movieDao.addMovie(film1);
@@ -117,9 +119,9 @@ public class WishlistDaoTest {
         film2.setTitle("Jaws");
         film2.setReleaseDate(LocalDate.of(2005,9,22));
         film2.setFormat(form);
-        film2.setGenre(newGen);
-        film2.setStudio(newStudio);
-        film2.setDirector(newDir);
+        film2.setGenre(gen);
+        film2.setStudio(std);
+        film2.setDirector(dir);
         film2.setImdbid("abcidkasb");
         film2.setUpccode("999999999999");
         newMovie2 = movieDao.addMovie(film2);

@@ -12,8 +12,6 @@
 
 <div id="accordion">
     <c:forEach var="user" items="${users}" >
-        <c:set var="addr" value="${user.address}" />
-        <c:set var="st" value="${addresses[addr - 1].state}" />
         <h3 style="text-decoration:underline;"><strong>${user.lname}, ${user.fname}</strong></h3>
         <form action="/mycine/secure/admin/updateuser">
             <table width="100%">
@@ -92,11 +90,11 @@
                 <tr>
                     <td colspan="3" width="25%">
 
-                            <input type="text" hidden="true" name="addrid" value="${user.address}" />
+                            <input type="text" hidden="true" name="addrid" value="${user.address.idaddresses}" />
                             <label for="address" class="control-label">Address Line 1:</label>
                     </td>
                     <td colspan="3" width="25%">
-                            <input id="address" width="100%"  class="form-control" type="text" name="address1" value="${addresses[addr -1].streetaddress1}" />
+                            <input id="address" width="100%"  class="form-control" type="text" name="address1" value="${user.address.streetaddress1}" />
 
                     </td>
                     <td colspan="3" width="25%">
@@ -104,7 +102,7 @@
                             <label for="address2" class="control-label">Address Line 2:</label>
                     </td>
                     <td colspan="3" width="25%">
-                            <input id="address2" width="100%"  class="form-control" name="address2" type="text" value="${addresses[addr -1].streetaddress2}" />
+                            <input id="address2" width="100%"  class="form-control" name="address2" type="text" value="${user.address.streetaddress2}" />
 
                     </td>
                 </tr>
@@ -113,7 +111,7 @@
                             <label for="city" class="control-label">City:</label>
                     </td>
                     <td colspan="2">
-                            <input id="city" width="100%" class="form-control" name="city" type="text" value="${addresses[addr -1].city}" />
+                            <input id="city" width="100%" class="form-control" name="city" type="text" value="${user.address.city}" />
 
                     </td>
                     <td colspan="2">
@@ -122,7 +120,7 @@
                     </td>
                     <td colspan="2">
                             <select class="form-control" id="state" name="state">
-                                <c:set var="selectedState" value="${addresses[addr - 1].state}" />
+                                <c:set var="selectedState" value="${user.address.state.idstate}" />
                                 <option value="Select...">Select...</option> 
                                 <c:forEach var="state" items="${states}"> 
                                     <option value="${state.idstate}" ${state.idstate ==  selectedState? 'selected="selected"' : ''}>${state.longname}</option> 
@@ -131,12 +129,10 @@
 
                     </td>
                     <td colspan="2">
-
-                                <%--<input id="state" name="state" type="text" value="${states[st -1].longname}" />--%>
-                            <label for="zipcode" class="control-label">Zip:</label>
+                         <label for="zipcode" class="control-label">Zip:</label>
                     </td>
                     <td colspan="2">
-                            <input id="zipcode" width="100%"  class="form-control" name="zip" type="text" value="${addresses[addr -1].zipcode}" />
+                            <input id="zipcode" width="100%"  class="form-control" name="zip" type="text" value="${user.address.zipcode}" />
 
                     </td>
                 </tr>

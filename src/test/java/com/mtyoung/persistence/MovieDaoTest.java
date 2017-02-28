@@ -62,9 +62,9 @@ public class MovieDaoTest {
         film.setTitle("The Matrix");
         film.setReleaseDate(LocalDate.of(1999,3,31));
         film.setFormat(form);
-        film.setGenre(newGen);
-        film.setStudio(newStudio);
-        film.setDirector(newDir);
+        film.setGenre(gen);
+        film.setStudio(std);
+        film.setDirector(dir);
         film.setImdbid("098765432");
         film.setUpccode("87654323456");
     }
@@ -112,10 +112,10 @@ public class MovieDaoTest {
         assertEquals("release date not returned correctly", film.getReleaseDate(), dao.getMovie(newMovie).getReleaseDate());
         assertEquals("imdb id not returned correctly", film.getImdbid(), dao.getMovie(newMovie).getImdbid());
         assertEquals("upc code not returned", film.getUpccode(), dao.getMovie(newMovie).getUpccode());
-        assertEquals("Director not returned", film.getDirector(), dao.getMovie(newMovie).getDirector());
+        assertEquals("Director not returned", film.getDirector().getIddirector(), dao.getMovie(newMovie).getDirector().getIddirector());
         assertEquals("Format not returned", film.getFormat().getFormattitle(), dao.getMovie(newMovie).getFormat().getFormattitle());
-        assertEquals("Genre not returned", film.getGenre(), dao.getMovie(newMovie).getGenre());
-        assertEquals("Studio not returned", film.getStudio(), dao.getMovie(newMovie).getStudio());
+        assertEquals("Genre not returned", film.getGenre().getGenretitle(), dao.getMovie(newMovie).getGenre().getGenretitle());
+        assertEquals("Studio not returned", film.getStudio().getStudiotitle(), dao.getMovie(newMovie).getStudio().getStudiotitle());
         assertEquals("Movie ID not returned", film.getIdmovie(), dao.getMovie(newMovie).getIdmovie());
 
     }
@@ -144,9 +144,9 @@ public class MovieDaoTest {
         film.setTitle("Jaws");
         film.setReleaseDate(LocalDate.of(2005,9,22));
         film.setFormat(form);
-        film.setGenre(newGen);
-        film.setStudio(newStudio2);
-        film.setDirector(newDir);
+        film.setGenre(gen);
+        film.setStudio(std);
+        film.setDirector(dir);
         film.setImdbid("abcidkas098b");
         film.setUpccode("9999999955559");
 
@@ -155,10 +155,10 @@ public class MovieDaoTest {
         assertEquals("release date not updated correctly", film.getReleaseDate(), dao.getMovie(newMovie).getReleaseDate());
         assertEquals("imdb id not updated correctly", film.getImdbid(), dao.getMovie(newMovie).getImdbid());
         assertEquals("upc code not updated", film.getUpccode(), dao.getMovie(newMovie).getUpccode());
-        assertEquals("Director not updated", film.getDirector(), dao.getMovie(newMovie).getDirector());
+        assertEquals("Director not updated", film.getDirector().getIddirector(), dao.getMovie(newMovie).getDirector().getIddirector());
         assertEquals("Format not updated", film.getFormat().getFormattitle(), dao.getMovie(newMovie).getFormat().getFormattitle());
-        assertEquals("Genre not updated", film.getGenre(), dao.getMovie(newMovie).getGenre());
-        assertEquals("Studio not updated", film.getStudio(), dao.getMovie(newMovie).getStudio());
+        assertEquals("Genre not updated", film.getGenre().getGenretitle(), dao.getMovie(newMovie).getGenre().getGenretitle());
+        assertEquals("Studio not updated", film.getStudio().getStudiotitle(), dao.getMovie(newMovie).getStudio().getStudiotitle());
         assertEquals("Movie ID not updated", film.getIdmovie(), dao.getMovie(newMovie).getIdmovie());
 
 

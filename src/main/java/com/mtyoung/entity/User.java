@@ -4,46 +4,36 @@ import org.hibernate.annotations.GenericGenerator;
 import org.apache.catalina.realm.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Comparator;
 
 @Entity
 @Table(name = "users")
-public class User implements Comparable<User>{
+public class User implements Comparable<User>, Serializable{
+
+  private int uuid;
+  private String user_name;
+  private String fname;
+  private String lname;
+  private Address address;
+  private String cellnumber;
+  private int reminderthreshold;
+  private int defaultrentalperiod;
+  private String password;
 
   @Id
   @GeneratedValue(generator="increment")
   @GenericGenerator(name="increment", strategy = "increment")
   @Column(name = "id")
-  private int uuid;
-
-  @Column(name = "user_name")
-  private String user_name;
-
-  @Column(name = "fName")
-  private String fname;
-
-  @Column(name = "lName")
-  private String lname;
-
-  @Column(name = "id_address")
-  private int address;
-
-  @Column(name = "cell_number", unique = true)
-  private String cellnumber;
-
-  @Column(name = "reminderThreshold")
-  private int reminderthreshold;
-
-  @Column(name = "defaultRentalPeriod")
-  private int defaultrentalperiod;
-
-  @Column(name="password")
-  private String password;
-
   public int getUuid() {
     return uuid;
   }
 
+  public void setUuid(int uuid) {
+    this.uuid = uuid;
+  }
+
+  @Column(name = "fName")
   public String getFname() {
     return fname;
   }
@@ -52,6 +42,8 @@ public class User implements Comparable<User>{
     this.fname = fname;
   }
 
+
+  @Column(name = "lName")
   public String getLname() {
     return lname;
   }
@@ -60,14 +52,19 @@ public class User implements Comparable<User>{
     this.lname = lname;
   }
 
-  public int getAddress() {
+  //@Column(name = "id_address")
+  @ManyToOne(fetch = FetchType.EAGER)
+  @JoinColumn(name = "address")
+  public Address getAddress() {
     return address;
   }
 
-  public void setAddress(int addressid) {
-    this.address = addressid;
+  public void setAddress(Address address) {
+    this.address = address;
   }
 
+
+  @Column(name = "user_name")
   public String getUser_name() {
     return user_name;
   }
@@ -76,6 +73,8 @@ public class User implements Comparable<User>{
     this.user_name = user_name;
   }
 
+
+  @Column(name = "cell_number", unique = true)
   public String getCellnumber() {
     return cellnumber;
   }
@@ -84,6 +83,8 @@ public class User implements Comparable<User>{
     this.cellnumber = cellnumber;
   }
 
+
+  @Column(name = "reminderThreshold")
   public int getReminderthreshold() {
     return reminderthreshold;
   }
@@ -92,6 +93,8 @@ public class User implements Comparable<User>{
     this.reminderthreshold = reminderthreshold;
   }
 
+
+  @Column(name = "defaultRentalPeriod")
   public int getDefaultrentalperiod() {
     return defaultrentalperiod;
   }
@@ -100,12 +103,14 @@ public class User implements Comparable<User>{
     this.defaultrentalperiod = defaultrentalperiod;
   }
 
+
+  @Column(name="password")
   public String getPassword() {
     return password;
   }
 
   public void setPassword(String password) {
-    this.password = RealmBase.Digest(password,"sha-256", "UTF-8");
+    this.password = password;
   }
 
   public int compareTo(User compareUser) {

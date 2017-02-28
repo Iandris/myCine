@@ -12,7 +12,14 @@
 <div id="accordion">
     <c:forEach  var="movie" items="${mymovies}" >
         <h3 style="text-decoration:underline;"><strong>${movie.title}</strong></h3>
-        ${movie.format.formattitle}
+        <table width="100%">
+            <tr>
+                <td>${movie.format.formattitle}</td>
+                <td>${movie.genre.genretitle}</td>
+            </tr>
+
+
+        </table>
     </c:forEach>
 </div>
 </body>

@@ -15,17 +15,19 @@ import static org.junit.Assert.*;
 public class AddressDaoTest {
     AddressDao dao;
     Address mail;
+    StateDao stateDao;
     int newMail = 0;
 
     @Before
     public void setup() {
+        stateDao = new StateDao();
         dao = new AddressDao();
         mail = new Address();
 
         mail.setStreetaddress1("605 Park St");
         mail.setStreetaddress2("");
         mail.setCity("Watertown");
-        mail.setState(49);
+        mail.setState(stateDao.getState(49));
         mail.setZipcode(53098);
 
     }
@@ -51,7 +53,7 @@ public class AddressDaoTest {
         assertEquals("street 1 from address not returned correctly", mail.getStreetaddress1(), dao.getAddress(newMail).getStreetaddress1());
         assertEquals("street 2 from address not returned correctly", mail.getStreetaddress2(), dao.getAddress(newMail).getStreetaddress2());
         assertEquals("City from address not returned correctly", mail.getCity(), dao.getAddress(newMail).getCity());
-        assertEquals("state from address not returned correctly", mail.getState(), dao.getAddress(newMail).getState());
+        assertEquals("state from address not returned correctly", mail.getState().getLongname(), dao.getAddress(newMail).getState().getLongname());
         assertEquals("zipcode from address not returned correctly", mail.getZipcode(), dao.getAddress(newMail).getZipcode());
     }
 
@@ -63,7 +65,7 @@ public class AddressDaoTest {
         assertEquals("street 1 from address not inserted correctly", mail.getStreetaddress1(), dao.getAddress(newMail).getStreetaddress1());
         assertEquals("street 2 from address not inserted correctly", mail.getStreetaddress2(), dao.getAddress(newMail).getStreetaddress2());
         assertEquals("City from address not inserted correctly", mail.getCity(), dao.getAddress(newMail).getCity());
-        assertEquals("state from address not inserted correctly", mail.getState(), dao.getAddress(newMail).getState());
+        assertEquals("state from address not inserted correctly", mail.getState().getLongname(), dao.getAddress(newMail).getState().getLongname());
         assertEquals("zipcode from address not inserted correctly", mail.getZipcode(), dao.getAddress(newMail).getZipcode());
 
     }
@@ -82,7 +84,7 @@ public class AddressDaoTest {
         mail.setStreetaddress1("205 Fairview St");
         mail.setStreetaddress2("Apt 555");
         mail.setCity("Madison");
-        mail.setState(44);
+        mail.setState(stateDao.getState(44));
         mail.setZipcode(12345);
 
         dao.updateAddress(mail);
@@ -90,7 +92,7 @@ public class AddressDaoTest {
         assertEquals("street 1 from address not updated correctly", mail.getStreetaddress1(), dao.getAddress(newMail).getStreetaddress1());
         assertEquals("street 2 from address not updated correctly", mail.getStreetaddress2(), dao.getAddress(newMail).getStreetaddress2());
         assertEquals("City from address not updated correctly", mail.getCity(), dao.getAddress(newMail).getCity());
-        assertEquals("state from address not updated correctly", mail.getState(), dao.getAddress(newMail).getState());
+        assertEquals("state from address not updated correctly", mail.getState().getLongname(), dao.getAddress(newMail).getState().getLongname());
         assertEquals("zipcode from address not updated correctly", mail.getZipcode(), dao.getAddress(newMail).getZipcode());
     }
 }

@@ -23,8 +23,8 @@ public class StateDaoTest {
         dao = new StateDao();
         state = new State();
 
-        state.setLong("CHICKEN");
-        state.setShort("CZ");
+        state.setLongname("CHICKEN");
+        state.setShortname("CZ");
     }
 
     @After
@@ -69,8 +69,8 @@ public class StateDaoTest {
     public void updateState() throws Exception {
         newState = dao.addState(state);
 
-        state.setLong("BOBOBO");
-        state.setShort("BO");
+        state.setLongname("BOBOBO");
+        state.setShortname("BO");
 
         dao.updateState(state);
 

@@ -21,6 +21,7 @@ public class UserFriendDaoTest {
 
     Address mail;
     AddressDao mailDao;
+    StateDao stateDao;
 
     UserDao userDao;
     User bob1;
@@ -35,6 +36,7 @@ public class UserFriendDaoTest {
 
     @Before
     public void setup() {
+        stateDao = new StateDao();
         dao = new UserFriendDao();
         friend = new UserFriends();
         mailDao = new AddressDao();
@@ -44,14 +46,14 @@ public class UserFriendDaoTest {
         mail.setStreetaddress1("605 Park St");
         mail.setStreetaddress2("");
         mail.setCity("Watertown");
-        mail.setState(49);
+        mail.setState(stateDao.getState(49));
         mail.setZipcode(53098);
         newMail = mailDao.addAddress(mail);
 
         bob1 = new User();
         bob1.setFname("Mike");
         bob1.setLname("Young");
-        bob1.setAddress(mailDao.getAddress(newMail).getIdaddresses());
+        bob1.setAddress(mail);
         bob1.setUser_name("bob7@email.com");
         bob1.setCellnumber("4444444444");
         bob1.setReminderthreshold(1);
@@ -62,7 +64,7 @@ public class UserFriendDaoTest {
         bob2 = new User();
         bob2.setFname("John");
         bob2.setLname("Smith");
-        bob2.setAddress(mailDao.getAddress(newMail).getIdaddresses());
+        bob2.setAddress(mail);
         bob2.setUser_name("bob8@email.com");
         bob2.setCellnumber("3333333333");
         bob2.setReminderthreshold(1555);
@@ -73,7 +75,7 @@ public class UserFriendDaoTest {
         bob3 = new User();
         bob3.setFname("Dave");
         bob3.setLname("Navarro");
-        bob3.setAddress(mailDao.getAddress(newMail).getIdaddresses());
+        bob3.setAddress(mail);
         bob3.setUser_name("bob9@email.com");
         bob3.setCellnumber("2222222222");
         bob3.setReminderthreshold(51123);

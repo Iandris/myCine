@@ -18,9 +18,9 @@ public class Movie  implements Comparable<Movie>, Serializable{
   private int idmovie;
   private String title;
   private Format format;
-  private int genre;
-  private int director;
-  private int studio;
+  private Genre genre;
+  private Director director;
+  private Studio studio;
   private String imdbid;
   private String upccode;
   private LocalDate releaseDate;
@@ -46,12 +46,14 @@ public class Movie  implements Comparable<Movie>, Serializable{
     this.title = title;
   }
 
-  @Column(name="genre")
-  public int getGenre() {
+  @ManyToOne(fetch = FetchType.EAGER)
+  @JoinColumn(name = "genre")
+  //@Column(name="genre")
+  public Genre getGenre() {
     return genre;
   }
 
-  public void setGenre(int genre) {
+  public void setGenre(Genre genre) {
     this.genre = genre;
   }
 
@@ -65,21 +67,25 @@ public class Movie  implements Comparable<Movie>, Serializable{
     this.format = format;
   }
 
-  @Column(name="director")
-  public int getDirector() {
+  //@Column(name="director")
+  @ManyToOne(fetch = FetchType.EAGER)
+  @JoinColumn(name = "director")
+  public Director getDirector() {
     return director;
   }
 
-  public void setDirector(int director) {
+  public void setDirector(Director director) {
     this.director = director;
   }
 
-  @Column(name="studio")
-  public int getStudio() {
+ // @Column(name="studio")
+  @ManyToOne(fetch = FetchType.EAGER)
+  @JoinColumn(name = "studio")
+  public Studio getStudio() {
     return studio;
   }
 
-  public void setStudio(int studio) {
+  public void setStudio(Studio studio) {
     this.studio = studio;
   }
 

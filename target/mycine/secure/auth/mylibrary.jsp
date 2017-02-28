@@ -12,35 +12,15 @@
 <div id="accordion">
     <c:forEach  var="movie" items="${mymovies}" >
         <h3 style="text-decoration:underline;"><strong>${movie.title}</strong></h3>
-        ${movie.format.formattitle}
-    </c:forEach>
-    <%--<c:forEach var="link" items="${mymovies}" >--%>
-        <%--<c:set var="movieID" value="${link.movieid}" />--%>
-        <%--<c:set var="movie" value="${movieInfo.getMovie(movieID)}" />--%>
-        <%--<c:set var="director" value="${directors.getDirector(${movie.director})}" />--%>
-        <%--<h3 style="text-decoration:underline;"><strong>${movie.title}</strong></h3>--%>
-        <%--<form action="/mycine/secure/auth/updatelibraryitem">--%>
-            <%--<input type="text" hidden="hidden" name="linkid" value="${link.linkid}" />--%>
-            <%--<table>--%>
-                <%--<tr>--%>
-                    <%--<td>Director: </td>--%>
-                        <%--<td>${director.lname}, ${director.fname} </td>--%>
-                <%--</tr>--%>
-                <%--<tr>--%>
-                    <%--<td>--%>
-                        <%--Release Date:--%>
-                    <%--</td>--%>
-                    <%--<td>--%>
-                      <%--${movie.releaseDate}--%>
-                    <%--</td>--%>
-                <%--</tr>--%>
-            <%--</table>--%>
-        <%--</form>--%>
+        <table width="100%">
+            <tr>
+                <td>${movie.format.formattitle}</td>
+                <td>${movie.genre.genretitle}</td>
+            </tr>
 
-    <%--</c:forEach>--%>
-    <%--<c:if test="${empty mymovies}" >--%>
-        <%--<h2>No Movies in your Library</h2>--%>
-    <%--</c:if>--%>
+
+        </table>
+    </c:forEach>
 </div>
 </body>
 
