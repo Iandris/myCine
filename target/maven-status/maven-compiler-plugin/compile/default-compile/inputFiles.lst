@@ -12,6 +12,7 @@
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/UserAdminServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/LoginStoreInSession.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/util/LocalDateAttributeConverter.java
+/Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/com/omdbapi/OmdbJson.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/GenreDao.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/UserFriendDao.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/RegistrationServlet.java

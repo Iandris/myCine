@@ -3,6 +3,7 @@ com/mtyoung/com/omdbapi/Title.class
 com/mtyoung/entity/UserFriends.class
 com/mtyoung/util/LocalDateAttributeConverter.class
 com/mtyoung/util/LocalDateTimeAttributeConverter.class
+com/mtyoung/com/omdbapi/OmdbJson.class
 com/mtyoung/entity/Director.class
 com/mtyoung/persistence/MovieCastDao.class
 com/mtyoung/com/omdbapi/Search.class
