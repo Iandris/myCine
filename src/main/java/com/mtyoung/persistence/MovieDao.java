@@ -118,4 +118,21 @@ public class MovieDao {
         }
         return recents;
     }
+
+    public Movie getMovieByIMDB(String imdbID) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        Transaction tx = null;
+        Movie movie = null;
+        try {
+            movie = (Movie) session.createQuery("from com.mtyoung.entity.Movie U where U.imdbid = :imdb")
+                    .setString("imdb", imdbID)
+                    .uniqueResult();
+            return movie;
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return movie;
+    }
 }

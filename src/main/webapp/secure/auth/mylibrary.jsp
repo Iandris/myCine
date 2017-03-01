@@ -25,6 +25,9 @@
                 <td>View on IMDB&nbsp;<a href="http://www.imdb.com/title/${movie.imdbid}/">${movie.title}</a></td>
                 <td colspan="2"></td>
             </tr>
+            <tr>
+                <td><img src="${movie.imgsource}" /></td>
+            </tr>
         </table>
     </c:forEach>
 </div>

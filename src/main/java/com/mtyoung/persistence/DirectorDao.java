@@ -91,4 +91,22 @@ public class DirectorDao {
             session.close();
         }
     }
+
+    public Director getDirectorByLastFirst (String lname, String fname) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        Transaction tx = null;
+        Director dir = null;
+        try {
+            dir = (Director) session.createQuery("from com.mtyoung.entity.Director U where U.lname = :last and U.fname = :first")
+                    .setString("first", fname)
+                    .setString("last", lname)
+                    .uniqueResult();
+            return dir;
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return dir;
+    }
 }

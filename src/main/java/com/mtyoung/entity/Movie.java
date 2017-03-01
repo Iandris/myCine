@@ -24,6 +24,7 @@ public class Movie  implements Comparable<Movie>, Serializable{
   private String imdbid;
   private String upccode;
   private LocalDate releaseDate;
+  private String imgsource;
 
   @Id
   @GeneratedValue(generator="increment")
@@ -115,6 +116,15 @@ public class Movie  implements Comparable<Movie>, Serializable{
 
   public void setReleaseDate(LocalDate releaseDate) {
     this.releaseDate = releaseDate;
+  }
+
+  @Column(name="imgSource")
+  public String getImgsource() {
+      return imgsource;
+  }
+
+  public void setImgsource(String url) {
+      this.imgsource = url;
   }
 
   public int compareTo(Movie compareMovie) {

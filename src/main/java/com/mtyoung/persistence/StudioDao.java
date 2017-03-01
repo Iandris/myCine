@@ -91,4 +91,21 @@ public class StudioDao {
             session.close();
         }
     }
+
+    public Studio getStudioByTitle(String studio) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        Transaction tx = null;
+        Studio std = null;
+        try {
+            std = (Studio) session.createQuery("from com.mtyoung.entity.Studio U where U.studiotitle = :studio")
+                    .setString("studio", studio)
+                    .uniqueResult();
+            return std;
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return std;
+    }
 }

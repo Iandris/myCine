@@ -91,4 +91,21 @@ public class GenreDao {
             session.close();
         }
     }
+
+    public Genre getGenreByTitle(String title) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        Transaction tx = null;
+        Genre genre = null;
+        try {
+            genre = (Genre) session.createQuery("from com.mtyoung.entity.Genre U where U.genretitle = :genreTitle")
+                    .setString("genreTitle", title)
+                    .uniqueResult();
+            return genre;
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return genre;
+    }
 }

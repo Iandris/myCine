@@ -37,4 +37,9 @@ public class LocalDateAttributeConverterTest {
 
     }
 
+    @Test
+    public void convertFromString() throws Exception {
+        assertEquals(LocalDate.of(1999, 3, 31), converter.convertFromString("31 Mar 1999"));
+    }
+
 }

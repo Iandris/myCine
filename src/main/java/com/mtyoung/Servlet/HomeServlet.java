@@ -50,9 +50,6 @@ public class HomeServlet  extends HttpServlet {
 
             session.setAttribute("newreleases" ,newreleases );
             session.setAttribute("upcoming" ,upcoming );
-        } else {
-            session.setAttribute("newreleases" , mvdao.getMovie(1) );
-            session.setAttribute("upcoming" , mvdao.getMovie(2)  );
         }
 
         getServletContext().getRequestDispatcher("/secure/auth/home.jsp").forward(request, response);
