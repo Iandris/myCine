@@ -25,6 +25,7 @@ com/mtyoung/Servlet/UserAdminServlet.class
 com/mtyoung/entity/Format.class
 com/mtyoung/entity/Movie$1.class
 com/mtyoung/persistence/UserMovieDao.class
+com/mtyoung/Servlet/WishlistLoaderServlet.class
 com/mtyoung/persistence/StudioDao.class
 com/mtyoung/persistence/UserDao.class
 com/mtyoung/entity/MovieCastLink.class

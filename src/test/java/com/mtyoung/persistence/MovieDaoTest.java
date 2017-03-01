@@ -164,4 +164,10 @@ public class MovieDaoTest {
 
     }
 
+    @Test
+    public void getRecent() throws Exception {
+        newMovie = dao.addMovie(film);
+        List<Movie> movies =  dao.getRecentMovies(film.getReleaseDate());
+        assertTrue(movies.size() > 0);
+    }
 }

@@ -27,16 +27,22 @@
     <div class="releases">
         <h2>New Releases</h2>
         <ul>
-            <li>Title One - Release Date 02/10/2017</li>
-            <li>Title One - Release Date 02/10/2017</li>
-            <li>Title One - Release Date 02/10/2017</li>
+            <c:forEach var="movie" items="${newreleases}" >
+                <li>${movie.title} - Release Date: ${movie.releaseDate}</li>
+            </c:forEach>
+            <c:if test="${newreleases == null}" >
+                <li>No Known New Releases</li>
+            </c:if>
         </ul>
 
         <h2>Upcoming Releases</h2>
         <ul>
-            <li>Title One - Release Date 02/10/2017</li>
-            <li>Title One - Release Date 02/10/2017</li>
-            <li>Title One - Release Date 02/10/2017</li>
+            <c:forEach var="movie" items="${upcoming}" >
+                <li>${movie.title} - Release Date: ${movie.releaseDate}</li>
+            </c:forEach>
+            <c:if test="${upcoming == null}" >
+                <li>No Known Upcoming Releases</li>
+            </c:if>
         </ul>
     </div>
 </div>

@@ -5,15 +5,10 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
   <display-name>Welcome to MyCine</display-name>
-
-
+  
   <!-- ********************************************************************* -->
   <!-- Servlet and JSP Configurations ************************************** -->
   <!-- ********************************************************************* -->
-  <servlet>
-    <servlet-name>Home</servlet-name>
-    <jsp-file>/secure/auth/home.jsp</jsp-file>
-  </servlet>
 
   <servlet>
     <servlet-name>Index</servlet-name>
@@ -30,20 +25,9 @@
     <jsp-file>/login.jsp</jsp-file>
   </servlet>
 
-  <servlet>
-    <servlet-name>MyLibrary</servlet-name>
-    <jsp-file>/secure/auth/mylibrary.jsp</jsp-file>
-  </servlet>
-
-
   <!-- ********************************************************************* -->
   <!-- Servlet Mappings **************************************************** -->
   <!-- ********************************************************************* -->
-
-  <servlet-mapping>
-    <servlet-name>Home</servlet-name>
-    <url-pattern>/secure/auth/home</url-pattern>
-  </servlet-mapping>
 
   <servlet-mapping>
     <servlet-name>Index</servlet-name>
@@ -56,42 +40,17 @@
   </servlet-mapping>
 
   <servlet-mapping>
-    <servlet-name>RegCheck</servlet-name>
-    <url-pattern>/regcheck</url-pattern>
-  </servlet-mapping>
-
-  <servlet-mapping>
     <servlet-name>Login</servlet-name>
     <url-pattern>/login</url-pattern>
-  </servlet-mapping>
-
-  <servlet-mapping>
-    <servlet-name>Logout</servlet-name>
-    <url-pattern>/logout</url-pattern>
-  </servlet-mapping>
-
-  <servlet-mapping>
-    <servlet-name>UserAdmin</servlet-name>
-    <url-pattern>/secure/admin/useradmin</url-pattern>
-  </servlet-mapping>
-
-  <servlet-mapping>
-    <servlet-name>MyLibrary</servlet-name>
-    <url-pattern>/secure/auth/mylibrary</url-pattern>
-  </servlet-mapping>
-
-  <servlet-mapping>
-    <servlet-name>LoginFailure</servlet-name>
-    <url-pattern>/loginfailure</url-pattern>
   </servlet-mapping>
 
   <!-- ********************************************************************* -->
   <!-- Home Page *********************************************************** -->
   <!-- ********************************************************************* -->
+
   <welcome-file-list>
     <welcome-file>/index.jsp</welcome-file>
   </welcome-file-list>
-
 
   <!-- ********************************************************************* -->
   <!-- Page Security ******************************************************* -->
@@ -118,6 +77,7 @@
     </auth-constraint>
   </security-constraint>
 
+  <!-- Further protect everything within the "secure" directory. -->
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>admin</web-resource-name>
@@ -128,6 +88,7 @@
     </auth-constraint>
   </security-constraint>
 
+  <!-- Open directories up to public -->
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>Public</web-resource-name>
@@ -142,10 +103,13 @@
     <!-- No auth-constraint means everybody has access! -->
   </security-constraint>
 
+
+  <!-- User Role -->
   <security-role>
     <role-name>registered-user</role-name>
   </security-role>
 
+  <!-- Admin Role -->
   <security-role>
     <role-name>administrator</role-name>
   </security-role>

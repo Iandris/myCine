@@ -6,6 +6,11 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import javax.ejb.Local;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.temporal.ChronoUnit;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -90,5 +95,27 @@ public class MovieDao {
         } finally {
             session.close();
         }
+    }
+
+    public List<Movie> getRecentMovies(LocalDate localDate) {
+        Date old = Date.from(localDate.minusDays(14).atStartOfDay(ZoneId.systemDefault()).toInstant());
+        Date newest = Date.from(localDate.plusDays(14).atStartOfDay(ZoneId.systemDefault()).toInstant());
+
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        Transaction tx = null;
+        List<Movie> recents = null;
+        try {
+
+            recents = session.createQuery("from com.mtyoung.entity.Movie U where U.releaseDate > :old and U.releaseDate < :newer")
+                    .setDate("old", old)
+                    .setDate("newer", newest)
+                    .list();
+            return recents;
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return recents;
     }
 }
