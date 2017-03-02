@@ -12,6 +12,7 @@ import javax.ejb.Local;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -138,12 +139,12 @@ public class MovieDao {
         return movie;
     }
 
-    public List<Movie> getMovieListByLinks(List<UserMovieLink> movieIDs) {
+    public List<Movie> getMovieListByLinks(List<UserMovieLink> links) {
         List<Movie> movies = null;
 
-        for (UserMovieLink link : movieIDs
+        for (UserMovieLink link : links
              ) {
-            movies.add(getMovie(link.getMovieid()));
+            movies.add(this.getMovie(link.getMovieid()));
         }
 
         return movies;
@@ -154,7 +155,7 @@ public class MovieDao {
 
         for (Wishlist link : movieIDs
                 ) {
-            movies.add(getMovie(link.getMovieid()));
+            movies.add(this.getMovie(link.getMovieid()));
         }
 
         return movies;

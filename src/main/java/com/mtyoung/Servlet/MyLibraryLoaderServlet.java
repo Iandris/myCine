@@ -23,27 +23,44 @@ import java.util.List;
  * Created by Mike on 2/24/17.
  */
 public class MyLibraryLoaderServlet extends HttpServlet {
+    private HttpSession session;
+    private List<Movie> mymovies;
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        HttpSession session = request.getSession();
-        User user = (User)session.getAttribute("user");
+        session = request.getSession();
 
-        MovieDao dao = new MovieDao();
-        UserMovieDao umdao = new UserMovieDao();
+        mymovies = buildLibrary();
 
-        List<UserMovieLink> links = umdao.getMovieLinkByUserID(user.getUuid());
-        List<Movie> mymovies = new ArrayList<Movie>();
-
-        for (UserMovieLink link: links
-             ) {
-            mymovies.add(dao.getMovie(link.getMovieid()));
-        }
+        session.setAttribute("new", null);
 
         session.setAttribute("mymovies", mymovies);
 
         getServletContext().getRequestDispatcher("/secure/auth/mylibrary.jsp").forward(request, response);
+    }
 
+//    public void doPost(HttpServletRequest request, HttpServletResponse response)
+//            throws ServletException, IOException {
+//        session = request.getSession();
+//        mymovies = buildLibrary();
+//        session.setAttribute("new", null);
+//        session.setAttribute("mymovies", mymovies);
+//        getServletContext().getRequestDispatcher("/secure/auth/mylibrary.jsp").forward(request, response);
+//    }
+
+    public List<Movie> buildLibrary() {
+        User user = (User)session.getAttribute("user");
+        MovieDao dao = new MovieDao();
+        UserMovieDao umdao = new UserMovieDao();
+
+        List<UserMovieLink> links = umdao.getMovieLinkByUserID(user.getUuid());
+        mymovies = new ArrayList<Movie>();
+
+        for (UserMovieLink link: links
+                ) {
+            mymovies.add(dao.getMovie(link.getMovieid()));
+        }
+        return mymovies;
     }
 }

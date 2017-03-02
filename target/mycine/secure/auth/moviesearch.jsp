@@ -25,13 +25,7 @@
         <h3>Results:</h3>
         <div id="accordion">
             <c:forEach  var="movie" items="${mymovies}" >
-                <h3 style="text-decoration:underline;">
-                    <strong id="movietitle">${movie.title}</strong>
-                </h3>
-                    <form hidden="hidden" id="frm" action="/mycine/secure/auth/addlibrary" method="post">
-                        <input type="text" hidden="hidden" name="movieID" id="movieID" value="${movie.idmovie}" />
-                        <input type="text" hidden="hidden" name="destination" id="destination" />
-                    </form>
+                <h3 style="text-decoration:underline;"><strong id="label">${movie.title}</strong></h3>
                 <table width="100%">
                     <tr>
                         <td rowspan="5"><img src="${movie.imgsource}" alt="${movie.title}" width="125" height="200" /></td>
@@ -48,12 +42,38 @@
                         <td>Studio: ${movie.studio.studiotitle}</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>
-                            <div class="form-group input-group">
-                                <span class="input-group-addon" id="wish" onclick="validate('Wishlist');"><i class="fa fa-magic"></i></span>
-                                <span class="input-group-addon" id="lib" onclick="validate('Library');"><i class="fa fa-television"></i></span>
-                            </div>
+                        <td colspan="3">
+                            <form id="frm" action="/mycine/secure/auth/addlibrary" method="post" onsubmit="return validate();">
+                                <input type="text" hidden="hidden" name="movietitle" id="movietitle" />
+                                <input type="text" hidden="hidden" name="movieID" id="movieID" />
+                                <input type="text" hidden="hidden" name="destination" id="destination" />
+                                <button type="button" onclick="setDestination('Wishlist', '${movie.title}', '${movie.idmovie}');">
+                                    <i class="fa fa-magic"></i>
+                                </button>
+                                <button type="button" onclick="setDestination('Library', '${movie.title}', '${movie.idmovie}');">
+                                    <i class="fa fa-television"></i>
+                                </button>
+                            </form>
+                            <script type="text/javascript">
+                                function setDestination(destination, title, id) {
+                                    document.getElementById('destination').value = destination;
+                                    document.getElementById('movietitle').value = title
+                                    document.getElementById('movieID').value = id;
+                                    $('#frm').submit();
+                                }
+
+                                function validate() {
+                                    var movietitle = document.getElementById('movietitle').value;
+                                    var destination = document.getElementById('destination').value;
+                                    var goahead = window.confirm("Add " + movietitle + " to your " + destination + "?");
+                                            if (goahead) {
+                                                return true;
+                                            } else {
+                                                return false;
+                                            }
+                                    return false;
+                                }
+                            </script>
                         </td>
                     </tr>
                 </table>
@@ -67,17 +87,7 @@
         $("#title").focus();
     });
 
-    function validate(destination) {
-        var movie = document.getElementById("movietitle").innerHTML.toString();
-        var goahead = window.confirm("Add " + movie + " to your " + destination + "?");
 
-        if (goahead) {
-            $("#destination").value = destination;
-            $("#frm").submit();
-        } else {
-            return false;
-        }
-    }
 
 </script>
 </html>

@@ -50,4 +50,27 @@ public class WishlistLoaderServlet extends HttpServlet {
         getServletContext().getRequestDispatcher("/secure/auth/mywishlist.jsp").forward(request, response);
 
     }
+
+//    public void doPost(HttpServletRequest request, HttpServletResponse response)
+//            throws ServletException, IOException {
+//
+//        HttpSession session = request.getSession();
+//        User user = (User) session.getAttribute("user");
+//
+//        MovieDao dao = new MovieDao();
+//        WishlistDao wishlistDao = new WishlistDao();
+//
+//        List<Wishlist> links = wishlistDao.getWishListByUserID(user.getUuid());
+//        List<Movie> mymovies = new ArrayList<Movie>();
+//
+//        for (Wishlist link : links
+//                ) {
+//            mymovies.add(dao.getMovie(link.getMovieid()));
+//        }
+//
+//        session.setAttribute("mymovies", mymovies);
+//
+//        getServletContext().getRequestDispatcher("/secure/auth/mywishlist.jsp").forward(request, response);
+//
+//    }
 }

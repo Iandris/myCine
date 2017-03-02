@@ -2,30 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f46ccfb-b6a2-4f76-a242-8954c9e8b758" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/AddMovieLibraryServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MovieSearchRedirect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MovieSearchServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/secure/auth/moviesearch.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/images/unknownlarge.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/com/omdbapi/OmdbJson.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/com/omdbapi/OmdbJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/AddMovieLibraryServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/AddMovieLibraryServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/MyLibraryLoaderServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/MyLibraryLoaderServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/MovieDao.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/MovieDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine.war" afterPath="$PROJECT_DIR$/target/mycine.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/com/omdbapi/OmdbJson.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/com/omdbapi/OmdbJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/AddMovieLibraryServlet.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/AddMovieLibraryServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/MyLibraryLoaderServlet.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/MyLibraryLoaderServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/MovieDao.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/MovieDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/HibernateDemo.log" afterPath="$PROJECT_DIR$/logs/HibernateDemo.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/com/omdbapi/OmdbJson.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/com/omdbapi/OmdbJson.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/AddMovieLibraryServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/AddMovieLibraryServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MyLibraryLoaderServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MyLibraryLoaderServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/WishlistLoaderServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/WishlistLoaderServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/MovieDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/MovieDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jspinclude/navigationBar.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jspinclude/navigationBar.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/secure/auth/home.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/secure/auth/home.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/secure/auth/moviesearch.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/secure/auth/moviesearch.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom.properties" afterPath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/index.jsp" afterPath="$PROJECT_DIR$/target/mycine/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/navigationBar.jsp" afterPath="$PROJECT_DIR$/target/mycine/jspinclude/navigationBar.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/secure/auth/home.jsp" afterPath="$PROJECT_DIR$/target/mycine/secure/auth/home.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/scripts.jsp" afterPath="$PROJECT_DIR$/target/mycine/jspinclude/scripts.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/secure/auth/moviesearch.jsp" afterPath="$PROJECT_DIR$/target/mycine/secure/auth/moviesearch.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -87,82 +82,91 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="myCine@localhost [2]" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="UserMovie" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MovieSearchServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MovieSearchServlet.java">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/entity/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="57" column="108" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="108" />
+            <state relative-caret-position="240">
+              <caret line="26" column="20" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+              <folding>
+                <element signature="e#2315#2316#0" expanded="true" />
+                <marker date="1488309492000" expanded="true" signature="36:203" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserMovieDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/UserMovieDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="519">
+              <caret line="50" column="12" lean-forward="false" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+              <folding>
+                <element signature="docComment;class#UserMovieDao#0" expanded="true" />
+                <element signature="method#getAllMovieLinks#0;class#UserMovieDao#0" expanded="true" />
+                <element signature="method#getMovieLink#0;class#UserMovieDao#0" expanded="true" />
+                <element signature="method#deleteMovieLink#0;class#UserMovieDao#0" expanded="true" />
+                <element signature="method#updateMovieLink#0;class#UserMovieDao#0" expanded="true" />
+                <element signature="method#getMovieLinkByUserID#0;class#UserMovieDao#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserMovieLink.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/entity/UserMovieLink.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="14" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#535#572#0" expanded="false" />
+                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#587#588#0" expanded="true" />
+                <element signature="e#615#616#0" expanded="true" />
+                <element signature="e#638#639#0" expanded="true" />
+                <element signature="e#677#678#0" expanded="true" />
+                <element signature="e#707#708#0" expanded="true" />
+                <element signature="e#736#737#0" expanded="true" />
+                <element signature="e#760#761#0" expanded="true" />
+                <element signature="e#801#802#0" expanded="true" />
+                <element signature="e#833#834#0" expanded="true" />
+                <element signature="e#863#864#0" expanded="true" />
+                <element signature="e#888#889#0" expanded="true" />
+                <element signature="e#931#932#0" expanded="true" />
+                <element signature="e#965#966#0" expanded="true" />
+                <element signature="e#997#998#0" expanded="true" />
+                <element signature="e#1024#1025#0" expanded="true" />
+                <element signature="e#1071#1072#0" expanded="true" />
+                <element signature="e#1109#1110#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="moviesearch.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/secure/auth/moviesearch.jsp">
+      <file leaf-file-name="UserMovieDaoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserMovieDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="53" column="95" lean-forward="false" selection-start-line="53" selection-start-column="95" selection-end-line="53" selection-end-column="95" />
+            <state relative-caret-position="174">
+              <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
               <folding>
-                <element signature="e#3109#3145#0#HTML" expanded="true" />
-                <element signature="e#3184#3461#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddMovieLibraryServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/AddMovieLibraryServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="75" column="61" lean-forward="false" selection-start-line="75" selection-start-column="55" selection-end-line="75" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#734#771#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/MovieDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="151" column="45" lean-forward="false" selection-start-line="151" selection-start-column="23" selection-end-line="151" selection-end-column="45" />
-              <folding>
-                <element signature="method#getAllMovies#0;class#MovieDao#0" expanded="true" />
-                <element signature="method#getMovieByIMDB#0;class#MovieDao#0" expanded="true" />
-                <element signature="method#getMovieListByLinks#0;class#MovieDao#0" expanded="true" />
-                <element signature="method#getMovieListByWishlist#0;class#MovieDao#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyLibraryLoaderServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MyLibraryLoaderServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Movie.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Movie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="33" column="18" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="18" />
-              <folding>
-                <element signature="e#2650#2651#0" expanded="true" />
-                <element signature="e#2678#2679#0" expanded="true" />
+                <element signature="method#getMovieLinkByUserID#0;class#UserMovieDaoTest#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -200,6 +204,7 @@
       <find>width=&quot;100%&quot;</find>
       <find>class=&quot;controls form-inline&quot;</find>
       <find>form-control</find>
+      <find>movietitle</find>
     </findStrings>
     <replaceStrings>
       <replace>mycine</replace>
@@ -216,10 +221,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/UserMovieLink.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/UserMovieDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MyLibraryServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/relationships/MovieFormatID.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Format.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Genre.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Director.java" />
@@ -229,12 +230,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/State.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/MessageDaoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserFriendDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/RentalDaoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/WishlistDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserMovieDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Address.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/EnrollServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/UserAdminUpdateServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/secure/admin/useradmin.jsp" />
@@ -242,13 +240,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/LoginStoreInSession.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/WishlistDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/WishlistLoaderServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/movieDetail.jsp" />
         <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/MovieDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/HomeServlet.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Movie.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/GenreDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/StudioDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/DirectorDao.java" />
@@ -260,13 +256,22 @@
         <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/navigationBar.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/com/omdbapi/OmdbJson.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MyLibraryLoaderServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MovieSearchServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MovieSearchRedirect.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/secure/auth/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/WishlistLoaderServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/secure/auth/moviesearch.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/UserMovieLinkID.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Movie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MyLibraryLoaderServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/MovieDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/AddMovieLibraryServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/secure/auth/moviesearch.jsp" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/RentalDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserMovieDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/UserMovieDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/UserMovieLink.java" />
       </list>
     </option>
   </component>
@@ -354,7 +359,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="26" />
+    <option name="x" value="-1" />
+    <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="798" />
   </component>
@@ -376,8 +382,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -402,6 +406,66 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtyoung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtyoung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="persistence" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -709,10 +773,12 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -753,33 +819,7 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.tomee+">
-    <configuration default="false" name="TestOmdbServiceClient.testOMDBAPIJSON" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.mtyoung.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="mycine" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.mtyoung.util" />
-      <option name="MAIN_CLASS_NAME" value="com.mtyoung.util.TestOmdbServiceClient" />
-      <option name="METHOD_NAME" value="testOMDBAPIJSON" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="MovieDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="UserMovieDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.mtyoung.persistence.*" />
@@ -790,7 +830,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.mtyoung.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.mtyoung.persistence.MovieDaoTest" />
+      <option name="MAIN_CLASS_NAME" value="com.mtyoung.persistence.UserMovieDaoTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -805,19 +845,19 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="LocalDateAttributeConverterTest.convertFromString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="UserMovieDaoTest.deleteMovieLink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.mtyoung.util.*" />
+          <option name="PATTERN" value="com.mtyoung.persistence.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="mycine" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.mtyoung.util" />
-      <option name="MAIN_CLASS_NAME" value="com.mtyoung.util.LocalDateAttributeConverterTest" />
-      <option name="METHOD_NAME" value="convertFromString" />
+      <option name="PACKAGE_NAME" value="com.mtyoung.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.mtyoung.persistence.UserMovieDaoTest" />
+      <option name="METHOD_NAME" value="deleteMovieLink" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -831,46 +871,72 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="TestOmdbServiceClient.convertName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="com.mtyoung.persistence in mycine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.mtyoung.util.*" />
+          <option name="PATTERN" value="com.mtyoung.persistence.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="mycine" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.mtyoung.util" />
-      <option name="MAIN_CLASS_NAME" value="com.mtyoung.util.TestOmdbServiceClient" />
-      <option name="METHOD_NAME" value="convertName" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestOmdbServiceClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.mtyoung.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="mycine" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.mtyoung.util" />
-      <option name="MAIN_CLASS_NAME" value="com.mtyoung.util.TestOmdbServiceClient" />
+      <option name="PACKAGE_NAME" value="com.mtyoung.persistence" />
+      <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserMovieDaoTest.addUserMovie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.mtyoung.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="mycine" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.mtyoung.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.mtyoung.persistence.UserMovieDaoTest" />
+      <option name="METHOD_NAME" value="addUserMovie" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserMovieDaoTest.getMovieLink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.mtyoung.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="mycine" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.mtyoung.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.mtyoung.persistence.UserMovieDaoTest" />
+      <option name="METHOD_NAME" value="getMovieLink" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -1324,6 +1390,7 @@
       <method />
     </configuration>
     <configuration default="false" name="tomee+" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 8.5.6" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="e5120d43-2c3f-47ef-9f26-65e539e05186" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <file path="$PROJECT_DIR$/target/mycine.war">
@@ -1469,19 +1536,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="TomEE Server.tomee+" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.tomcat" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestOmdbServiceClient.testOMDBAPIJSON" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MovieDaoTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LocalDateAttributeConverterTest.convertFromString" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.TestOmdbServiceClient.convertName" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.TestOmdbServiceClient" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UserMovieDaoTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UserMovieDaoTest.deleteMovieLink" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.com.mtyoung.persistence in mycine" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.UserMovieDaoTest.addUserMovie" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.UserMovieDaoTest.getMovieLink" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestOmdbServiceClient" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestOmdbServiceClient.testOMDBAPIJSON" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestOmdbServiceClient.convertName" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LocalDateAttributeConverterTest.convertFromString" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MovieDaoTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.com.mtyoung.persistence in mycine" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UserMovieDaoTest.getMovieLink" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UserMovieDaoTest.addUserMovie" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UserMovieDaoTest.deleteMovieLink" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UserMovieDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1537,47 +1604,48 @@
       <workItem from="1488377132091" duration="2161000" />
       <workItem from="1488392167776" duration="1099000" />
       <workItem from="1488393292350" duration="8463000" />
-      <workItem from="1488408662174" duration="14388000" />
+      <workItem from="1488408662174" duration="14405000" />
+      <workItem from="1488461489253" duration="16926000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestOmdbServiceClient - 2017.03.01 at 17h 04m 48s.xml">
-      <configuration name="TestOmdbServiceClient" configurationId="JUnit" />
+    <history-entry file="UserMovieDaoTest_addUserMovie - 2017.03.02 at 12h 13m 22s.xml">
+      <configuration name="UserMovieDaoTest.addUserMovie" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestOmdbServiceClient - 2017.03.01 at 17h 07m 16s.xml">
-      <configuration name="TestOmdbServiceClient" configurationId="JUnit" />
+    <history-entry file="UserMovieDaoTest_addUserMovie - 2017.03.02 at 12h 13m 47s.xml">
+      <configuration name="UserMovieDaoTest.addUserMovie" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestOmdbServiceClient - 2017.03.01 at 17h 20m 15s.xml">
-      <configuration name="TestOmdbServiceClient" configurationId="JUnit" />
+    <history-entry file="UserMovieDaoTest_getMovieLink - 2017.03.02 at 12h 17m 58s.xml">
+      <configuration name="UserMovieDaoTest.getMovieLink" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestOmdbServiceClient - 2017.03.01 at 17h 21m 22s.xml">
-      <configuration name="TestOmdbServiceClient" configurationId="JUnit" />
+    <history-entry file="UserMovieDaoTest_getMovieLink - 2017.03.02 at 12h 21m 45s.xml">
+      <configuration name="UserMovieDaoTest.getMovieLink" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestOmdbServiceClient - 2017.03.01 at 17h 22m 57s.xml">
-      <configuration name="TestOmdbServiceClient" configurationId="JUnit" />
+    <history-entry file="UserMovieDaoTest_getMovieLink - 2017.03.02 at 12h 23m 07s.xml">
+      <configuration name="UserMovieDaoTest.getMovieLink" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestOmdbServiceClient - 2017.03.01 at 17h 23m 38s.xml">
-      <configuration name="TestOmdbServiceClient" configurationId="JUnit" />
+    <history-entry file="UserMovieDaoTest_getMovieLink - 2017.03.02 at 12h 24m 38s.xml">
+      <configuration name="UserMovieDaoTest.getMovieLink" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestOmdbServiceClient - 2017.03.01 at 17h 24m 32s.xml">
-      <configuration name="TestOmdbServiceClient" configurationId="JUnit" />
+    <history-entry file="UserMovieDaoTest_getMovieLink - 2017.03.02 at 12h 25m 00s.xml">
+      <configuration name="UserMovieDaoTest.getMovieLink" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestOmdbServiceClient - 2017.03.01 at 17h 26m 29s.xml">
-      <configuration name="TestOmdbServiceClient" configurationId="JUnit" />
+    <history-entry file="UserMovieDaoTest_getMovieLink - 2017.03.02 at 12h 30m 36s.xml">
+      <configuration name="UserMovieDaoTest.getMovieLink" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestOmdbServiceClient_testOMDBAPIJSON - 2017.03.01 at 15h 40m 18s.xml">
-      <configuration name="TestOmdbServiceClient.testOMDBAPIJSON" configurationId="JUnit" />
+    <history-entry file="UserMovieDaoTest_getMovieLink - 2017.03.02 at 12h 31m 37s.xml">
+      <configuration name="UserMovieDaoTest.getMovieLink" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestOmdbServiceClient_testOMDBAPIJSON - 2017.03.01 at 15h 40m 59s.xml">
-      <configuration name="TestOmdbServiceClient.testOMDBAPIJSON" configurationId="JUnit" />
+    <history-entry file="com_mtyoung_persistence_in_mycine - 2017.03.02 at 12h 32m 53s.xml">
+      <configuration name="com.mtyoung.persistence in mycine" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309499000" />
+    <option name="totallyTimeSpent" value="326442000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="26" width="1440" height="798" extended-state="6" />
+    <frame x="-1" y="22" width="1440" height="798" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1589,7 +1657,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16738197" sideWeight="0.22629969" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.04077253" sideWeight="0.22629969" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1601,14 +1669,13 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32765958" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3753541" sideWeight="0.481402" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32765958" sideWeight="0.49427754" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44334278" sideWeight="0.481402" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22836879" sideWeight="0.49713877" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26824033" sideWeight="0.44770643" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27181688" sideWeight="0.5522936" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17596567" sideWeight="0.5522936" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29041487" sideWeight="0.36231884" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1618,6 +1685,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.56795424" sideWeight="0.7737003" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1668,7 +1736,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="88" />
+      <option name="time" value="94" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1677,54 +1745,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/LoginFailureServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="25" column="106" lean-forward="false" selection-start-line="25" selection-start-column="106" selection-end-line="25" selection-end-column="106" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#435#473#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/UserMovieDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="109" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Wishlist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/movieDetail.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/WishlistDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="109" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/MovieDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="170" column="38" lean-forward="false" selection-start-line="170" selection-start-column="38" selection-end-line="170" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/srdtfyguhi.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/ActorDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/UserAdminUpdateServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="505">
@@ -1748,21 +1768,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/165039e0/8f8781a9-02cc-4d66-bfc1-9da8aea25b0e/myCine.Movie">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="91" selection-end-column="20" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1898,13 +1911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="41" column="89" lean-forward="false" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#LocalDateAttributeConverterTest#0" expanded="false" />
-            <element signature="method#setUp#0;class#LocalDateAttributeConverterTest#0" expanded="false" />
-            <element signature="method#convertToDatabaseColumn#0;class#LocalDateAttributeConverterTest#0" expanded="false" />
-            <element signature="method#convertToEntityAttribute#0;class#LocalDateAttributeConverterTest#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1926,7 +1932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1954,14 +1959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/DirectorDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="100" column="45" lean-forward="false" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/com/omdbapi/Search.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1973,19 +1970,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/unknown.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/unknown.jpg" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mtyoung/util/TestOmdbServiceClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="35" column="34" lean-forward="false" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-          <folding>
-            <element signature="method#testOMDBAPIJSON#0;class#TestOmdbServiceClient#0" expanded="true" />
-            <element signature="method#convertName#0;class#TestOmdbServiceClient#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2013,14 +2002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/WishlistLoaderServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/loginModal.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2033,14 +2014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -2077,24 +2050,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/com/omdbapi/OmdbJson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1476">
-          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#702#709#0" expanded="true" />
-            <element signature="method#convertName#0;class#OmdbJson#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MovieSearchRedirect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2103,14 +2064,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="46" column="27" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/registration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="39" column="28" lean-forward="false" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="64" />
           <folding />
         </state>
       </provider>
@@ -2131,67 +2084,222 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MyLibraryLoaderServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/com/omdbapi/OmdbJson.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="33" column="18" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="18" />
+        <state relative-caret-position="1365">
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding>
-            <element signature="e#2650#2651#0" expanded="true" />
-            <element signature="e#2678#2679#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#702#709#0" expanded="false" />
+            <element signature="method#convertName#0;class#OmdbJson#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/MovieDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="151" column="45" lean-forward="false" selection-start-line="151" selection-start-column="23" selection-end-line="151" selection-end-column="45" />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/registration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-913">
+          <caret line="21" column="94" lean-forward="false" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="94" />
           <folding>
-            <element signature="method#getAllMovies#0;class#MovieDao#0" expanded="true" />
-            <element signature="method#getMovieByIMDB#0;class#MovieDao#0" expanded="true" />
-            <element signature="method#getMovieListByLinks#0;class#MovieDao#0" expanded="true" />
-            <element signature="method#getMovieListByWishlist#0;class#MovieDao#0" expanded="true" />
+            <element signature="e#4035#5632#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MovieSearchServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="57" column="108" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="108" />
+        <state relative-caret-position="-377">
+          <caret line="18" column="49" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="49" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#535#572#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/AddMovieLibraryServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="75" column="61" lean-forward="false" selection-start-line="75" selection-start-column="55" selection-end-line="75" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#734#771#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="method#doPost#0;class#MovieSearchServlet#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/secure/auth/moviesearch.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="53" column="95" lean-forward="false" selection-start-line="53" selection-start-column="95" selection-end-line="53" selection-end-column="95" />
+        <state relative-caret-position="165">
+          <caret line="60" column="68" lean-forward="false" selection-start-line="60" selection-start-column="68" selection-end-line="60" selection-end-column="68" />
           <folding>
-            <element signature="e#3109#3145#0#HTML" expanded="true" />
-            <element signature="e#3184#3461#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3314#3999#0#HTML" expanded="true" />
+            <element signature="e#4251#4287#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/WishlistLoaderServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="53" column="4" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="74" selection-end-column="7" />
+          <folding>
+            <element signature="method#doGet#0;class#WishlistLoaderServlet#0" expanded="true" />
+            <marker date="1488470581000" expanded="false" signature="2078:2085" ph="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="91" selection-end-column="20" />
+          <folding>
+            <element signature="method#addUser#0;class#UserDao#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/DirectorDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="method#getDirectorByLastFirst#0;class#DirectorDao#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/StateDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="26" column="20" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+          <folding>
+            <element signature="e#2315#2316#0" expanded="true" />
+            <marker date="1488309492000" expanded="true" signature="36:203" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="40" />
+          <folding>
+            <element signature="e#2752#2753#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/MovieDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="146" column="65" lean-forward="false" selection-start-line="146" selection-start-column="65" selection-end-line="146" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/AddMovieLibraryServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="78" column="20" lean-forward="true" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MyLibraryLoaderServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="64" column="66" lean-forward="false" selection-start-line="64" selection-start-column="66" selection-end-line="64" selection-end-column="66" />
+          <folding>
+            <element signature="method#doGet#0;class#MyLibraryLoaderServlet#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/entity/UserMovieLinkID.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="53" lean-forward="false" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/RentalDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="138" column="9" lean-forward="false" selection-start-line="138" selection-start-column="9" selection-end-line="138" selection-end-column="9" />
+          <folding>
+            <element signature="method#tearDown#0;class#RentalDaoTest#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserMovieDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+          <folding>
+            <element signature="method#getMovieLinkByUserID#0;class#UserMovieDaoTest#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/UserMovieDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="50" column="12" lean-forward="false" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+          <folding>
+            <element signature="docComment;class#UserMovieDao#0" expanded="true" />
+            <element signature="method#getAllMovieLinks#0;class#UserMovieDao#0" expanded="true" />
+            <element signature="method#getMovieLink#0;class#UserMovieDao#0" expanded="true" />
+            <element signature="method#deleteMovieLink#0;class#UserMovieDao#0" expanded="true" />
+            <element signature="method#updateMovieLink#0;class#UserMovieDao#0" expanded="true" />
+            <element signature="method#getMovieLinkByUserID#0;class#UserMovieDao#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/entity/UserMovieLink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#965#966#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1071#1072#0" expanded="true" />
+            <element signature="e#1109#1110#0" expanded="true" />
           </folding>
         </state>
       </provider>

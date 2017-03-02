@@ -38,45 +38,82 @@ public class AddMovieLibraryServlet extends HttpServlet {
         int movieID = 0;
 
         if (request.getParameter("movieID") == null) {
-            getServletContext().getRequestDispatcher("/secure/auth/home.jsp").forward(request, response);
+            getServletContext().getRequestDispatcher("/secure/auth/moviesearch").forward(request, response);
         } else {
             movieID = Integer.parseInt(request.getParameter("movieID"));
         }
 
+        System.out.println(movieID);
+
         String destination = request.getParameter("destination");
 
+
         if (destination.equals("Wishlist")) {
-            List<Movie> links = mvDao.getMovieListByWishlist(
+            List<Movie> movies = mvDao.getMovieListByWishlist(
                     wishlistDao.getWishListByUserID(user.getUuid()));
 
-            //TODO after hibernate many to many rewrite lookup
-            //if movie not contained within user movie link
-            if (!links.contains(mvDao.getMovie(movieID))) {
-                Wishlist listItem = new Wishlist();
-                listItem.setMovieid(movieID);
-                listItem.setUserid(user.getUuid());
-                wishlistDao.addWishListItem(listItem);
-            }
-        } else if (destination.equals("Library")) {
-            List<Movie> links = mvDao.getMovieListByLinks(
-                    libraryDao.getMovieLinkByUserID(user.getUuid()));
+            Movie mo = mvDao.getMovie(movieID);
 
-            //TODO after hibernate many to many rewrite lookup
-            //if movie not contained within user movie link
-            if (!links.contains(mvDao.getMovie(movieID))) {
-                UserMovieLink librarylink = new UserMovieLink();
-                librarylink.setMovieid(movieID);
-                librarylink.setUserid(user.getUuid());
-                librarylink.setQuantity(1);
-                librarylink.setStarrating(0);
-                libraryDao.addUserMovie(librarylink);
+            if (movies != null) {
+                //TODO after hibernate many to many rewrite lookup
+                //if movie not contained within user movie link
+                if (!movies.contains(mo)) {
+                    wishlistDao.addWishListItem(addMovieToWishlist(movieID, user));
+                }
+            } else {
+                wishlistDao.addWishListItem(addMovieToWishlist(movieID, user));
             }
+
+            response.sendRedirect("/mycine/secure/auth/wishlist");
+           //getServletContext().getRequestDispatcher("/secure/auth/wishlist").forward(request, response);
+
+        } else if (destination.equals("Library")) {
+           // List<Movie> links = mvDao.getMovieListByLinks(
+             //       libraryDao.getMovieLinkByUserID(user.getUuid()));
+
+            List<UserMovieLink> links = libraryDao.getMovieLinkByUserID(user.getUuid());
+            List<Integer> movieIDs = null;
+
+            for (UserMovieLink link: links
+                 ) {
+                movieIDs.add(link.getMovieid());
+            }
+
+            if (!movieIDs.contains(movieID)) {
+                libraryDao.addUserMovie(addMovieToLibrary(movieID, user));
+            }
+//
+//            //TODO after hibernate many to many rewrite lookup
+//            //if movie not contained within user movie link
+//            if (links != null) {
+//                if (!links.contains(mvDao.getMovie(movieID))) {
+//                    libraryDao.addUserMovie(addMovieToLibrary(movieID, user));
+//                }
+//            } else {
+//                //not handling the event that the movie list is null due to lookup error, duplicate movies being added
+//                libraryDao.addUserMovie(addMovieToLibrary(movieID, user));
+//            }
+            response.sendRedirect("/mycine/secure/auth/library");
+           // getServletContext().getRequestDispatcher("/secure/auth/library").forward(request, response);
 
         } else {
-            getServletContext().getRequestDispatcher("/secure/auth/mywishlist.jsp").forward(request, response);
+            getServletContext().getRequestDispatcher("/secure/auth/moviesearch").forward(request, response);
         }
+    }
 
+    public Wishlist addMovieToWishlist(int movieID, User user) {
+        Wishlist listItem = new Wishlist();
+        listItem.setMovieid(movieID);
+        listItem.setUserid(user.getUuid());
+        return listItem;
+    }
 
-
+    public UserMovieLink addMovieToLibrary(int movieID, User user) {
+        UserMovieLink librarylink = new UserMovieLink();
+        librarylink.setMovieid(movieID);
+        librarylink.setUserid(user.getUuid());
+        librarylink.setQuantity(1);
+        librarylink.setStarrating(0);
+        return librarylink;
     }
 }
