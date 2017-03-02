@@ -1,6 +1,8 @@
 package com.mtyoung.persistence;
 
 import com.mtyoung.entity.Movie;
+import com.mtyoung.entity.UserMovieLink;
+import com.mtyoung.entity.Wishlist;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -134,5 +136,27 @@ public class MovieDao {
             session.close();
         }
         return movie;
+    }
+
+    public List<Movie> getMovieListByLinks(List<UserMovieLink> movieIDs) {
+        List<Movie> movies = null;
+
+        for (UserMovieLink link : movieIDs
+             ) {
+            movies.add(getMovie(link.getMovieid()));
+        }
+
+        return movies;
+    }
+
+    public List<Movie> getMovieListByWishlist(List<Wishlist> movieIDs) {
+        List<Movie> movies = null;
+
+        for (Wishlist link : movieIDs
+                ) {
+            movies.add(getMovie(link.getMovieid()));
+        }
+
+        return movies;
     }
 }

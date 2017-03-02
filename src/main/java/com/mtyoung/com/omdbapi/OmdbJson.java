@@ -20,7 +20,7 @@ import java.util.Map;
  * Created by Mike on 3/1/17.
  */
 public class OmdbJson {
-    public List<Movie> searchByTitle(String movieTitle)  throws Exception  {
+    public List<Movie> searchByTitle(String movieTitle) throws Exception  {
         List<Movie> found = new ArrayList<Movie>();
         Client client = ClientBuilder.newClient();
         WebTarget target =
@@ -40,6 +40,7 @@ public class OmdbJson {
         for (SearchItem item: search.getSearch()
             ) {
 
+
             if (dao.getMovieByIMDB(item.getImdbID()) == null) {
                 WebTarget target2 =
                         client.target("http://www.omdbapi.com/?r=json&type=movie&plot=long&i=" + item.getImdbID());
@@ -49,52 +50,61 @@ public class OmdbJson {
                 ObjectMapper mapper2 = new ObjectMapper();
                 Title title = mapper2.readValue(response2, Title.class);
 
-                Movie movie = new Movie();
-                movie.setTitle(title.getTitle());
-                movie.setFormat(fmdao.getFormat(1));
 
-                if (gnDao.getGenreByTitle(title.getGenre()) == null) {
-                    Genre gn = new Genre();
-                    gn.setGenretitle(title.getGenre());
-                    gnDao.addGenre(gn);
-                    movie.setGenre(gn);
-                } else {
-                    movie.setGenre(gnDao.getGenreByTitle(title.getGenre()));
+                //Filtering out Adult Genre Results
+                if (!title.getGenre().equals("Adult")) {
+
+                    Movie movie = new Movie();
+                    movie.setTitle(title.getTitle());
+                    movie.setFormat(fmdao.getFormat(1));
+
+                    if (!title.getGenre().equals("N/A")) {
+                        if (gnDao.getGenreByTitle(title.getGenre()) == null) {
+                            Genre gn = new Genre();
+                            gn.setGenretitle(title.getGenre());
+                            gnDao.addGenre(gn);
+                            movie.setGenre(gn);
+                        } else {
+                            movie.setGenre(gnDao.getGenreByTitle(title.getGenre()));
+                        }
+                    }
+
+                    movie.setStudio(studioDao.getStudio(1));
+
+                    if (!title.getDirector().equals("N/A")) {
+                        String[] directors = title.getDirector().split(",");
+
+                        //TODO currently only grabs the first director, could be multiples
+                        Map<String, String> dir = convertName(directors[0].toString());
+                        String fname = dir.get("firstname");
+                        String lname = dir.get("lastname");
+
+                        if (directorDao.getDirectorByLastFirst(lname, fname) == null) {
+                            Director newDir = new Director();
+                            newDir.setFname(fname);
+                            newDir.setLname(lname);
+                            directorDao.addDirector(newDir);
+                            movie.setDirector(newDir);
+                        } else {
+                            movie.setDirector(directorDao.getDirectorByLastFirst(lname, fname));
+                        }
+                    } else {
+                        movie.setDirector(directorDao.getDirector(1));
+                    }
+
+                    movie.setImdbid(title.getImdbID());
+
+                    movie.setReleaseDate(converter.convertFromString(title.getReleased()));
+
+                    if (title.getPoster().equals("N/A")) {
+                        movie.setImgsource("/mycine/images/unknown.png");
+                    } else {
+                        movie.setImgsource(title.getPoster());
+                    }
+
+                    dao.addMovie(movie);
+                    found.add(movie);
                 }
-
-                movie.setStudio(studioDao.getStudio(1));
-
-                String[] directors = title.getDirector().split(",");
-
-                //TODO currently only grabs the first director, could be multiples
-                Map<String, String> dir = convertName(directors[0].toString());
-                String fname = dir.get("firstname");
-                String lname = dir.get("lastname");
-
-                if (directorDao.getDirectorByLastFirst(lname, fname) == null) {
-                    Director newDir = new Director();
-                    newDir.setFname(fname);
-                    newDir.setLname(lname);
-                    directorDao.addDirector(newDir);
-                    movie.setDirector(newDir);
-                } else {
-                    movie.setDirector(directorDao.getDirectorByLastFirst(lname, fname));
-                }
-
-                movie.setImdbid(title.getImdbID());
-
-                movie.setReleaseDate(converter.convertFromString(title.getReleased()));
-
-                if (title.getPoster().equals("N/A")) {
-                    movie.setImgsource("/mycine/images/unknown.png");
-                } else {
-                    movie.setImgsource(title.getPoster());
-                }
-
-
-
-                dao.addMovie(movie);
-                found.add(movie);
 
             } else {
                 found.add(dao.getMovieByIMDB(item.getImdbID()));

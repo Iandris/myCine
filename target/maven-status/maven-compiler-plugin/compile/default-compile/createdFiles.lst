@@ -10,12 +10,14 @@ com/mtyoung/com/omdbapi/Search.class
 com/mtyoung/entity/Actor.class
 com/mtyoung/entity/User$1.class
 com/mtyoung/persistence/SessionFactoryProvider.class
+com/mtyoung/Servlet/MovieSearchRedirect.class
 com/mtyoung/Servlet/LoginFailureServlet.class
 com/mtyoung/com/omdbapi/SearchItem.class
 com/mtyoung/entity/Genre.class
 com/mtyoung/persistence/StateDao.class
 com/mtyoung/entity/Address.class
 com/mtyoung/persistence/UserFriendDao.class
+com/mtyoung/Servlet/MovieSearchServlet.class
 com/mtyoung/persistence/AddressDao.class
 com/mtyoung/persistence/MessageDao.class
 com/mtyoung/persistence/UserRoleDao.class
@@ -43,6 +45,7 @@ com/mtyoung/entity/Wishlist.class
 com/mtyoung/entity/User.class
 com/mtyoung/entity/State.class
 com/mtyoung/entity/Studio.class
+com/mtyoung/Servlet/AddMovieLibraryServlet.class
 com/mtyoung/persistence/ActorDao.class
 com/mtyoung/persistence/MovieDao.class
 com/mtyoung/persistence/WishlistDao.class

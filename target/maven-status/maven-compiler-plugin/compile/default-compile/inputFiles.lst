@@ -16,6 +16,7 @@
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/GenreDao.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/UserFriendDao.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/RegistrationServlet.java
+/Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/MovieSearchServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/Movie.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/util/LocalDateTimeAttributeConverter.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/Wishlist.java
@@ -40,9 +41,11 @@
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/LogoutServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/MovieCastLink.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/LoginFailureServlet.java
+/Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/AddMovieLibraryServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/WishlistLoaderServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/DirectorDao.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/UserRole.java
+/Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/MovieSearchRedirect.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/com/omdbapi/Title.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/AddressDao.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/State.java

@@ -33,6 +33,9 @@
             <c:if test="${newreleases == null}" >
                 <li>No Known New Releases</li>
             </c:if>
+            <c:if test="${newreleases.size() < 1}" >
+                <li>No Known New Releases</li>
+            </c:if>
         </ul>
 
         <h2>Upcoming Releases</h2>
@@ -42,6 +45,9 @@
             </c:forEach>
             <c:if test="${upcoming == null}" >
                 <li>No Known Upcoming Releases</li>
+            </c:if>
+            <c:if test="${upcoming.size() < 1}" >
+                <li>No Known New Releases</li>
             </c:if>
         </ul>
     </div>

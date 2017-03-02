@@ -6,7 +6,7 @@
 </head>
 <body class="regform">
         <h1>Welcome to MyCine</h1>
-<c:import url="jspinclude/loginModal.jsp" />
+<%--<c:import url="jspinclude/loginModal.jsp" />--%>
 <c:import url="jspinclude/scripts.jsp" />
 </body>
 
