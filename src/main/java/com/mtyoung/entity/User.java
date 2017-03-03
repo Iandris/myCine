@@ -117,7 +117,7 @@ public class User implements Comparable<User>, Serializable{
     this.password = password;
   }
 
-  @OneToMany (fetch = FetchType.EAGER, mappedBy = "userid")
+  @OneToMany (fetch = FetchType.LAZY, mappedBy = "userid")
   public Set<Wishlist> getWishlistSet() {
     return this.wishlists;
   }
@@ -126,7 +126,7 @@ public class User implements Comparable<User>, Serializable{
     this.wishlists = wishlists;
   }
 
-  @OneToMany (fetch = FetchType.EAGER, mappedBy = "userid")
+  @OneToMany (fetch = FetchType.LAZY, mappedBy = "userid")
   public Set<UserMovieLink> getMovieSet() {
     return this.links;
   }

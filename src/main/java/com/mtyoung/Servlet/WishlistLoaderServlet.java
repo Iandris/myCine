@@ -35,8 +35,6 @@ private HttpSession session;
         session = request.getSession();
         User user = (User) session.getAttribute("user");
 
-
-
         Movie[] mymovies = buildLibrary();
 
         session.setAttribute("mymovies", mymovies);
@@ -45,7 +43,7 @@ private HttpSession session;
 
     }
 
-    public Movie[] buildLibrary() {
+    private Movie[] buildLibrary() {
 
         User user = (User)session.getAttribute("user");
 

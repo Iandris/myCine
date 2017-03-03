@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>MyCine - Home</title>
+    <c:import url="/jspinclude/header.jsp" />
     <c:import url="/jspinclude/navigationBar.jsp" />
     <c:import url="/jspinclude/scripts.jsp" />
 </head>
@@ -56,14 +57,14 @@
                                 <input type="text" hidden="hidden" name="movietitle" id="movietitle" />
                                 <input type="text" hidden="hidden" name="movieID" id="movieID" />
                                 <input type="text" hidden="hidden" name="destination" id="destination" />
-                                <button  class="hoverbutton" type="button" onclick="setDestination('Wishlist', '${movie.title}', '${movie.idmovie}');">
+                                <button type="button" onclick="setDestination('Wishlist', '${movie.title}', '${movie.idmovie}');">
                                     <i class="fa fa-magic">
-                                        <span class="tooltiptext">Add to Wishlist</span>
+                                        <span>Add to Wishlist</span>
                                     </i>
                                 </button>
-                                <button class="hoverbutton"  type="button" onclick="setDestination('Library', '${movie.title}', '${movie.idmovie}');">
+                                <button type="button" onclick="setDestination('Library', '${movie.title}', '${movie.idmovie}');">
                                     <i class="fa fa-television">
-                                        <span class="tooltiptext">Add to Library</span>
+                                        <span>Add to Library</span>
                                     </i>
                                 </button>
                             </form>

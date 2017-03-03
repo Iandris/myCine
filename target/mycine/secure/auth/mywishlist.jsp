@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>MyCine - MyWishlist</title>
+    <c:import url="/jspinclude/header.jsp" />
     <c:import url="/jspinclude/navigationBar.jsp" />
     <c:import url="/jspinclude/scripts.jsp" />
 </head>

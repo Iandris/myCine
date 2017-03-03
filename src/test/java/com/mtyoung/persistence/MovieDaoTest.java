@@ -160,8 +160,6 @@ public class MovieDaoTest {
         assertEquals("Genre not updated", film.getGenre().getGenretitle(), dao.getMovie(newMovie).getGenre().getGenretitle());
         assertEquals("Studio not updated", film.getStudio().getStudiotitle(), dao.getMovie(newMovie).getStudio().getStudiotitle());
         assertEquals("Movie ID not updated", film.getIdmovie(), dao.getMovie(newMovie).getIdmovie());
-
-
     }
 
     @Test

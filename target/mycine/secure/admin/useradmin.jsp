@@ -2,8 +2,9 @@
 <html>
 <head>
     <title>MyCine - User Admin</title>
-    <c:import url="../../jspinclude/navigationBar.jsp" />
-    <c:import url="../../jspinclude/scripts.jsp" />
+    <c:import url="/jspinclude/header.jsp" />
+    <c:import url="/jspinclude/navigationBar.jsp" />
+    <c:import url="/jspinclude/scripts.jsp" />
 </head>
 <body class="schpeal-home" >
 <div>
@@ -11,7 +12,7 @@
 </div>
 
 <div id="accordion">
-    <c:forEach var="user" items="${users}" >
+    <c:forEach var="user" items="${people}" >
         <h3 style="text-decoration:underline;"><strong>${user.lname}, ${user.fname}</strong></h3>
         <form action="/mycine/secure/admin/updateuser">
             <table width="100%">
@@ -147,13 +148,5 @@
         </form>
     </c:forEach>
 </div>
-
-
-<%--<script type="text/javascript">--%>
-    <%--$(document).ready( --%>
-        <%--function() {--%>
-            <%--$("#state").val(${states[st -1 ].idstate});--%>
-        <%--});--%>
-<%--</script>--%>
 </body>
 </html>

@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Title</title>
+    <c:import url="jspinclude/header.jsp" />
 </head>
 <body>
 

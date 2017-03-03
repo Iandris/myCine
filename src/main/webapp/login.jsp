@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>MyCine - Login</title>
+    <c:import url="jspinclude/header.jsp" />
     <c:import url="jspinclude/navBarNoLogin.jsp" />
 </head>
 <body class="regform">

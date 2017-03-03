@@ -131,7 +131,7 @@ public class Movie  implements Comparable<Movie>, Serializable{
   }
 
 
-    @OneToMany (fetch = FetchType.EAGER, mappedBy = "movieid")
+    @OneToMany (fetch = FetchType.LAZY, mappedBy = "movieid")
     public Set<UserMovieLink> getMovieSet() {
         return this.links;
     }
