@@ -144,7 +144,7 @@ public class MovieDao {
 
         for (UserMovieLink link : links
              ) {
-            movies.add(this.getMovie(link.getMovieid()));
+            movies.add(this.getMovie(link.getMovieid().getIdmovie()));
         }
 
         return movies;
@@ -155,7 +155,7 @@ public class MovieDao {
 
         for (Wishlist link : movieIDs
                 ) {
-            movies.add(this.getMovie(link.getMovieid()));
+            movies.add(this.getMovie(link.getMovieid().getIdmovie()));
         }
 
         return movies;

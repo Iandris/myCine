@@ -8,35 +8,42 @@ import javax.persistence.*;
 @Table(name="WishList")
 public class Wishlist {
 
+  private int idwishlistlink;
+  private User userid;
+  private Movie movieid;
+
+
   @Id
   @GeneratedValue(generator="increment")
   @GenericGenerator(name="increment", strategy = "increment")
   @Column(name = "idWishListLink")
-  private int idwishlistlink;
-
-  @Column(name="userID")
-  private int userid;
-
-  @Column(name="movieID")
-  private int movieid;
-
   public int getIdwishlistlink() {
     return idwishlistlink;
   }
 
-  public int getUserid() {
+  public void setIdwishlistlink(int wishlistid) {
+    this.idwishlistlink = wishlistid;
+  }
+
+  //@Column(name="userID")
+  @ManyToOne(fetch = FetchType.EAGER)
+  @JoinColumn(name = "userid")
+  public User getUserid() {
     return userid;
   }
 
-  public void setUserid(int userid) {
+  public void setUserid(User userid) {
     this.userid = userid;
   }
 
-  public int getMovieid() {
+  //@Column(name="movieID")
+  @ManyToOne(fetch = FetchType.EAGER)
+  @JoinColumn(name = "movieid")
+  public Movie getMovieid() {
     return movieid;
   }
 
-  public void setMovieid(int movieid) {
+  public void setMovieid(Movie movieid) {
     this.movieid = movieid;
   }
 

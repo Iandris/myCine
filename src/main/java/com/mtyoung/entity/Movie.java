@@ -6,6 +6,8 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.time.*;
 import java.util.Comparator;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name="Movie", uniqueConstraints = {
@@ -25,6 +27,7 @@ public class Movie  implements Comparable<Movie>, Serializable{
   private String upccode;
   private LocalDate releaseDate;
   private String imgsource;
+  private Set<UserMovieLink> links = new HashSet<UserMovieLink>(0);
 
   @Id
   @GeneratedValue(generator="increment")
@@ -126,6 +129,16 @@ public class Movie  implements Comparable<Movie>, Serializable{
   public void setImgsource(String url) {
       this.imgsource = url;
   }
+
+
+    @OneToMany (fetch = FetchType.EAGER, mappedBy = "movieid")
+    public Set<UserMovieLink> getMovieSet() {
+        return this.links;
+    }
+
+    public void setMovieSet (Set<UserMovieLink> links) {
+        this.links = links;
+    }
 
   public int compareTo(Movie compareMovie) {
     int movieID = ((Movie) compareMovie).getIdmovie();

@@ -128,8 +128,8 @@ public class WishlistDaoTest {
 
         dao = new WishlistDao();
         link = new Wishlist();
-        link.setUserid(bob1.getUuid());
-        link.setMovieid(film1.getIdmovie());
+        link.setUserid(bob1);
+        link.setMovieid(film1);
     }
 
     @After
@@ -187,16 +187,16 @@ public class WishlistDaoTest {
     public void getWishListItem() throws Exception {
         newWishList = dao.addWishListItem(link);
         assertEquals("wishlist id not returned", link.getIdwishlistlink(), dao.getWishListItem(newWishList).getIdwishlistlink());
-        assertEquals("wishlist movie not returned", link.getMovieid(), dao.getWishListItem(newWishList).getMovieid());
-        assertEquals("wishlist owner not returned", link.getUserid(), dao.getWishListItem(newWishList).getUserid());
+        assertEquals("wishlist movie not returned", link.getMovieid().getIdmovie(), dao.getWishListItem(newWishList).getMovieid().getIdmovie());
+        assertEquals("wishlist owner not returned", link.getUserid().getUuid(), dao.getWishListItem(newWishList).getUserid().getUuid());
     }
 
     @Test
     public void addWishListItem() throws Exception {
         newWishList = dao.addWishListItem(link);
         assertEquals("wishlist id not inserted", link.getIdwishlistlink(), dao.getWishListItem(newWishList).getIdwishlistlink());
-        assertEquals("wishlist movie not inserted", link.getMovieid(), dao.getWishListItem(newWishList).getMovieid());
-        assertEquals("wishlist owner not inserted", link.getUserid(), dao.getWishListItem(newWishList).getUserid());
+        assertEquals("wishlist movie not inserted", link.getMovieid().getIdmovie(), dao.getWishListItem(newWishList).getMovieid().getIdmovie());
+        assertEquals("wishlist owner not inserted", link.getUserid().getUuid(), dao.getWishListItem(newWishList).getUserid().getUuid());
     }
 
     @Test
@@ -211,18 +211,31 @@ public class WishlistDaoTest {
         newWishList = dao.addWishListItem(link);
 
         assertEquals("wishlist id not inserted", link.getIdwishlistlink(), dao.getWishListItem(newWishList).getIdwishlistlink());
-        assertEquals("wishlist movie not inserted", link.getMovieid(), dao.getWishListItem(newWishList).getMovieid());
-        assertEquals("wishlist owner not inserted", link.getUserid(), dao.getWishListItem(newWishList).getUserid());
+        assertEquals("wishlist movie not inserted", link.getMovieid().getIdmovie(), dao.getWishListItem(newWishList).getMovieid().getIdmovie());
+        assertEquals("wishlist owner not inserted", link.getUserid().getUuid(), dao.getWishListItem(newWishList).getUserid().getUuid());
 
-        link.setUserid(bob2.getUuid());
-        link.setMovieid(film2.getIdmovie());
+        link.setUserid(bob2);
+        link.setMovieid(film2);
 
         dao.updateWishListItem(link);
 
         assertEquals("wishlist id not updated", link.getIdwishlistlink(), dao.getWishListItem(newWishList).getIdwishlistlink());
-        assertEquals("wishlist movie not updated", link.getMovieid(), dao.getWishListItem(newWishList).getMovieid());
-        assertEquals("wishlist owner not updated", link.getUserid(), dao.getWishListItem(newWishList).getUserid());
+        assertEquals("wishlist movie not updated", link.getMovieid().getIdmovie(), dao.getWishListItem(newWishList).getMovieid().getIdmovie());
+        assertEquals("wishlist owner not updated", link.getUserid().getUuid(), dao.getWishListItem(newWishList).getUserid().getUuid());
 
     }
 
+    @Test
+    public void getWishListByUserID() throws Exception {
+        newWishList = dao.addWishListItem(link);
+        assertNotNull("no movie returned for user in link", dao.getWishListByUserID(link.getUserid().getUuid()));
+        assertNotNull("no movie link returned for user", dao.getWishListByUserID(bob1.getUuid()));
+        assertEquals("link count returned different than expected", 1, dao.getWishListByUserID(link.getUserid().getUuid()).size());
+    }
+
+    @Test
+    public void getLinkByUserMovie() throws Exception {
+        newWishList = dao.addWishListItem(link);
+        assertNotNull("no links returned", dao.getLinkByUserMovie(link.getUserid().getUuid(), link.getMovieid().getIdmovie()));
+    }
 }

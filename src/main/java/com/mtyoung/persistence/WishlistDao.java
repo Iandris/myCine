@@ -109,4 +109,23 @@ public class WishlistDao {
         }
         return links;
     }
+
+    public Wishlist getLinkByUserMovie(int userid, int movieid) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        Transaction tx = null;
+        Wishlist link = null;
+        try {
+
+            link = (Wishlist) session.createQuery("from com.mtyoung.entity.Wishlist U where U.userid = :uuid and U.movieid = :movieid")
+                    .setString("uuid", String.valueOf(userid))
+                    .setString("movieid", String.valueOf(movieid))
+                    .uniqueResult();
+            return link;
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return link;
+    }
 }

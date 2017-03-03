@@ -130,9 +130,9 @@ public class UserMovieDaoTest {
 
         dao = new UserMovieDao();
         link = new UserMovieLink();
-        link.setUserid(bob1.getUuid());
+        link.setUserid(bob1);
         link.setQuantity(1);
-        link.setMovieid(film1.getIdmovie());
+        link.setMovieid(film1);
         link.setStarrating(5);
 
     }
@@ -191,9 +191,9 @@ public class UserMovieDaoTest {
     public void getMovieLink() throws Exception {
         newMovieLink = dao.addUserMovie(link);
         assertEquals("link id not returned", link.getLinkid(), dao.getMovieLink(newMovieLink).getLinkid());
-        assertEquals("link movie not returned", link.getMovieid(), dao.getMovieLink(newMovieLink).getMovieid());
+        assertEquals("link movie not returned", link.getMovieid().getIdmovie(), dao.getMovieLink(newMovieLink).getMovieid().getIdmovie());
         assertEquals("link quantity not returned", link.getQuantity(), dao.getMovieLink(newMovieLink).getQuantity());
-        assertEquals("link owner not returned", link.getUserid(), dao.getMovieLink(newMovieLink).getUserid());
+        assertEquals("link owner not returned", link.getUserid().getUuid(), dao.getMovieLink(newMovieLink).getUserid().getUuid());
         assertEquals("link rating not returned", link.getStarrating(), dao.getMovieLink(newMovieLink).getStarrating());
 
     }
@@ -202,9 +202,9 @@ public class UserMovieDaoTest {
     public void addUserMovie() throws Exception {
         newMovieLink = dao.addUserMovie(link);
         assertEquals("link id not inserted", link.getLinkid(), dao.getMovieLink(newMovieLink).getLinkid());
-        assertEquals("link movie not inserted", link.getMovieid(), dao.getMovieLink(newMovieLink).getMovieid());
+        assertEquals("link movie not inserted", link.getMovieid().getIdmovie(), dao.getMovieLink(newMovieLink).getMovieid().getIdmovie());
         assertEquals("link quantity not inserted", link.getQuantity(), dao.getMovieLink(newMovieLink).getQuantity());
-        assertEquals("link owner not inserted", link.getUserid(), dao.getMovieLink(newMovieLink).getUserid());
+        assertEquals("link owner not inserted", link.getUserid().getUuid(), dao.getMovieLink(newMovieLink).getUserid().getUuid());
         assertEquals("link rating not inserted", link.getStarrating(), dao.getMovieLink(newMovieLink).getStarrating());
     }
 
@@ -220,30 +220,36 @@ public class UserMovieDaoTest {
         newMovieLink = dao.addUserMovie(link);
 
         assertEquals("link id not inserted", link.getLinkid(), dao.getMovieLink(newMovieLink).getLinkid());
-        assertEquals("link movie not inserted", link.getMovieid(), dao.getMovieLink(newMovieLink).getMovieid());
+        assertEquals("link movie not inserted", link.getMovieid().getIdmovie(), dao.getMovieLink(newMovieLink).getMovieid().getIdmovie());
         assertEquals("link quantity not inserted", link.getQuantity(), dao.getMovieLink(newMovieLink).getQuantity());
-        assertEquals("link owner not inserted", link.getUserid(), dao.getMovieLink(newMovieLink).getUserid());
+        assertEquals("link owner not inserted", link.getUserid().getUuid(), dao.getMovieLink(newMovieLink).getUserid().getUuid());
         assertEquals("link rating not inserted", link.getStarrating(), dao.getMovieLink(newMovieLink).getStarrating());
 
-        link.setUserid(bob2.getUuid());
+        link.setUserid(bob2);
         link.setQuantity(3);
-        link.setMovieid(film2.getIdmovie());
+        link.setMovieid(film2);
         link.setStarrating(2);
 
         dao.updateMovieLink(link);
 
         assertEquals("link id not updated", link.getLinkid(), dao.getMovieLink(newMovieLink).getLinkid());
-        assertEquals("link movie not updated", link.getMovieid(), dao.getMovieLink(newMovieLink).getMovieid());
+        assertEquals("link movie not updated", link.getMovieid().getIdmovie(), dao.getMovieLink(newMovieLink).getMovieid().getIdmovie());
         assertEquals("link quantity not updated", link.getQuantity(), dao.getMovieLink(newMovieLink).getQuantity());
-        assertEquals("link owner not updated", link.getUserid(), dao.getMovieLink(newMovieLink).getUserid());
+        assertEquals("link owner not updated", link.getUserid().getUuid(), dao.getMovieLink(newMovieLink).getUserid().getUuid());
         assertEquals("link rating not updated", link.getStarrating(), dao.getMovieLink(newMovieLink).getStarrating());
     }
 
     @Test
     public void getMovieLinkByUserID() throws Exception {
         newMovieLink = dao.addUserMovie(link);
-        assertNotNull("no movie returned for user in link", dao.getMovieLinkByUserID(link.getUserid()));
-        assertNotNull("no movie link returned for user", dao.getMovieLinkByUserID(bob1.getUuid()));
-        assertEquals("link count returned different than expected", 1, dao.getMovieLinkByUserID(link.getUserid()).size());
+        assertNotNull("no movie returned for user in link", dao.getMoviesLinkByUserID(link.getUserid().getUuid()));
+        assertNotNull("no movie link returned for user", dao.getMoviesLinkByUserID(bob1.getUuid()));
+        assertEquals("link count returned different than expected", 1, dao.getMoviesLinkByUserID(link.getUserid().getUuid()).size());
+    }
+
+    @Test
+    public void getLinkByUserMovie() throws Exception {
+        newMovieLink = dao.addUserMovie(link);
+        assertNotNull("no links returned", dao.getLinkByUserMovie(link.getUserid().getUuid(), link.getMovieid().getIdmovie()));
     }
 }

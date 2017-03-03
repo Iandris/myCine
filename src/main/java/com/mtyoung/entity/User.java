@@ -6,6 +6,8 @@ import org.apache.catalina.realm.*;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Comparator;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "users")
@@ -20,6 +22,8 @@ public class User implements Comparable<User>, Serializable{
   private int reminderthreshold;
   private int defaultrentalperiod;
   private String password;
+  private Set<UserMovieLink> links = new HashSet<UserMovieLink>(0);
+  private Set<Wishlist> wishlists = new HashSet<Wishlist>(0);
 
   @Id
   @GeneratedValue(generator="increment")
@@ -111,6 +115,24 @@ public class User implements Comparable<User>, Serializable{
 
   public void setPassword(String password) {
     this.password = password;
+  }
+
+  @OneToMany (fetch = FetchType.EAGER, mappedBy = "userid")
+  public Set<Wishlist> getWishlistSet() {
+    return this.wishlists;
+  }
+
+  public void setWishlistSet (Set<Wishlist> wishlists) {
+    this.wishlists = wishlists;
+  }
+
+  @OneToMany (fetch = FetchType.EAGER, mappedBy = "userid")
+  public Set<UserMovieLink> getMovieSet() {
+    return this.links;
+  }
+
+  public void setMovieSet (Set<UserMovieLink> links) {
+    this.links = links;
   }
 
   public int compareTo(User compareUser) {

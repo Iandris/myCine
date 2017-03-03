@@ -132,9 +132,9 @@ public class RentalDaoTest {
 
         movieLinkDao = new UserMovieDao();
         movieLink = new UserMovieLink();
-        movieLink.setUserid(bob1.getUuid());
+        movieLink.setUserid(bob1);
         movieLink.setQuantity(1);
-        movieLink.setMovieid(film1.getIdmovie());
+        movieLink.setMovieid(film1);
         movieLink.setStarrating(5);
         newMovieLink = movieLinkDao.addUserMovie(movieLink);
 

@@ -2,6 +2,7 @@ com/mtyoung/entity/UserMovieLink.class
 com/mtyoung/com/omdbapi/Title.class
 com/mtyoung/entity/UserFriends.class
 com/mtyoung/util/LocalDateAttributeConverter.class
+com/mtyoung/Servlet/RemoveMovieLibraryServlet.class
 com/mtyoung/util/LocalDateTimeAttributeConverter.class
 com/mtyoung/com/omdbapi/OmdbJson.class
 com/mtyoung/entity/Director.class
@@ -20,6 +21,7 @@ com/mtyoung/persistence/UserFriendDao.class
 com/mtyoung/Servlet/MovieSearchServlet.class
 com/mtyoung/persistence/AddressDao.class
 com/mtyoung/persistence/MessageDao.class
+com/mtyoung/Servlet/ErrorRedirect.class
 com/mtyoung/persistence/UserRoleDao.class
 com/mtyoung/Servlet/LoginServlet.class
 com/mtyoung/Servlet/LoginStoreInSession.class

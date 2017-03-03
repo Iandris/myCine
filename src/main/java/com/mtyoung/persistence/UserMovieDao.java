@@ -92,7 +92,7 @@ public class UserMovieDao {
         }
     }
 
-    public List<UserMovieLink> getMovieLinkByUserID(int userid) {
+    public List<UserMovieLink> getMoviesLinkByUserID(int userid) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Transaction tx = null;
         List<UserMovieLink> links = null;
@@ -108,5 +108,24 @@ public class UserMovieDao {
             session.close();
         }
         return links;
+    }
+
+    public UserMovieLink getLinkByUserMovie(int userid, int movieid) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        Transaction tx = null;
+        UserMovieLink link = null;
+        try {
+
+            link = (UserMovieLink) session.createQuery("from com.mtyoung.entity.UserMovieLink U where U.userid = :uuid and U.movieid = :movieid")
+                    .setString("uuid", String.valueOf(userid))
+                    .setString("movieid", String.valueOf(movieid))
+                    .uniqueResult();
+            return link;
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return link;
     }
 }
