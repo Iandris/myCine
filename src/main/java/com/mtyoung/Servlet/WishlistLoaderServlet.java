@@ -54,7 +54,7 @@ private HttpSession session;
 
         List<Wishlist> links = wishlistDao.getWishListByUserID(user.getUuid());
         Movie[] films = new Movie[links.size()];
-        
+
         int i =0;
         for (Wishlist link: links
                 ) {

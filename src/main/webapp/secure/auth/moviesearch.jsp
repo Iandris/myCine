@@ -14,9 +14,14 @@
     <form action="/mycine/secure/auth/moviesearch" onsubmit="return showMe()" id="searchForm" method="POST" >
         <div class="form-group input-group">
             <input type='text' placeholder='Search...' id='title' name="title" class="form-control"/>
-            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <span class="input-group-addon" onclick="searchNow()" id="searchSpanner"><i class="fa fa-search"></i></span>
         </div>
     </form>
+    <script type="text/javascript">
+        function searchNow() {
+            $('#searchForm').submit();
+        }
+    </script>
 
     <div id="loading" class="hideme">
         <img src="${pageContext.request.contextPath}/images/loading-bar.gif" alt="loadinggif" />
