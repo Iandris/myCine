@@ -26,3 +26,6 @@
 | 2/24/17 | created jsp for mylibrary | 2 | |
 | 2/27/17 | added detail to mylibrary jsp, and form for update of useradmin | 3 | |
 | 2/28/17 | re-designed hibernate annotations to include relationships | 6 | |
+| 3/01/17 | added json class and tests | 3 | |
+| 3/02/17 | added more hibernate relationships for usermovie and wishlist entities | 4 | |
+| 3/03/17 | functional add to wishlist and library from search, and move from wishlist to library etc | 4 | |
