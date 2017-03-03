@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="myCine@localhost [2]" uuid="8f8781a9-02cc-4d66-bfc1-9da8aea25b0e">
+    <data-source name="mycine local" uuid="8f8781a9-02cc-4d66-bfc1-9da8aea25b0e">
       <database-info product="MySQL" version="5.7.17" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
@@ -11,7 +11,7 @@
       <user-name>root</user-name>
       <resolve-scope>myCine:</resolve-scope>
     </data-source>
-    <data-source name="myCine@localhost" uuid="762b1740-9133-47e5-b3fa-f611e7f61edf">
+    <data-source name="mycine on AWS" uuid="762b1740-9133-47e5-b3fa-f611e7f61edf">
       <database-info product="MySQL" version="5.7.17-0ubuntu0.16.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>

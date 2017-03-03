@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @WebServlet(
@@ -27,27 +28,41 @@ import java.util.List;
  * Created by Mike on 2/28/17.
  */
 public class WishlistLoaderServlet extends HttpServlet {
-
+private HttpSession session;
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        HttpSession session = request.getSession();
+        session = request.getSession();
         User user = (User) session.getAttribute("user");
 
-        MovieDao dao = new MovieDao();
-        WishlistDao wishlistDao = new WishlistDao();
 
-        List<Wishlist> links = wishlistDao.getWishListByUserID(user.getUuid());
-        List<Movie> mymovies = new ArrayList<Movie>();
 
-        for (Wishlist link : links
-                ) {
-            mymovies.add(dao.getMovie(link.getMovieid().getIdmovie()));
-        }
+        Movie[] mymovies = buildLibrary();
 
         session.setAttribute("mymovies", mymovies);
 
         getServletContext().getRequestDispatcher("/secure/auth/mywishlist.jsp").forward(request, response);
 
+    }
+
+    public Movie[] buildLibrary() {
+
+        User user = (User)session.getAttribute("user");
+
+        MovieDao dao = new MovieDao();
+        WishlistDao wishlistDao = new WishlistDao();
+
+        List<Wishlist> links = wishlistDao.getWishListByUserID(user.getUuid());
+        Movie[] films = new Movie[links.size()];
+        
+        int i =0;
+        for (Wishlist link: links
+                ) {
+            films[i] = dao.getMovie(link.getMovieid().getIdmovie());
+            i++;
+        }
+
+        Arrays.sort(films, Movie.MovieNameComparator);
+        return films;
     }
 }

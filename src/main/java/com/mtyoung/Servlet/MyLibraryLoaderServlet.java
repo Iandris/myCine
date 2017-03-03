@@ -2,6 +2,7 @@ package com.mtyoung.Servlet;
 
 import com.mtyoung.entity.*;
 import com.mtyoung.persistence.*;
+import jersey.repackaged.com.google.common.collect.Lists;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @WebServlet(
@@ -22,14 +24,13 @@ import java.util.List;
  */
 public class MyLibraryLoaderServlet extends HttpServlet {
     private HttpSession session;
-    private List<Movie> mymovies;
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
         session = request.getSession();
 
-        mymovies = buildLibrary();
+        Movie[] mymovies = buildLibrary();
 
         session.setAttribute("new", null);
 
@@ -38,18 +39,22 @@ public class MyLibraryLoaderServlet extends HttpServlet {
         getServletContext().getRequestDispatcher("/secure/auth/mylibrary.jsp").forward(request, response);
     }
 
-    public List<Movie> buildLibrary() {
+    public Movie[] buildLibrary() {
         User user = (User)session.getAttribute("user");
         MovieDao dao = new MovieDao();
         UserMovieDao umdao = new UserMovieDao();
 
         List<UserMovieLink> links = umdao.getMoviesLinkByUserID(user.getUuid());
-        mymovies = new ArrayList<Movie>();
+        Movie[] films = new Movie[links.size()];
 
+        int i =0;
         for (UserMovieLink link: links
                 ) {
-            mymovies.add(dao.getMovie(link.getMovieid().getIdmovie()));
+            films[i] = dao.getMovie(link.getMovieid().getIdmovie());
+            i++;
         }
-        return mymovies;
+
+        Arrays.sort(films, Movie.MovieNameComparator);
+        return films;
     }
 }

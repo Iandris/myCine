@@ -2,78 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f46ccfb-b6a2-4f76-a242-8954c9e8b758" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/loading-bar.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/ErrorRedirect.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/RemoveMovieLibraryServlet.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/ErrorRedirect.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/RemoveMovieLibraryServlet.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mycine/images/loading-bar.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/ErrorRedirect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RemoveMovieLibraryServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/javascript/mycine.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mycine/error.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mycine/javascript/mycine.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/css/kingtable.clear.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/css/kingtable.core.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/css/kingtable.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/css/kingtable.clear.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/css/kingtable.core.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/css/kingtable.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/AddMovieLibraryServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/AddMovieLibraryServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/MyLibraryLoaderServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/MyLibraryLoaderServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/WishlistLoaderServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/WishlistLoaderServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/Movie$1.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/Movie$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/Movie.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/Movie.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/User$1.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/User$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/User.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/UserMovieLink.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/UserMovieLink.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/Wishlist.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/Wishlist.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/MovieDao.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/MovieDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/UserMovieDao.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/UserMovieDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/WishlistDao.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/WishlistDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine.war" afterPath="$PROJECT_DIR$/target/mycine.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/AddMovieLibraryServlet.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/AddMovieLibraryServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/MyLibraryLoaderServlet.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/MyLibraryLoaderServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/WishlistLoaderServlet.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/WishlistLoaderServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Movie$1.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Movie$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Movie.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Movie.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User$1.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserMovieLink.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserMovieLink.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Wishlist.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Wishlist.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/MovieDao.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/MovieDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/UserMovieDao.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/UserMovieDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/WishlistDao.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/WishlistDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/762b1740-9133-47e5-b3fa-f611e7f61edf.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/762b1740-9133-47e5-b3fa-f611e7f61edf.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/8f8781a9-02cc-4d66-bfc1-9da8aea25b0e.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/8f8781a9-02cc-4d66-bfc1-9da8aea25b0e.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/HibernateDemo.log" afterPath="$PROJECT_DIR$/logs/HibernateDemo.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/AddMovieLibraryServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/AddMovieLibraryServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MyLibraryLoaderServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MyLibraryLoaderServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/WishlistLoaderServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/WishlistLoaderServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Movie.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Movie.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/UserMovieLink.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/UserMovieLink.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Wishlist.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Wishlist.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/MovieDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/MovieDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/UserMovieDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/UserMovieDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/WishlistDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/WishlistDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrapOverload.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/secure/auth/moviesearch.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/secure/auth/moviesearch.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/secure/auth/mylibrary.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/secure/auth/mylibrary.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/secure/auth/mywishlist.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/secure/auth/mywishlist.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/RentalDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/RentalDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserMovieDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/UserMovieDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/WishlistDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/WishlistDaoTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom.properties" afterPath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/css/bootstrapOverload.css" afterPath="$PROJECT_DIR$/target/mycine/css/bootstrapOverload.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/jspinclude/scripts.jsp" afterPath="$PROJECT_DIR$/target/mycine/jspinclude/scripts.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/secure/auth/moviesearch.jsp" afterPath="$PROJECT_DIR$/target/mycine/secure/auth/moviesearch.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/secure/auth/mylibrary.jsp" afterPath="$PROJECT_DIR$/target/mycine/secure/auth/mylibrary.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/secure/auth/mywishlist.jsp" afterPath="$PROJECT_DIR$/target/mycine/secure/auth/mywishlist.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -131,7 +74,7 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="myCine@localhost [2]" />
+        <option name="myItemId" value="mycine on AWS" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -141,11 +84,7 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="myCine@localhost [2]" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="UserMovie" />
+        <option name="myItemId" value="mycine local" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -153,76 +92,35 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AddMovieLibraryServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/AddMovieLibraryServlet.java">
+      <file leaf-file-name="MyLibraryLoaderServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MyLibraryLoaderServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="60" column="46" lean-forward="false" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="46" />
+            <state relative-caret-position="45">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#addMovieToWishlist#0;class#AddMovieLibraryServlet#0" expanded="true" />
-                <element signature="method#addMovieToLibrary#0;class#AddMovieLibraryServlet#0" expanded="true" />
+                <element signature="method#doGet#0;class#MyLibraryLoaderServlet#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RemoveMovieLibraryServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RemoveMovieLibraryServlet.java">
+      <file leaf-file-name="Movie.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Movie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="70" column="74" lean-forward="false" selection-start-line="70" selection-start-column="74" selection-end-line="70" selection-end-column="74" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#689#726#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EnrollServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/EnrollServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="76" column="42" lean-forward="false" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="42" />
+            <state relative-caret-position="130">
+              <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mylibrary.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/secure/auth/mylibrary.jsp">
+      <file leaf-file-name="WishlistLoaderServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/WishlistLoaderServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="51" column="47" lean-forward="false" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+            <state relative-caret-position="399">
+              <caret line="56" column="8" lean-forward="false" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
               <folding>
-                <element signature="e#3252#3818#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyLibraryLoaderServlet.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MyLibraryLoaderServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding>
-                <element signature="method#doGet#0;class#MyLibraryLoaderServlet#0" expanded="true" />
-                <element signature="method#buildLibrary#0;class#MyLibraryLoaderServlet#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mywishlist.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/secure/auth/mywishlist.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="37" column="85" lean-forward="false" selection-start-line="37" selection-start-column="85" selection-end-line="37" selection-end-column="85" />
-              <folding>
-                <element signature="e#2550#2946#0#HTML" expanded="true" />
-                <element signature="e#2992#3558#0#HTML" expanded="true" />
+                <element signature="method#doGet#0;class#WishlistLoaderServlet#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -318,7 +216,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/WishlistDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jspinclude/scripts.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/javascript/mycine.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/WishlistLoaderServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/error.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/ErrorRedirect.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/AddMovieLibraryServlet.java" />
@@ -326,8 +223,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/secure/auth/moviesearch.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/secure/auth/mywishlist.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RemoveMovieLibraryServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MyLibraryLoaderServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/secure/auth/mylibrary.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MyLibraryLoaderServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/WishlistLoaderServlet.java" />
       </list>
     </option>
   </component>
@@ -707,6 +605,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Servlet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mycine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtyoung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1548,7 +1476,7 @@
       <workItem from="1488393292350" duration="8463000" />
       <workItem from="1488408662174" duration="14405000" />
       <workItem from="1488461489253" duration="21956000" />
-      <workItem from="1488547691332" duration="16071000" />
+      <workItem from="1488547691332" duration="17756000" />
     </task>
     <servers />
   </component>
@@ -1585,7 +1513,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="347543000" />
+    <option name="totallyTimeSpent" value="349228000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1610,7 +1538,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19098713" sideWeight="0.22629969" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12660944" sideWeight="0.22629969" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1623,7 +1551,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32765958" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32765958" sideWeight="0.49427754" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44475922" sideWeight="0.47854078" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44475922" sideWeight="0.47854078" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22836879" sideWeight="0.49713877" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26824033" sideWeight="0.44770643" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26251787" sideWeight="0.5522936" order="0" side_tool="false" content_ui="combo" />
@@ -1847,19 +1775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#819#834#0" expanded="false" />
-            <element signature="e#2979#2980#0" expanded="false" />
-            <element signature="e#3012#3013#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/RentalDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -1891,7 +1806,7 @@
         <state relative-caret-position="258">
           <caret line="157" column="67" lean-forward="false" selection-start-line="157" selection-start-column="67" selection-end-line="157" selection-end-column="67" />
           <folding>
-            <element signature="method#getMovieListByLinks#0;class#MovieDao#0" expanded="true" />
+            <element signature="method#getMovieListByLinks#0;class#MovieDao#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1901,9 +1816,9 @@
         <state relative-caret-position="157">
           <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#640#655#0" expanded="true" />
-            <element signature="e#707#717#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#640#655#0" expanded="false" />
+            <element signature="e#707#717#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1925,8 +1840,8 @@
         <state relative-caret-position="161">
           <caret line="112" column="3" lean-forward="true" selection-start-line="112" selection-start-column="3" selection-end-line="129" selection-end-column="5" />
           <folding>
-            <element signature="docComment;class#UserMovieDao#0" expanded="true" />
-            <element signature="method#getLinkByUserMovie#0;class#UserMovieDao#0" expanded="true" />
+            <element signature="docComment;class#UserMovieDao#0" expanded="false" />
+            <element signature="method#getLinkByUserMovie#0;class#UserMovieDao#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1946,7 +1861,7 @@
         <state relative-caret-position="-81">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="32" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2014,16 +1929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/WishlistLoaderServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="51" column="5" lean-forward="false" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-          <folding>
-            <element signature="method#doGet#0;class#WishlistLoaderServlet#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/error.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -2056,8 +1961,8 @@
         <state relative-caret-position="121">
           <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding>
-            <element signature="method#getWishListByUserID#0;class#WishlistDao#0" expanded="true" />
-            <element signature="method#getLinkByUserMovie#0;class#WishlistDao#0" expanded="true" />
+            <element signature="method#getWishListByUserID#0;class#WishlistDao#0" expanded="false" />
+            <element signature="method#getLinkByUserMovie#0;class#WishlistDao#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2086,14 +1991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/EnrollServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="76" column="42" lean-forward="false" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/AddMovieLibraryServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -2102,17 +1999,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#addMovieToWishlist#0;class#AddMovieLibraryServlet#0" expanded="true" />
             <element signature="method#addMovieToLibrary#0;class#AddMovieLibraryServlet#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/secure/auth/mywishlist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="37" column="85" lean-forward="false" selection-start-line="37" selection-start-column="85" selection-end-line="37" selection-end-column="85" />
-          <folding>
-            <element signature="e#2550#2946#0#HTML" expanded="true" />
-            <element signature="e#2992#3558#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2128,6 +2014,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/EnrollServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="76" column="42" lean-forward="false" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/secure/auth/mylibrary.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -2138,13 +2032,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/secure/auth/mywishlist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="37" column="85" lean-forward="false" selection-start-line="37" selection-start-column="85" selection-end-line="37" selection-end-column="85" />
+          <folding>
+            <element signature="e#2550#2946#0#HTML" expanded="true" />
+            <element signature="e#2992#3558#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MyLibraryLoaderServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="45">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
             <element signature="method#doGet#0;class#MyLibraryLoaderServlet#0" expanded="true" />
-            <element signature="method#buildLibrary#0;class#MyLibraryLoaderServlet#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/WishlistLoaderServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="56" column="8" lean-forward="false" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+          <folding>
+            <element signature="method#doGet#0;class#WishlistLoaderServlet#0" expanded="true" />
           </folding>
         </state>
       </provider>
