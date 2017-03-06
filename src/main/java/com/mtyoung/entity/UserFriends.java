@@ -7,37 +7,38 @@ import javax.persistence.*;
 @Entity
 @Table(name = "UserFriends")
 public class UserFriends {
+  private int idConnector;
+  private int frienda;
+  private int friendb;
 
   @Id
   @GeneratedValue(generator="increment")
   @GenericGenerator(name="increment", strategy = "increment")
   @Column(name = "id")
-  private int idConnector;
-
-  @Column(name="friend_a")
-  private int friend_a;
-
-  @Column(name="friend_b")
-  private int friend_b;
-
   public int getIdConnector() {
     return idConnector;
   }
 
-  public int getFriendidA() {
-    return friend_a;
+  public void setIdConnector(int idConnector) {
+    this.idConnector = idConnector;
   }
 
-  public void setFriendidA(int id_1) {
-    this.friend_a = id_1;
+  @Column(name="frienda")
+  public int getFrienda() {
+    return frienda;
   }
 
-  public int getFriendidB() {
-    return friend_b;
+  public void setFrienda(int frienda) {
+    this.frienda = frienda;
   }
 
-  public void setFriendidB(int id_2) {
-    this.friend_b = id_2;
+  @Column(name="friendb")
+  public int getFriendb() {
+    return friendb;
+  }
+
+  public void setFriendb(int friendb) {
+    this.friendb = friendb;
   }
 
 }

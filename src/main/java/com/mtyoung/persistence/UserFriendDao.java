@@ -2,9 +2,13 @@ package com.mtyoung.persistence;
 
 import com.mtyoung.entity.UserFriends;
 import org.apache.log4j.Logger;
+import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Criterion;
+import org.hibernate.criterion.LogicalExpression;
+import org.hibernate.criterion.Restrictions;
 
 import java.util.List;
 
@@ -30,7 +34,6 @@ public class UserFriendDao {
         }
         return friends;
     }
-
 
     /**
      * retrieve a user given their id
@@ -113,5 +116,26 @@ public class UserFriendDao {
         } finally {
             session.close();
         }
+    }
+
+    public List<UserFriends> getFriendsByUser(int userid) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        Transaction tx = null;
+        List<UserFriends> links = null;
+        try {
+
+            links = session.createCriteria(UserFriends.class)
+                    .add(Restrictions.disjunction()
+                    .add(Restrictions.eq("frienda", userid))
+                    .add(Restrictions.eq("friendb", userid))
+                    ).list();
+
+            return links;
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return links;
     }
 }

@@ -83,8 +83,8 @@ public class UserFriendDaoTest {
         bob3.setPassword("Password");
         newUser3 = userDao.addUser(bob3);
 
-        friend.setFriendidA(bob1.getUuid());
-        friend.setFriendidB(bob2.getUuid());
+        friend.setFrienda(bob1.getUuid());
+        friend.setFriendb(bob2.getUuid());
 
     }
 
@@ -124,16 +124,16 @@ public class UserFriendDaoTest {
     public void getFriend() throws Exception {
         newFriend = dao.addFriend(friend);
         assertTrue(newFriend != 0);
-        assertEquals("friend a not returned" , friend.getFriendidA(), dao.getFriend(newFriend).getFriendidA());
-        assertEquals("friend b not returned" , friend.getFriendidB(), dao.getFriend(newFriend).getFriendidB());
+        assertEquals("friend a not returned" , friend.getFrienda(), dao.getFriend(newFriend).getFrienda());
+        assertEquals("friend b not returned" , friend.getFriendb(), dao.getFriend(newFriend).getFriendb());
     }
 
     @Test
     public void addFriend() throws Exception {
         newFriend = dao.addFriend(friend);
         assertTrue(newFriend != 0);
-        assertEquals("friend a not inserted" , friend.getFriendidA(), dao.getFriend(newFriend).getFriendidA());
-        assertEquals("friend b not inserted" , friend.getFriendidB(), dao.getFriend(newFriend).getFriendidB());
+        assertEquals("friend a not inserted" , friend.getFrienda(), dao.getFriend(newFriend).getFrienda());
+        assertEquals("friend b not inserted" , friend.getFriendb(), dao.getFriend(newFriend).getFriendb());
     }
 
     @Test
@@ -148,12 +148,18 @@ public class UserFriendDaoTest {
         newFriend = dao.addFriend(friend);
         assertTrue(newFriend != 0);
 
-        friend.setFriendidB(bob3.getUuid());
-        friend.setFriendidA(bob2.getUuid());
+        friend.setFriendb(bob3.getUuid());
+        friend.setFrienda(bob2.getUuid());
         dao.updateFriend(friend);
 
-        assertEquals("friend a not updated", friend.getFriendidB(), dao.getFriend(friend.getIdConnector()).getFriendidB());
-        assertEquals("friend a not updated", friend.getFriendidA(), dao.getFriend(friend.getIdConnector()).getFriendidA());
+        assertEquals("friend a not updated", friend.getFriendb(), dao.getFriend(friend.getIdConnector()).getFriendb());
+        assertEquals("friend a not updated", friend.getFrienda(), dao.getFriend(friend.getIdConnector()).getFrienda());
     }
 
+    @Test
+    public void getFriendsByUser() throws Exception {
+        newFriend = dao.addFriend(friend);
+        assertEquals("No friends returned for a", 1, dao.getFriendsByUser(bob1.getUuid()).size());
+        assertEquals("No friends returned for b", 1, dao.getFriendsByUser(bob2.getUuid()).size());
+    }
 }

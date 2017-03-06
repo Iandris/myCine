@@ -8,7 +8,7 @@
         <li><a href="/mycine/secure/auth/library">MyLibrary</a></li>
         <li><a href="/mycine/secure/auth/wishlist">MyWishList</a></li>
         <li><a href="/mycine/secure/auth/search">Search Titles</a></li>
-        <li><a href="#">MyFriends</a></li>
+        <li><a href="/mycine/secure/auth/friends">MyFriends</a></li>
         <li><a href="#">Settings</a></li>
         <li><a href="#">Support</a></li>
         <li><a href="/mycine/secure/admin/useradmin">User Admin</a></li>
