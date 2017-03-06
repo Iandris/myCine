@@ -11,8 +11,8 @@ import java.util.Properties;
  */
 public class EmailMessage {
     //TODO update username and password for your gmail account
-    private static final String GMAIL_USERNAME = "iandris427@gmail.com";
-    private static final String GMAIL_PWD = "J795ui9j";
+    private static final String GMAIL_USERNAME = "";
+    private static final String GMAIL_PWD = "";
 
 
     public boolean sendFriendRequest(String sender, String recipient) {
