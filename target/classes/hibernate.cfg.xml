@@ -37,6 +37,7 @@
         <mapping class="com.mtyoung.entity.UserMovieLink" />
         <mapping class="com.mtyoung.entity.UserRole" />
         <mapping class="com.mtyoung.entity.Wishlist" />
+        <mapping class="com.mtyoung.entity.Friendrequests" />
 
     </session-factory>
 

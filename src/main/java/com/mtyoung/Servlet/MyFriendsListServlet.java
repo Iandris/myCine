@@ -43,12 +43,15 @@ public class MyFriendsListServlet extends HttpServlet {
         List<UserFriends> friends = dao.getFriendsByUser(user.getUuid());
         List<User> myFriends = new ArrayList<>();
 
-        for (UserFriends friend: friends
-             ) {
-            if (friend.getFrienda() == user.getUuid()) {
-                myFriends.add(usrDao.getUser(friend.getFriendb()));
-            } else if (friend.getFriendb() == user.getUuid()) {
-                myFriends.add(usrDao.getUser(friend.getFrienda()));
+        if (friends != null) {
+
+            for (UserFriends friend : friends
+                    ) {
+                if (friend.getFrienda() == user.getUuid()) {
+                    myFriends.add(usrDao.getUser(friend.getFriendb()));
+                } else if (friend.getFriendb() == user.getUuid()) {
+                    myFriends.add(usrDao.getUser(friend.getFrienda()));
+                }
             }
         }
 

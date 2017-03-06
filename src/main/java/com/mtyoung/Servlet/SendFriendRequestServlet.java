@@ -54,7 +54,7 @@ public class SendFriendRequestServlet extends HttpServlet {
 
                     EmailMessage email = new EmailMessage();
 
-                    boolean success = email.sendFriendRequest(sender, recipient);
+                    boolean success = email.sendFriendRequest(user, user2);
 
                     if (success) {
                         sendMessage = "Friend Request Email was sent to " + recipient;
@@ -79,12 +79,14 @@ public class SendFriendRequestServlet extends HttpServlet {
         List<UserFriends> friends = userFriendDao.getFriendsByUser(user.getUuid());
         List<String> myFriends = new ArrayList<>();
 
-        for (UserFriends friend: friends
-                ) {
-            if (friend.getFrienda() == user.getUuid()) {
-                myFriends.add(userDao.getUser(friend.getFriendb()).getUser_name());
-            } else if (friend.getFriendb() == user.getUuid()) {
-                myFriends.add(userDao.getUser(friend.getFrienda()).getUser_name());
+        if (friends != null) {
+            for (UserFriends friend : friends
+                    ) {
+                if (friend.getFrienda() == user.getUuid()) {
+                    myFriends.add(userDao.getUser(friend.getFriendb()).getUser_name());
+                } else if (friend.getFriendb() == user.getUuid()) {
+                    myFriends.add(userDao.getUser(friend.getFrienda()).getUser_name());
+                }
             }
         }
 

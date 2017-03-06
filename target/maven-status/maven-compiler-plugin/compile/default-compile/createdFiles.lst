@@ -21,6 +21,7 @@ com/mtyoung/persistence/StateDao.class
 com/mtyoung/entity/Address.class
 com/mtyoung/persistence/UserFriendDao.class
 com/mtyoung/Servlet/MovieSearchServlet.class
+com/mtyoung/persistence/FriendrequestsDao.class
 com/mtyoung/persistence/AddressDao.class
 com/mtyoung/persistence/MessageDao.class
 com/mtyoung/Servlet/ErrorRedirect.class
@@ -30,6 +31,7 @@ com/mtyoung/Servlet/LoginServlet.class
 com/mtyoung/Servlet/LoginStoreInSession.class
 com/mtyoung/Servlet/HomeServlet.class
 com/mtyoung/entity/UserRole.class
+com/mtyoung/entity/Friendrequests.class
 com/mtyoung/Servlet/EnrollServlet.class
 com/mtyoung/Servlet/LogoutServlet.class
 com/mtyoung/Servlet/UserAdminServlet.class

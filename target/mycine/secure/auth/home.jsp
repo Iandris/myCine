@@ -25,6 +25,8 @@
         </aside>
     </div>
 
+    ${request}
+
     <div class="releases">
         <h2>New Releases</h2>
         <ul>
