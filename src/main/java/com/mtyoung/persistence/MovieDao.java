@@ -139,6 +139,27 @@ public class MovieDao {
         return movie;
     }
 
+    public List<Movie> getMoviesByTitleSearch(String title) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        Transaction tx = null;
+        List<Movie> titles = null;
+        //parse out url space
+        title = title.replace("%20", " ");
+        try {
+
+            titles = session.createQuery("from com.mtyoung.entity.Movie U where U.title like :movieTitle")
+                    .setString("movieTitle", "%" + title + "%")
+                    .list();
+            return titles;
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return titles;
+
+    }
+
     public List<Movie> getMovieListByLinks(List<UserMovieLink> links) {
         List<Movie> movies = null;
 

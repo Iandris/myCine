@@ -18,7 +18,7 @@ import java.io.IOException;
 
 @WebServlet(
         name = "AcceptFriendRequest",
-        urlPatterns = { "/acceptfriendrequest" }
+        urlPatterns = { "/secure/auth/acceptfriendrequest" }
 )
 
 /**
@@ -45,11 +45,13 @@ public class FriendRequestServlet extends HttpServlet {
                 friends.setFriendb(userB.getUuid());
 
                 int friendID = friendDao.addFriend(friends);
-                if (friendID != 0) {
+                if (friendID > 0) {
                     dao.deleteFriendRequest(friendrequests.getIdfriendrequests());
                     response.sendRedirect("/mycine/secure/auth/friends");
+                } else {
+                    response.sendRedirect("/mycine/secure/auth/home");
                 }
             }
-        } 
+        }
     }
 }

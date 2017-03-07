@@ -62,6 +62,7 @@ com/mtyoung/util/EmailMessage.class
 com/mtyoung/persistence/RentalDao.class
 com/mtyoung/Servlet/SendFriendRequestServlet.class
 com/mtyoung/persistence/DirectorDao.class
+com/mtyoung/rest/Titles.class
 com/mtyoung/Servlet/RegistrationCheckServlet.class
 com/mtyoung/entity/Message.class
 com/mtyoung/Servlet/MyLibraryLoaderServlet.class

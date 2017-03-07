@@ -60,7 +60,7 @@ public class EmailMessage {
 
             String htmlBody = "<link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>";
             htmlBody += "<h3>MyCine</h3><br /><form action='' method='post'><p>" + senderName + " would like to be your friend on MyCine and share their movie library with you.</p>";
-            htmlBody += "<br /><p>To Accept this friend request click <a href='http://52.14.69.207:8080/mycine/acceptfriendrequest?reqid=" + hashedReqid +  "' class='btn btn-success'>Approve</a>";
+            htmlBody += "<br /><p>To Accept this friend request click <a href='http://52.14.69.207:8080/mycine/secure/auth/acceptfriendrequest?reqid=" + hashedReqid +  "' class='btn btn-success'>Approve</a>";
 
             message.setContent(htmlBody, "text/html; charset=utf-8");
 
