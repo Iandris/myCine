@@ -29,3 +29,6 @@
 | 3/01/17 | added json class and tests | 3 | |
 | 3/02/17 | added more hibernate relationships for usermovie and wishlist entities | 4 | |
 | 3/03/17 | functional add to wishlist and library from search, and move from wishlist to library etc | 4 | |
+| 3/06/17 | added text message and email relay classes | 1 | |
+| 3/06/17 | created linking processes to create friends within users | 3 | |
+| 3/07/17 | added rest service to expose movie titles in db (responses in txt, json and html) | 2 | |
