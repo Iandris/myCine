@@ -46,7 +46,7 @@ public class State implements Serializable {
     this.longname = long_name;
   }
 
-  @OneToMany (fetch = FetchType.EAGER, mappedBy = "state")
+  @OneToMany (fetch = FetchType.LAZY, mappedBy = "state")
   public Set<Address> getAddressSet() {
     return this.addressSet;
   }

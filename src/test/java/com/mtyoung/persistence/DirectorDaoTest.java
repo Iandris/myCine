@@ -77,8 +77,12 @@ public class DirectorDaoTest {
         assertEquals("Director ID not updated", director.getIddirector(), dao.getDirector(newDirector).getIddirector());
         assertEquals("FirstName not updated", director.getFname(), dao.getDirector(newDirector).getFname());
         assertEquals("LastName not updated", director.getLname(), dao.getDirector(newDirector).getLname());
+    }
 
-
+    @Test
+    public void getDirectorByLastFirst() throws Exception {
+        newDirector = dao.addDirector(director);
+        assertEquals("director not found by last first", director.getIddirector(), dao.getDirectorByLastFirst(director.getLname(), director.getFname()).getIddirector());
     }
 
 }

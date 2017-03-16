@@ -34,7 +34,6 @@ public class LoginStoreInSession  extends HttpServlet  {
             session.setAttribute("uname", username);
             response.sendRedirect("/mycine/loginfailure");
         } else {
-
             session.setAttribute("user",user );
             session.setAttribute("uname", user.getUser_name());
 
