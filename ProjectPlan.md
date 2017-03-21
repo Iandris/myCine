@@ -50,7 +50,7 @@
  - [ ] Time log entries
  
 ### Week 9
- - [ ] update prefs for users info
+ - [ ] update prefs for users info
  - [ ] update pref for default rental period
  - [ ] Time log entries
  
