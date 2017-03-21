@@ -47,18 +47,11 @@
  
 ### Week 8
  - [X] begin text message information
- - [ ] 
- - [ ] 
- - [ ] 
- - [ ] 
  - [ ] Time log entries
  
 ### Week 9
  - [ ] update prefs for users info
  - [ ] update pref for default rental period
- - [ ] 
- - [ ] 
- - [ ] 
  - [ ] Time log entries
  
 ### Week 10
