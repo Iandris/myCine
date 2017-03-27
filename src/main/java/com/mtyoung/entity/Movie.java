@@ -29,6 +29,7 @@ public class Movie  implements Comparable<Movie>, Serializable{
   private String imgsource;
   private Set<UserMovieLink> links = new HashSet<UserMovieLink>(0);
 
+
   @Id
   @GeneratedValue(generator="increment")
   @GenericGenerator(name="increment", strategy = "increment")
@@ -139,6 +140,8 @@ public class Movie  implements Comparable<Movie>, Serializable{
     public void setMovieSet (Set<UserMovieLink> links) {
         this.links = links;
     }
+
+
 
   public int compareTo(Movie compareMovie) {
     int movieID = ((Movie) compareMovie).getIdmovie();

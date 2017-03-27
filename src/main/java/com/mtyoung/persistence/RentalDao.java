@@ -1,10 +1,12 @@
 package com.mtyoung.persistence;
 
 import com.mtyoung.entity.Rental;
+import com.mtyoung.entity.User;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 
 import java.util.List;
 
@@ -90,5 +92,21 @@ public class RentalDao {
         } finally {
             session.close();
         }
+    }
+
+    public List<Rental> getRentalsByRenter(User renterID) {
+        List<Rental> rentals = null;
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        try {
+            rentals = session.createCriteria(Rental.class)
+                    .add(Restrictions.eq("renterid", renterID)
+                    ).list();
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        }finally {
+            session.close();
+        }
+
+        return rentals;
     }
 }

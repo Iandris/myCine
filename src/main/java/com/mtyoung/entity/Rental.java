@@ -10,42 +10,45 @@ import java.time.LocalDateTime;
 @Table(name="Rentals")
 public class Rental {
 
+  private int idrentals;
+  private User renterid;
+  private UserMovieLink movieid;
+  private LocalDateTime duedate;
+
   @Id
   @GeneratedValue(generator="increment")
   @GenericGenerator(name="increment", strategy = "increment")
   @Column(name = "idRentals")
-  private int idrentals;
-
-  @Column(name="renterID")
-  private int renterid;
-
-  @Column(name="movieID")
-  private int movieid;
-
-  @Column(name="dueDate")
-  @Convert(converter = LocalDateTimeAttributeConverter.class)
-  private LocalDateTime duedate;
-
   public int getIdrentals() {
     return idrentals;
   }
 
-  public int getRenterid() {
+  public void setIdrentals(int idrentals) { this.idrentals = idrentals;}
+
+  //@Column(name="renterID")
+  @ManyToOne(fetch = FetchType.LAZY)
+  @JoinColumn(name = "renterID")
+  public User getRenterid() {
     return renterid;
   }
 
-  public void setRenterid(int renterid) {
+  public void setRenterid(User renterid) {
     this.renterid = renterid;
   }
 
-  public int getMovieid() {
+  //@Column(name="movieID")
+  @ManyToOne(fetch = FetchType.LAZY)
+  @JoinColumn(name = "movieID")
+  public UserMovieLink getMovieid() {
     return movieid;
   }
 
-  public void setMovieid(int movieid) {
+  public void setMovieid(UserMovieLink movieid) {
     this.movieid = movieid;
   }
 
+  @Column(name="dueDate")
+  @Convert(converter = LocalDateTimeAttributeConverter.class)
   public LocalDateTime getDuedate() {
     return duedate;
   }

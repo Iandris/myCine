@@ -1,7 +1,6 @@
 package com.mtyoung.entity;
 
 import org.hibernate.annotations.GenericGenerator;
-import org.apache.catalina.realm.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -24,6 +23,7 @@ public class User implements Comparable<User>, Serializable{
   private String password;
   private Set<UserMovieLink> links = new HashSet<UserMovieLink>(0);
   private Set<Wishlist> wishlists = new HashSet<Wishlist>(0);
+  private Set<Rental> rentalset = new HashSet<Rental>(0);
 
   @Id
   @GeneratedValue(generator="increment")
@@ -133,6 +133,15 @@ public class User implements Comparable<User>, Serializable{
 
   public void setMovieSet (Set<UserMovieLink> links) {
     this.links = links;
+  }
+
+  @OneToMany (fetch = FetchType.LAZY, mappedBy = "renterid")
+  public Set<Rental> getRentalset() {
+    return this.rentalset;
+  }
+
+  public void setRentalset(Set<Rental> rentalSet) {
+    this.rentalset = rentalSet;
   }
 
   public int compareTo(User compareUser) {

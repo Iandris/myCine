@@ -34,6 +34,10 @@ public class MyLibraryLoaderServlet extends HttpServlet {
 
         session.setAttribute("new", null);
 
+        if(session.getAttribute("mymovies") != null) {
+            session.setAttribute("mymovies", null);
+        }
+
         session.setAttribute("mymovies", mymovies);
 
         getServletContext().getRequestDispatcher("/secure/auth/mylibrary.jsp").forward(request, response);

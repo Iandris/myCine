@@ -10,7 +10,7 @@
 <div>
     <h1> ${user.fname}'s WishList</h1>
 </div>
-<!-- TODO using imdb/omdb call import movie cover art and synopsis  -->
+
 <div id="accordion">
     <c:forEach  var="movie" items="${mymovies}" >
         <h3 style="text-decoration:underline;"><strong>${movie.title}</strong></h3>

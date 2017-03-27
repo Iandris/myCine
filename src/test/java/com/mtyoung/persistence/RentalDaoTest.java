@@ -140,8 +140,8 @@ public class RentalDaoTest {
 
         dao = new RentalDao();
         rental = new Rental();
-        rental.setRenterid(bob1.getUuid());
-        rental.setMovieid(movieLink.getLinkid());
+        rental.setRenterid(bob1);
+        rental.setMovieid(movieLink);
         rental.setDuedate(LocalDateTime.of(2017,3,1,10,0,0));
     }
 
@@ -206,8 +206,8 @@ public class RentalDaoTest {
         newRental = dao.addRental(rental);
         assertEquals("rental id not returned", rental.getIdrentals(), dao.getRental(newRental).getIdrentals());
         assertEquals("rental due date not returned", rental.getDuedate(), dao.getRental(newRental).getDuedate());
-        assertEquals("rental movie id not returned", rental.getMovieid(), dao.getRental(newRental).getMovieid());
-        assertEquals("rental renter id not returned", rental.getRenterid(), dao.getRental(newRental).getRenterid());
+        assertEquals("rental movie id not returned", rental.getMovieid().getLinkid(), dao.getRental(newRental).getMovieid().getLinkid());
+        assertEquals("rental renter id not returned", rental.getRenterid().getUuid(), dao.getRental(newRental).getRenterid().getUuid());
     }
 
     @Test
@@ -215,8 +215,8 @@ public class RentalDaoTest {
         newRental = dao.addRental(rental);
         assertEquals("rental id not inserted", rental.getIdrentals(), dao.getRental(newRental).getIdrentals());
         assertEquals("rental due date not inserted", rental.getDuedate(), dao.getRental(newRental).getDuedate());
-        assertEquals("rental movie id not inserted", rental.getMovieid(), dao.getRental(newRental).getMovieid());
-        assertEquals("rental renter id not inserted", rental.getRenterid(), dao.getRental(newRental).getRenterid());
+        assertEquals("rental movie id not inserted", rental.getMovieid().getLinkid(), dao.getRental(newRental).getMovieid().getLinkid());
+        assertEquals("rental renter id not inserted", rental.getRenterid().getUuid(), dao.getRental(newRental).getRenterid().getUuid());
     }
 
     @Test
@@ -230,16 +230,16 @@ public class RentalDaoTest {
     public void updateRental() throws Exception {
         newRental = dao.addRental(rental);
 
-        rental.setRenterid(bob2.getUuid());
-        rental.setMovieid(movieLink.getLinkid());
+        rental.setRenterid(bob2);
+        rental.setMovieid(movieLink);
         rental.setDuedate(LocalDateTime.of(2018,5,30,9,0,0));
 
         dao.updateRental(rental);
 
         assertEquals("rental id not updated", rental.getIdrentals(), dao.getRental(newRental).getIdrentals());
         assertEquals("rental due date not updated", rental.getDuedate(), dao.getRental(newRental).getDuedate());
-        assertEquals("rental movie id not updated", rental.getMovieid(), dao.getRental(newRental).getMovieid());
-        assertEquals("rental renter id not updated", rental.getRenterid(), dao.getRental(newRental).getRenterid());
+        assertEquals("rental movie id not updated", rental.getMovieid().getLinkid(), dao.getRental(newRental).getMovieid().getLinkid());
+        assertEquals("rental renter id not updated", rental.getRenterid().getUuid(), dao.getRental(newRental).getRenterid().getUuid());
     }
 
 }

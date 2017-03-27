@@ -4,6 +4,8 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name="UserMovie")
@@ -14,6 +16,7 @@ public class UserMovieLink implements Serializable {
   private Movie movieid;
   private int quantity;
   private int starrating;
+  private Set<Rental> rentalSet = new HashSet<Rental>(0);
   
   @Id
   @GeneratedValue(generator="increment")
@@ -70,5 +73,14 @@ public class UserMovieLink implements Serializable {
   public void setStarrating(int starrating) {
     this.starrating = starrating;
   }
+
+    @OneToMany (fetch = FetchType.LAZY, mappedBy = "movieid")
+    public Set<Rental> getRentalSet() {
+        return this.rentalSet;
+    }
+
+    public void setRentalSet (Set<Rental> rentalSet) {
+        this.rentalSet = rentalSet;
+    }
 
 }

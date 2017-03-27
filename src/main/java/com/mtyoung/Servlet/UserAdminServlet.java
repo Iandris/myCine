@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(
@@ -27,10 +28,18 @@ public class UserAdminServlet  extends HttpServlet {
 
         HttpSession session  = request.getSession();
 
+        if(session.getAttribute("people") != null) {
+            session.setAttribute("people", null);
+        }
+
+        if(session.getAttribute("states") != null) {
+            session.setAttribute("states", null);
+        }
+
         UserDao dao = new UserDao();
         StateDao stateDao = new StateDao();
 
-        List<User> users;
+        List<User> users = new ArrayList<>();
         users = dao.getAllUsers();
         System.out.println(users.size());
 
