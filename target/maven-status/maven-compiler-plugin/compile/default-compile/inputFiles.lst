@@ -39,6 +39,7 @@
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/UserRoleDao.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/com/omdbapi/SearchItem.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/Studio.java
+/Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/RentMovieToFriendServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/UserDao.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/UserMovieLink.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/SessionFactoryProvider.java
@@ -59,6 +60,7 @@
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/AddressDao.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/State.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/util/EmailMessage.java
+/Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/com/omdbapi/RatingsItem.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/MyLibraryLoaderServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/com/omdbapi/Search.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/EnrollServlet.java

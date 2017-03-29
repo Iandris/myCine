@@ -27,6 +27,7 @@ com/mtyoung/persistence/MessageDao.class
 com/mtyoung/Servlet/ErrorRedirect.class
 com/mtyoung/persistence/UserRoleDao.class
 com/mtyoung/Servlet/MyFriendsListServlet.class
+com/mtyoung/Servlet/RentMovieToFriendServlet.class
 com/mtyoung/Servlet/LoginServlet.class
 com/mtyoung/Servlet/LoginStoreInSession.class
 com/mtyoung/Servlet/HomeServlet.class
@@ -59,6 +60,7 @@ com/mtyoung/persistence/MovieDao.class
 com/mtyoung/persistence/WishlistDao.class
 com/mtyoung/persistence/FormatDao.class
 com/mtyoung/util/EmailMessage.class
+com/mtyoung/com/omdbapi/RatingsItem.class
 com/mtyoung/persistence/RentalDao.class
 com/mtyoung/Servlet/SendFriendRequestServlet.class
 com/mtyoung/persistence/DirectorDao.class

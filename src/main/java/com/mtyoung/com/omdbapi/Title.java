@@ -1,16 +1,44 @@
 package com.mtyoung.com.omdbapi;
 
+import java.util.List;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.annotation.Generated;
 
 @Generated("com.robohorse.robopojogenerator")
 public class Title{
 
-	@JsonProperty("Released")
-	private String released;
-
 	@JsonProperty("Metascore")
 	private String metascore;
+
+	@JsonProperty("BoxOffice")
+	private String boxOffice;
+
+	@JsonProperty("Website")
+	private String website;
+
+	@JsonProperty("imdbRating")
+	private String imdbRating;
+
+	@JsonProperty("imdbVotes")
+	private String imdbVotes;
+
+	@JsonProperty("Ratings")
+	private List<RatingsItem> ratings;
+
+	@JsonProperty("Runtime")
+	private String runtime;
+
+	@JsonProperty("Language")
+	private String language;
+
+	@JsonProperty("Rated")
+	private String rated;
+
+	@JsonProperty("Production")
+	private String production;
+
+	@JsonProperty("Released")
+	private String released;
 
 	@JsonProperty("imdbID")
 	private String imdbID;
@@ -27,17 +55,8 @@ public class Title{
 	@JsonProperty("Actors")
 	private String actors;
 
-	@JsonProperty("imdbRating")
-	private String imdbRating;
-
-	@JsonProperty("imdbVotes")
-	private String imdbVotes;
-
 	@JsonProperty("Response")
 	private String response;
-
-	@JsonProperty("Runtime")
-	private String runtime;
 
 	@JsonProperty("Type")
 	private String type;
@@ -45,14 +64,11 @@ public class Title{
 	@JsonProperty("Awards")
 	private String awards;
 
+	@JsonProperty("DVD")
+	private String dVD;
+
 	@JsonProperty("Year")
 	private String year;
-
-	@JsonProperty("Language")
-	private String language;
-
-	@JsonProperty("Rated")
-	private String rated;
 
 	@JsonProperty("Poster")
 	private String poster;
@@ -66,20 +82,92 @@ public class Title{
 	@JsonProperty("Writer")
 	private String writer;
 
-	public void setReleased(String released){
-		this.released = released;
-	}
-
-	public String getReleased(){
-		return released;
-	}
-
 	public void setMetascore(String metascore){
 		this.metascore = metascore;
 	}
 
 	public String getMetascore(){
 		return metascore;
+	}
+
+	public void setBoxOffice(String boxOffice){
+		this.boxOffice = boxOffice;
+	}
+
+	public String getBoxOffice(){
+		return boxOffice;
+	}
+
+	public void setWebsite(String website){
+		this.website = website;
+	}
+
+	public String getWebsite(){
+		return website;
+	}
+
+	public void setImdbRating(String imdbRating){
+		this.imdbRating = imdbRating;
+	}
+
+	public String getImdbRating(){
+		return imdbRating;
+	}
+
+	public void setImdbVotes(String imdbVotes){
+		this.imdbVotes = imdbVotes;
+	}
+
+	public String getImdbVotes(){
+		return imdbVotes;
+	}
+
+	public void setRatings(List<RatingsItem> ratings){
+		this.ratings = ratings;
+	}
+
+	public List<RatingsItem> getRatings(){
+		return ratings;
+	}
+
+	public void setRuntime(String runtime){
+		this.runtime = runtime;
+	}
+
+	public String getRuntime(){
+		return runtime;
+	}
+
+	public void setLanguage(String language){
+		this.language = language;
+	}
+
+	public String getLanguage(){
+		return language;
+	}
+
+	public void setRated(String rated){
+		this.rated = rated;
+	}
+
+	public String getRated(){
+		return rated;
+	}
+
+	public void setProduction(String production){
+		this.production = production;
+	}
+
+	public String getProduction(){
+		return production;
+	}
+
+	public void setReleased(String released){
+		this.released = released;
+	}
+
+	public String getReleased(){
+		return released;
 	}
 
 	public void setImdbID(String imdbID){
@@ -122,36 +210,12 @@ public class Title{
 		return actors;
 	}
 
-	public void setImdbRating(String imdbRating){
-		this.imdbRating = imdbRating;
-	}
-
-	public String getImdbRating(){
-		return imdbRating;
-	}
-
-	public void setImdbVotes(String imdbVotes){
-		this.imdbVotes = imdbVotes;
-	}
-
-	public String getImdbVotes(){
-		return imdbVotes;
-	}
-
 	public void setResponse(String response){
 		this.response = response;
 	}
 
 	public String getResponse(){
 		return response;
-	}
-
-	public void setRuntime(String runtime){
-		this.runtime = runtime;
-	}
-
-	public String getRuntime(){
-		return runtime;
 	}
 
 	public void setType(String type){
@@ -170,28 +234,20 @@ public class Title{
 		return awards;
 	}
 
+	public void setDVD(String dVD){
+		this.dVD = dVD;
+	}
+
+	public String getDVD(){
+		return dVD;
+	}
+
 	public void setYear(String year){
 		this.year = year;
 	}
 
 	public String getYear(){
 		return year;
-	}
-
-	public void setLanguage(String language){
-		this.language = language;
-	}
-
-	public String getLanguage(){
-		return language;
-	}
-
-	public void setRated(String rated){
-		this.rated = rated;
-	}
-
-	public String getRated(){
-		return rated;
 	}
 
 	public void setPoster(String poster){
@@ -230,22 +286,27 @@ public class Title{
  	public String toString(){
 		return 
 			"Title{" + 
-			"released = '" + released + '\'' + 
-			",metascore = '" + metascore + '\'' + 
+			"metascore = '" + metascore + '\'' + 
+			",boxOffice = '" + boxOffice + '\'' + 
+			",website = '" + website + '\'' + 
+			",imdbRating = '" + imdbRating + '\'' + 
+			",imdbVotes = '" + imdbVotes + '\'' + 
+			",ratings = '" + ratings + '\'' + 
+			",runtime = '" + runtime + '\'' + 
+			",language = '" + language + '\'' + 
+			",rated = '" + rated + '\'' + 
+			",production = '" + production + '\'' + 
+			",released = '" + released + '\'' + 
 			",imdbID = '" + imdbID + '\'' + 
 			",plot = '" + plot + '\'' + 
 			",director = '" + director + '\'' + 
 			",title = '" + title + '\'' + 
 			",actors = '" + actors + '\'' + 
-			",imdbRating = '" + imdbRating + '\'' + 
-			",imdbVotes = '" + imdbVotes + '\'' + 
 			",response = '" + response + '\'' + 
-			",runtime = '" + runtime + '\'' + 
 			",type = '" + type + '\'' + 
 			",awards = '" + awards + '\'' + 
+			",dVD = '" + dVD + '\'' + 
 			",year = '" + year + '\'' + 
-			",language = '" + language + '\'' + 
-			",rated = '" + rated + '\'' + 
 			",poster = '" + poster + '\'' + 
 			",country = '" + country + '\'' + 
 			",genre = '" + genre + '\'' + 
