@@ -1,11 +1,9 @@
 package com.mtyoung.Servlet;
 
-
-import com.mtyoung.entity.Movie;
 import com.mtyoung.entity.User;
 import com.mtyoung.entity.UserMovieLink;
 import com.mtyoung.entity.Wishlist;
-import com.mtyoung.persistence.MovieDao;
+import com.mtyoung.persistence.RentalDao;
 import com.mtyoung.persistence.UserMovieDao;
 import com.mtyoung.persistence.WishlistDao;
 
@@ -38,7 +36,7 @@ public class RemoveMovieLibraryServlet extends HttpServlet{
         String source = request.getParameter("source");
         String destination = request.getParameter("destination");
 
-        String returnURL = "";
+        String returnURL;
 
         if (request.getParameter("movieID") == null) {
             response.sendRedirect("/mycine/secure/auth/moviesearch");
@@ -67,8 +65,11 @@ public class RemoveMovieLibraryServlet extends HttpServlet{
                 response.sendRedirect("/mycine/" + returnURL);
             }
         } else if (destination.equals("rental")) {
+            UserMovieLink library = libraryDao.getLinkByUserMovie(user.getUuid(), movieID);
+
+            session.setAttribute("link", library);
             //TODO redirect to rental servlet
-            getServletContext().getRequestDispatcher("/secure/auth/library").forward(request, response);
+            getServletContext().getRequestDispatcher("/secure/auth/rental").forward(request, response);
         } else if (destination.equals("Library")) {
             getServletContext().getRequestDispatcher("/secure/auth/addlibrary").forward(request, response);
         }

@@ -74,4 +74,11 @@ public class StudioDaoTest {
 
     }
 
+    @Test
+    public void getStudioByTitle() throws Exception {
+        newStudio = dao.addStudio(std);
+
+        assertNotNull("no studio found by title", dao.getStudioByTitle(std.getStudiotitle()));
+    }
+
 }

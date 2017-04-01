@@ -72,4 +72,9 @@ public class GenreDaoTest {
         assertEquals("desc not updated", gen.getGenretitle(), dao.getGenre(newGen).getGenretitle());
     }
 
+    @Test
+    public void getGenreByTitle() throws Exception {
+        newGen = dao.addGenre(gen);
+        assertEquals("no genres returned", gen.getIdgenre(), dao.getGenreByTitle(gen.getGenretitle()).getIdgenre());
+    }
 }

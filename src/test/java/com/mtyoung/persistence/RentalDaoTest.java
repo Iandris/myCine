@@ -242,4 +242,10 @@ public class RentalDaoTest {
         assertEquals("rental renter id not updated", rental.getRenterid().getUuid(), dao.getRental(newRental).getRenterid().getUuid());
     }
 
+    @Test
+    public void getRentalsByRenter() throws Exception {
+        newRental = dao.addRental(rental);
+        assertTrue("no rentals returned by renter", dao.getRentalsByRenter(bob1).size() > 0);
+
+    }
 }

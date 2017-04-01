@@ -161,7 +161,7 @@ public class MovieDao {
     }
 
     public List<Movie> getMovieListByLinks(List<UserMovieLink> links) {
-        List<Movie> movies = null;
+        List<Movie> movies = new ArrayList<Movie>();
 
         for (UserMovieLink link : links
              ) {
@@ -172,7 +172,7 @@ public class MovieDao {
     }
 
     public List<Movie> getMovieListByWishlist(List<Wishlist> movieIDs) {
-        List<Movie> movies = null;
+        List<Movie> movies = new ArrayList<Movie>();
 
         for (Wishlist link : movieIDs
                 ) {

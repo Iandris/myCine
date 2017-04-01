@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.time.*;
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -15,6 +16,10 @@ import static org.junit.Assert.*;
  */
 public class MovieDaoTest {
 
+    Address mail;
+    AddressDao mailDao;
+    UserDao userDao;
+    StateDao stateDao;
     Movie film;
     MovieDao dao;
     Genre gen;
@@ -25,6 +30,11 @@ public class MovieDaoTest {
     DirectorDao dirDao;
     Studio std;
     StudioDao stdDao;
+    User bob1;
+    Wishlist link;
+    WishlistDao wishlistDao;
+    UserMovieDao umdao;
+    UserMovieLink link2;
 
     int newDir = 0;
     int newMovie = 0;
@@ -32,9 +42,36 @@ public class MovieDaoTest {
     int newForm = 0;
     int newStudio = 0;
     int newStudio2 = 0;
+    int newMail = 0;
+    int newUser1 = 0;
+    int newWishList = 0;
+    int newUserMovie = 0;
 
     @Before
     public void setup() {
+        stateDao = new StateDao();
+        //prep address table first, or user insert will fail on constraint
+        mailDao = new AddressDao();
+        mail = new Address();
+        mail.setStreetaddress1("605 Park St");
+        mail.setStreetaddress2("nnnnn");
+        mail.setCity("Watertown");
+        mail.setState(stateDao.getState(49));
+        mail.setZipcode(53098);
+        newMail = mailDao.addAddress(mail);
+
+        userDao = new UserDao();
+        bob1 = new User();
+        bob1.setFname("Mike");
+        bob1.setLname("Young");
+        bob1.setAddress(mail);
+        bob1.setUser_name("bob9@email.com");
+        bob1.setCellnumber("1111111111");
+        bob1.setReminderthreshold(1);
+        bob1.setDefaultrentalperiod(3);
+        bob1.setPassword("Password");
+        newUser1 = userDao.addUser(bob1);
+
         film = new Movie();
         dao = new MovieDao();
 
@@ -67,10 +104,24 @@ public class MovieDaoTest {
         film.setDirector(dir);
         film.setImdbid("098765432");
         film.setUpccode("87654323456");
+
+        wishlistDao = new WishlistDao();
+        link = new Wishlist();
+
+        umdao = new UserMovieDao();
+        link2 = new UserMovieLink();
     }
 
     @After
     public void cleanup() {
+        if (newUserMovie != 0) {
+            umdao.deleteMovieLink(newUserMovie);
+        }
+
+        if (newWishList != 0) {
+            wishlistDao.deleteWishListItem(newWishList);
+        }
+
         if (newMovie != 0) {
             dao.deleteMovie(newMovie);
         }
@@ -93,6 +144,14 @@ public class MovieDaoTest {
 
         if (newStudio2 != 0) {
             stdDao.deleteStudio(newStudio2);
+        }
+
+        if (newUser1 != 0) {
+            userDao.deleteUser(newUser1);
+        }
+
+        if (newMail != 0) {
+            mailDao.deleteAddress(newMail);
         }
     }
 
@@ -167,5 +226,46 @@ public class MovieDaoTest {
         newMovie = dao.addMovie(film);
         List<Movie> movies =  dao.getRecentMovies(film.getReleaseDate());
         assertTrue(movies.size() > 0);
+    }
+
+    @Test
+    public void getMovieByIMDB() throws Exception {
+        newMovie = dao.addMovie(film);
+        assertEquals("movie not returned by IMDB id", film.getTitle(), dao.getMovieByIMDB(film.getImdbid()).getTitle());
+    }
+
+    @Test
+    public void getMoviesByTitleSearch() throws Exception {
+        newMovie = dao.addMovie(film);
+        List<Movie> movies =  dao.getMoviesByTitleSearch(film.getTitle());
+        assertTrue("movies not found by title search", movies.size() > 0);
+    }
+
+    @Test
+    public void getMovieListByLinks() throws Exception{
+        newMovie = dao.addMovie(film);
+
+        link2.setUserid(bob1);
+        link2.setMovieid(film);
+        link2.setQuantity(1);
+        link2.setStarrating(5);
+
+        newUserMovie = umdao.addUserMovie(link2);
+
+        List<Movie> movies =  dao.getMovieListByLinks(umdao.getAllMovieLinks());
+        assertTrue("no movies returned", movies.size() > 0);
+    }
+
+    @Test
+    public void getMovieListByWishlist() throws Exception {
+        newMovie = dao.addMovie(film);
+
+        link.setUserid(bob1);
+        link.setMovieid(film);
+
+        newWishList = wishlistDao.addWishListItem(link);
+
+        List<Movie> movies =  dao.getMovieListByWishlist(wishlistDao.getAllWishListItems());
+        assertTrue("no movies returned", movies.size() > 0);
     }
 }

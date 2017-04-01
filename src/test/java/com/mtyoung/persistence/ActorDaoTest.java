@@ -36,7 +36,7 @@ public class ActorDaoTest {
     }
 
     @Test
-    public void getAllMovies() throws Exception {
+    public void getAllActors() throws Exception {
         newStar = dao.addActor(star);
         List<Actor> stars = dao.getAllActors();
         assertTrue(stars.size() > 0);

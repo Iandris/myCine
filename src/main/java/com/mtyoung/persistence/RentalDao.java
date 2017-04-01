@@ -2,6 +2,7 @@ package com.mtyoung.persistence;
 
 import com.mtyoung.entity.Rental;
 import com.mtyoung.entity.User;
+import com.mtyoung.entity.UserMovieLink;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -108,5 +109,20 @@ public class RentalDao {
         }
 
         return rentals;
+    }
+
+    public Rental getRentalByMovieID(UserMovieLink link) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        Rental rental = null;
+        try {
+            rental = (Rental) session.createCriteria(Rental.class)
+                    .add(Restrictions.eq("movieid", link)
+                    ).uniqueResult();
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return rental;
     }
 }

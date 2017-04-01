@@ -16,7 +16,6 @@ import java.util.Set;
 })
 public class Movie  implements Comparable<Movie>, Serializable{
 
-
   private int idmovie;
   private String title;
   private Format format;
@@ -28,7 +27,6 @@ public class Movie  implements Comparable<Movie>, Serializable{
   private LocalDate releaseDate;
   private String imgsource;
   private Set<UserMovieLink> links = new HashSet<UserMovieLink>(0);
-
 
   @Id
   @GeneratedValue(generator="increment")
@@ -53,7 +51,6 @@ public class Movie  implements Comparable<Movie>, Serializable{
 
   @ManyToOne(fetch = FetchType.EAGER)
   @JoinColumn(name = "genre")
-  //@Column(name="genre")
   public Genre getGenre() {
     return genre;
   }
@@ -72,7 +69,6 @@ public class Movie  implements Comparable<Movie>, Serializable{
     this.format = format;
   }
 
-  //@Column(name="director")
   @ManyToOne(fetch = FetchType.EAGER)
   @JoinColumn(name = "director")
   public Director getDirector() {
@@ -83,7 +79,6 @@ public class Movie  implements Comparable<Movie>, Serializable{
     this.director = director;
   }
 
- // @Column(name="studio")
   @ManyToOne(fetch = FetchType.EAGER)
   @JoinColumn(name = "studio")
   public Studio getStudio() {
@@ -140,7 +135,6 @@ public class Movie  implements Comparable<Movie>, Serializable{
     public void setMovieSet (Set<UserMovieLink> links) {
         this.links = links;
     }
-
 
 
   public int compareTo(Movie compareMovie) {
