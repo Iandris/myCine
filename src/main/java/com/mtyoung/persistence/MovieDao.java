@@ -181,4 +181,21 @@ public class MovieDao {
 
         return movies;
     }
+
+    public Movie getMovieByUPC(String upcCode) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        Transaction tx = null;
+        Movie movie = null;
+        try {
+            movie = (Movie) session.createQuery("from com.mtyoung.entity.Movie U where U.upccode = :code")
+                    .setString("code", upcCode)
+                    .uniqueResult();
+            return movie;
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return movie;
+    }
 }

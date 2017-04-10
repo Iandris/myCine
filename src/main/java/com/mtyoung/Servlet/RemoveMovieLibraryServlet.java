@@ -3,7 +3,7 @@ package com.mtyoung.Servlet;
 import com.mtyoung.entity.User;
 import com.mtyoung.entity.UserMovieLink;
 import com.mtyoung.entity.Wishlist;
-import com.mtyoung.persistence.RentalDao;
+import com.mtyoung.persistence.UserDao;
 import com.mtyoung.persistence.UserMovieDao;
 import com.mtyoung.persistence.WishlistDao;
 
@@ -25,6 +25,7 @@ import java.io.IOException;
 public class RemoveMovieLibraryServlet extends HttpServlet{
     UserMovieDao libraryDao = new UserMovieDao();
     WishlistDao wishlistDao = new WishlistDao();
+    UserDao userdao = new UserDao();
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -68,8 +69,13 @@ public class RemoveMovieLibraryServlet extends HttpServlet{
             UserMovieLink library = libraryDao.getLinkByUserMovie(user.getUuid(), movieID);
 
             session.setAttribute("link", library);
+
+            User renter = (User)userdao.getUserByEmail(request.getParameter("renter"));
+            System.out.println(renter.getFname());
+            session.setAttribute("renter", renter);
+
             //TODO redirect to rental servlet
-            getServletContext().getRequestDispatcher("/secure/auth/rental").forward(request, response);
+            response.sendRedirect("/mycine/secure/auth/rental");
         } else if (destination.equals("Library")) {
             getServletContext().getRequestDispatcher("/secure/auth/addlibrary").forward(request, response);
         }

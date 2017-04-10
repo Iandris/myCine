@@ -28,14 +28,15 @@
     <!--TODO add more detail for friends, include ability to remove from friends -->
 <c:forEach  var="friend" items="${friends}" >
     <h3 style="text-decoration:underline;"><strong>${friend.lname}, ${friend.fname}</strong></h3>
+    <c:if test="${rentals != null}">
         <ul>
             <c:forEach var="rental" items="${rentals}">
-                <c:if test="${rental.movieid.userid.uuid == user.uuid}">
+                <c:if test="${rental.movieid.userid.uuid == user.uuid && rental.renterid.uuid == friend.uuid}">
                     <li>${rental.movieid.movieid.title} due back on ${rental.duedate}</li>
                 </c:if>
             </c:forEach>
         </ul>
-
+    </c:if>
 </c:forEach>
 </div>
 </body>

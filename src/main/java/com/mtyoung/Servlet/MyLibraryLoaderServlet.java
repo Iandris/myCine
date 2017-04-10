@@ -28,7 +28,27 @@ public class MyLibraryLoaderServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+
+
         session = request.getSession();
+
+        UserFriendDao dao = new UserFriendDao();
+        UserDao usrDao = new UserDao();
+        User user = (User)session.getAttribute("user");
+
+        List<UserFriends> friends = dao.getFriendsByUser(user.getUuid());
+        List<User> myFriends = new ArrayList<>();
+
+        if (friends != null) {
+            for (UserFriends friend : friends
+                    ) {
+                if (friend.getFrienda() == user.getUuid()) {
+                    myFriends.add(usrDao.getUser(friend.getFriendb()));
+                } else if (friend.getFriendb() == user.getUuid()) {
+                    myFriends.add(usrDao.getUser(friend.getFrienda()));
+                }
+            }
+        }
 
         Movie[] mymovies = buildLibrary();
 
@@ -39,6 +59,7 @@ public class MyLibraryLoaderServlet extends HttpServlet {
         }
 
         session.setAttribute("mymovies", mymovies);
+        session.setAttribute("friends", myFriends);
 
         getServletContext().getRequestDispatcher("/secure/auth/mylibrary.jsp").forward(request, response);
     }

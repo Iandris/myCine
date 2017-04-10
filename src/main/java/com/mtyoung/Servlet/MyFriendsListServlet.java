@@ -73,7 +73,6 @@ public class MyFriendsListServlet extends HttpServlet {
             }
         }
 
-
         session.setAttribute("friends", myFriends);
         session.setAttribute("rentals", rentals);
         getServletContext().getRequestDispatcher("/secure/auth/myfriends.jsp").forward(request, response);
