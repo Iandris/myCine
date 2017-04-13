@@ -24,6 +24,8 @@ import java.util.List;
  */
 public class MyLibraryLoaderServlet extends HttpServlet {
     private HttpSession session;
+    Movie[] films;
+    ArrayList<Movie> rentals;
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -50,7 +52,7 @@ public class MyLibraryLoaderServlet extends HttpServlet {
             }
         }
 
-        Movie[] mymovies = buildLibrary();
+        buildLibrary();
 
         session.setAttribute("new", null);
 
@@ -58,28 +60,40 @@ public class MyLibraryLoaderServlet extends HttpServlet {
             session.setAttribute("mymovies", null);
         }
 
-        session.setAttribute("mymovies", mymovies);
+        //TODO populate list of my movies that are rented out
+
+        session.setAttribute("mymovies", films);
+        session.setAttribute("rentals", rentals);
         session.setAttribute("friends", myFriends);
 
         getServletContext().getRequestDispatcher("/secure/auth/mylibrary.jsp").forward(request, response);
     }
 
-    public Movie[] buildLibrary() {
+    public void buildLibrary() {
         User user = (User)session.getAttribute("user");
         MovieDao dao = new MovieDao();
         UserMovieDao umdao = new UserMovieDao();
+        RentalDao rentalDao = new RentalDao();
+        rentals = new ArrayList<Movie>();
+
 
         List<UserMovieLink> links = umdao.getMoviesLinkByUserID(user.getUuid());
-        Movie[] films = new Movie[links.size()];
+        films = new Movie[links.size()];
 
         int i =0;
         for (UserMovieLink link: links
                 ) {
-            films[i] = dao.getMovie(link.getMovieid().getIdmovie());
+            Movie mve = dao.getMovie(link.getMovieid().getIdmovie());
+            films[i] = mve;
+
+            if (rentalDao.getRentalByMovieID(link) != null) {
+                rentals.add(mve);
+            }
+
             i++;
         }
 
         Arrays.sort(films, Movie.MovieNameComparator);
-        return films;
+
     }
 }

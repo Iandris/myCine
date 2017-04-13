@@ -4,9 +4,11 @@ import com.mtyoung.entity.Rental;
 import com.mtyoung.entity.User;
 import com.mtyoung.entity.UserFriends;
 
+import com.mtyoung.entity.UserMovieLink;
 import com.mtyoung.persistence.RentalDao;
 import com.mtyoung.persistence.UserDao;
 import com.mtyoung.persistence.UserFriendDao;
+import com.mtyoung.persistence.UserMovieDao;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -45,6 +47,7 @@ public class MyFriendsListServlet extends HttpServlet {
         UserFriendDao dao = new UserFriendDao();
         UserDao usrDao = new UserDao();
         RentalDao rentalDao = new RentalDao();
+        UserMovieDao librarydao = new UserMovieDao();
         User user = (User)session.getAttribute("user");
         List<UserFriends> friends = dao.getFriendsByUser(user.getUuid());
         List<User> myFriends = new ArrayList<>();
@@ -68,7 +71,10 @@ public class MyFriendsListServlet extends HttpServlet {
 
                 for (Rental rent: friendsRental
                      ) {
-                    rentals.add(rent);
+                    UserMovieLink link = librarydao.getLinkByUserMovie(user.getUuid(), rent.getMovieid().getMovieid().getIdmovie());
+                    if (link != null) {
+                        rentals.add(rent);
+                    }
                 }
             }
         }

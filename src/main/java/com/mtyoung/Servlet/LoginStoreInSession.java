@@ -2,6 +2,8 @@ package com.mtyoung.Servlet;
 
 import com.mtyoung.entity.User;
 import com.mtyoung.persistence.UserDao;
+import org.apache.catalina.realm.RealmBase;
+import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -21,6 +23,7 @@ import java.io.IOException;
  * Created by Mike on 2/28/17.
  */
 public class LoginStoreInSession  extends HttpServlet  {
+    private final Logger log = Logger.getLogger(this.getClass());
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         HttpSession session = request.getSession();
@@ -37,9 +40,14 @@ public class LoginStoreInSession  extends HttpServlet  {
             session.setAttribute("user",user );
             session.setAttribute("uname", user.getUser_name());
 
-            String url = "j_security_check?j_username=" + username + "&j_password=" + pwd;
-            String redirectURL = response.encodeRedirectURL(url);
-            response.sendRedirect(redirectURL);
+            if(!user.getPassword().equals(RealmBase.Digest(pwd,"sha-256", "UTF-8"))) {
+                session.setAttribute("uname", username);
+                response.sendRedirect("/mycine/loginfailure");
+            } else {
+                String url = "j_security_check?j_username=" + username + "&j_password=" + pwd;
+                String redirectURL = response.encodeRedirectURL(url);
+                response.sendRedirect(redirectURL);
+            }
         }
 
     }

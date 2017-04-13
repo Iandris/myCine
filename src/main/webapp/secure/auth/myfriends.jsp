@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html>
 <head>
     <title>MyCine - MyFriends</title>
@@ -32,10 +33,15 @@
         <ul>
             <c:forEach var="rental" items="${rentals}">
                 <c:if test="${rental.movieid.userid.uuid == user.uuid && rental.renterid.uuid == friend.uuid}">
-                    <li>${rental.movieid.movieid.title} due back on ${rental.duedate}</li>
+                   <fmt:parseDate value="${rental.duedate}" pattern="yyyy-MM-dd'T'HH:mm:ss" var="date" />
+                    <fmt:formatDate value="${date}" var="formatted" pattern="MM-dd-yyyy hh:mm a" />
+                    <li>${rental.movieid.movieid.title} - due back on ${formatted}</li>
                 </c:if>
             </c:forEach>
         </ul>
+    </c:if>
+    <c:if test="${rentals == null}">
+        <p>No Active Rentals</p>
     </c:if>
 </c:forEach>
 </div>

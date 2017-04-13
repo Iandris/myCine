@@ -1,6 +1,7 @@
 package com.mtyoung.util;
 
 import com.twilio.Twilio;
+import com.twilio.exception.ApiException;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
 
@@ -14,11 +15,17 @@ public class TextMessage {
 
     public String sendMessate(String txtRecipient, String txtBody) {
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
-
-        Message message = Message.creator(new PhoneNumber(txtRecipient),
-                new PhoneNumber(SENDER_PHONE),
-                txtBody).create();
-
-        return message.getSid();
+        String status = "Message Failure";
+        try {
+            Message message = Message.creator(new PhoneNumber(txtRecipient),
+                    new PhoneNumber(SENDER_PHONE),
+                    txtBody).create();
+            status = message.getSid();
+        } catch (ApiException ex) {
+            if (ex.getStatusCode() == 500) {
+                status = "Invalid phone number for recipient";
+            }
+        }
+        return status;
     }
 }

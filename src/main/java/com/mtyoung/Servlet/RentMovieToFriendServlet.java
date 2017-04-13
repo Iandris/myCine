@@ -34,24 +34,27 @@ public class RentMovieToFriendServlet extends HttpServlet {
         User user = (User) session.getAttribute("user");
 
         User renter = (User)session.getAttribute("renter");
-
-//TODO prevent same UserMovie from being rented out twice at the same time
+        Boolean returns = (Boolean)session.getAttribute("return");
 
         if (rentalDao.getRentalByMovieID(link) != null) {
-            //TODO prevent same UserMovie from being rented out twice at the same time
-            //attempt to create delete event with null entity current error message
-            rentalDao.deleteRental(link.getLinkid());
+            rentalDao.deleteRental(rentalDao.getRentalByMovieID(link).getIdrentals());
         }
 
-        Rental rental = new Rental();
-        rental.setMovieid(link);
-        LocalDateTime duedate = LocalDateTime.now().plusDays(user.getDefaultrentalperiod());
-        rental.setDuedate(duedate);
-        rental.setRenterid(renter);
-        rentalDao.addRental(rental);
+        if (!returns) {
+            Rental rental = new Rental();
+            rental.setMovieid(link);
+            LocalDateTime duedate = LocalDateTime.now().plusDays(user.getDefaultrentalperiod());
+            rental.setDuedate(duedate);
+            rental.setRenterid(renter);
+            rentalDao.addRental(rental);
+            response.sendRedirect("/mycine/secure/auth/friends");
+            //getServletContext().getRequestDispatcher("/secure/auth/friends").forward(request, response);
+        } else {
+            response.sendRedirect("/mycine/secure/auth/library");
+           // getServletContext().getRequestDispatcher("/secure/auth/library").forward(request, response);
+        }
 
 
-        getServletContext().getRequestDispatcher("/secure/auth/friends").forward(request, response);
 
     }
 }

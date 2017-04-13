@@ -1,5 +1,5 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
-    <a class="navbar-brand" href="index.jsp">
+    <a class="navbar-brand" href="/mycine/index">
         <img src="${pageContext.request.contextPath}/images/MyCine_157x60_White.png" alt="MyCine Logo" />
     </a>
 
@@ -11,7 +11,7 @@
         <li><a href="/mycine/secure/auth/friends">MyFriends</a></li>
         <li><a href="#">Settings</a></li>
         <li><a href="#">Support</a></li>
-        <li><a href="/mycine/secure/admin/useradmin">User Admin</a></li>
+        <li><a href="/mycine/secure/admin/useradmin">Admin</a></li>
     </ul>
 
     <ul class="nav navbar-nav navbar-right">

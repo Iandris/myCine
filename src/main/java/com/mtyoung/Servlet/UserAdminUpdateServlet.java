@@ -3,9 +3,11 @@ package com.mtyoung.Servlet;
 
 import com.mtyoung.entity.Address;
 import com.mtyoung.entity.User;
+import com.mtyoung.entity.UserRole;
 import com.mtyoung.persistence.AddressDao;
 import com.mtyoung.persistence.StateDao;
 import com.mtyoung.persistence.UserDao;
+import com.mtyoung.persistence.UserRoleDao;
 import org.apache.catalina.realm.RealmBase;
 import org.apache.log4j.Logger;
 
@@ -45,6 +47,7 @@ public class UserAdminUpdateServlet extends HttpServlet {
 
         UserDao dao = new UserDao();
         User newUser = dao.getUser(Integer.parseInt(request.getParameter("uuid")));
+        String username = newUser.getUser_name();
 
         newUser.setFname(request.getParameter("firstname"));
         newUser.setLname(request.getParameter("lastname"));
@@ -58,6 +61,14 @@ public class UserAdminUpdateServlet extends HttpServlet {
         }
 
         dao.updateUser(newUser);
+
+        UserRoleDao roleDao = new UserRoleDao();
+        UserRole role = roleDao.getRoleByUserName(username);
+
+        if (role != null) {
+            role.setuser_name(newUser.getUser_name());
+            roleDao.updateRole(role);
+        }
 
         getServletContext().getRequestDispatcher("/secure/admin/useradmin").forward(request, response);
     }

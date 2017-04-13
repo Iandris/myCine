@@ -11,6 +11,8 @@
     <h1> ${user.fname}'s Library</h1>
 </div>
 
+${reminder}
+
 <div id="myModal" class="modal">
     <div class="modal-content">
         <h3 style="color:white;">Pick a Friend to rent to:</h3>
@@ -52,11 +54,28 @@
                         <input type="text" hidden="hidden" name="destination" id="destination" />
                         <input type="text" hidden="hidden" name="source" id="source" />
                         <input type="text" hidden="hidden" name="renter" id="renter" />
-                        <button type="button" onclick="setSource('Library', 'rental', '${movie.title}', '${movie.idmovie}');">
-                            <i class="fa fa-user">
-                                <span>Loan to a Friend</span>
-                            </i>
-                        </button>
+                        <c:if test="${rentals.contains(movie)}">
+                            <button type="button" onclick="setSource('Library', 'returns', '${movie.title}', '${movie.idmovie}');">
+                                <i class="fa fa-user">
+                                    <span>End Rental</span>
+                                </i>
+                            </button>
+
+                            <button type="button" onclick="setSource('Library', 'reminder', '${movie.title}', '${movie.idmovie}');">
+                                <i class="fa fa-phone">
+                                    <span>Send Reminder Text</span>
+                                </i>
+                            </button>
+                        </c:if>
+
+                        <c:if test="${!rentals.contains(movie)}">
+                            <button type="button" onclick="setSource('Library', 'rental', '${movie.title}', '${movie.idmovie}');">
+                                <i class="fa fa-user">
+                                    <span>Loan to a Friend</span>
+                                </i>
+                            </button>
+                        </c:if>
+
                         <button type="button" onclick="setSource('Library', 'trash', '${movie.title}', '${movie.idmovie}');">
                             <i class="fa fa-trash">
                                 <span>Remove from Library</span>
@@ -104,6 +123,10 @@
                                 question = "Rent movie " + movietitle + " to " + renter + "?";
                             } else if (destination == 'trash') {
                                 question = "Send movie " + movietitle + " to the " + destination + "?";
+                            } else if (destination == 'returns') {
+                                question = "End Rental of movie: " + movietitle + "?";
+                            } else if (destination == 'reminder') {
+                                question = "Send Return reminder for " + movietitle + "?";
                             }
 
                             var goahead = window.confirm(question);
