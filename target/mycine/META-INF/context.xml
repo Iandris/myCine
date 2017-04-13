@@ -6,10 +6,7 @@
            userNameCol="user_name"
            userCredCol="password"
            userRoleTable="UserRoles"
-           roleNameCol="role_name"
-           maxActive="100"
-           maxIdle="30"
-           maxWait="604800">
+           roleNameCol="role_name">
         <CredentialHandler
                 className="org.apache.catalina.realm.MessageDigestCredentialHandler"
                 algorithm="sha-256" />

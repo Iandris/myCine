@@ -44,10 +44,10 @@ public class MyLibraryLoaderServlet extends HttpServlet {
         if (friends != null) {
             for (UserFriends friend : friends
                     ) {
-                if (friend.getFrienda() == user.getUuid()) {
-                    myFriends.add(usrDao.getUser(friend.getFriendb()));
-                } else if (friend.getFriendb() == user.getUuid()) {
+                if (friend.getFriendb() == user.getUuid()) {
                     myFriends.add(usrDao.getUser(friend.getFrienda()));
+                } else if (friend.getFrienda() == user.getUuid()) {
+                    myFriends.add(usrDao.getUser(friend.getFriendb()));
                 }
             }
         }
@@ -59,8 +59,6 @@ public class MyLibraryLoaderServlet extends HttpServlet {
         if(session.getAttribute("mymovies") != null) {
             session.setAttribute("mymovies", null);
         }
-
-        //TODO populate list of my movies that are rented out
 
         session.setAttribute("mymovies", films);
         session.setAttribute("rentals", rentals);

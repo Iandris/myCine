@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <a class="navbar-brand" href="/mycine/index">
         <img src="${pageContext.request.contextPath}/images/MyCine_157x60_White.png" alt="MyCine Logo" />
@@ -9,9 +11,12 @@
         <li><a href="/mycine/secure/auth/wishlist">MyWishList</a></li>
         <li><a href="/mycine/secure/auth/search">Search Titles</a></li>
         <li><a href="/mycine/secure/auth/friends">MyFriends</a></li>
-        <li><a href="#">Settings</a></li>
+        <li><a href="/mycine/secure/auth/rentals">MyRentals</a></li>
+        <li><a href="/mycine/secure/auth/settings">Settings</a></li>
         <li><a href="#">Support</a></li>
-        <li><a href="/mycine/secure/admin/useradmin">Admin</a></li>
+        <c:if test="${admin == true}">
+            <li><a href="/mycine/secure/admin/useradmin">Admin</a></li>
+        </c:if>
     </ul>
 
     <ul class="nav navbar-nav navbar-right">

@@ -33,7 +33,7 @@ public class HomeServlet  extends HttpServlet {
 
         HttpSession session  = request.getSession();
         MovieDao mvdao = new MovieDao();
-
+        session.setAttribute("admin", request.isUserInRole("administrator"));
         List<Movie> movies = mvdao.getRecentMovies(LocalDate.now());
         List<Movie> upcoming = new ArrayList<Movie>();
         List<Movie> newreleases = new ArrayList<Movie>();

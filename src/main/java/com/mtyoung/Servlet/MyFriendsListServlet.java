@@ -52,7 +52,6 @@ public class MyFriendsListServlet extends HttpServlet {
         List<UserFriends> friends = dao.getFriendsByUser(user.getUuid());
         List<User> myFriends = new ArrayList<>();
 
-        //TODO list active rentals by friends listed
         List<Rental> rentals = new ArrayList<>();
 
         if (friends != null) {

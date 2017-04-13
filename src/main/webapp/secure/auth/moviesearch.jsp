@@ -32,7 +32,7 @@
     </c:if>
 
     <c:if test="${results == true}">
-        <h3>Results:</h3>
+        <h3>Results: ${count}</h3>
         <p>Note: Adding a Movie currently on your Wishlist to your Library will automatically remove it from your Wishlist.</p>
         <div id="accordion">
             <c:forEach  var="movie" items="${mymovies}" >

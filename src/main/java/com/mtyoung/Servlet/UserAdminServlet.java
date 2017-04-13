@@ -41,7 +41,6 @@ public class UserAdminServlet  extends HttpServlet {
 
         List<User> users = new ArrayList<>();
         users = dao.getAllUsers();
-        System.out.println(users.size());
 
         List<State> states = stateDao.getAllStates();
 

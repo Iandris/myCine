@@ -6,6 +6,7 @@
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/RegistrationCheckServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/RentalDao.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/Genre.java
+/Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/RemoveFriendServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/RemoveMovieLibraryServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/MyFriendsListServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/Message.java
@@ -38,12 +39,14 @@
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/StudioDao.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/UserRoleDao.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/com/omdbapi/SearchItem.java
+/Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/MyRentalsListServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/Studio.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/RentMovieToFriendServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/UserDao.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/UserMovieLink.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/SessionFactoryProvider.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/WishlistDao.java
+/Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/UserSettingsServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/LoginServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/LogoutServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/MovieCastLink.java
@@ -52,6 +55,7 @@
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/WishlistLoaderServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/DirectorDao.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/SendFriendRequestServlet.java
+/Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/UserSettingsUpdateServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/UserRole.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/MovieSearchRedirect.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/rest/Titles.java

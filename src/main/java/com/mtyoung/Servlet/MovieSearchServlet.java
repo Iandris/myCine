@@ -3,6 +3,7 @@ package com.mtyoung.Servlet;
 
 import com.mtyoung.com.omdbapi.OmdbJson;
 import com.mtyoung.entity.Movie;
+import com.mtyoung.persistence.MovieDao;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -48,10 +49,12 @@ public class MovieSearchServlet extends HttpServlet {
 
                 Arrays.sort(sortedMovies, Movie.MovieNameComparator);
 
+                session.setAttribute("count", sortedMovies.length);
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
+
 
         session.setAttribute("results", found);
         session.setAttribute("mymovies", sortedMovies);

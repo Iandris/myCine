@@ -92,6 +92,23 @@ public class UserDao {
         return user;
     }
 
+    public User getUserByPhone(String phone) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        Transaction tx = null;
+        User user = null;
+        try {
+            user = (User) session.createQuery("from com.mtyoung.entity.User U where U.cellnumber = :cell")
+                    .setString("cell", phone)
+                    .uniqueResult();
+            return user;
+        } catch (HibernateException e) {
+            log.error("Hibernate Exception", e);
+        } finally {
+            session.close();
+        }
+        return user;
+    }
+
     /**
      * delete a user by id
      * @param id the user's id

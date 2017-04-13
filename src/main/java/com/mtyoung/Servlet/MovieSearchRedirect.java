@@ -19,6 +19,7 @@ public class MovieSearchRedirect extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         HttpSession session  = request.getSession();
+        session.setAttribute("count", null);
         session.setAttribute("mymovies", null);
         session.setAttribute("results", null);
         getServletContext().getRequestDispatcher("/secure/auth/moviesearch.jsp").forward(request, response);

@@ -23,7 +23,6 @@ import java.io.IOException;
  * Created by Mike on 2/28/17.
  */
 public class LoginStoreInSession  extends HttpServlet  {
-    private final Logger log = Logger.getLogger(this.getClass());
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         HttpSession session = request.getSession();
@@ -44,6 +43,7 @@ public class LoginStoreInSession  extends HttpServlet  {
                 session.setAttribute("uname", username);
                 response.sendRedirect("/mycine/loginfailure");
             } else {
+
                 String url = "j_security_check?j_username=" + username + "&j_password=" + pwd;
                 String redirectURL = response.encodeRedirectURL(url);
                 response.sendRedirect(redirectURL);

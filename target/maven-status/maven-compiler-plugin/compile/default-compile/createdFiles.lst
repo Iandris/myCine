@@ -1,5 +1,6 @@
 com/mtyoung/entity/UserMovieLink.class
 com/mtyoung/util/EmailMessage$1.class
+com/mtyoung/Servlet/UserSettingsUpdateServlet.class
 com/mtyoung/com/omdbapi/Title.class
 com/mtyoung/entity/UserFriends.class
 com/mtyoung/util/LocalDateAttributeConverter.class
@@ -21,6 +22,7 @@ com/mtyoung/persistence/StateDao.class
 com/mtyoung/entity/Address.class
 com/mtyoung/persistence/UserFriendDao.class
 com/mtyoung/Servlet/MovieSearchServlet.class
+com/mtyoung/Servlet/UserSettingsServlet.class
 com/mtyoung/persistence/FriendrequestsDao.class
 com/mtyoung/persistence/AddressDao.class
 com/mtyoung/persistence/MessageDao.class
@@ -35,9 +37,11 @@ com/mtyoung/entity/UserRole.class
 com/mtyoung/entity/Friendrequests.class
 com/mtyoung/Servlet/EnrollServlet.class
 com/mtyoung/Servlet/LogoutServlet.class
+com/mtyoung/Servlet/MyRentalsListServlet.class
 com/mtyoung/Servlet/UserAdminServlet.class
 com/mtyoung/entity/Format.class
 com/mtyoung/entity/Movie$1.class
+com/mtyoung/Servlet/RemoveFriendServlet.class
 com/mtyoung/persistence/UserMovieDao.class
 com/mtyoung/Servlet/WishlistLoaderServlet.class
 com/mtyoung/persistence/StudioDao.class
