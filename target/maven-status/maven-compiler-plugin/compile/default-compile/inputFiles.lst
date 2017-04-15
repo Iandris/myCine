@@ -1,5 +1,6 @@
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/Director.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/Rental.java
+/Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/SupportRedirectServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/MovieDao.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/User.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/FormatDao.java
@@ -46,6 +47,7 @@
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/entity/UserMovieLink.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/SessionFactoryProvider.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/persistence/WishlistDao.java
+/Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/SupportRequestEmailServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/UserSettingsServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/LoginServlet.java
 /Users/Mike/Desktop/Java/mycine/src/main/java/com/mtyoung/Servlet/LogoutServlet.java

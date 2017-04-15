@@ -1,9 +1,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>MyCine - Registration</title>
+	<title>MyCine - Registration</title>
 	<c:import url="jspinclude/header.jsp" />
-    <c:import url="jspinclude/navBarNoLogin.jsp" />
+	<c:import url="jspinclude/navBarNoLogin.jsp" />
 </head>
 <body class="regform">
 <div>
@@ -26,7 +26,7 @@
 								<span class="input-group-addon"><i class="fa fa-id-card"  ></i></span>
 								<input type="text" class="form-control" placeholder="First Name" id="firstname" name="firstname" />
 							</div>
-							   <div class="form-group input-group">
+							<div class="form-group input-group">
 								<span class="input-group-addon"><i class="fa fa-id-card-o"  ></i></span>
 								<input type="text" class="form-control" placeholder="Last Name" id="lastname" name="lastname" />
 							</div>

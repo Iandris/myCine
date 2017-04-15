@@ -41,6 +41,7 @@ com/mtyoung/Servlet/MyRentalsListServlet.class
 com/mtyoung/Servlet/UserAdminServlet.class
 com/mtyoung/entity/Format.class
 com/mtyoung/entity/Movie$1.class
+com/mtyoung/Servlet/SupportRedirectServlet.class
 com/mtyoung/Servlet/RemoveFriendServlet.class
 com/mtyoung/persistence/UserMovieDao.class
 com/mtyoung/Servlet/WishlistLoaderServlet.class
@@ -59,6 +60,7 @@ com/mtyoung/entity/State.class
 com/mtyoung/entity/Studio.class
 com/mtyoung/Servlet/AddMovieLibraryServlet.class
 com/mtyoung/persistence/ActorDao.class
+com/mtyoung/Servlet/SupportRequestEmailServlet.class
 com/mtyoung/util/TextMessage.class
 com/mtyoung/persistence/MovieDao.class
 com/mtyoung/persistence/WishlistDao.class

@@ -10,7 +10,7 @@
 <body class="schpeal-home" >
 
 <div>
-    <h1>Search Titles</h1>
+    <h1>Search Titles</h1>&nbsp;<p>Please note: Some searches may take longer, depending on the number of results.</p>
 
     <form action="/mycine/secure/auth/moviesearch" onsubmit="return showMe()" id="searchForm" method="POST" >
         <div class="form-group input-group">

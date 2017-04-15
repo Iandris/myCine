@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -26,38 +27,45 @@ public class MovieSearchServlet extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         HttpSession session  = request.getSession();
-
+        MovieDao movieDao = new MovieDao();
         OmdbJson search = new OmdbJson();
-        List<Movie> mymovies = null;
-        Movie[] sortedMovies = null;
+        List<Movie> mymovies = new ArrayList<>();
+       // Movie[] sortedMovies = null;
         boolean found = false;
 
         String searchtitle = request.getParameter("title").replace(" ", "%20");
 
         try {
-            mymovies = search.searchByTitle(searchtitle);
+            search.searchByTitle(searchtitle);
+
+            mymovies = movieDao.getMoviesByTitleSearch(searchtitle);
+
             if (mymovies.size() > 0) {
                 found = true;
-
-                sortedMovies = new Movie[mymovies.size()];
-                int i = 0;
-                for (Movie mvie: mymovies
-                        ) {
-                    sortedMovies[i] = mvie;
-                    i++;
-                }
-
-                Arrays.sort(sortedMovies, Movie.MovieNameComparator);
-
-                session.setAttribute("count", sortedMovies.length);
             }
+
+//            if (mymovies.size() > 0) {
+//                found = true;
+//
+//                sortedMovies = new Movie[mymovies.size()];
+//                int i = 0;
+//                for (Movie mvie: mymovies
+//                        ) {
+//                    sortedMovies[i] = mvie;
+//                    i++;
+//                }
+//
+//                //Arrays.sort(sortedMovies, Movie.MovieNameComparator);
+//
+//
+//            }
+            session.setAttribute("count", mymovies.size());
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-
         session.setAttribute("results", found);
-        session.setAttribute("mymovies", sortedMovies);
+        session.setAttribute("mymovies", mymovies);
         getServletContext().getRequestDispatcher("/secure/auth/moviesearch.jsp").forward(request, response);
 
     }

@@ -147,7 +147,7 @@ public class MovieDao {
         title = title.replace("%20", " ");
         try {
 
-            titles = session.createQuery("from com.mtyoung.entity.Movie U where U.title like :movieTitle")
+            titles = session.createQuery("from com.mtyoung.entity.Movie U where U.title like :movieTitle ORDER BY U.title")
                     .setString("movieTitle", "%" + title + "%")
                     .list();
             return titles;
