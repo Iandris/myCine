@@ -19,13 +19,13 @@
 ${messagestatus}
 
 <h3>Contact Us:</h3>
-
+<%--TODO FIX width of text area--%>
 <form id="frmsupport" action="/mycine/supportrequest">
-    <input type="text" class="form-control" placeholder="Full Name" id="sender" name="sender" />
-    <br />
-    <textarea width="35em" id="detail" lass="form-control" name="detail" rows="8" placeholder="How can we help?" ></textarea>
-    <br /><br />
-    <button type="submit" value="Submit" class="btn btn-success">Send</button>
+        <input type="text" class="form-control"  placeholder="Full Name" id="sender" name="sender" />
+        <br />
+        <textarea id="detail" lass="form-control" cols="107" name="detail" rows="8" placeholder="How can we help?" ></textarea>
+        <br /><br />
+        <button type="submit" value="Submit" class="btn btn-success">Send</button>
 </form>
 
 

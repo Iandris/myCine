@@ -15,6 +15,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import java.io.IOException;
 
@@ -35,7 +36,7 @@ public class EnrollServlet  extends HttpServlet {
      */
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
+        HttpSession session = request.getSession();
         AddressDao addrDao = new AddressDao();
         Address addr = new Address();
         StateDao stateDao = new StateDao();
@@ -69,9 +70,20 @@ public class EnrollServlet  extends HttpServlet {
             UserRole role = new UserRole();
             role.setRole_name("registered-user");
             role.setuser_name(newUser.getUser_name());
-            roleDao.addRole(role);
+            int i = roleDao.addRole(role);
 
-            response.sendRedirect("/mycine/secure/auth/home");
+            if (i != 0) {
+                request.login(newUser.getUser_name(), request.getParameter("password"));
+                session.setAttribute("user", dao.getUser(userID));
+
+//                String url = "j_security_check?j_username=" + newUser.getUser_name() + "&j_password=" + request.getParameter("password");
+//                String redirectURL = response.encodeRedirectURL(url);
+//                response.sendRedirect(redirectURL);
+
+                response.sendRedirect("/mycine/secure/auth/home");
+            } else {
+                response.sendRedirect("/mycine/index");
+            }
         } else {
             //getServletContext().getRequestDispatcher("/index").forward(request, response);
             response.sendRedirect("/mycine/index");
