@@ -6,7 +6,7 @@ import com.mtyoung.entity.UserFriends;
 import com.mtyoung.persistence.RentalDao;
 import com.mtyoung.persistence.UserDao;
 import com.mtyoung.persistence.UserFriendDao;
-import org.apache.log4j.Logger;
+
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -28,56 +28,53 @@ import java.util.Set;
 )
 
 public class RemoveFriendServlet extends HttpServlet {
-    private final Logger log = Logger.getLogger(this.getClass());
+    private UserDao userdao = new UserDao();
+    private UserFriendDao friendDao = new UserFriendDao();
+    private RentalDao rentalDao = new RentalDao();
+    private User user;
+    private User friend;
+    private String error;
+
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
-        UserDao userdao = new UserDao();
-        UserFriendDao friendDao = new UserFriendDao();
-        RentalDao rentalDao = new RentalDao();
-
         HttpSession session = request.getSession();
-        User user = (User)session.getAttribute("user");
 
-        User friend = userdao.getUser(Integer.parseInt(request.getParameter("friendid")));
+        user = (User)session.getAttribute("user");
+        friend = userdao.getUser(Integer.parseInt(request.getParameter("friendid")));
 
-        String error = "Unable to Remove Friend " + friend.getFname() + " " + friend.getLname();;
+        error = "Unable to Remove Friend " + friend.getFname() + " " + friend.getLname();
 
         if (user != null && friend != null) {
-            List<UserFriends> myFriends = friendDao.getFriendsByUser(user.getUuid());
-
-            for (UserFriends link : myFriends) {
+            for (UserFriends link : friendDao.getFriendsByUser(user.getUuid())) {
                 if (link.getFrienda() == friend.getUuid() || link.getFriendb() == friend.getUuid()) {
 
-                    //Check for and delete rentals where I own the movie, and delete friend is owner
-                    Set<Rental> rentals = friend.getRentalset();
+                    //Check for and delete rentals where user own the movie, and delete friend is owner
+                    purgeRentalsInLibrary(friend.getRentalset(), user);
 
-                    for (Rental rent: rentals
-                         ) {
-                        if (rent.getMovieid().getUserid().getUuid() == user.getUuid()) {
-                            rentalDao.deleteRental(rent.getIdrentals());
-                        }
-                    }
+                    //Check for and delete any rentals where user is the renter, and friend is owner
+                    purgeRentalsInLibrary(user.getRentalset(), friend);
 
-                    //Check for and delete any rentals where I am the renter, and friend is owner
-                    Set<Rental> myRentals = user.getRentalset();
-
-                    for (Rental rent : myRentals) {
-                        if (rent.getMovieid().getUserid().getUuid() == friend.getUuid()) {
-                            rentalDao.deleteRental(rent.getIdrentals());
-                        }
-                    }
-
+                    //delete friendship connection
                     friendDao.deleteFriend(link.getIdConnector());
-                    error = "Sucessfully Ended Friendship with " + friend.getFname() + " " + friend.getLname();
-                    session.setAttribute("deleteStatus", error);
-                    response.sendRedirect("/mycine/secure/auth/friends");
                 }
             }
+
+            error = "Sucessfully Ended Friendship with " + friend.getFname() + " " + friend.getLname();
+            session.setAttribute("deleteStatus", error);
+            response.sendRedirect("/mycine/secure/auth/friends");
         } else {
             session.setAttribute("deleteStatus", error);
             response.sendRedirect("/mycine/secure/auth/friends");
         }
 
+    }
+
+    private void purgeRentalsInLibrary(Set<Rental> rentals, User user) {
+        for (Rental rent: rentals
+             ) {
+            if (rent.getMovieid().getUserid().getUuid() == user.getUuid()) {
+                rentalDao.deleteRental(rent.getIdrentals());
+            }
+        }
     }
 }

@@ -141,7 +141,6 @@ public class MovieDao {
 
     public List<Movie> getMoviesByTitleSearch(String title) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        Transaction tx = null;
         List<Movie> titles = null;
         //parse out url space
         title = title.replace("%20", " ");

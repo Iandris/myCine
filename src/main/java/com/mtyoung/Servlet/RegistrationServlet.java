@@ -24,8 +24,7 @@ import java.util.List;
  * Created by Mike on 2/16/17.
  */
 public class RegistrationServlet  extends HttpServlet {
-
-    private final Logger log = Logger.getLogger(this.getClass());
+    private StateDao dao = new StateDao();
     /**
      * doGet method for MyCine registration.jsp redirect
      * @param request
@@ -37,10 +36,7 @@ public class RegistrationServlet  extends HttpServlet {
             throws ServletException, IOException {
 
         HttpSession session  = request.getSession();
-        StateDao dao = new StateDao();
-        List<State> states = dao.getAllStates();
-
-        session.setAttribute("states", states);
+        session.setAttribute("states", dao.getAllStates());
         getServletContext().getRequestDispatcher("/registration").forward(request, response);
 
     }

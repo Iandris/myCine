@@ -24,13 +24,14 @@ import java.util.List;
  * Created by Mike on 3/1/17.
  */
 public class MovieSearchServlet extends HttpServlet {
+    private MovieDao movieDao = new MovieDao();
+    private OmdbJson search = new OmdbJson();
+
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         HttpSession session  = request.getSession();
-        MovieDao movieDao = new MovieDao();
-        OmdbJson search = new OmdbJson();
+
         List<Movie> mymovies = new ArrayList<>();
-       // Movie[] sortedMovies = null;
         boolean found = false;
 
         String searchtitle = request.getParameter("title").replace(" ", "%20");
@@ -43,22 +44,6 @@ public class MovieSearchServlet extends HttpServlet {
             if (mymovies.size() > 0) {
                 found = true;
             }
-
-//            if (mymovies.size() > 0) {
-//                found = true;
-//
-//                sortedMovies = new Movie[mymovies.size()];
-//                int i = 0;
-//                for (Movie mvie: mymovies
-//                        ) {
-//                    sortedMovies[i] = mvie;
-//                    i++;
-//                }
-//
-//                //Arrays.sort(sortedMovies, Movie.MovieNameComparator);
-//
-//
-//            }
             session.setAttribute("count", mymovies.size());
         } catch (Exception e) {
             e.printStackTrace();

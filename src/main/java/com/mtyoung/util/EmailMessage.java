@@ -17,9 +17,20 @@ import java.util.Random;
  */
 public class EmailMessage {
     //TODO update username and password for your gmail account
+    //TODO for demonstration leave un/p in place
     private static final String GMAIL_USERNAME = "iandris427@gmail.com";
     private static final String GMAIL_PWD = "J795ui9j";
-    private Message message = new MimeMessage(getEmailSession());
+    private Message message;
+    FriendrequestsDao dao;
+    Friendrequests friendrequests;
+    Random rand;
+
+    public EmailMessage() {
+        rand  = new Random();
+        friendrequests  = new Friendrequests();
+        dao  = new FriendrequestsDao();
+        message  = new MimeMessage(getEmailSession());
+    }
 
     public boolean sendFriendRequest(User sender, User recipient) {
         boolean success = false;
@@ -28,12 +39,7 @@ public class EmailMessage {
             this.message.setFrom(new InternetAddress("FriendRequest@MyCine.com", "MyCine"));
             this.message.setRecipient(Message.RecipientType.TO, new InternetAddress(recipient.getUser_name()));
             this.message.setSubject("New MyCine Friend Request");
-            //TODO do not use html/body tags use only inner elements
             String senderName = sender.getFname() + " " + sender.getLname();
-            FriendrequestsDao dao = new FriendrequestsDao();
-            Friendrequests friendrequests = new Friendrequests();
-            Random rand = new Random();
-
 
             String hashedReqid = RealmBase.Digest(String.valueOf(rand.nextInt(1000000000 - 1 + 1) + 1),"sha-256", "UTF-8");
             friendrequests.setReqid(hashedReqid);
@@ -83,8 +89,7 @@ public class EmailMessage {
         return success;
     }
 
-
-    private Session getEmailSession() {
+    public Session getEmailSession() {
         Properties props = new Properties();
 
         props.put("mail.smtp.host", "smtp.gmail.com");

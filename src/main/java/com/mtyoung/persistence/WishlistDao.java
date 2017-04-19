@@ -94,11 +94,10 @@ public class WishlistDao {
 
     public List<Wishlist> getWishListByUserID(int userid) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        Transaction tx = null;
         List<Wishlist> links = null;
         try {
 
-            links = session.createQuery("from com.mtyoung.entity.Wishlist U where U.userid = :uuid")
+            links = session.createQuery("from com.mtyoung.entity.Wishlist U where U.userid = :uuid order by U.movieid.title")
                     .setString("uuid", String.valueOf(userid))
                     .list();
             return links;

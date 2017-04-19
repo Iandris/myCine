@@ -94,11 +94,10 @@ public class UserMovieDao {
 
     public List<UserMovieLink> getMoviesLinkByUserID(int userid) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        Transaction tx = null;
         List<UserMovieLink> links = null;
         try {
 
-            links = session.createQuery("from com.mtyoung.entity.UserMovieLink U where U.userid = :uuid")
+            links = session.createQuery("from com.mtyoung.entity.UserMovieLink U where U.userid = :uuid order by U.movieid.title")
                     .setString("uuid", String.valueOf(userid))
                     .list();
             return links;

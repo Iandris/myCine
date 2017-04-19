@@ -31,20 +31,20 @@ ${reminder}
 
 <div id="accordion">
     <c:forEach  var="movie" items="${mymovies}" >
-        <h3 style="text-decoration:underline;"><strong>${movie.title}</strong></h3>
+        <h3 style="text-decoration:underline;"><strong>${movie.movieid.title}</strong></h3>
         <table width="100%">
             <tr>
-                <td rowspan="5"><img src="${movie.imgsource}" alt="${movie.title}" width="125" height="200" /></td>
-                <td>Release Date: ${movie.releaseDate}</td>
-                <td>View on IMDB&nbsp;<a href="http://www.imdb.com/title/${movie.imdbid}/">${movie.title}</a></td>
+                <td rowspan="5"><img src="${movie.movieid.imgsource}" alt="${movie.movieid.title}" width="125" height="200" /></td>
+                <td>Release Date: ${movie.movieid.releaseDate}</td>
+                <td>View on IMDB&nbsp;<a href="http://www.imdb.com/title/${movie.movieid.imdbid}/">${movie.movieid.title}</a></td>
             </tr>
             <tr>
-                <td>Format: ${movie.format.formattitle}</td>
-                <td>Genre: ${movie.genre.genretitle}</td>
+                <td>Format: ${movie.movieid.format.formattitle}</td>
+                <td>Genre: ${movie.movieid.genre.genretitle}</td>
             </tr>
             <tr>
-                <td>Director: ${movie.director.lname}, ${movie.director.fname}</td>
-                <td>Studio: ${movie.studio.studiotitle}</td>
+                <td>Director: ${movie.movieid.director.lname}, ${movie.movieid.director.fname}</td>
+                <td>Studio: ${movie.movieid.studio.studiotitle}</td>
             </tr>
             <tr>
                 <td colspan="3">
@@ -54,29 +54,29 @@ ${reminder}
                         <input type="text" hidden="hidden" name="destination" id="destination" />
                         <input type="text" hidden="hidden" name="source" id="source" />
                         <input type="text" hidden="hidden" name="renter" id="renter" />
-                        <c:if test="${rentals.contains(movie)}">
-                            <button type="button" onclick="setSource('Library', 'returns', '${movie.title}', '${movie.idmovie}');">
+                        <c:if test="${rentals.contains(movie.movieid)}">
+                            <button type="button" onclick="setSource('Library', 'returns', '${movie.movieid.title}', '${movie.movieid.idmovie}');">
                                 <i class="fa fa-user">
                                     <span>End Rental</span>
                                 </i>
                             </button>
 
-                            <button type="button" onclick="setSource('Library', 'reminder', '${movie.title}', '${movie.idmovie}');">
+                            <button type="button" onclick="setSource('Library', 'reminder', '${movie.movieid.title}', '${movie.movieid.idmovie}');">
                                 <i class="fa fa-phone">
                                     <span>Send Reminder Text</span>
                                 </i>
                             </button>
                         </c:if>
 
-                        <c:if test="${!rentals.contains(movie)}">
-                            <button type="button" onclick="setSource('Library', 'rental', '${movie.title}', '${movie.idmovie}');">
+                        <c:if test="${!rentals.contains(movie.movieid)}">
+                            <button type="button" onclick="setSource('Library', 'rental', '${movie.movieid.title}', '${movie.movieid.idmovie}');">
                                 <i class="fa fa-user">
                                     <span>Loan to a Friend</span>
                                 </i>
                             </button>
                         </c:if>
 
-                        <button type="button" onclick="setSource('Library', 'trash', '${movie.title}', '${movie.idmovie}');">
+                        <button type="button" onclick="setSource('Library', 'trash', '${movie.movieid.title}', '${movie.movieid.idmovie}');">
                             <i class="fa fa-trash">
                                 <span>Remove from Library</span>
                             </i>

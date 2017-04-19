@@ -21,6 +21,8 @@ import java.util.List;
 )
 
 public class HomeServlet  extends HttpServlet {
+    private  MovieDao mvdao = new MovieDao();
+
     /**
      * doGet method for MyCine home.jsp redirect
      * @param request
@@ -32,13 +34,12 @@ public class HomeServlet  extends HttpServlet {
             throws ServletException, IOException {
 
         HttpSession session  = request.getSession();
-        MovieDao mvdao = new MovieDao();
         session.setAttribute("admin", request.isUserInRole("administrator"));
         List<Movie> movies = mvdao.getRecentMovies(LocalDate.now());
         List<Movie> upcoming = new ArrayList<Movie>();
         List<Movie> newreleases = new ArrayList<Movie>();
 
-        if (movies != null & movies.size() > 0) {
+        if (!movies.isEmpty()) {
             for (Movie movie: movies
                     ) {
                 if (movie.getReleaseDate().isAfter(LocalDate.now()) ) {

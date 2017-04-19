@@ -4,13 +4,12 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
 @Table(name = "users")
-public class User implements Comparable<User>, Serializable{
+public class User implements  Serializable{
 
   private int uuid;
   private String user_name;
@@ -56,7 +55,6 @@ public class User implements Comparable<User>, Serializable{
     this.lname = lname;
   }
 
-  //@Column(name = "id_address")
   @ManyToOne(fetch = FetchType.EAGER)
   @JoinColumn(name = "address")
   public Address getAddress() {
@@ -143,20 +141,4 @@ public class User implements Comparable<User>, Serializable{
   public void setRentalset(Set<Rental> rentalSet) {
     this.rentalset = rentalSet;
   }
-
-  public int compareTo(User compareUser) {
-    int userId = ((User) compareUser).getUuid();
-
-    return this.uuid - userId;
-  }
-
-  public static Comparator<User> UserNameComparator = new Comparator<User>() {
-    public int compare(User user1, User user2) {
-      String lastName1 = user1.getLname().toLowerCase();
-      String lastName2 = user2.getLname().toLowerCase();
-
-      return lastName1.compareTo(lastName2);
-    }
-
-  };
 }

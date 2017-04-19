@@ -5,7 +5,6 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.*;
-import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -14,7 +13,7 @@ import java.util.Set;
         @UniqueConstraint(columnNames = "imdbID"),
         @UniqueConstraint(columnNames = "upcCode")
 })
-public class Movie  implements Comparable<Movie>, Serializable{
+public class Movie  implements Serializable{
 
   private int idmovie;
   private String title;
@@ -135,21 +134,4 @@ public class Movie  implements Comparable<Movie>, Serializable{
     public void setMovieSet (Set<UserMovieLink> links) {
         this.links = links;
     }
-
-
-  public int compareTo(Movie compareMovie) {
-    int movieID = ((Movie) compareMovie).getIdmovie();
-
-    return this.idmovie - movieID;
-  }
-
-  public static Comparator<Movie> MovieNameComparator = new Comparator<Movie>() {
-    public int compare(Movie movie1, Movie movie2) {
-      String movieName1 = movie1.getTitle().toLowerCase();
-      String movieName2 = movie2.getTitle().toLowerCase();
-
-      return movieName1.compareTo(movieName2);
-    }
-
-  };
 }

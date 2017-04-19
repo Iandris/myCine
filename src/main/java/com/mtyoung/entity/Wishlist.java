@@ -25,7 +25,6 @@ public class Wishlist {
     this.idwishlistlink = wishlistid;
   }
 
-  //@Column(name="userID")
   @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "userid")
   public User getUserid() {
@@ -36,7 +35,6 @@ public class Wishlist {
     this.userid = userid;
   }
 
-  //@Column(name="movieID")
   @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "movieid")
   public Movie getMovieid() {

@@ -30,8 +30,6 @@ public class UserMovieLink implements Serializable {
     this.linkid = linkid;
   }
 
-
-  //@Column(name="userID")
   @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "userid")
   public User getUserid() {
@@ -43,7 +41,6 @@ public class UserMovieLink implements Serializable {
   }
 
 
- // @Column(name="movieID")
   @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "movieid")
   public Movie getMovieid() {

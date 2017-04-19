@@ -27,16 +27,15 @@ import java.io.IOException;
         urlPatterns = {"/secure/auth/updateuser"}
 )
 public class UserSettingsUpdateServlet  extends HttpServlet{
+    private AddressDao addrDao = new AddressDao();
+    private StateDao stateDao = new StateDao();
+    private UserDao dao = new UserDao();
+    private UserRoleDao roleDao = new UserRoleDao();
+
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
         HttpSession session  = request.getSession();
-
-        AddressDao addrDao = new AddressDao();
-        StateDao stateDao = new StateDao();
-        UserDao dao = new UserDao();
-        UserRoleDao roleDao = new UserRoleDao();
-
 
         User me = (User)session.getAttribute("user");
         User user = dao.getUser(me.getUuid());
@@ -49,7 +48,6 @@ public class UserSettingsUpdateServlet  extends HttpServlet{
         addr.setState(stateDao.getState(Integer.parseInt(request.getParameter("state"))));
         addr.setZipcode(Integer.parseInt(request.getParameter("zip")));
         addrDao.updateAddress(addr);
-
 
         User newUser = dao.getUser(Integer.parseInt(request.getParameter("uuid")));
         String username = newUser.getUser_name();
@@ -72,7 +70,6 @@ public class UserSettingsUpdateServlet  extends HttpServlet{
         newUser.setCellnumber(request.getParameter("cellnumber").replace(".","").replace("-","").replace("(","").replace(")","").replace(" ",""));
 
         if (!newUser.getCellnumber().equals(user.getCellnumber())) {
-
             User usr = dao.getUserByPhone(newUser.getCellnumber());
 
             if (usr != null) {
@@ -90,15 +87,19 @@ public class UserSettingsUpdateServlet  extends HttpServlet{
 
         dao.updateUser(newUser);
 
+        updateUserRole(newUser, username);
+
+        session.setAttribute("updateStatus", "Settings Update Successful");
+        response.sendRedirect("/mycine/secure/auth/settings");
+
+    }
+
+    private void updateUserRole(User newUser, String username) {
         UserRole role = roleDao.getRoleByUserName(username);
 
         if (role != null) {
             role.setuser_name(newUser.getUser_name());
             roleDao.updateRole(role);
         }
-
-        session.setAttribute("updateStatus", "Settings Update Successful");
-        response.sendRedirect("/mycine/secure/auth/settings");
-
     }
 }

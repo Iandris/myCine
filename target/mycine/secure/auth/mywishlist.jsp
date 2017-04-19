@@ -13,21 +13,21 @@
 
 <div id="accordion">
     <c:forEach  var="movie" items="${mymovies}" >
-        <h3 style="text-decoration:underline;"><strong>${movie.title}</strong></h3>
+        <h3 style="text-decoration:underline;"><strong>${movie.movieid.title}</strong></h3>
         <table width="100%">
             <tr>
-                <td rowspan="5"><img src="${movie.imgsource}" alt="${movie.title}" width="125" height="200" /></td>
-                <td>Release Date: ${movie.releaseDate}</td>
-                <td>View on IMDB&nbsp;<a href="http://www.imdb.com/title/${movie.imdbid}/">${movie.title}</a></td>
+                <td rowspan="5"><img src="${movie.movieid.imgsource}" alt="${movie.movieid.title}" width="125" height="200" /></td>
+                <td>Release Date: ${movie.movieid.releaseDate}</td>
+                <td>View on IMDB&nbsp;<a href="http://www.imdb.com/title/${movie.movieid.imdbid}/">${movie.movieid.title}</a></td>
             </tr>
             <tr>
-                <td>Format: ${movie.format.formattitle}</td>
-                <td>Genre: ${movie.genre.genretitle}</td>
+                <td>Format: ${movie.movieid.format.formattitle}</td>
+                <td>Genre: ${movie.movieid.genre.genretitle}</td>
 
             </tr>
             <tr>
-                <td>Director: ${movie.director.lname}, ${movie.director.fname}</td>
-                <td>Studio: ${movie.studio.studiotitle}</td>
+                <td>Director: ${movie.movieid.director.lname}, ${movie.movieid.director.fname}</td>
+                <td>Studio: ${movie.movieid.studio.studiotitle}</td>
             </tr>
             <tr>
                 <td colspan="3">
@@ -36,12 +36,12 @@
                         <input type="text" hidden="hidden" name="movieID" id="movieID" />
                         <input type="text" hidden="hidden" name="destination" id="destination" />
                         <input type="text" hidden="hidden" name="source" id="source" />
-                        <button type="button" onclick="setSource('Wishlist', 'Library', '${movie.title}', '${movie.idmovie}');">
+                        <button type="button" onclick="setSource('Wishlist', 'Library', '${movie.movieid.title}', '${movie.movieid.idmovie}');">
                             <i class="fa fa-television">
                                 <span>Move to Library</span>
                             </i>
                         </button>
-                        <button type="button" onclick="setSource('Wishlist', 'trash', '${movie.title}', '${movie.idmovie}');">
+                        <button type="button" onclick="setSource('Wishlist', 'trash', '${movie.movieid.title}', '${movie.movieid.idmovie}');">
                             <i class="fa fa-trash">
                                 <span>Remove from Wishlist</span>
                             </i>

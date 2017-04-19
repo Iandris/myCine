@@ -15,6 +15,7 @@ import static org.junit.Assert.*;
  * Created by Mike on 3/6/17.
  */
 public class EmailMessageTest {
+    private static final String TEST_MESSAGE = "TEST MESSAGE";
     EmailMessage email;
     UserDao userDao;
     User bob1;
@@ -89,6 +90,16 @@ public class EmailMessageTest {
     @Test
     public void sendFriendRequest() throws Exception {
         assertEquals("message not successfully sent", true, email.sendFriendRequest(bob1, bob2));
+    }
+
+    @Test
+    public void sendSupportRequest() throws Exception {
+        assertEquals("support message not successfully sent", true, email.sendSupportRequest(bob1.getUser_name(),  TEST_MESSAGE));
+    }
+
+    @Test
+    public void getEmailSession() throws Exception {
+        assertNotNull("No Session Returned", email.getEmailSession());
     }
 
 }

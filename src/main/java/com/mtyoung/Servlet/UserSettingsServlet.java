@@ -23,9 +23,11 @@ import java.util.List;
         urlPatterns = {"/secure/auth/settings"}
 )
 public class UserSettingsServlet extends HttpServlet {
+    private UserDao dao = new UserDao();
+    private StateDao stateDao = new StateDao();
+
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        UserDao dao = new UserDao();
 
         HttpSession session  = request.getSession();
 
@@ -36,14 +38,7 @@ public class UserSettingsServlet extends HttpServlet {
             session.setAttribute("user", user);
         }
 
-        if(session.getAttribute("states") != null) {
-            session.setAttribute("states", null);
-        }
-
-        StateDao stateDao = new StateDao();
-
-        List<State> states = stateDao.getAllStates();
-        session.setAttribute("states", states);
+        session.setAttribute("states", stateDao.getAllStates());
 
         getServletContext().getRequestDispatcher("/secure/auth/settings.jsp").forward(request, response);
     }

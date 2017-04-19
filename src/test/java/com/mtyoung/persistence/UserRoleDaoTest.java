@@ -24,7 +24,7 @@ public class UserRoleDaoTest {
         role = new UserRole();
 
         role.setRole_name("CHIPS n SALSA");
-        role.setuser_name("myoung86@charter.net");
+        role.setuser_name("abcdefg@charter.net");
     }
 
     @After
@@ -80,6 +80,12 @@ public class UserRoleDaoTest {
         assertEquals("role user not returned", role.getuser_name(), dao.getRole(newRole).getuser_name());
         assertEquals("role description not updated", role.getRole_name(), dao.getRole(newRole).getRole_name());
 
+    }
+
+    @Test
+    public void getRoleByUserName() throws Exception {
+        newRole = dao.addRole(role);
+        assertEquals("role not found by username lookup", role.getRoleid(), dao.getRoleByUserName(role.getuser_name()).getRoleid());
     }
 
 }

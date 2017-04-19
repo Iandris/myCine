@@ -23,13 +23,14 @@ import java.io.IOException;
  * Created by Mike on 2/28/17.
  */
 public class LoginStoreInSession  extends HttpServlet  {
+    private UserDao dao = new UserDao();
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         HttpSession session = request.getSession();
         String username = request.getParameter("j_username");
         String pwd = request.getParameter("j_password");
 
-        UserDao dao = new UserDao();
+
         User user = dao.getUserByEmail(username);
 
         if (user == null) {

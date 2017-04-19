@@ -25,14 +25,15 @@ import java.io.IOException;
  * Created by Mike on 3/6/17.
  */
 public class FriendRequestServlet extends HttpServlet {
+    private FriendrequestsDao dao = new FriendrequestsDao();
+    private UserDao userDao = new UserDao();
+    private UserFriendDao friendDao = new UserFriendDao();
+
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException{
-        HttpSession session = request.getSession();
+
         String requestUUID = request.getParameter("reqid");
 
-        FriendrequestsDao dao = new FriendrequestsDao();
-        UserDao userDao = new UserDao();
-        UserFriendDao friendDao = new UserFriendDao();
         Friendrequests friendrequests = dao.findFriendRequestByHashId(requestUUID);
 
         if (friendrequests != null) {

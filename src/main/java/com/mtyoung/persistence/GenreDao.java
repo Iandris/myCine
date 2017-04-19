@@ -1,7 +1,6 @@
 package com.mtyoung.persistence;
 
 import com.mtyoung.entity.Genre;
-import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -12,15 +11,13 @@ import java.util.List;
  * Created by Mike on 2/14/17.
  */
 public class GenreDao {
-    private final Logger log = Logger.getLogger(this.getClass());
-
     public List<Genre> getAllGenres() {
         List<Genre> genres = null;
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         try {
             genres = session.createCriteria(Genre.class).list();
         } catch (HibernateException e) {
-           log.error("Hibernate Exception", e);
+            e.printStackTrace();
         }finally {
             session.close();
         }
@@ -34,7 +31,7 @@ public class GenreDao {
         try {
             genre = (Genre) session.get(Genre.class, id);
         } catch (HibernateException e) {
-           log.error("Hibernate Exception", e);
+            e.printStackTrace();
         } finally {
             session.close();
         }
@@ -52,7 +49,7 @@ public class GenreDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-           log.error("Hibernate Exception", e);
+            e.printStackTrace();
         }finally {
             session.close();
         }
@@ -71,7 +68,7 @@ public class GenreDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-           log.error("Hibernate Exception", e);
+            e.printStackTrace();
         } finally {
             session.close();
         }
@@ -86,7 +83,7 @@ public class GenreDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-           log.error("Hibernate Exception", e);
+            e.printStackTrace();
         } finally {
             session.close();
         }
@@ -94,7 +91,6 @@ public class GenreDao {
 
     public Genre getGenreByTitle(String title) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        Transaction tx = null;
         Genre genre = null;
         try {
             genre = (Genre) session.createQuery("from com.mtyoung.entity.Genre U where U.genretitle = :genreTitle")
@@ -102,7 +98,7 @@ public class GenreDao {
                     .uniqueResult();
             return genre;
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            e.printStackTrace();
         } finally {
             session.close();
         }

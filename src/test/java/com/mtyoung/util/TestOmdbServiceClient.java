@@ -26,6 +26,7 @@ import static org.junit.Assert.*;
  */
 public class TestOmdbServiceClient {
 
+    MovieDao dao;
     String movieTitle;
     String someNames;
     String someName;
@@ -33,16 +34,18 @@ public class TestOmdbServiceClient {
 
     @Before
     public void setup() {
-        movieTitle = "The%20Matrix";
+        dao = new MovieDao();
+        movieTitle = "Logan";
         someNames = "Lana Wachowski, Lilly Wachowski";
         someName = "Lilly Wachowski";
         myJson = new OmdbJson();
     }
 
-    private final Logger log = Logger.getLogger(this.getClass());
     @Test
     public void testOMDBAPIJSON() throws Exception {
-        assertNotEquals("no movies found", 0, myJson.searchByTitle(movieTitle).size());
+        myJson.searchByTitle(movieTitle);
+        List<Movie> movies = dao.getMoviesByTitleSearch(movieTitle);
+        assertNotEquals("no movies found", 0, movies.size());
     }
 
     @Test

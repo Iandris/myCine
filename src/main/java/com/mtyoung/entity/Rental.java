@@ -25,7 +25,6 @@ public class Rental {
 
   public void setIdrentals(int idrentals) { this.idrentals = idrentals;}
 
-  //@Column(name="renterID")
   @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "renterID")
   public User getRenterid() {
@@ -36,7 +35,6 @@ public class Rental {
     this.renterid = renterid;
   }
 
-  //@Column(name="movieID")
   @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "movieID")
   public UserMovieLink getMovieid() {

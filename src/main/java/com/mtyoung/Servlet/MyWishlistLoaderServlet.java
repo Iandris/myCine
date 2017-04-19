@@ -27,40 +27,22 @@ import java.util.List;
 /**
  * Created by Mike on 2/28/17.
  */
-public class WishlistLoaderServlet extends HttpServlet {
-private HttpSession session;
+public class MyWishlistLoaderServlet extends HttpServlet {
+    private HttpSession session;
+    private WishlistDao wishlistDao = new WishlistDao();
+    private List<Wishlist> links;
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
         session = request.getSession();
-        User user = (User) session.getAttribute("user");
-
-        Movie[] mymovies = buildLibrary();
-
-        session.setAttribute("mymovies", mymovies);
-
-        getServletContext().getRequestDispatcher("/secure/auth/mywishlist.jsp").forward(request, response);
-
-    }
-
-    private Movie[] buildLibrary() {
 
         User user = (User)session.getAttribute("user");
 
-        MovieDao dao = new MovieDao();
-        WishlistDao wishlistDao = new WishlistDao();
+        links = wishlistDao.getWishListByUserID(user.getUuid());
 
-        List<Wishlist> links = wishlistDao.getWishListByUserID(user.getUuid());
-        Movie[] films = new Movie[links.size()];
+        session.setAttribute("mymovies", links);
 
-        int i =0;
-        for (Wishlist link: links
-                ) {
-            films[i] = dao.getMovie(link.getMovieid().getIdmovie());
-            i++;
-        }
+        getServletContext().getRequestDispatcher("/secure/auth/mywishlist.jsp").forward(request, response);
 
-        Arrays.sort(films, Movie.MovieNameComparator);
-        return films;
     }
 }

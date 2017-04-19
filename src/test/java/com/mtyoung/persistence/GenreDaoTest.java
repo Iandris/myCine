@@ -23,7 +23,7 @@ public class GenreDaoTest {
     public void startup() {
         gen = new Genre();
         dao = new GenreDao();
-        gen.setGenretitle("Action");
+        gen.setGenretitle("BLAHBLACH");
     }
 
     @After

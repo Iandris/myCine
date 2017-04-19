@@ -36,10 +36,16 @@ public class EnrollServlet  extends HttpServlet {
      */
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
         HttpSession session = request.getSession();
         AddressDao addrDao = new AddressDao();
         Address addr = new Address();
         StateDao stateDao = new StateDao();
+        UserDao dao = new UserDao();
+        User newUser = new User();
+        UserRoleDao roleDao = new UserRoleDao();
+        UserRole role = new UserRole();
+
 
 
         addr.setStreetaddress1(request.getParameter("address1"));
@@ -47,10 +53,7 @@ public class EnrollServlet  extends HttpServlet {
         addr.setCity(request.getParameter("city"));
         addr.setState(stateDao.getState(Integer.parseInt(request.getParameter("state"))));
         addr.setZipcode(Integer.parseInt(request.getParameter("zip")));
-        int newaddr = addrDao.addAddress(addr);
-
-        UserDao dao = new UserDao();
-        User newUser = new User();
+        addrDao.addAddress(addr);
 
         newUser.setFname(request.getParameter("firstname"));
         newUser.setLname(request.getParameter("lastname"));
@@ -63,11 +66,7 @@ public class EnrollServlet  extends HttpServlet {
 
         int userID =  dao.addUser(newUser);
 
-
         if (userID != 0) {
-
-            UserRoleDao roleDao = new UserRoleDao();
-            UserRole role = new UserRole();
             role.setRole_name("registered-user");
             role.setuser_name(newUser.getUser_name());
             int i = roleDao.addRole(role);
@@ -76,18 +75,12 @@ public class EnrollServlet  extends HttpServlet {
                 request.login(newUser.getUser_name(), request.getParameter("password"));
                 session.setAttribute("user", dao.getUser(userID));
 
-//                String url = "j_security_check?j_username=" + newUser.getUser_name() + "&j_password=" + request.getParameter("password");
-//                String redirectURL = response.encodeRedirectURL(url);
-//                response.sendRedirect(redirectURL);
-
                 response.sendRedirect("/mycine/secure/auth/home");
             } else {
                 response.sendRedirect("/mycine/index");
             }
         } else {
-            //getServletContext().getRequestDispatcher("/index").forward(request, response);
             response.sendRedirect("/mycine/index");
         }
-
     }
 }

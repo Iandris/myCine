@@ -25,55 +25,58 @@ import java.io.IOException;
  * Created by Mike on 3/1/17.
  */
 public class AddMovieLibraryServlet extends HttpServlet {
-    MovieDao mvDao = new MovieDao();
-    UserMovieDao libraryDao = new UserMovieDao();
-    WishlistDao  wishlistDao = new WishlistDao();
+    private MovieDao mvDao = new MovieDao();
+    private UserMovieDao libraryDao = new UserMovieDao();
+    private WishlistDao  wishlistDao = new WishlistDao();
+    private String destination;
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
         HttpSession session = request.getSession();
         User user = (User)session.getAttribute("user");
+        session.setAttribute("failure", null);
 
-        int movieID = 0;
+        int movieID;
 
-        if (request.getParameter("movieID") == null) {
-            getServletContext().getRequestDispatcher("/secure/auth/moviesearch").forward(request, response);
-        } else {
+        if (request.getParameter("movieID") != null) {
             movieID = Integer.parseInt(request.getParameter("movieID"));
-        }
 
-        String destination = request.getParameter("destination");
+            destination = request.getParameter("destination");
 
+            if (destination.equals("Wishlist")) {
+                //TODO Prevent add to wishlist if title already in library
+                UserMovieLink library = libraryDao.getLinkByUserMovie(user.getUuid(), movieID);
+                Wishlist wishlist = wishlistDao.getLinkByUserMovie(user.getUuid(), movieID);
 
-        if (destination.equals("Wishlist")) {
-            Wishlist wishlist = wishlistDao.getLinkByUserMovie(user.getUuid(), movieID);
-
-
-            if (wishlist == null) {
-                wishlistDao.addWishListItem(addMovieToWishlist(mvDao.getMovie(movieID), user));
-            }
-
-
-
-            response.sendRedirect("/mycine/secure/auth/wishlist");
-
-        } else if (destination.equals("Library")) {
-            UserMovieLink library = libraryDao.getLinkByUserMovie(user.getUuid(), movieID);
-            Wishlist wishlist = wishlistDao.getLinkByUserMovie(user.getUuid(), movieID);
-
-            if (library == null) {
-                //movie not currently in library
-                if (wishlist != null) {
-                    //movie currently in wishlist
-                    wishlistDao.deleteWishListItem(wishlist.getIdwishlistlink());
+                if (wishlist == null) {
+                    if (library != null) {
+                        session.setAttribute("failure", "ERROR: Title " + mvDao.getMovie(movieID).getTitle() + " is already in Library.");
+                        getServletContext().getRequestDispatcher("/secure/auth/moviesearch.jsp").forward(request, response);
+                    } else {
+                        wishlistDao.addWishListItem(addMovieToWishlist(mvDao.getMovie(movieID), user));
+                        response.sendRedirect("/mycine/secure/auth/wishlist");
+                    }
+                } else {
+                    session.setAttribute("failure", "ERROR: Title " + mvDao.getMovie(movieID).getTitle() + " is already in Wishlist.");
+                    getServletContext().getRequestDispatcher("/secure/auth/moviesearch.jsp").forward(request, response);
                 }
 
-                libraryDao.addUserMovie(addMovieToLibrary(mvDao.getMovie(movieID), user));
+            } else if (destination.equals("Library")) {
+                UserMovieLink library = libraryDao.getLinkByUserMovie(user.getUuid(), movieID);
+                Wishlist wishlist = wishlistDao.getLinkByUserMovie(user.getUuid(), movieID);
+
+                if (library == null && wishlist != null) {
+                    //move from wishlist to library
+                    wishlistDao.deleteWishListItem(wishlist.getIdwishlistlink());
+                    libraryDao.addUserMovie(addMovieToLibrary(mvDao.getMovie(movieID), user));
+                }
+
+                response.sendRedirect("/mycine/secure/auth/library");
+
+            } else {
+                getServletContext().getRequestDispatcher("/secure/auth/moviesearch").forward(request, response);
             }
-
-            response.sendRedirect("/mycine/secure/auth/library");
-
         } else {
             getServletContext().getRequestDispatcher("/secure/auth/moviesearch").forward(request, response);
         }

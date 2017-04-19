@@ -27,6 +27,7 @@ import java.util.List;
 public class SendFriendRequestServlet extends HttpServlet {
     private UserDao userDao;
     private UserFriendDao userFriendDao;
+    private String sendMessage;
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -34,7 +35,6 @@ public class SendFriendRequestServlet extends HttpServlet {
         HttpSession session = request.getSession();
         userDao = new UserDao();
         userFriendDao = new UserFriendDao();
-        String sendMessage;
 
         if(session.getAttribute("friendRequest") != null) {
             session.setAttribute("friendRequest", null);
@@ -43,18 +43,17 @@ public class SendFriendRequestServlet extends HttpServlet {
         User user = (User)session.getAttribute("user");
         List<String> myFriends = getFriends(user);
         String recipient = request.getParameter("user_name");
-        User user2 = userDao.getUserByEmail(recipient);
+        User friend = userDao.getUserByEmail(recipient);
 
-        if (user2 != null) {
+        if (friend != null) {
             if (!myFriends.contains(recipient)) {
                 if (recipient.equals(user.getUser_name())) {
                     sendMessage = "Cannot send friend request to yourself.";
                 } else {
-                    String sender = user.getFname() + " " + user.getLname();
 
                     EmailMessage email = new EmailMessage();
 
-                    boolean success = email.sendFriendRequest(user, user2);
+                    boolean success = email.sendFriendRequest(user, friend);
 
                     if (success) {
                         sendMessage = "Friend Request Email was sent to " + recipient;

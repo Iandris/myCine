@@ -160,5 +160,9 @@ public class UserDaoTest {
         assertEquals("incorrect password returned", bob.getPassword(), dao.getUserByEmail(bob.getUser_name()).getPassword());
     }
 
-
+    @Test
+    public void getUserByPhone() throws Exception {
+        newUser = dao.addUser(bob);
+        assertEquals("User not found by phone number lookup", bob.getUuid(), dao.getUserByPhone(bob.getCellnumber()).getUuid());
+    }
 }

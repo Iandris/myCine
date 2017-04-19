@@ -28,13 +28,13 @@ import java.util.List;
         urlPatterns = {"/secure/auth/rentals"}
         )
 public class MyRentalsListServlet  extends HttpServlet{
-
+private  RentalDao dao = new RentalDao();
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         HttpSession session = request.getSession();
         User user = (User)session.getAttribute("user");
 
-        RentalDao dao = new RentalDao();
+
 
         List<Rental> myRentals = dao.getRentalsByRenter(user);
 

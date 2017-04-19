@@ -24,42 +24,33 @@ import java.util.List;
  */
 public class MyLibraryLoaderServlet extends HttpServlet {
     private HttpSession session;
-    Movie[] films;
-    ArrayList<Movie> rentals;
+    private List<UserMovieLink> films;
+    private ArrayList<Movie> rentals;
+    private UserFriendDao dao = new UserFriendDao();
+    private UserDao usrDao = new UserDao();
+    private List<UserFriends> friends;
+    private User user;
+    private MovieDao movieDao = new MovieDao();
+    private UserMovieDao umdao = new UserMovieDao();
+    private RentalDao rentalDao = new RentalDao();
+
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
-
-
         session = request.getSession();
 
-        UserFriendDao dao = new UserFriendDao();
-        UserDao usrDao = new UserDao();
-        User user = (User)session.getAttribute("user");
+        user = (User)session.getAttribute("user");
 
-        List<UserFriends> friends = dao.getFriendsByUser(user.getUuid());
+        friends = dao.getFriendsByUser(user.getUuid());
         List<User> myFriends = new ArrayList<>();
 
         if (friends != null) {
-            for (UserFriends friend : friends
-                    ) {
-                if (friend.getFriendb() == user.getUuid()) {
-                    myFriends.add(usrDao.getUser(friend.getFrienda()));
-                } else if (friend.getFrienda() == user.getUuid()) {
-                    myFriends.add(usrDao.getUser(friend.getFriendb()));
-                }
-            }
+            buildFriendsList(user, myFriends);
         }
 
         buildLibrary();
 
         session.setAttribute("new", null);
-
-        if(session.getAttribute("mymovies") != null) {
-            session.setAttribute("mymovies", null);
-        }
-
         session.setAttribute("mymovies", films);
         session.setAttribute("rentals", rentals);
         session.setAttribute("friends", myFriends);
@@ -67,31 +58,29 @@ public class MyLibraryLoaderServlet extends HttpServlet {
         getServletContext().getRequestDispatcher("/secure/auth/mylibrary.jsp").forward(request, response);
     }
 
-    public void buildLibrary() {
-        User user = (User)session.getAttribute("user");
-        MovieDao dao = new MovieDao();
-        UserMovieDao umdao = new UserMovieDao();
-        RentalDao rentalDao = new RentalDao();
-        rentals = new ArrayList<Movie>();
-
-
-        List<UserMovieLink> links = umdao.getMoviesLinkByUserID(user.getUuid());
-        films = new Movie[links.size()];
-
-        int i =0;
-        for (UserMovieLink link: links
+    private void buildFriendsList(User user, List<User> myFriends) {
+        for (UserFriends friend : friends
                 ) {
-            Movie mve = dao.getMovie(link.getMovieid().getIdmovie());
-            films[i] = mve;
+            if (friend.getFriendb() == user.getUuid()) {
+                myFriends.add(usrDao.getUser(friend.getFrienda()));
+            } else if (friend.getFrienda() == user.getUuid()) {
+                myFriends.add(usrDao.getUser(friend.getFriendb()));
+            }
+        }
+    }
+
+    private void buildLibrary() {
+//        films = new ArrayList<>();
+        films = umdao.getMoviesLinkByUserID(user.getUuid());
+        rentals = new ArrayList<>();
+
+        for (UserMovieLink link: films
+                ) {
+            Movie mve = movieDao.getMovie(link.getMovieid().getIdmovie());
 
             if (rentalDao.getRentalByMovieID(link) != null) {
                 rentals.add(mve);
             }
-
-            i++;
         }
-
-        Arrays.sort(films, Movie.MovieNameComparator);
-
     }
 }

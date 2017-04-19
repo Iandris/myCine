@@ -28,13 +28,13 @@ import java.io.InterruptedIOException;
  * Created by Mike on 2/23/17.
  */
 public class UserAdminUpdateServlet extends HttpServlet {
-    private final Logger log = Logger.getLogger(this.getClass());
+    private AddressDao addrDao = new AddressDao();
+    private StateDao stateDao = new StateDao();
+    private UserDao dao = new UserDao();
+    private UserRoleDao roleDao = new UserRoleDao();
+
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
-
-        AddressDao addrDao = new AddressDao();
-        StateDao stateDao = new StateDao();
 
         Address addr = addrDao.getAddress(Integer.parseInt(request.getParameter("addrid")));
 
@@ -45,7 +45,6 @@ public class UserAdminUpdateServlet extends HttpServlet {
         addr.setZipcode(Integer.parseInt(request.getParameter("zip")));
         addrDao.updateAddress(addr);
 
-        UserDao dao = new UserDao();
         User newUser = dao.getUser(Integer.parseInt(request.getParameter("uuid")));
         String username = newUser.getUser_name();
 
@@ -62,7 +61,6 @@ public class UserAdminUpdateServlet extends HttpServlet {
 
         dao.updateUser(newUser);
 
-        UserRoleDao roleDao = new UserRoleDao();
         UserRole role = roleDao.getRoleByUserName(username);
 
         if (role != null) {

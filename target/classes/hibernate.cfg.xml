@@ -30,14 +30,14 @@
         <property name="show_sql">true</property>
 
         <!-- List the annotated entity class/es -->
-        <mapping class="com.mtyoung.entity.Actor" />
+        <!--<mapping class="com.mtyoung.entity.Actor" />-->
         <mapping class="com.mtyoung.entity.Address" />
         <mapping class="com.mtyoung.entity.Director" />
         <mapping class="com.mtyoung.entity.Format" />
         <mapping class="com.mtyoung.entity.Genre" />
         <mapping class="com.mtyoung.entity.Message" />
         <mapping class="com.mtyoung.entity.Movie" />
-        <mapping class="com.mtyoung.entity.MovieCastLink" />
+        <!--<mapping class="com.mtyoung.entity.MovieCastLink" />-->
         <mapping class="com.mtyoung.entity.Rental" />
         <mapping class="com.mtyoung.entity.State" />
         <mapping class="com.mtyoung.entity.Studio" />

@@ -30,8 +30,6 @@ public class LoginServlet  extends HttpServlet {
 
         if(request.getParameter("status").equals("fail")) {
             session.setAttribute("status", "Username and Password did not match records.");
-        } else {
-
         }
 
         getServletContext().getRequestDispatcher("/login.jsp").forward(request, response);

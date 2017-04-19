@@ -248,4 +248,10 @@ public class RentalDaoTest {
         assertTrue("no rentals returned by renter", dao.getRentalsByRenter(bob1).size() > 0);
 
     }
+
+    @Test
+    public void getRentalByMovieID() throws Exception {
+        newRental = dao.addRental(rental);
+        assertEquals("Rental not found by movie ID", rental.getMovieid().getMovieid().getTitle(), dao.getRentalByMovieID(rental.getMovieid()).getMovieid().getMovieid().getTitle());
+    }
 }

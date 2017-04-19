@@ -27,9 +27,14 @@
     <div id="loading" class="hideme">
         <img src="${pageContext.request.contextPath}/images/loading-bar.gif" alt="loadinggif" />
     </div>
+
+    ${failure}
+
     <c:if test="${results == false}">
         <h3>No Results Found</h3>
     </c:if>
+
+
 
     <c:if test="${results == true}">
         <h3>Results: ${count}</h3>

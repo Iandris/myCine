@@ -268,4 +268,10 @@ public class MovieDaoTest {
         List<Movie> movies =  dao.getMovieListByWishlist(wishlistDao.getAllWishListItems());
         assertTrue("no movies returned", movies.size() > 0);
     }
+
+    @Test
+    public void getMovieByUPC() throws  Exception {
+        newMovie = dao.addMovie(film);
+        assertEquals("movie not found by UPC", film.getTitle(), dao.getMovieByUPC(film.getUpccode()).getTitle());
+    }
 }

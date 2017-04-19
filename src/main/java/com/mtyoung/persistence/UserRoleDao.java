@@ -97,8 +97,8 @@ public class UserRoleDao {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         UserRole role = null;
         try {
-             role = (UserRole) session.createQuery("from com.mtyoung.entity.UserRole U where U.user_name = :uuid")
-                    .setString("uuid", String.valueOf(user))
+             role = (UserRole) session.createQuery("from com.mtyoung.entity.UserRole U where U.user_name = :username")
+                    .setString("username", user)
                     .uniqueResult();
             return role;
         } catch (HibernateException e) {

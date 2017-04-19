@@ -24,10 +24,10 @@ import java.time.LocalDateTime;
  * Created by Mike on 3/28/17.
  */
 public class RentMovieToFriendServlet extends HttpServlet {
+    private RentalDao rentalDao = new RentalDao();
+
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
-        RentalDao rentalDao = new RentalDao();
 
         HttpSession session = request.getSession();
         UserMovieLink link = (UserMovieLink)session.getAttribute("link");
@@ -48,13 +48,8 @@ public class RentMovieToFriendServlet extends HttpServlet {
             rental.setRenterid(renter);
             rentalDao.addRental(rental);
             response.sendRedirect("/mycine/secure/auth/friends");
-            //getServletContext().getRequestDispatcher("/secure/auth/friends").forward(request, response);
         } else {
             response.sendRedirect("/mycine/secure/auth/library");
-           // getServletContext().getRequestDispatcher("/secure/auth/library").forward(request, response);
         }
-
-
-
     }
 }

@@ -19,7 +19,6 @@
 ${messagestatus}
 
 <h3>Contact Us:</h3>
-<%--TODO FIX width of text area--%>
 <form id="frmsupport" action="/mycine/supportrequest">
         <input type="text" class="form-control"  placeholder="Full Name" id="sender" name="sender" />
         <br />
