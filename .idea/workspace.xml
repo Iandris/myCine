@@ -2,121 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f46ccfb-b6a2-4f76-a242-8954c9e8b758" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/util/UpdateValidator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/util/UserUpdater.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/entity/Message.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/MessageDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/mtyoung/persistence/MessageDaoTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/AddMovieLibraryServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/EnrollServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/FriendRequestServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/HomeServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/IndexServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/LoginFailureServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/LoginServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/LoginStoreInSession.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/LogoutServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/MovieSearchRedirect.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/MovieSearchServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/MyFriendsListServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/MyLibraryLoaderServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/RegistrationServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/RemoveMovieLibraryServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/SendFriendRequestServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/UserAdminServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/Servlet/UserAdminUpdateServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/Message.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/MessageDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/AddMovieLibraryServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/EnrollServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/FriendRequestServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/HomeServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/IndexServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/LoginFailureServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/LoginServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/LoginStoreInSession.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/LogoutServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/MovieSearchRedirect.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/MovieSearchServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/MyFriendsListServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/MyLibraryLoaderServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/RegistrationServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/RemoveMovieLibraryServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/SendFriendRequestServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/UserAdminServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/Servlet/UserAdminUpdateServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Message.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/MessageDao.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/AddMovieLibraryServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/functional/AddMovieLibraryServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/EnrollServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/functional/EnrollServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/FriendRequestServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/functional/FriendRequestServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/HomeServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/navigation/HomeServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/IndexServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/navigation/IndexServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/LoginFailureServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/authentication/LoginFailureServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/LoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/authentication/LoginServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/LoginStoreInSession.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/authentication/LoginStoreInSession.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/LogoutServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/authentication/LogoutServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MovieSearchRedirect.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/navigation/MovieSearchRedirect.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MovieSearchServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/functional/MovieSearchServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MyFriendsListServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/navigation/MyFriendsListServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MyLibraryLoaderServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/navigation/MyLibraryLoaderServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MyRentalsListServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/navigation/MyRentalsListServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/MyWishlistLoaderServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/navigation/MyWishlistLoaderServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RegistrationServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/navigation/RegistrationServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RemoveFriendServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/functional/RemoveFriendServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RemoveMovieLibraryServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/functional/RemoveMovieLibraryServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/RentMovieToFriendServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/functional/RentMovieToFriendServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/SendFriendRequestServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/functional/SendFriendRequestServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/SupportRedirectServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/navigation/SupportRedirectServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/SupportRequestEmailServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/functional/SupportRequestEmailServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/UserAdminServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/navigation/UserAdminServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/UserAdminUpdateServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/functional/UserAdminUpdateServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/UserSettingsServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/navigation/UserSettingsServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/UserSettingsUpdateServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/Servlet/functional/UserSettingsUpdateServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/com/omdbapi/OmdbJson.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/com/omdbapi/OmdbJson.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/Movie.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/Movie.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/Rental.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/Rental.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/User.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/UserMovieLink.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/UserMovieLink.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/Wishlist.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/entity/Wishlist.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/AddressDao.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/AddressDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/DirectorDao.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/DirectorDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/GenreDao.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/GenreDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/UserMovieDao.class" afterPath="$PROJECT_DIR$/target/classes/com/mtyoung/persistence/UserMovieDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine.war" afterPath="$PROJECT_DIR$/target/mycine.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/com/omdbapi/OmdbJson.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/com/omdbapi/OmdbJson.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Movie.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Movie.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Rental.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Rental.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserMovieLink.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/UserMovieLink.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Wishlist.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/entity/Wishlist.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/AddressDao.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/AddressDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/DirectorDao.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/DirectorDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/GenreDao.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/GenreDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/UserMovieDao.class" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/com/mtyoung/persistence/UserMovieDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/762b1740-9133-47e5-b3fa-f611e7f61edf.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/762b1740-9133-47e5-b3fa-f611e7f61edf.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/8f8781a9-02cc-4d66-bfc1-9da8aea25b0e.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/8f8781a9-02cc-4d66-bfc1-9da8aea25b0e.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/HibernateDemo.log" afterPath="$PROJECT_DIR$/logs/HibernateDemo.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/UserMovieDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/persistence/UserMovieDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mtyoung/util/EmailMessage.java" afterPath="$PROJECT_DIR$/src/main/java/com/mtyoung/util/EmailMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/registration.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/registration.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/secure/admin/useradmin.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/secure/admin/useradmin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/secure/auth/moviesearch.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/secure/auth/moviesearch.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/secure/auth/mylibrary.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/secure/auth/mylibrary.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom.properties" afterPath="$PROJECT_DIR$/target/mycine/META-INF/maven/com.mtyoung.mycine/mycine/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/target/mycine/WEB-INF/classes/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/registration.jsp" afterPath="$PROJECT_DIR$/target/mycine/registration.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/secure/admin/useradmin.jsp" afterPath="$PROJECT_DIR$/target/mycine/secure/admin/useradmin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/secure/auth/moviesearch.jsp" afterPath="$PROJECT_DIR$/target/mycine/secure/auth/moviesearch.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mycine/secure/auth/mylibrary.jsp" afterPath="$PROJECT_DIR$/target/mycine/secure/auth/mylibrary.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -241,8 +127,8 @@
       <file leaf-file-name="EmailMessage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/util/EmailMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1718,7 +1604,7 @@
       <workItem from="1492290168360" duration="1344000" />
       <workItem from="1492517598205" duration="16358000" />
       <workItem from="1492554532630" duration="13166000" />
-      <workItem from="1492603763200" duration="16409000" />
+      <workItem from="1492603763200" duration="16535000" />
     </task>
     <servers />
   </component>
@@ -1755,7 +1641,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="536909000" />
+    <option name="totallyTimeSpent" value="537035000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1791,8 +1677,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32719547" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4036827" sideWeight="0.47496423" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32719547" sideWeight="0.49427754" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4036827" sideWeight="0.47496423" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32719547" sideWeight="0.49427754" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.472103" sideWeight="0.7737003" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22804533" sideWeight="0.49713877" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26824033" sideWeight="0.44770643" order="9" side_tool="true" content_ui="tabs" />
@@ -2352,8 +2238,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mtyoung/util/EmailMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
