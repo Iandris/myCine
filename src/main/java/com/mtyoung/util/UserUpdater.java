@@ -26,7 +26,7 @@ public class UserUpdater {
         newUser.setFname(request.getParameter("firstname"));
         newUser.setLname(request.getParameter("lastname"));
         newUser.setAddress(addr);
-        newUser.setCellnumber(request.getParameter("cellnumber"));
+        newUser.setCellnumber(request.getParameter("cellnumber").replace(".","").replace("-","").replace("(","").replace(")","").replace(" ",""));
         newUser.setUser_name(request.getParameter("user_name"));
         newUser.setReminderthreshold(1);
         newUser.setDefaultrentalperiod(3);

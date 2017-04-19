@@ -31,7 +31,7 @@ public class OmdbJson {
     private GenreDao gnDao= new GenreDao();
     private StudioDao studioDao= new StudioDao();
     private DirectorDao directorDao = new DirectorDao();
-    private List<Search> searches = new ArrayList<>();;
+    private List<Search> searches;
     private Client client = ClientBuilder.newClient();
     private ObjectMapper mapper= new ObjectMapper();
     private LocalDateAttributeConverter converter= new LocalDateAttributeConverter();
@@ -42,6 +42,7 @@ public class OmdbJson {
      * @throws Exception
      */
     public void searchByTitle(String movieTitle) throws Exception  {
+        searches = new ArrayList<>();
         searches.add(mapper.readValue(getJsonResponse(API_BASE_PATH, movieTitle), Search.class));
 
         int totalResults = Integer.parseInt(searches.get(0).getTotalResults());

@@ -61,7 +61,7 @@ public class FriendRequestServlet extends HttpServlet {
         friends.setFrienda(userA.getUuid());
         friends.setFriendb(userB.getUuid());
 
-        if (friendDao.addFriend(friends) > 0) {
+        if (friendDao.addFriend(friends) <= 0) {
             success = false;
         }
     }

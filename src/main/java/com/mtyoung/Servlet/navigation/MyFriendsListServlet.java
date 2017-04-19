@@ -32,10 +32,10 @@ import java.util.List;
  */
 public class MyFriendsListServlet extends HttpServlet {
     private HttpSession session;
-    private UserFriendDao dao = new UserFriendDao();
-    private UserDao usrDao = new UserDao();
-    private RentalDao rentalDao = new RentalDao();
-    private UserMovieDao librarydao = new UserMovieDao();
+    private UserFriendDao dao;
+    private UserDao usrDao;
+    private RentalDao rentalDao;
+    private UserMovieDao librarydao;
     private ArrayList<User> myFriends;
     private ArrayList<Rental> rentals;
     private User user;
@@ -43,6 +43,10 @@ public class MyFriendsListServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        dao = new UserFriendDao();
+        usrDao = new UserDao();
+        rentalDao = new RentalDao();
+        librarydao = new UserMovieDao();
         session = request.getSession();
         myFriends = new ArrayList<>();
         rentals = new ArrayList<>();

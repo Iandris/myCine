@@ -25,6 +25,8 @@ public class UpdateValidator {
     }
 
     public boolean checkCell(String cell, HttpSession session) throws IOException {
+        cell = cell.replace(".","").replace("-","").replace("(","").replace(")","").replace(" ","");
+
         User test = dao.getUserByPhone(cell);
         Boolean success = true;
         if (test != null) {
