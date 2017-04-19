@@ -20,8 +20,6 @@
  - [X] Deploy to AWS
  - [X] Complete DB design
  - [X] Begin creating jsp
- - [ ] create class diagram
- - [ ] set up logging
  - [X] Time log entries
  
 ### Week 4
@@ -38,35 +36,35 @@
  - [X] add movie creation / logging
  - [X] add friend connection
  - [X] attempt API call for imdb (omdb)
- - [ ] Time log entries
+ - [X] Time log entries
  
 ### Week 7
  - [X] create paging/sorting for library
  - [X] create paging/sorgint for users
- - [ ] Time log entries
+ - [X] Time log entries
  
 ### Week 8
  - [X] begin text message information
- - [ ] Time log entries
+ - [X] Time log entries
  
 ### Week 9
- - [ ] update prefs for users info
- - [ ] update pref for default rental period
- - [ ] Time log entries
+ - [X] update prefs for users info
+ - [X] update pref for default rental period
+ - [X] Time log entries
  
 ### Week 10
- - [ ] complete remaining jsp
- - [ ] Time log entries
+ - [X] complete remaining jsp
+ - [X] Time log entries
  
 ### Week 11
- - [ ] set up unit with Spock (Groovy)
- - [ ] Time log entries
+ - [X] set up unit with Spock (Groovy)
+ - [X] Time log entries
  
 ### Week 12
- - [ ] Time log entries
+ - [X] Time log entries
  
 ### Week 13
- - [ ] Time log entries
+ - [X] Time log entries
  
 ### Week 14
  - [ ] Create Final Presentation
