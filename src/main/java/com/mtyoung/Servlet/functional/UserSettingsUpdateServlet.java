@@ -28,8 +28,7 @@ public class UserSettingsUpdateServlet  extends HttpServlet{
     private String oldPhone;
     private User user;
     private boolean success;
-
-
+    
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
