@@ -42,9 +42,8 @@ Ever bought a movie and after watching it decided maybe it wasnt worth the $$?. 
 ### Design
 
 * Screen Designs
-* Application Flow
-
-### [DB Design](https://github.com/Iandris/myCine/blob/master/Design%20Documents/MyCineDBTableRelationship.png)
+* [Application Flow](https://github.com/Iandris/myCine/blob/master/Design%20Documents/ApplicationFlow.md)
+* [DB Design](https://github.com/Iandris/myCine/blob/master/Design%20Documents/MyCineDBTableRelationship.png)
 
 ### [Project Plan](https://github.com/Iandris/myCine/blob/master/ProjectPlan.md)
 
