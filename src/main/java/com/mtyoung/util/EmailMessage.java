@@ -16,7 +16,7 @@ import java.util.Random;
  * Created by Mike on 3/6/17.
  */
 public class EmailMessage {
-    //TODO update username and password for your gmail account
+    //TODO for demonstration leave un/p in place
     private static final String GMAIL_USERNAME = "";
     private static final String GMAIL_PWD = "";
     private Message message;

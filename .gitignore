@@ -7,7 +7,6 @@
 .idea/dictionaries
 .idea/vcs.xml
 .idea/jsLibraryMappings.xml
-/src/main/java/com/mtyoung/util/EmailMessage.java
 
 # Sensitive or high-churn files:
 .idea/dataSources.ids
@@ -16,6 +15,7 @@
 .idea/sqlDataSources.xml
 .idea/dynamic.xml
 .idea/uiDesigner.xml
+/src/main/java/com/mtyoung/util/EmailMessage.java
 
 # Gradle:
 .idea/gradle.xml
