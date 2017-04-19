@@ -24,8 +24,6 @@ Ever bought a movie and after watching it decided maybe it wasnt worth the $$?. 
 	* Store users / roles
 	* Store video libraries (linked to LibraryOwner users)
 	* Store active rentals (LibraryOwner, Renter, ReturnDate)
-	* Store all communication details -STRETCH
-	* Store all change logs -STRETCH
 * WebService / API
 	* text alert for renter (return title by date) Twilio https://www.twilio.com/docs/libraries/java 
 	* IMDB web service for movie info (omdb API) http://www.omdbapi.com 
@@ -41,7 +39,7 @@ Ever bought a movie and after watching it decided maybe it wasnt worth the $$?. 
 
 ### Design
 
-* Screen Designs
+* [Screen Designs](https://github.com/Iandris/myCine/blob/master/Design%20Documents/Screens.png)
 * [Application Flow](https://github.com/Iandris/myCine/blob/master/Design%20Documents/ApplicationFlow.md)
 * [DB Design](https://github.com/Iandris/myCine/blob/master/Design%20Documents/MyCineDBTableRelationship.png)
 
