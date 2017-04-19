@@ -38,3 +38,7 @@
 | 4/01/17 | adding addtional tests for new dao methods | 3 | |
 | 4/10/17 | adding functionality for rentals | 3 | |
 | 4/12/17 | rental interactions complete, adding additional "admin" tasks | 4 | |
+| 4/13/17 | corrected rental interactions, added friend/rental management | 4 | |
+| 4/15/17 | added auto login after registration, begining to refactor for smaller methods | 3 | |
+| 4/18/17 | updated missing tests for dao/util classes | 3 | |
+| 4/19/17 | continuing to refactor and clean up code, added EmailMessage.java to gitignore | 4 | |
