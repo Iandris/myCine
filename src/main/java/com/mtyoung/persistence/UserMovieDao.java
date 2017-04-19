@@ -111,7 +111,6 @@ public class UserMovieDao {
 
     public UserMovieLink getLinkByUserMovie(int userid, int movieid) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        Transaction tx = null;
         UserMovieLink link = null;
         try {
 

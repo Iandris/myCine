@@ -28,7 +28,7 @@
         <img src="${pageContext.request.contextPath}/images/loading-bar.gif" alt="loadinggif" />
     </div>
 
-    ${failure}
+    ${addFail}
 
     <c:if test="${results == false}">
         <h3>No Results Found</h3>

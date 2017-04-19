@@ -54,7 +54,7 @@ ${reminder}
                         <input type="text" hidden="hidden" name="destination" id="destination" />
                         <input type="text" hidden="hidden" name="source" id="source" />
                         <input type="text" hidden="hidden" name="renter" id="renter" />
-                        <c:if test="${rentals.contains(movie.movieid)}">
+                        <c:if test="${rentals.contains(movie)}">
                             <button type="button" onclick="setSource('Library', 'returns', '${movie.movieid.title}', '${movie.movieid.idmovie}');">
                                 <i class="fa fa-user">
                                     <span>End Rental</span>
@@ -68,7 +68,7 @@ ${reminder}
                             </button>
                         </c:if>
 
-                        <c:if test="${!rentals.contains(movie.movieid)}">
+                        <c:if test="${!rentals.contains(movie)}">
                             <button type="button" onclick="setSource('Library', 'rental', '${movie.movieid.title}', '${movie.movieid.idmovie}');">
                                 <i class="fa fa-user">
                                     <span>Loan to a Friend</span>

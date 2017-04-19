@@ -18,6 +18,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<strong>   Tell us a little more about you  </strong>
+						<p>${updateStatus}</p>
 					</div>
 					<div class="panel-body">
 						<form role="form" action="/mycine/enroll" onsubmit="return validate();" method="POST">

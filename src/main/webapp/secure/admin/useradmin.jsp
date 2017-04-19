@@ -11,6 +11,8 @@
     <h1>MyCine - User Admin</h1>
 </div>
 
+${updateStatus}
+
 <div id="accordion">
     <c:forEach var="user" items="${people}" >
         <h3 style="text-decoration:underline;"><strong>${user.lname}, ${user.fname}</strong></h3>

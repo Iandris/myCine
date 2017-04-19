@@ -17,9 +17,8 @@ import java.util.Random;
  */
 public class EmailMessage {
     //TODO update username and password for your gmail account
-    //TODO for demonstration leave un/p in place
-    private static final String GMAIL_USERNAME = "iandris427@gmail.com";
-    private static final String GMAIL_PWD = "J795ui9j";
+    private static final String GMAIL_USERNAME = "";
+    private static final String GMAIL_PWD = "";
     private Message message;
     FriendrequestsDao dao;
     Friendrequests friendrequests;
