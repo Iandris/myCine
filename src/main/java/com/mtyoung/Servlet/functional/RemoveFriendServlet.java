@@ -35,6 +35,13 @@ public class RemoveFriendServlet extends HttpServlet {
     private User friend;
     private String error;
 
+    /**
+     * doPost method for RemoveFriendServlet
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         HttpSession session = request.getSession();
@@ -69,6 +76,11 @@ public class RemoveFriendServlet extends HttpServlet {
 
     }
 
+    /**
+     * purgeRentalsInLibrary - loop through all rentals for current user and cancel them
+     * @param rentals
+     * @param user
+     */
     private void purgeRentalsInLibrary(Set<Rental> rentals, User user) {
         for (Rental rent: rentals
              ) {

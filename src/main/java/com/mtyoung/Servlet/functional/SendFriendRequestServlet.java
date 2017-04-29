@@ -64,6 +64,12 @@ public class SendFriendRequestServlet extends HttpServlet {
         getServletContext().getRequestDispatcher("/secure/auth/myfriends.jsp").forward(request, response);
     }
 
+    /**
+     * sendFriendRequestMessage method - sends email message to recipient
+     * @param user
+     * @param recipient
+     * @param friend
+     */
     private void sendFriendRequestMessage(User user, String recipient, User friend) {
         EmailMessage email = new EmailMessage();
 
@@ -76,6 +82,11 @@ public class SendFriendRequestServlet extends HttpServlet {
         }
     }
 
+    /**
+     * getFriends method, returns list of friends for current user
+     * @param user
+     * @return
+     */
     private List<String> getFriends(User user) {
 
         List<UserFriends> friends = userFriendDao.getFriendsByUser(user.getUuid());

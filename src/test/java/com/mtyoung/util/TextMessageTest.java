@@ -30,7 +30,7 @@ public class TextMessageTest {
 
     @Test
     public void sendMessate() throws Exception {
-        assertNotNull("message not sent", txter.sendMessate(senderPhone, messageBody));
+        assertNotNull("message not sent", txter.sendMessage(senderPhone, messageBody));
     }
 
 }

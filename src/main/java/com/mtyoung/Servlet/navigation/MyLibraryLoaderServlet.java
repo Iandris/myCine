@@ -57,6 +57,11 @@ public class MyLibraryLoaderServlet extends HttpServlet {
         getServletContext().getRequestDispatcher("/secure/auth/mylibrary.jsp").forward(request, response);
     }
 
+    /**
+     * buildFriendsList method, builds the list of friends for the current user
+     * @param user
+     * @param myFriends
+     */
     private void buildFriendsList(User user, List<User> myFriends) {
         for (UserFriends friend : friends
                 ) {
@@ -68,6 +73,9 @@ public class MyLibraryLoaderServlet extends HttpServlet {
         }
     }
 
+    /**
+     * buildLibrary method, builds the list of movies in current user library
+     */
     private void buildLibrary() {
         films = umdao.getMoviesLinkByUserID(user.getUuid());
         rentals = new ArrayList<>();

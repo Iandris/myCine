@@ -13,7 +13,13 @@ public class TextMessage {
     public static final String AUTH_TOKEN = "7cced0c148f37ed828170f8a10b37d8f";
     public static final String SENDER_PHONE = "+16082607041";
 
-    public String sendMessate(String txtRecipient, String txtBody) {
+    /**
+     * create and send text message from Twilio acct, sends message to recpient specified
+     * @param txtRecipient
+     * @param txtBody
+     * @return
+     */
+    public String sendMessage(String txtRecipient, String txtBody) {
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
         String status = "Message Failure";
         try {

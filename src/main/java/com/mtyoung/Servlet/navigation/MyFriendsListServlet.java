@@ -76,6 +76,12 @@ public class MyFriendsListServlet extends HttpServlet {
         getServletContext().getRequestDispatcher("/secure/auth/myfriends.jsp").forward(request, response);
     }
 
+    /**
+     * findRentals method, builds the list of rentals based on current user
+     * @param user
+     * @param rentals
+     * @param friend
+     */
     private void findRentals(User user, List<Rental> rentals, User friend) {
         for (Rental rent: rentalDao.getRentalsByRenter(friend)
              ) {
@@ -86,6 +92,12 @@ public class MyFriendsListServlet extends HttpServlet {
         }
     }
 
+    /**
+     * buildFriendsList method, builds a list of friends for the current user
+     * @param user
+     * @param myFriends
+     * @param friends
+     */
     private void buildFriendsList(User user, ArrayList<User> myFriends, List<UserFriends> friends) {
         for (UserFriends friend : friends
                 ) {

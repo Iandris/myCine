@@ -35,6 +35,13 @@ public class RemoveMovieLibraryServlet extends HttpServlet{
     private UserMovieLink library;
     private String returnURL;
 
+    /**
+     * doPost method for RemoveLibrary
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -99,13 +106,19 @@ public class RemoveMovieLibraryServlet extends HttpServlet{
         }
     }
 
+    /**
+     * sendTextReminder method, calls TextMessage class to build and send a text reminder to renter of selected title
+     * @param session
+     * @param message
+     * @param rental
+     */
     private void sendTextReminder(HttpSession session, TextMessage message, Rental rental) {
         renter = userdao.getUserByEmail(rental.getRenterid().getUser_name());
 
         String body = user.getFname() + " " + user.getLname() + " would like to remind you that your rental " +
                 "of movie " + library.getMovieid().getTitle() + " is due for return.";
 
-        String messageSID = message.sendMessate(renter.getCellnumber(), body);
+        String messageSID = message.sendMessage(renter.getCellnumber(), body);
         String status = "Reminder Message Failed to Send, Please try again later";
 
         if (messageSID != null) {
@@ -114,6 +127,11 @@ public class RemoveMovieLibraryServlet extends HttpServlet{
         session.setAttribute("reminder", status);
     }
 
+    /**
+     * returnRental method - cancels the active rental for user
+     * @param session
+     * @param movieID
+     */
     private void returnRental(HttpSession session, int movieID) {
         library = libraryDao.getLinkByUserMovie(user.getUuid(), movieID);
         session.setAttribute("link", library);
@@ -121,6 +139,12 @@ public class RemoveMovieLibraryServlet extends HttpServlet{
         session.setAttribute("reminder", null);
     }
 
+    /**
+     * createRental method, adds a new rental for current user with selected title
+     * @param request
+     * @param session
+     * @param movieID
+     */
     private void createRental(HttpServletRequest request, HttpSession session, int movieID) {
         library = libraryDao.getLinkByUserMovie(user.getUuid(), movieID);
         renter = userdao.getUserByEmail(request.getParameter("renter"));
@@ -131,6 +155,10 @@ public class RemoveMovieLibraryServlet extends HttpServlet{
         session.setAttribute("reminder", null);
     }
 
+    /**
+     * deleteFromWishlist method - for selected title, if exists in wishlist, removes from list
+     * @param movieID
+     */
     private void deleteFromWishlist(int movieID) {
         Wishlist wishlist = wishlistDao.getLinkByUserMovie(user.getUuid(), movieID);
 
@@ -140,6 +168,10 @@ public class RemoveMovieLibraryServlet extends HttpServlet{
         }
     }
 
+    /**
+     * deleteFromLibrary method - for selected title, if exists in library, removes from list
+     * @param movieID
+     */
     private void deleteFromLibrary(int movieID) {
         UserMovieLink library = libraryDao.getLinkByUserMovie(user.getUuid(), movieID);
 
@@ -154,6 +186,11 @@ public class RemoveMovieLibraryServlet extends HttpServlet{
         returnURL = "secure/auth/library";
     }
 
+    /**
+     * returns formatted string success message from text message
+     * @param messageSID
+     * @return
+     */
     private String getString(String messageSID) {
         String status;
         if (messageSID.equals("Invalid phone number for recipient") || messageSID.equals("Message Failure")) {

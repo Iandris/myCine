@@ -21,6 +21,14 @@ public class UserUpdater {
     private UserDao dao = new UserDao();
     private UserRoleDao roleDao = new UserRoleDao();
 
+    /**
+     * createUser method - returns true/false on successful creation of user in db
+     * @param request
+     * @param newUser
+     * @param addr
+     * @return
+     * @throws IOException
+     */
     public boolean createUser(HttpServletRequest request, User newUser, Address addr) throws IOException {
         boolean success = true;
         newUser.setFname(request.getParameter("firstname"));
@@ -38,6 +46,11 @@ public class UserUpdater {
         return success;
     }
 
+    /**
+     * createAddress - returns address object after creating in db
+     * @param request
+     * @return
+     */
     public Address createAddress(HttpServletRequest request) {
         Address addr = new Address();
         addr.setStreetaddress1(request.getParameter("address1"));
@@ -49,6 +62,10 @@ public class UserUpdater {
         return addr;
     }
 
+    /**
+     * createRole method, for new users, create a role with their username
+     * @param newUser
+     */
     public void createRole(User newUser) {
         UserRole role = new UserRole();
         role.setRole_name("registered-user");
@@ -56,6 +73,11 @@ public class UserUpdater {
         roleDao.addRole(role);
     }
 
+    /**
+     * updateUser - update an existing user in db
+     * @param request
+     * @param user
+     */
     public void updateUser(HttpServletRequest request, User user) {
         user.setFname(request.getParameter("firstname"));
         user.setLname(request.getParameter("lastname"));
@@ -71,6 +93,10 @@ public class UserUpdater {
         dao.updateUser(user);
     }
 
+    /**
+     * updateAddress - update an existing address in db
+     * @param request
+     */
     public void updateAddress(HttpServletRequest request) {
         Address addr = addrDao.getAddress(Integer.parseInt(request.getParameter("addrid")));
         addr.setStreetaddress1(request.getParameter("address1"));
@@ -81,6 +107,11 @@ public class UserUpdater {
         addrDao.updateAddress(addr);
     }
 
+    /**
+     * updateRole - update an existing userrole in db
+     * @param newUser
+     * @param username
+     */
     public void updateUserRole(User newUser, String username) {
         UserRole role = roleDao.getRoleByUserName(username);
 

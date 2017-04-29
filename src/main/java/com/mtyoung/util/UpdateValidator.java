@@ -12,6 +12,13 @@ import java.io.IOException;
 public class UpdateValidator {
     private UserDao dao = new UserDao();
 
+    /**
+     * checkEmail - returns true or false if email specified already exists in db
+     * @param email
+     * @param session
+     * @return
+     * @throws IOException
+     */
     public boolean checkEmail(String email, HttpSession session) throws IOException {
         User test = dao.getUserByEmail(email);
         Boolean success = true;
@@ -24,6 +31,13 @@ public class UpdateValidator {
         return success;
     }
 
+    /**
+     * checkCell method, returns true or false if cell phone number exists in DB
+     * @param cell
+     * @param session
+     * @return
+     * @throws IOException
+     */
     public boolean checkCell(String cell, HttpSession session) throws IOException {
         cell = cell.replace(".","").replace("-","").replace("(","").replace(")","").replace(" ","");
 
