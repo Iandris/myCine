@@ -3,7 +3,6 @@ package com.mtyoung.Servlet.authentication;
 import com.mtyoung.entity.User;
 import com.mtyoung.persistence.UserDao;
 import org.apache.catalina.realm.RealmBase;
-import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,11 +19,22 @@ import java.io.IOException;
 
 
 /**
+ * LoginStoreInSession Servlet - intercepts the tomcat j_security_check method and validates login.
  * Created by Mike on 2/28/17.
  */
 public class LoginStoreInSession  extends HttpServlet  {
     private UserDao dao = new UserDao();
     private boolean success;
+
+    /**
+     * doPOST method, responds to POST method form subission to /storelogin url pattern, Affirms user exists in db
+     * and that password parameter matches known value in db, if successful callssession.login against j_security_check
+     * and redirects client browser to home, else on failure redirects to /loginfailure
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         HttpSession session = request.getSession();
@@ -52,6 +62,13 @@ public class LoginStoreInSession  extends HttpServlet  {
 
     }
 
+    /**
+     * checkPassword method, handles hash string comparision from passed parameter for password to known detail in db
+     * @param session
+     * @param username
+     * @param pwd
+     * @param user
+     */
     private void checkPassword(HttpSession session, String username, String pwd, User user) {
         session.setAttribute("user",user );
         session.setAttribute("uname", user.getUser_name());

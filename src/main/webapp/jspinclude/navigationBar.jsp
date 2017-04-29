@@ -13,6 +13,7 @@
         <li><a href="/mycine/secure/auth/friends">MyFriends</a></li>
         <li><a href="/mycine/secure/auth/rentals">MyRentals</a></li>
         <li><a href="/mycine/secure/auth/settings">Settings</a></li>
+        <li><a href="/mycine/privacy">Privacy Policy</a></li>
         <li><a href="/mycine/support">Support</a></li>
         <c:if test="${admin == true}">
             <li><a href="/mycine/secure/admin/useradmin">Admin</a></li>

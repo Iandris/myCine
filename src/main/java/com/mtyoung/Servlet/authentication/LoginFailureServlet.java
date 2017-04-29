@@ -14,9 +14,18 @@ import java.io.IOException;
 )
 
 /**
+ * LoginFailureServlet - redirect to login.jsp after inserting a failure message into session
  * Created by Mike on 2/28/17.
  */
 public class LoginFailureServlet  extends HttpServlet {
+    /**
+     * doGet method, handles GET request at /loginfailure url, injects login failure message and redirects client
+     * browser back to login.jsp
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
