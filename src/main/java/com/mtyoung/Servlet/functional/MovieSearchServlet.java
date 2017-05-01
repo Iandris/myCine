@@ -4,6 +4,7 @@ package com.mtyoung.Servlet.functional;
 import com.mtyoung.com.omdbapi.OmdbJson;
 import com.mtyoung.entity.Movie;
 import com.mtyoung.persistence.MovieDao;
+import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -24,6 +25,8 @@ import java.util.List;
  * Created by Mike on 3/1/17.
  */
 public class MovieSearchServlet extends HttpServlet {
+    private final Logger logger = Logger.getLogger(this.getClass());
+
     private MovieDao movieDao = new MovieDao();
     private OmdbJson search = new OmdbJson();
 
@@ -46,7 +49,7 @@ public class MovieSearchServlet extends HttpServlet {
             }
             session.setAttribute("count", mymovies.size());
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
 
         session.setAttribute("results", found);

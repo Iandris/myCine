@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <html>
 <head>
     <title>MyCine - MyFriends</title>
@@ -72,14 +73,15 @@ ${deleteStatus}
                    <fmt:parseDate value="${rental.duedate}" pattern="yyyy-MM-dd'T'HH:mm:ss" var="date" />
                     <fmt:formatDate value="${date}" var="formatted" pattern="MM-dd-yyyy hh:mm a" />
                     <c:set var="bob" value="${bob + 1}" />
-                    <li>${rental.movieid.movieid.title} - due back on ${formatted}&nbsp;&nbsp;
-                        <button type="button" onclick="setSource('Library', 'returns', '${rental.movieid.movieid.title}', '${rental.movieid.movieid.idmovie}');">
+                    <c:set var="mvieTitle" value='${fn:replace(rental.movieid.movieid.title, "\'", "")}' />
+                    <li>${mvieTitle} - due back on ${formatted}&nbsp;&nbsp;
+                        <button type="button" onclick="setSource('Library', 'returns', '${mvieTitle}', '${rental.movieid.movieid.idmovie}');">
                             <i class="fa fa-user">
                                 <span>End Rental</span>
                             </i>
                         </button>
                         &nbsp;&nbsp;
-                        <button type="button" onclick="setSource('Library', 'reminder', '${rental.movieid.movieid.title}', '${rental.movieid.movieid.idmovie}');">
+                        <button type="button" onclick="setSource('Library', 'reminder', '${mvieTitle}', '${rental.movieid.movieid.idmovie}');">
                             <i class="fa fa-phone">
                                 <span>Send Reminder Text</span>
                             </i>

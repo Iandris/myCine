@@ -55,7 +55,7 @@ public class User implements  Serializable{
     this.lname = lname;
   }
 
-  @ManyToOne(fetch = FetchType.EAGER)
+  @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "address")
   public Address getAddress() {
     return address;

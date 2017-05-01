@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <html>
 <head>
     <title>MyCine - Home</title>
@@ -62,12 +63,13 @@
                                 <input type="text" hidden="hidden" name="movietitle" id="movietitle" />
                                 <input type="text" hidden="hidden" name="movieID" id="movieID" />
                                 <input type="text" hidden="hidden" name="destination" id="destination" />
-                                <button type="button" onclick="setDestination('Wishlist', '${movie.title}', '${movie.idmovie}');">
+                                <c:set var="mvieTitle" value='${fn:replace(movie.title, "\'", "")}' />
+                                <button type="button" onclick="setDestination('Wishlist', '${mvieTitle}', '${movie.idmovie}');">
                                     <i class="fa fa-magic">
                                         <span>Add to Wishlist</span>
                                     </i>
                                 </button>
-                                <button type="button" onclick="setDestination('Library', '${movie.title}', '${movie.idmovie}');">
+                                <button type="button" onclick="setDestination('Library', '${mvieTitle}', '${movie.idmovie}');">
                                     <i class="fa fa-television">
                                         <span>Add to Library</span>
                                     </i>
@@ -76,7 +78,7 @@
                             <script type="text/javascript">
                                 function setDestination(destination, title, id) {
                                     document.getElementById('destination').value = destination;
-                                    document.getElementById('movietitle').value = title
+                                    document.getElementById('movietitle').value = title;
                                     document.getElementById('movieID').value = id;
 
                                     $('#frm').submit();

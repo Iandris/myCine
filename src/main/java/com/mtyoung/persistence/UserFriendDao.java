@@ -16,7 +16,7 @@ import java.util.List;
  * Created by Mike on 2/14/17.
  */
 public class UserFriendDao {
-    private final Logger log = Logger.getLogger(this.getClass());
+        private final Logger logger = Logger.getLogger(this.getClass());
 
     /** Return a list of all users
      *
@@ -28,7 +28,7 @@ public class UserFriendDao {
         try {
             friends = session.createCriteria(UserFriends.class).list();
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         }finally {
             session.close();
         }
@@ -48,7 +48,7 @@ public class UserFriendDao {
             friend = (UserFriends) session.get(UserFriends.class, id);
             return friend;
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -71,7 +71,7 @@ public class UserFriendDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         }finally {
             session.close();
             return id;
@@ -92,7 +92,7 @@ public class UserFriendDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -112,7 +112,7 @@ public class UserFriendDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -132,7 +132,7 @@ public class UserFriendDao {
 
             return links;
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }

@@ -12,14 +12,14 @@ import java.util.List;
  * Created by Mike on 3/6/17.
  */
 public class FriendrequestsDao {
-    private final Logger log = Logger.getLogger(this.getClass());
+    private final Logger logger = Logger.getLogger(this.getClass());
     public List<Friendrequests> getAllFriendRequests() {
         List<Friendrequests> friendrequestss = null;
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         try {
             friendrequestss = session.createCriteria(Friendrequests.class).list();
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         }finally {
             session.close();
         }
@@ -32,7 +32,7 @@ public class FriendrequestsDao {
         try {
             friendrequest = (Friendrequests) session.get(Friendrequests.class, id);
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -49,7 +49,7 @@ public class FriendrequestsDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         }finally {
             session.close();
         }
@@ -66,7 +66,7 @@ public class FriendrequestsDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -81,7 +81,7 @@ public class FriendrequestsDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -97,7 +97,7 @@ public class FriendrequestsDao {
                     .uniqueResult();
             return friendrequests;
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }

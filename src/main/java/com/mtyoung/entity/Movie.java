@@ -48,7 +48,7 @@ public class Movie  implements Serializable{
     this.title = title;
   }
 
-  @ManyToOne(fetch = FetchType.EAGER)
+  @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "genre")
   public Genre getGenre() {
     return genre;
@@ -58,7 +58,7 @@ public class Movie  implements Serializable{
     this.genre = genre;
   }
 
-  @ManyToOne(fetch = FetchType.EAGER)
+  @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "format")
   public Format getFormat() {
     return format;
@@ -68,7 +68,7 @@ public class Movie  implements Serializable{
     this.format = format;
   }
 
-  @ManyToOne(fetch = FetchType.EAGER)
+  @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "director")
   public Director getDirector() {
     return director;
@@ -78,7 +78,7 @@ public class Movie  implements Serializable{
     this.director = director;
   }
 
-  @ManyToOne(fetch = FetchType.EAGER)
+  @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "studio")
   public Studio getStudio() {
     return studio;

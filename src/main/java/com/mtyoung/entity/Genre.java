@@ -35,7 +35,7 @@ public class Genre implements Serializable {
     this.genretitle = genretitle;
   }
 
-  @OneToMany (fetch = FetchType.EAGER, mappedBy = "genre")
+  @OneToMany (fetch = FetchType.LAZY, mappedBy = "genre")
   public Set<Movie> getMovieSet() {
     return this.movieSet;
   }

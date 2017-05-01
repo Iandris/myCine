@@ -1,4 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+
 <html>
 <head>
     <title>MyCine - MyLibrary</title>
@@ -31,12 +33,13 @@ ${reminder}
 
 <div id="accordion">
     <c:forEach  var="movie" items="${mymovies}" >
-        <h3 style="text-decoration:underline;"><strong>${movie.movieid.title}</strong></h3>
+        <c:set var="mvieTitle" value='${fn:replace(movie.movieid.title, "\'", "")}' />
+        <h3 style="text-decoration:underline;"><strong>${mvieTitle}</strong></h3>
         <table width="100%">
             <tr>
-                <td rowspan="5"><img src="${movie.movieid.imgsource}" alt="${movie.movieid.title}" width="125" height="200" /></td>
+                <td rowspan="5"><img src="${movie.movieid.imgsource}" alt="${mvieTitle}" width="125" height="200" /></td>
                 <td>Release Date: ${movie.movieid.releaseDate}</td>
-                <td>View on IMDB&nbsp;<a href="http://www.imdb.com/title/${movie.movieid.imdbid}/">${movie.movieid.title}</a></td>
+                <td>View on IMDB&nbsp;<a href="http://www.imdb.com/title/${movie.movieid.imdbid}/">${mvieTitle}</a></td>
             </tr>
             <tr>
                 <td>Format: ${movie.movieid.format.formattitle}</td>
@@ -55,13 +58,13 @@ ${reminder}
                         <input type="text" hidden="hidden" name="source" id="source" />
                         <input type="text" hidden="hidden" name="renter" id="renter" />
                         <c:if test="${rentals.contains(movie)}">
-                            <button type="button" onclick="setSource('Library', 'returns', '${movie.movieid.title}', '${movie.movieid.idmovie}');">
+                            <button type="button" onclick="setSource('Library', 'returns', '${mvieTitle}', '${movie.movieid.idmovie}');">
                                 <i class="fa fa-user">
                                     <span>End Rental</span>
                                 </i>
                             </button>
 
-                            <button type="button" onclick="setSource('Library', 'reminder', '${movie.movieid.title}', '${movie.movieid.idmovie}');">
+                            <button type="button" onclick="setSource('Library', 'reminder', '${mvieTitle}', '${movie.movieid.idmovie}');">
                                 <i class="fa fa-phone">
                                     <span>Send Reminder Text</span>
                                 </i>
@@ -69,14 +72,14 @@ ${reminder}
                         </c:if>
 
                         <c:if test="${!rentals.contains(movie)}">
-                            <button type="button" onclick="setSource('Library', 'rental', '${movie.movieid.title}', '${movie.movieid.idmovie}');">
+                            <button type="button" onclick="setSource('Library', 'rental', '${mvieTitle}', '${movie.movieid.idmovie}');">
                                 <i class="fa fa-user">
                                     <span>Loan to a Friend</span>
                                 </i>
                             </button>
                         </c:if>
 
-                        <button type="button" onclick="setSource('Library', 'trash', '${movie.movieid.title}', '${movie.movieid.idmovie}');">
+                        <button type="button" onclick="setSource('Library', 'trash', '${mvieTitle}', '${movie.movieid.idmovie}');">
                             <i class="fa fa-trash">
                                 <span>Remove from Library</span>
                             </i>

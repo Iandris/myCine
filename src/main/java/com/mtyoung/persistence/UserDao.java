@@ -12,7 +12,7 @@ import java.util.List;
  * Created by Mike on 2/13/17.
  */
 public class UserDao {
-    private final Logger log = Logger.getLogger(this.getClass());
+        private final Logger logger = Logger.getLogger(this.getClass());
 
     /** Return a list of all users
      *
@@ -24,7 +24,7 @@ public class UserDao {
         try {
             users = session.createCriteria(User.class).list();
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         }finally {
             session.close();
         }
@@ -45,7 +45,7 @@ public class UserDao {
             user = (User) session.get(User.class, id);
             return user;
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -68,7 +68,7 @@ public class UserDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         }finally {
             session.close();
             return id;
@@ -85,7 +85,7 @@ public class UserDao {
                     .uniqueResult();
             return user;
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -102,7 +102,7 @@ public class UserDao {
                     .uniqueResult();
             return user;
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -123,7 +123,7 @@ public class UserDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -143,7 +143,7 @@ public class UserDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }

@@ -1,5 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+
 <html>
 <head>
     <title>MyCine - MyRentals</title>
@@ -15,13 +17,14 @@
 
 <div id="accordion">
 <c:forEach var="rental" items="${myrentals}">
-    <h3><strong style="text-decoration:underline;">${rental.movieid.movieid.title}</strong></h3>
+    <c:set var="mvieTitle" value='${fn:replace(rental.movieid.movieid.title, "\'", "")}' />
+    <h3><strong style="text-decoration:underline;">${mvieTitle}</strong></h3>
 
     <table width="100%">
         <tr>
-            <td rowspan="5"><img src="${rental.movieid.movieid.imgsource}" alt="${rental.movieid.movieid.title}" width="125" height="200" /></td>
+            <td rowspan="5"><img src="${rental.movieid.movieid.imgsource}" alt="${mvieTitle}" width="125" height="200" /></td>
             <td>Release Date: ${rental.movieid.movieid.releaseDate}</td>
-            <td>View on IMDB&nbsp;<a href="http://www.imdb.com/title/${rental.movieid.movieid.imdbid}/">${rental.movieid.movieid.title}</a></td>
+            <td>View on IMDB&nbsp;<a href="http://www.imdb.com/title/${rental.movieid.movieid.imdbid}/">${mvieTitle}</a></td>
         </tr>
         <tr>
             <td>Format: ${rental.movieid.movieid.format.formattitle}</td>

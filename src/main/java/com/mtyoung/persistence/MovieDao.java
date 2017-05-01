@@ -20,7 +20,7 @@ import java.util.List;
  * Created by Mike on 2/13/17.
  */
 public class MovieDao {
-    private final Logger log = Logger.getLogger(this.getClass());
+        private final Logger logger = Logger.getLogger(this.getClass());
 
     public List<Movie> getAllMovies() {
         List<Movie> movies = null;
@@ -28,7 +28,7 @@ public class MovieDao {
         try {
             movies = session.createCriteria(Movie.class).list();
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         }finally {
             session.close();
         }
@@ -42,7 +42,7 @@ public class MovieDao {
         try {
             movie = (Movie) session.get(Movie.class, id);
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -60,7 +60,7 @@ public class MovieDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         }finally {
             session.close();
         }
@@ -79,7 +79,7 @@ public class MovieDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -94,7 +94,7 @@ public class MovieDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -115,7 +115,7 @@ public class MovieDao {
                     .list();
             return recents;
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -132,7 +132,7 @@ public class MovieDao {
                     .uniqueResult();
             return movie;
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -151,7 +151,7 @@ public class MovieDao {
                     .list();
             return titles;
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -191,7 +191,7 @@ public class MovieDao {
                     .uniqueResult();
             return movie;
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }

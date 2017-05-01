@@ -1,6 +1,7 @@
 package com.mtyoung.persistence;
 
 import com.mtyoung.entity.Genre;
+import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -11,13 +12,14 @@ import java.util.List;
  * Created by Mike on 2/14/17.
  */
 public class GenreDao {
+    private final Logger logger = Logger.getLogger(this.getClass());
     public List<Genre> getAllGenres() {
         List<Genre> genres = null;
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         try {
             genres = session.createCriteria(Genre.class).list();
         } catch (HibernateException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }finally {
             session.close();
         }
@@ -31,7 +33,7 @@ public class GenreDao {
         try {
             genre = (Genre) session.get(Genre.class, id);
         } catch (HibernateException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -49,7 +51,7 @@ public class GenreDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }finally {
             session.close();
         }
@@ -68,7 +70,7 @@ public class GenreDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -83,7 +85,7 @@ public class GenreDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -98,7 +100,7 @@ public class GenreDao {
                     .uniqueResult();
             return genre;
         } catch (HibernateException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }

@@ -15,7 +15,7 @@ import java.util.List;
  * Created by Mike on 2/14/17.
  */
 public class RentalDao {
-    private final Logger log = Logger.getLogger(this.getClass());
+        private final Logger logger = Logger.getLogger(this.getClass());
 
     public List<Rental> getAllRentals() {
         List<Rental> rentals = null;
@@ -23,7 +23,7 @@ public class RentalDao {
         try {
             rentals = session.createCriteria(Rental.class).list();
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         }finally {
             session.close();
         }
@@ -37,7 +37,7 @@ public class RentalDao {
         try {
             rental = (Rental) session.get(Rental.class, id);
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -55,7 +55,7 @@ public class RentalDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         }finally {
             session.close();
         }
@@ -74,7 +74,7 @@ public class RentalDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -89,7 +89,7 @@ public class RentalDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -103,7 +103,7 @@ public class RentalDao {
                     .add(Restrictions.eq("renterid", renterID)
                     ).list();
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         }finally {
             session.close();
         }
@@ -119,7 +119,7 @@ public class RentalDao {
                     .add(Restrictions.eq("movieid", link)
                     ).uniqueResult();
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }

@@ -1,6 +1,7 @@
 package com.mtyoung.persistence;
 
 import com.mtyoung.entity.Address;
+import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -11,6 +12,7 @@ import java.util.List;
  * AddressDao class for mycine project, responsible for db interaction Full CRUD related to the Address Entity
  */
 public class AddressDao {
+    private final Logger logger = Logger.getLogger(this.getClass());
     /**
      * getAllAddresses method, returns a list of all Address entities found in local db
      * @return
@@ -21,7 +23,7 @@ public class AddressDao {
         try {
             mails = session.createCriteria(Address.class).list();
         } catch (HibernateException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }finally {
             session.close();
         }
@@ -41,7 +43,7 @@ public class AddressDao {
         try {
             mail = (Address) session.get(Address.class, id);
         } catch (HibernateException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -64,7 +66,7 @@ public class AddressDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }finally {
             session.close();
         }
@@ -88,7 +90,7 @@ public class AddressDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -108,7 +110,7 @@ public class AddressDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }

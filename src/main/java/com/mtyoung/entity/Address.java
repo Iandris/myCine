@@ -58,7 +58,7 @@ public class Address implements Serializable {
     this.city = city;
     }
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "state")
     public State getState() {
     return state;
@@ -77,7 +77,7 @@ public class Address implements Serializable {
     this.zipcode = zipcode;
     }
 
-    @OneToMany (fetch = FetchType.EAGER, mappedBy = "address")
+    @OneToMany (fetch = FetchType.LAZY, mappedBy = "address")
     public Set<User> getUserSet() {
         return this.userSet;
     }

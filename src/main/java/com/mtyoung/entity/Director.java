@@ -47,7 +47,7 @@ public class Director implements Serializable{
     this.lname = lname;
   }
 
-  @OneToMany (fetch = FetchType.EAGER, mappedBy = "director")
+  @OneToMany (fetch = FetchType.LAZY, mappedBy = "director")
   public Set<Movie> getMovieSet() {
     return this.movieSet;
   }

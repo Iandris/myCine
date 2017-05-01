@@ -36,7 +36,7 @@ public class Format implements Serializable {
     this.formattitle = formattitle;
   }
 
-  @OneToMany (fetch = FetchType.EAGER, mappedBy = "format")
+  @OneToMany (fetch = FetchType.LAZY, mappedBy = "format")
   public Set<Movie> getMovieSet() {
       return this.movieSet;
   }

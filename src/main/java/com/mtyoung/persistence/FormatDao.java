@@ -12,15 +12,14 @@ import java.util.List;
  * Created by Mike on 2/14/17.
  */
 public class FormatDao {
-    private final Logger log = Logger.getLogger(this.getClass());
-
+    private final Logger logger = Logger.getLogger(this.getClass());
     public List<Format> getAllFormats() {
         List<Format> formats = null;
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         try {
             formats = session.createCriteria(Format.class).list();
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         }finally {
             session.close();
         }
@@ -34,7 +33,7 @@ public class FormatDao {
         try {
             format = (Format) session.get(Format.class, id);
         } catch (HibernateException e) {
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -52,7 +51,7 @@ public class FormatDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         }finally {
             session.close();
         }
@@ -71,7 +70,7 @@ public class FormatDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }
@@ -86,7 +85,7 @@ public class FormatDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            log.error("Hibernate Exception", e);
+            logger.error(e.getMessage());
         } finally {
             session.close();
         }

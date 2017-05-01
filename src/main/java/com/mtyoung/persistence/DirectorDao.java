@@ -1,6 +1,7 @@
 package com.mtyoung.persistence;
 
 import com.mtyoung.entity.Director;
+import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -11,13 +12,15 @@ import java.util.List;
  * Created by Mike on 2/14/17.
  */
 public class DirectorDao {
+    private final Logger logger = Logger.getLogger(this.getClass());
     public List<Director> getAllDirectors() {
         List<Director> directors = null;
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         try {
             directors = session.createCriteria(Director.class).list();
         } catch (HibernateException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
+
         }finally {
             session.close();
         }
@@ -31,7 +34,8 @@ public class DirectorDao {
         try {
             director = (Director) session.get(Director.class, id);
         } catch (HibernateException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
+
         } finally {
             session.close();
         }
@@ -48,7 +52,8 @@ public class DirectorDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            e.printStackTrace();
+            logger.error(e.getMessage());
+
         }finally {
             session.close();
         }
@@ -66,7 +71,8 @@ public class DirectorDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            e.printStackTrace();
+            logger.error(e.getMessage());
+
         } finally {
             session.close();
         }
@@ -81,7 +87,8 @@ public class DirectorDao {
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) tx.rollback();
-            e.printStackTrace();
+            logger.error(e.getMessage());
+
         } finally {
             session.close();
         }
@@ -97,7 +104,8 @@ public class DirectorDao {
                     .uniqueResult();
             return dir;
         } catch (HibernateException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
+
         } finally {
             session.close();
         }
