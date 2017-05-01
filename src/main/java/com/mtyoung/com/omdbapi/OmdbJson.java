@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mtyoung.entity.Director;
 import com.mtyoung.entity.Genre;
 import com.mtyoung.entity.Movie;
+import com.mtyoung.entity.Studio;
 import com.mtyoung.persistence.*;
 import com.mtyoung.util.LocalDateAttributeConverter;
 
@@ -29,7 +30,7 @@ public class OmdbJson {
     private MovieDao dao = new MovieDao();
     private FormatDao fmdao = new FormatDao();
     private GenreDao gnDao= new GenreDao();
-    private StudioDao studioDao= new StudioDao();
+    private StudioDao studioDao = new StudioDao();
     private DirectorDao directorDao = new DirectorDao();
     private List<Search> searches;
     private Client client = ClientBuilder.newClient();
@@ -83,7 +84,7 @@ public class OmdbJson {
 
                         movie.setGenre(lookupGenre(title));
 
-                        movie.setStudio(studioDao.getStudio(1));
+                        movie.setStudio(lookupStudio(title));
 
                         movie.setDirector(lookupDirector(title));
 
@@ -157,6 +158,28 @@ public class OmdbJson {
             }
         } else {
             return gnDao.getGenre(1);
+        }
+    }
+
+    /**
+     * lookupStudio method, parses out the studio value from found movie, if no studio entity exists in db one is created,
+     * returns a Genre entity for attribute mapping in Movie
+     * @param title
+     * @return
+     * @throws Exception
+     */
+    private Studio lookupStudio(Title title) throws Exception {
+        if (!title.getProduction().equals("N/A")) {
+            if (studioDao.getStudioByTitle(title.getProduction()) == null) {
+                Studio st = new Studio();
+                st.setStudiotitle(title.getProduction());
+                studioDao.addStudio(st);
+                return st;
+            } else {
+                return studioDao.getStudioByTitle(title.getProduction());
+            }
+        } else {
+            return studioDao.getStudio(1);
         }
     }
 
