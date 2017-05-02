@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>MyCine - Support</title>
+    <title>MyCine - Privacy Policy</title>
     <c:import url="jspinclude/header.jsp" />
     <c:if test="${user == null}">
         <c:import url="jspinclude/navBarNoLogin.jsp" />
@@ -13,10 +13,8 @@
 </head>
 <body class="schpeal-home" >
 <div>
-    <h1>Support</h1>
+    <h1>Privacy Policy</h1>
 </div>
-
-<h3>Privacy Policy:</h3>
 
 <div id='ppBody'><div class='ppConsistencies'><div class='col-2'>
     <div class="quick-links text-center">Information Collection</div>

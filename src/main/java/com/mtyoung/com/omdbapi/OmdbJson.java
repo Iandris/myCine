@@ -1,5 +1,6 @@
 package com.mtyoung.com.omdbapi;
 
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mtyoung.entity.Director;
 import com.mtyoung.entity.Genre;
@@ -7,6 +8,7 @@ import com.mtyoung.entity.Movie;
 import com.mtyoung.entity.Studio;
 import com.mtyoung.persistence.*;
 import com.mtyoung.util.LocalDateAttributeConverter;
+import org.apache.log4j.Logger;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
@@ -36,6 +38,8 @@ public class OmdbJson {
     private Client client = ClientBuilder.newClient();
     private ObjectMapper mapper= new ObjectMapper();
     private LocalDateAttributeConverter converter= new LocalDateAttributeConverter();
+    private final Logger logger = Logger.getLogger(this.getClass());
+
 
     /**
      * searchByTitle method, main entry point for OmdbJson.java class, requires String parameter for movie title to search
@@ -44,17 +48,23 @@ public class OmdbJson {
      */
     public void searchByTitle(String movieTitle) throws Exception  {
         searches = new ArrayList<>();
-        searches.add(mapper.readValue(getJsonResponse(API_BASE_PATH, movieTitle), Search.class));
 
-        int totalResults = Integer.parseInt(searches.get(0).getTotalResults());
+        try {
+            searches.add(mapper.readValue(getJsonResponse(API_BASE_PATH, movieTitle), Search.class));
 
-        for (int i = 2; i < ((totalResults / 10) + 1); i++) {
-            searches.add(mapper.readValue(getJsonResponse(API_BASE_PATH, movieTitle + "&page=" + i), Search.class));
-        }
 
-        for (Search searchers : searches
-                ) {
-            searchLoop(searchers);
+            int totalResults = Integer.parseInt(searches.get(0).getTotalResults());
+
+            for (int i = 2; i < ((totalResults / 10) + 1); i++) {
+                searches.add(mapper.readValue(getJsonResponse(API_BASE_PATH, movieTitle + "&page=" + i), Search.class));
+            }
+
+            for (Search searchers : searches
+                    ) {
+                searchLoop(searchers);
+            }
+        } catch (JsonMappingException ex) {
+            logger.error(ex.getMessage());
         }
     }
 
@@ -97,7 +107,7 @@ public class OmdbJson {
                         dao.addMovie(movie);
                     }
                 } catch (SocketTimeoutException timeout) {
-                    timeout.printStackTrace();
+                    logger.error(timeout.getMessage());
                 }
             }
         }
@@ -206,7 +216,7 @@ public class OmdbJson {
      * @throws Exception
      */
     private Director lookupDirector(Title title)  throws Exception  {
-        if (!title.getDirector().equals("N/A")) {
+        if (!title.getDirector().equals("N/A") && !title.getDirector().isEmpty()) {
             String[] directors = title.getDirector().split(",");
             Map<String, String> dirDetail = convertName(directors[0]);
             String fname = dirDetail.get("firstname");
@@ -234,10 +244,15 @@ public class OmdbJson {
      */
     public Map<String, String> convertName(String name) throws Exception  {
         Map<String, String> director = new HashMap<>();
-        String fname = name.substring(0, name.indexOf(" "));
-        String lname = name.substring(name.indexOf(" ") + 1);
-        director.put("firstname", fname);
-        director.put("lastname", lname);
+        if(name.contains(" ")) {
+            String fname = name.substring(0, name.indexOf(" "));
+            String lname = name.substring(name.indexOf(" ") + 1);
+            director.put("firstname", fname);
+            director.put("lastname", lname);
+        } else {
+            director.put("firstname", "unkown");
+            director.put("lastname", "unknown");
+        }
         return director;
     }
 }

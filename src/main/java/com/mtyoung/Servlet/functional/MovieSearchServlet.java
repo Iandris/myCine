@@ -37,7 +37,7 @@ public class MovieSearchServlet extends HttpServlet {
         List<Movie> mymovies = new ArrayList<>();
         boolean found = false;
 
-        String searchtitle = request.getParameter("title").replace(" ", "%20");
+        String searchtitle = request.getParameter("title").replace(" ", "%20").replace("/","%2F").replace("-","%2D").replace(":","%3A");
 
         try {
             search.searchByTitle(searchtitle);

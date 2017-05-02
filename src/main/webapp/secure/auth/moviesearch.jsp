@@ -2,7 +2,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <html>
 <head>
-    <title>MyCine - Home</title>
+    <title>MyCine - Search</title>
     <c:import url="/jspinclude/header.jsp" />
     <c:import url="/jspinclude/navigationBar.jsp" />
     <c:import url="/jspinclude/scripts.jsp" />
