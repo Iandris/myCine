@@ -12,7 +12,7 @@
 
 <div>
     <h1>Search Titles</h1>&nbsp;<p>Please note: Some searches may take longer, depending on the number of results.</p>
-
+        <h4>The 3rd Party API used for searching new movie titles is no longer free. As this page is for educational purposesonly, the developer has chosen not to pay for this lookup service. Movies in the existing database are searchable and fully functional, however new titles (after June 2017) are not available.</h4>
     <form action="/mycine/secure/auth/moviesearch" onsubmit="return showMe()" id="searchForm" method="POST" >
         <div class="form-group input-group">
             <input type='text' placeholder='Search...' id='title' name="title" class="form-control"/>

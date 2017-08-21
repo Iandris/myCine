@@ -18,9 +18,8 @@
     </div>
     <div class="aside">
         <aside>
-            <h2>Pro Tip:</h2>
-            <p>Try our companion mobile app for even faster access to your movie library. Scan the UPC barcode to check your inventory or quickly add
-                a title to your wish list.
+            <h2>API Change:</h2>
+            <p>The 3rd Party API used for searching new movie titles is no longer free. As this page is for educational purposesonly, the developer has chosen not to pay for this lookup service. Movies in the existing database are searchable and fully functional, however new titles (after June 2017) are not available.
             </p>
         </aside>
     </div>

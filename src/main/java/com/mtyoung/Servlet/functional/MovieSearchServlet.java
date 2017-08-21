@@ -40,7 +40,7 @@ public class MovieSearchServlet extends HttpServlet {
         String searchtitle = request.getParameter("title").replace(" ", "%20").replace("/","%2F").replace("-","%2D").replace(":","%3A");
 
         try {
-            search.searchByTitle(searchtitle);
+            //search.searchByTitle(searchtitle);
 
             mymovies = movieDao.getMoviesByTitleSearch(searchtitle);
 
