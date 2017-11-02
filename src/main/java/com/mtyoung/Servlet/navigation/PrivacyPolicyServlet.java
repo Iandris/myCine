@@ -18,7 +18,7 @@ import java.io.IOException;
  */
 public class PrivacyPolicyServlet  extends HttpServlet {
     /**
-     * doGet method for MyCine index.jsp redirect
+     * doGet method for MyCine lander.jsp redirect
      * @param request
      * @param response
      * @throws ServletException

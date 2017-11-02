@@ -21,7 +21,7 @@ import java.io.IOException;
 public class LogoutServlet  extends HttpServlet {
 
     /**
-     * doGET method hands GET request to /logout url pattern, invalidates user session and redirects back to index.jsp
+     * doGET method hands GET request to /logout url pattern, invalidates user session and redirects back to lander.jsp
      * @param request
      * @param response
      * @throws ServletException
@@ -33,7 +33,7 @@ public class LogoutServlet  extends HttpServlet {
 
         session.invalidate();
 
-        getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
+        getServletContext().getRequestDispatcher("/lander.jsp").forward(request, response);
 
     }
 }

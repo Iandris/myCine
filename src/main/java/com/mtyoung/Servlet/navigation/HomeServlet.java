@@ -3,6 +3,7 @@ package com.mtyoung.Servlet.navigation;
 import com.mtyoung.entity.Movie;
 import com.mtyoung.entity.User;
 import com.mtyoung.persistence.MovieDao;
+import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -34,7 +35,6 @@ public class HomeServlet  extends HttpServlet {
      */
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
         HttpSession session = request.getSession();
         session.setAttribute("admin", request.isUserInRole("administrator"));
         List<Movie> movies = mvdao.getRecentMovies(LocalDate.now());

@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
-    <a class="navbar-brand" href="/mycine/index">
+    <a class="navbar-brand" href="/mycine/landing">
         <img src="${pageContext.request.contextPath}/images/MyCine_157x60_White.png" alt="MyCine Logo" />
     </a>
 

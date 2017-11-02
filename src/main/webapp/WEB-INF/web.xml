@@ -11,11 +11,6 @@
   <!-- ********************************************************************* -->
 
   <servlet>
-    <servlet-name>Index</servlet-name>
-    <jsp-file>/index.jsp</jsp-file>
-  </servlet>
-
-  <servlet>
     <servlet-name>Registration</servlet-name>
     <jsp-file>/registration.jsp</jsp-file>
   </servlet>
@@ -29,10 +24,6 @@
   <!-- Servlet Mappings **************************************************** -->
   <!-- ********************************************************************* -->
 
-  <servlet-mapping>
-    <servlet-name>Index</servlet-name>
-    <url-pattern>/index</url-pattern>
-  </servlet-mapping>
 
   <servlet-mapping>
     <servlet-name>Registration</servlet-name>
@@ -49,7 +40,7 @@
   <!-- ********************************************************************* -->
 
   <welcome-file-list>
-    <welcome-file>/index.jsp</welcome-file>
+    <welcome-file>landing</welcome-file>
   </welcome-file-list>
 
   <!-- ********************************************************************* -->
@@ -93,7 +84,7 @@
     <web-resource-collection>
       <web-resource-name>Public</web-resource-name>
       <description>Matches a few special pages.</description>
-      <url-pattern>/index.jsp</url-pattern>
+      <url-pattern>/landing.jsp</url-pattern>
       <url-pattern>/login.jsp</url-pattern>
       <url-pattern>/registration.jsp</url-pattern>
       <url-pattern>/loginFailure.jsp</url-pattern>

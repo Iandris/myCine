@@ -24,7 +24,7 @@
                 document.getElementById('user_name').value = user_name;
                 document.getElementById('uid').value = uid;
             } else {
-                window.location = '../index.jsp';
+                window.location = '../lander.jsp';
             }
         }, function (error) {
             console.log(error);
